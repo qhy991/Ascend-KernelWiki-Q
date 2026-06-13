@@ -1,0 +1,146 @@
+# Controlled vocabulary for Ascend-KernelWiki-Q
+# All page tags must come from this registry
+
+architectures:
+  - id: ascend910
+    npus: [Ascend 910]
+    generation: 1
+    description: "DaVinci architecture, 64 AICores, FP16 256 TOPS"
+  - id: ascend910b
+    npus: [Ascend 910B]
+    generation: 2
+    description: "Enhanced DaVinci, improved Cube/Vector units, FP16 320 TOPS"
+  - id: ascend310p
+    npus: [Atlas 200I A2, Ascend 310P]
+    generation: 1
+    description: "Inference-optimized, 4-8 AICores"
+
+hardware_features:
+  # Compute units
+  cube-unit:
+    description: "Cube matrix multiply unit (CISC-based, analogous to Tensor Core)"
+    min_arch: ascend910
+    cuda_equivalent: tensor_core
+  vector-unit:
+    description: "Vector SIMD unit for element-wise and reduction operations"
+    min_arch: ascend910
+    cuda_equivalent: cuda_core
+  scalar-unit:
+    description: "Scalar control-flow unit for branch and address computation"
+    min_arch: ascend910
+    cuda_equivalent: null
+  mte:
+    description: "Memory Transfer Engine for async data movement (GM↔UB↔L1)"
+    min_arch: ascend910
+    cuda_equivalent: tma
+  # Memory
+  unified-buffer:
+    description: "On-chip Unified Buffer (UB), ~1-2 MB per AICore, analogous to Shared Memory"
+    min_arch: ascend910
+    cuda_equivalent: shared_memory
+  l1-buffer:
+    description: "L1 cache buffer between UB and GM"
+    min_arch: ascend910
+    cuda_equivalent: l1_cache
+  l0-buffer:
+    description: "L0 buffer (register file level) for Cube/Vector operands"
+    min_arch: ascend910
+    cuda_equivalent: register_file
+  global-memory:
+    description: "Off-chip HBM/DDR Global Memory"
+    min_arch: ascend910
+    cuda_equivalent: global_memory
+  # Data formats
+  nd-format:
+    description: "Standard N-dimensional data layout (row-major)"
+    min_arch: ascend910
+    cuda_equivalent: row_major
+  nz-format:
+    description: "FRACTAL_NZ 5D tiled data layout required by Cube unit"
+    min_arch: ascend910
+    cuda_equivalent: null
+  # Interconnect
+  hccs:
+    description: "Huawei Cache Coherent System interconnect between NPUs"
+    min_arch: ascend910
+    cuda_equivalent: nvlink
+  # Synchronization
+  instruction-queue:
+    description: "4 independent instruction queues (Scalar/Vector/Cube/MTE) for pipeline overlap"
+    min_arch: ascend910
+    cuda_equivalent: null
+  event-sync:
+    description: "Event-based synchronization between instruction queues"
+    min_arch: ascend910
+    cuda_equivalent: barrier
+
+techniques:
+  pipeline-scheduling:
+    description: "CopyIn→Compute→CopyOut pipeline with queue-based dependency management"
+    related_hw: [instruction-queue, mte, unified-buffer]
+  double-buffering:
+    description: "Ping-pong two UB tile buffers to overlap MTE data transfer with compute"
+    related_hw: [unified-buffer, mte]
+  nz-tiling:
+    description: "Tiling strategy for FRACTAL_NZ 5D data format on Cube unit"
+    related_hw: [cube-unit, nz-format]
+  cube-vector-overlap:
+    description: "Overlapping Cube (matrix) and Vector (SIMD) execution via separate queues"
+    related_hw: [cube-unit, vector-unit, instruction-queue]
+  bank-conflict-avoidance:
+    description: "UB bank conflict avoidance through padding and access pattern optimization"
+    related_hw: [unified-buffer]
+  data-reuse:
+    description: "Maximizing UB data reuse to reduce GM bandwidth pressure"
+    related_hw: [unified-buffer, mte]
+  hccl-optimization:
+    description: "HCCL collective communication tuning (topology-aware, pipelined)"
+    related_hw: [hccs]
+  format-conversion:
+    description: "ND↔NZ format conversion optimization to minimize overhead"
+    related_hw: [nz-format, nd-format, vector-unit]
+
+kernel_types:
+  - matmul
+  - gemm
+  - attention
+  - flash-attention
+  - moe
+  - grouped-gemm
+  - softmax
+  - layernorm
+  - rmsnorm
+  - elementwise
+  - reduce
+  - conv
+  - embedding
+  - activation
+
+languages:
+  - ascendc
+  - tbe-dsl
+  - tbe-tik
+  - python
+  - cpp
+
+tracked_repos:
+  - org: Ascend
+    name: pytorch
+    description: "PyTorch Ascend backend"
+    url: https://gitee.com/ascend/pytorch
+  - org: Ascend
+    name: samples
+    description: "CANN sample code (1325+ stars)"
+    url: https://gitee.com/ascend/samples
+  - org: Ascend
+    name: MindSpore
+    description: "MindSpore deep learning framework"
+    url: https://gitee.com/mindspore/mindspore
+  - org: sgl-project
+    name: sgl-kernel-npu
+    description: "SGLang NPU kernel implementations"
+    url: https://github.com/sgl-project/sgl-kernel-npu
+  - org: Ascend
+    name: CANN-community
+    description: "CANN community edition"
+    url: https://gitee.com/ascend/CANN-community

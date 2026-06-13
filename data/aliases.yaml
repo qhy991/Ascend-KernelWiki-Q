@@ -1,0 +1,60 @@
+# Alias mappings for Ascend-KernelWiki-Q
+# Maps common alternative names to canonical tag IDs
+
+hardware:
+  cube: cube-unit
+  "cube unit": cube-unit
+  "tensor core": cube-unit
+  "matrix unit": cube-unit
+  "矩阵计算单元": cube-unit
+  vector: vector-unit
+  "vector unit": vector-unit
+  "cuda core": vector-unit
+  "向量计算单元": vector-unit
+  scalar: scalar-unit
+  "scalar unit": scalar-unit
+  ub: unified-buffer
+  "unified buffer": unified-buffer
+  "shared memory": unified-buffer
+  "片上存储": unified-buffer
+  l1: l1-buffer
+  "l1 buffer": l1-buffer
+  l0: l0-buffer
+  "l0 buffer": l0-buffer
+  gm: global-memory
+  "global memory": global-memory
+  hbm: global-memory
+  mte: mte
+  "memory transfer engine": mte
+  "dma engine": mte
+
+data_formats:
+  fractal_nz: nz-format
+  nz: nz-format
+  "5d format": nz-format
+  "fractal nz": nz-format
+  nd: nd-format
+  "row major": nd-format
+
+architectures:
+  "910a": ascend910
+  "910": ascend910
+  "davinci": ascend910
+  "910b": ascend910b
+  "310p": ascend310p
+  "atlas 200i": ascend310p
+
+concepts:
+  ascendc: ascendc
+  "ascend c": ascendc
+  "ascend-c": ascendc
+  tbe: tbe-dsl
+  "tbe dsl": tbe-dsl
+  tik: tbe-tik
+  "tbe tik": tbe-tik
+  cann: cann
+  hccl: hccl
+  "collective communication": hccl
+  catlass: catlass
+  acl: ascendcl
+  "ascend computing language": ascendcl
