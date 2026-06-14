@@ -1,7 +1,7 @@
 # Index: By Language
 
 
-## ascendc (15 pages)
+## ascendc (17 pages)
 
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md)
@@ -18,6 +18,8 @@
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
+- [RoPE (Rotary Positional Embedding) Implementation in Ascend C](wiki/kernels/rope-ascendc.md)
+- [SwiGLU Activation Implementation in Ascend C](wiki/kernels/swiglu-ascendc.md)
 
 ## cpp (1 pages)
 

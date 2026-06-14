@@ -22,10 +22,12 @@
 
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md) conf:inferred arch:ascend910, ascend910b
 
-## elementwise (2 pages)
+## elementwise (4 pages)
 
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) conf:verified arch:ascend910, ascend910b, ascend310p
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
+- [RoPE (Rotary Positional Embedding) Implementation in Ascend C](wiki/kernels/rope-ascendc.md) conf:verified arch:ascend910, ascend910b
+- [SwiGLU Activation Implementation in Ascend C](wiki/kernels/swiglu-ascendc.md) conf:verified arch:ascend910, ascend910b
 
 ## embedding (2 pages)
 
@@ -59,6 +61,11 @@
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md) conf:? arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) conf:? arch:ascend910, ascend910b
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) conf:source-reported arch:ascend910, ascend910b
+
+## math (2 pages)
+
+- [RoPE (Rotary Positional Embedding) Implementation in Ascend C](wiki/kernels/rope-ascendc.md) conf:verified arch:ascend910, ascend910b
+- [SwiGLU Activation Implementation in Ascend C](wiki/kernels/swiglu-ascendc.md) conf:verified arch:ascend910, ascend910b
 
 ## matmul (3 pages)
 

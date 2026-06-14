@@ -31,3 +31,9 @@ Symptom → Pattern → Technique → Solution
 - Path: `wiki/patterns/pipeline-stall.md`
 - Tags: MTE queue idle while Vector waits, Cube queue has gaps between operations, PipeBarrier taking >10% of kernel time, Low overall AICore utilization
 - Related: `hw-instruction-queue`, `technique-pipeline-scheduling`, `technique-double-buffering`
+
+### TQue Deadlock Pattern in Ascend C
+
+- ID: `wiki-pattern-tque-deadlock`
+- Path: `wiki/patterns/tque-deadlock.md`
+- Tags: instruction-queue, pipeline-scheduling, ascendc

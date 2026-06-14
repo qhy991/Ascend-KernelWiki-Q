@@ -6,9 +6,11 @@
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [UB Bank Conflict Avoidance](wiki/techniques/bank-conflict-avoidance.md)
 
-## cube-unit (1 pages)
+## cube-unit (3 pages)
 
 - [Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)](wiki/hardware/cube-unit.md)
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
+- [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
 
 ## cube-vector-overlap (9 pages)
 
@@ -46,9 +48,10 @@
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
 - [Double Buffering — Overlapping Data Transfer with Compute](wiki/techniques/double-buffering.md)
 
-## format-conversion (3 pages)
+## format-conversion (4 pages)
 
 - [Understanding FRACTAL_NZ — Ascend's 5D Data Format for Matrix Computation](sources/blogs/nz-format-explained.md)
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
 - [FRACTAL_NZ Format Traps — Common Pitfalls and Solutions](wiki/patterns/nz-format-traps.md)
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md)
 
@@ -57,6 +60,10 @@
 - [Multi-Stream Execution on Ascend NPU](sources/docs/ascend-multi-stream-guide.md)
 - [HCCL Collective Communication Library](sources/docs/hccl-collective.md)
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md)
+
+## nz-format (1 pages)
+
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
 
 ## nz-tiling (13 pages)
 
@@ -74,7 +81,7 @@
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md)
 
-## pipeline-scheduling (19 pages)
+## pipeline-scheduling (22 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -83,6 +90,7 @@
 - [Operator Fusion Patterns on Ascend NPU](sources/docs/ascend-operator-fusion.md)
 - [Ascend Profiling with msprof](sources/docs/ascend-profiling-guide.md)
 - [Catlass — Modular GEMM Framework for Ascend (CUTLASS equivalent)](sources/docs/catlass-framework.md)
+- [MTE (Memory Transfer Engine) in Ascend AICore](wiki/hardware/mte.md)
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
@@ -95,3 +103,5 @@
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md)
+- [TQue Deadlock Pattern in Ascend C](wiki/patterns/tque-deadlock.md)
+- [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
