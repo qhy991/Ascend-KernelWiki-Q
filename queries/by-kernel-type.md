@@ -5,9 +5,12 @@
 
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) conf:verified arch:ascend910, ascend910b, ascend310p
 
-## attention (10 pages)
+## attention (13 pages)
 
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md) conf:inferred arch:ascend910, ascend910b
+- [Multi-Head Latent Attention (AscendC)](wiki/kernels/mla-ascendc.md) conf:inferred arch:ascend910b
+- [Paged Attention (AscendC)](wiki/kernels/paged-attention-ascendc.md) conf:inferred arch:ascend910b
+- [Ring Attention & Context Parallelism (AscendC)](wiki/kernels/ring-attention-ascendc.md) conf:inferred arch:ascend910b
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md) conf:? arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) conf:? arch:ascend910, ascend910b
 - [UB Bank Conflict Avoidance](wiki/techniques/bank-conflict-avoidance.md) conf:inferred arch:ascend910, ascend910b
@@ -67,9 +70,10 @@
 - [RoPE (Rotary Positional Embedding) Implementation in Ascend C](wiki/kernels/rope-ascendc.md) conf:verified arch:ascend910, ascend910b
 - [SwiGLU Activation Implementation in Ascend C](wiki/kernels/swiglu-ascendc.md) conf:verified arch:ascend910, ascend910b
 
-## matmul (3 pages)
+## matmul (4 pages)
 
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md) conf:source-reported arch:ascend910, ascend910b
+- [Quantized GEMM (W4A16/INT8) (AscendC)](wiki/kernels/quantized-gemm-ascendc.md) conf:inferred arch:ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) conf:? arch:ascend910, ascend910b
 
@@ -82,6 +86,10 @@
 
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
+
+## reduction (1 pages)
+
+- [TopK & Sort (AscendC)](wiki/kernels/topk-sort-ascendc.md) conf:inferred arch:ascend910b
 
 ## rmsnorm (1 pages)
 

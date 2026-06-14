@@ -174,6 +174,20 @@ page_types:
       - related
       - aliases
 
+  wiki-tool:
+    id_prefix: "tool-"
+    description: "Tooling, profiling, and simulation guides"
+    required_fields:
+      - id
+      - title
+      - type
+      - tags
+      - confidence
+      - sources
+    optional_fields:
+      - related
+      - aliases
+
 confidence_levels:
   verified:
     description: "Official Huawei doc + runnable code evidence"
