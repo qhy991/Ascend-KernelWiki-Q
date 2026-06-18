@@ -7664,6 +7664,262 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-mindspeed-2684",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2684",
+    "path": "wiki/techniques/pr-mindspeed-2684.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2696",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2696",
+    "path": "wiki/techniques/pr-mindspeed-2696.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2700",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2700",
+    "path": "wiki/techniques/pr-mindspeed-2700.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2706",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2706",
+    "path": "wiki/techniques/pr-mindspeed-2706.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2708",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2708",
+    "path": "wiki/techniques/pr-mindspeed-2708.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2710",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2710",
+    "path": "wiki/techniques/pr-mindspeed-2710.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "distributed",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2711",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2711",
+    "path": "wiki/techniques/pr-mindspeed-2711.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2712",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2712",
+    "path": "wiki/techniques/pr-mindspeed-2712.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2714",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2714",
+    "path": "wiki/techniques/pr-mindspeed-2714.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2715",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2715",
+    "path": "wiki/techniques/pr-mindspeed-2715.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "kernel",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2716",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2716",
+    "path": "wiki/techniques/pr-mindspeed-2716.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2718",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2718",
+    "path": "wiki/techniques/pr-mindspeed-2718.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "gradient",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2720",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2720",
+    "path": "wiki/techniques/pr-mindspeed-2720.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2721",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2721",
+    "path": "wiki/techniques/pr-mindspeed-2721.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "attention",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-mindspeed-2722",
     "type": "wiki-technique",
     "title": "PR Insight: MindSpeed #2722",
@@ -7683,6 +7939,1050 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-mindspeed-2723",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2723",
+    "path": "wiki/techniques/pr-mindspeed-2723.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "feature",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2724",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2724",
+    "path": "wiki/techniques/pr-mindspeed-2724.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "bugfix",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2725",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2725",
+    "path": "wiki/techniques/pr-mindspeed-2725.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2726",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2726",
+    "path": "wiki/techniques/pr-mindspeed-2726.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2727",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2727",
+    "path": "wiki/techniques/pr-mindspeed-2727.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2728",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2728",
+    "path": "wiki/techniques/pr-mindspeed-2728.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2729",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2729",
+    "path": "wiki/techniques/pr-mindspeed-2729.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2730",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2730",
+    "path": "wiki/techniques/pr-mindspeed-2730.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "moe",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2731",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2731",
+    "path": "wiki/techniques/pr-mindspeed-2731.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2732",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2732",
+    "path": "wiki/techniques/pr-mindspeed-2732.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "attention",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2733",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2733",
+    "path": "wiki/techniques/pr-mindspeed-2733.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "training",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2737",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2737",
+    "path": "wiki/techniques/pr-mindspeed-2737.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2738",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2738",
+    "path": "wiki/techniques/pr-mindspeed-2738.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2740",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2740",
+    "path": "wiki/techniques/pr-mindspeed-2740.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2744",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2744",
+    "path": "wiki/techniques/pr-mindspeed-2744.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2746",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2746",
+    "path": "wiki/techniques/pr-mindspeed-2746.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "performance",
+      "feature",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2747",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2747",
+    "path": "wiki/techniques/pr-mindspeed-2747.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "kernel"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2748",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2748",
+    "path": "wiki/techniques/pr-mindspeed-2748.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2750",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2750",
+    "path": "wiki/techniques/pr-mindspeed-2750.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "kernel"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2752",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2752",
+    "path": "wiki/techniques/pr-mindspeed-2752.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2753",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2753",
+    "path": "wiki/techniques/pr-mindspeed-2753.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2754",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2754",
+    "path": "wiki/techniques/pr-mindspeed-2754.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2755",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2755",
+    "path": "wiki/techniques/pr-mindspeed-2755.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "performance",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2756",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2756",
+    "path": "wiki/techniques/pr-mindspeed-2756.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2757",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2757",
+    "path": "wiki/techniques/pr-mindspeed-2757.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2758",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2758",
+    "path": "wiki/techniques/pr-mindspeed-2758.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2760",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2760",
+    "path": "wiki/techniques/pr-mindspeed-2760.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2761",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2761",
+    "path": "wiki/techniques/pr-mindspeed-2761.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2762",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2762",
+    "path": "wiki/techniques/pr-mindspeed-2762.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2763",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2763",
+    "path": "wiki/techniques/pr-mindspeed-2763.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2770",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2770",
+    "path": "wiki/techniques/pr-mindspeed-2770.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "performance",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2771",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2771",
+    "path": "wiki/techniques/pr-mindspeed-2771.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2772",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2772",
+    "path": "wiki/techniques/pr-mindspeed-2772.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "bugfix",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2773",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2773",
+    "path": "wiki/techniques/pr-mindspeed-2773.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "bugfix",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2777",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2777",
+    "path": "wiki/techniques/pr-mindspeed-2777.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2778",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2778",
+    "path": "wiki/techniques/pr-mindspeed-2778.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2781",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2781",
+    "path": "wiki/techniques/pr-mindspeed-2781.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "performance",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2783",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2783",
+    "path": "wiki/techniques/pr-mindspeed-2783.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2784",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2784",
+    "path": "wiki/techniques/pr-mindspeed-2784.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2788",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2788",
+    "path": "wiki/techniques/pr-mindspeed-2788.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "feature",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2789",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2789",
+    "path": "wiki/techniques/pr-mindspeed-2789.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "distributed",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2790",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2790",
+    "path": "wiki/techniques/pr-mindspeed-2790.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2791",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2791",
+    "path": "wiki/techniques/pr-mindspeed-2791.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2792",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2792",
+    "path": "wiki/techniques/pr-mindspeed-2792.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2793",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2793",
+    "path": "wiki/techniques/pr-mindspeed-2793.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "performance",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2794",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2794",
+    "path": "wiki/techniques/pr-mindspeed-2794.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2795",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2795",
+    "path": "wiki/techniques/pr-mindspeed-2795.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2796",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2796",
+    "path": "wiki/techniques/pr-mindspeed-2796.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "attention",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2798",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2798",
+    "path": "wiki/techniques/pr-mindspeed-2798.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2799",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2799",
+    "path": "wiki/techniques/pr-mindspeed-2799.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2800",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2800",
+    "path": "wiki/techniques/pr-mindspeed-2800.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2801",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2801",
+    "path": "wiki/techniques/pr-mindspeed-2801.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2802",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2802",
+    "path": "wiki/techniques/pr-mindspeed-2802.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2803",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2803",
+    "path": "wiki/techniques/pr-mindspeed-2803.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2804",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2804",
+    "path": "wiki/techniques/pr-mindspeed-2804.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "moe",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2805",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2805",
+    "path": "wiki/techniques/pr-mindspeed-2805.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "bugfix",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2806",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2806",
+    "path": "wiki/techniques/pr-mindspeed-2806.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-mindspeed-2809",
     "type": "wiki-technique",
     "title": "PR Insight: MindSpeed #2809",
@@ -7694,6 +8994,114 @@
     "tags": [
       "bugfix",
       "profiling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2810",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2810",
+    "path": "wiki/techniques/pr-mindspeed-2810.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2811",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2811",
+    "path": "wiki/techniques/pr-mindspeed-2811.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2812",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2812",
+    "path": "wiki/techniques/pr-mindspeed-2812.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2813",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2813",
+    "path": "wiki/techniques/pr-mindspeed-2813.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2814",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2814",
+    "path": "wiki/techniques/pr-mindspeed-2814.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "performance",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2815",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2815",
+    "path": "wiki/techniques/pr-mindspeed-2815.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "distributed",
+      "feature"
     ],
     "kernel_types": [],
     "languages": [],
@@ -7784,6 +9192,24 @@
       "bugfix",
       "te",
       "transformer engine"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2825",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/MindSpeed #2825",
+    "path": "wiki/techniques/pr-mindspeed-2825.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -7881,6 +9307,1401 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-modellink-2842",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2842",
+    "path": "wiki/techniques/pr-modellink-2842.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "moe",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2846",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2846",
+    "path": "wiki/techniques/pr-modellink-2846.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "moe",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2852",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2852",
+    "path": "wiki/techniques/pr-modellink-2852.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2861",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2861",
+    "path": "wiki/techniques/pr-modellink-2861.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2863",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2863",
+    "path": "wiki/techniques/pr-modellink-2863.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2865",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2865",
+    "path": "wiki/techniques/pr-modellink-2865.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2869",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2869",
+    "path": "wiki/techniques/pr-modellink-2869.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2870",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2870",
+    "path": "wiki/techniques/pr-modellink-2870.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2872",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2872",
+    "path": "wiki/techniques/pr-modellink-2872.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2874",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2874",
+    "path": "wiki/techniques/pr-modellink-2874.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2875",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2875",
+    "path": "wiki/techniques/pr-modellink-2875.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix",
+      "gradient"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2876",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2876",
+    "path": "wiki/techniques/pr-modellink-2876.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2878",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2878",
+    "path": "wiki/techniques/pr-modellink-2878.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2879",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2879",
+    "path": "wiki/techniques/pr-modellink-2879.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2882",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2882",
+    "path": "wiki/techniques/pr-modellink-2882.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2885",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2885",
+    "path": "wiki/techniques/pr-modellink-2885.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2886",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2886",
+    "path": "wiki/techniques/pr-modellink-2886.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2887",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2887",
+    "path": "wiki/techniques/pr-modellink-2887.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2888",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2888",
+    "path": "wiki/techniques/pr-modellink-2888.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "performance",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2893",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2893",
+    "path": "wiki/techniques/pr-modellink-2893.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2894",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2894",
+    "path": "wiki/techniques/pr-modellink-2894.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2902",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2902",
+    "path": "wiki/techniques/pr-modellink-2902.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2903",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2903",
+    "path": "wiki/techniques/pr-modellink-2903.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2908",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2908",
+    "path": "wiki/techniques/pr-modellink-2908.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2911",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2911",
+    "path": "wiki/techniques/pr-modellink-2911.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2915",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2915",
+    "path": "wiki/techniques/pr-modellink-2915.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2918",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2918",
+    "path": "wiki/techniques/pr-modellink-2918.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2920",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2920",
+    "path": "wiki/techniques/pr-modellink-2920.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2925",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2925",
+    "path": "wiki/techniques/pr-modellink-2925.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2926",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2926",
+    "path": "wiki/techniques/pr-modellink-2926.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2928",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2928",
+    "path": "wiki/techniques/pr-modellink-2928.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "attention",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2932",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2932",
+    "path": "wiki/techniques/pr-modellink-2932.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2936",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2936",
+    "path": "wiki/techniques/pr-modellink-2936.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2938",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2938",
+    "path": "wiki/techniques/pr-modellink-2938.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2940",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2940",
+    "path": "wiki/techniques/pr-modellink-2940.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "performance",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2942",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2942",
+    "path": "wiki/techniques/pr-modellink-2942.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2943",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2943",
+    "path": "wiki/techniques/pr-modellink-2943.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2951",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2951",
+    "path": "wiki/techniques/pr-modellink-2951.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2952",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2952",
+    "path": "wiki/techniques/pr-modellink-2952.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2955",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2955",
+    "path": "wiki/techniques/pr-modellink-2955.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2956",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2956",
+    "path": "wiki/techniques/pr-modellink-2956.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2959",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2959",
+    "path": "wiki/techniques/pr-modellink-2959.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "bugfix",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2960",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2960",
+    "path": "wiki/techniques/pr-modellink-2960.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2965",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2965",
+    "path": "wiki/techniques/pr-modellink-2965.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2966",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2966",
+    "path": "wiki/techniques/pr-modellink-2966.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2968",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2968",
+    "path": "wiki/techniques/pr-modellink-2968.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2970",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2970",
+    "path": "wiki/techniques/pr-modellink-2970.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2978",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2978",
+    "path": "wiki/techniques/pr-modellink-2978.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2979",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2979",
+    "path": "wiki/techniques/pr-modellink-2979.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2983",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2983",
+    "path": "wiki/techniques/pr-modellink-2983.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2985",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2985",
+    "path": "wiki/techniques/pr-modellink-2985.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2988",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2988",
+    "path": "wiki/techniques/pr-modellink-2988.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2990",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2990",
+    "path": "wiki/techniques/pr-modellink-2990.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "distributed",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2994",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2994",
+    "path": "wiki/techniques/pr-modellink-2994.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "communication"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-2996",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #2996",
+    "path": "wiki/techniques/pr-modellink-2996.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "attention",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3001",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3001",
+    "path": "wiki/techniques/pr-modellink-3001.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3005",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3005",
+    "path": "wiki/techniques/pr-modellink-3005.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3015",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3015",
+    "path": "wiki/techniques/pr-modellink-3015.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "performance",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3020",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3020",
+    "path": "wiki/techniques/pr-modellink-3020.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "moe",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3021",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3021",
+    "path": "wiki/techniques/pr-modellink-3021.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3023",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3023",
+    "path": "wiki/techniques/pr-modellink-3023.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3031",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3031",
+    "path": "wiki/techniques/pr-modellink-3031.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "mindspore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3033",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3033",
+    "path": "wiki/techniques/pr-modellink-3033.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3035",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3035",
+    "path": "wiki/techniques/pr-modellink-3035.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "attention"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3036",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3036",
+    "path": "wiki/techniques/pr-modellink-3036.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3039",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3039",
+    "path": "wiki/techniques/pr-modellink-3039.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3050",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3050",
+    "path": "wiki/techniques/pr-modellink-3050.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3083",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3083",
+    "path": "wiki/techniques/pr-modellink-3083.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3099",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3099",
+    "path": "wiki/techniques/pr-modellink-3099.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "performance",
+      "feature"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3113",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3113",
+    "path": "wiki/techniques/pr-modellink-3113.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3127",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3127",
+    "path": "wiki/techniques/pr-modellink-3127.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3131",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3131",
+    "path": "wiki/techniques/pr-modellink-3131.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3175",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3175",
+    "path": "wiki/techniques/pr-modellink-3175.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "general"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3284",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3284",
+    "path": "wiki/techniques/pr-modellink-3284.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3288",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3288",
+    "path": "wiki/techniques/pr-modellink-3288.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "attention",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3345",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3345",
+    "path": "wiki/techniques/pr-modellink-3345.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "performance",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-modellink-3362",
     "type": "wiki-technique",
     "title": "PR Insight: ModelLink #3362",
@@ -7910,6 +10731,43 @@
     "tags": [
       "docs",
       "checkpoint"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3371",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3371",
+    "path": "wiki/techniques/pr-modellink-3371.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix",
+      "kernel"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3372",
+    "type": "wiki-technique",
+    "title": "PR Insight: Ascend/ModelLink #3372",
+    "path": "wiki/techniques/pr-modellink-3372.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "modellink",
+      "pytorch",
+      "bugfix"
     ],
     "kernel_types": [],
     "languages": [],
