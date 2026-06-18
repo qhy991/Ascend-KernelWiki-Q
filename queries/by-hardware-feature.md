@@ -1,7 +1,7 @@
 # Index: By Hardware Feature
 
 
-## cube-unit (91 pages)
+## cube-unit (101 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -90,12 +90,22 @@
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) `[wiki-technique]` arch:ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: Ascend/catlass #195](wiki/techniques/pr-catlass-195.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: Ascend/catlass #223](wiki/techniques/pr-catlass-223.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: Ascend/catlass #87](wiki/techniques/pr-catlass-87.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #102](wiki/techniques/pr-sgl-kernel-npu-102.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #384](wiki/techniques/pr-sgl-kernel-npu-384.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #430](wiki/techniques/pr-sgl-kernel-npu-430.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #92](wiki/techniques/pr-sgl-kernel-npu-92.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5808](wiki/techniques/pr-vllm-ascend-5808.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5873](wiki/techniques/pr-vllm-ascend-5873.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #7198](wiki/techniques/pr-vllm-ascend-7198.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md) `[wiki-technique]` arch:ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) `[wiki-technique]` arch:ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## event-sync (7 pages)
+## event-sync (15 pages)
 
 - [Ascend Samples — AscendCL Runtime Examples](cplusplus/level1_single_api) `[source-code]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Resource Group and KFC Workspace APIs](sources/docs/ascendc-resource-group-apis.md) `[source-doc]` arch:ascend910, ascend910b
@@ -104,6 +114,14 @@
 - [AscendCL Runtime Management API](sources/docs/ascendcl-runtime-api.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Instruction Queue System — 4-Queue Pipeline Architecture](wiki/hardware/instruction-queue.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) `[source-pr]` arch:ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #37](wiki/techniques/pr-sgl-kernel-npu-37.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #89](wiki/techniques/pr-sgl-kernel-npu-89.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #91](wiki/techniques/pr-sgl-kernel-npu-91.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #95](wiki/techniques/pr-sgl-kernel-npu-95.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5808](wiki/techniques/pr-vllm-ascend-5808.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5873](wiki/techniques/pr-vllm-ascend-5873.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6416](wiki/techniques/pr-vllm-ascend-6416.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6422](wiki/techniques/pr-vllm-ascend-6422.md) `[wiki-technique]` arch:ascend910, ascend910b
 
 ## global-memory (67 pages)
 
@@ -175,7 +193,7 @@
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) `[wiki-technique]` arch:ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## hccs (12 pages)
+## hccs (16 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp) `[source-code]` arch:ascend910, ascend910b
@@ -188,9 +206,13 @@
 - [HCCS — Huawei Cache Coherent System Interconnect](wiki/hardware/hccs.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md) `[source-pr]` arch:ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #117](wiki/techniques/pr-sgl-kernel-npu-117.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #141](wiki/techniques/pr-sgl-kernel-npu-141.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #193](wiki/techniques/pr-sgl-kernel-npu-193.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #95](wiki/techniques/pr-sgl-kernel-npu-95.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) `[wiki-technique]` arch:ascend910b
 
-## instruction-queue (9 pages)
+## instruction-queue (11 pages)
 
 - [Ascend C Synchronization Control APIs](sources/docs/ascendc-synchronization-control.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C TPipe InitBuffer API](sources/docs/ascendc-tpipe-initbuffer.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
@@ -200,6 +222,8 @@
 - [Scalar Unit — Control Flow and Address Generation](wiki/hardware/scalar-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: Ascend/cann-ops-adv #257](wiki/techniques/pr-cann-ops-adv-257.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #89](wiki/techniques/pr-sgl-kernel-npu-89.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [TQue Deadlock Pattern in Ascend C](wiki/patterns/tque-deadlock.md) `[wiki-pattern]` arch:ascend910, ascend910b
 
 ## l0-buffer (27 pages)
@@ -232,7 +256,7 @@
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
 
-## l1-buffer (29 pages)
+## l1-buffer (30 pages)
 
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) `[source-blog]` arch:ascend910b
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) `[source-code]` arch:ascend910, ascend910b
@@ -261,10 +285,11 @@
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [MTE — Memory Transfer Engine (Async Data Movement)](wiki/hardware/mte.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
+- [PR Insight: cann-ops-adv #84](wiki/techniques/pr-cann-ops-adv-84.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## mte (25 pages)
+## mte (28 pages)
 
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc) `[source-code]` arch:ascend910, ascend910b, ascend310p
@@ -291,14 +316,20 @@
 - [Double Buffering — Overlapping Data Transfer with Compute](wiki/techniques/double-buffering.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) `[wiki-technique]` arch:ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: cann-ops-adv #128](wiki/techniques/pr-cann-ops-adv-128.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #517](wiki/techniques/pr-sgl-kernel-npu-517.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #533](wiki/techniques/pr-sgl-kernel-npu-533.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## nd-format (3 pages)
+## nd-format (6 pages)
 
 - [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #1131](wiki/techniques/pr-vllm-ascend-1131.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6393](wiki/techniques/pr-vllm-ascend-6393.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6579](wiki/techniques/pr-vllm-ascend-6579.md) `[wiki-technique]` arch:ascend310p
 
-## nz-format (21 pages)
+## nz-format (55 pages)
 
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) `[source-blog]` arch:ascend910b
 - [Understanding FRACTAL_NZ — Ascend's 5D Data Format for Matrix Computation](sources/blogs/nz-format-explained.md) `[source-blog]` arch:ascend910, ascend910b
@@ -321,6 +352,40 @@
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) `[source-pr]` arch:ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #107](wiki/techniques/pr-sgl-kernel-npu-107.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #135](wiki/techniques/pr-sgl-kernel-npu-135.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #79](wiki/techniques/pr-sgl-kernel-npu-79.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #1098](wiki/techniques/pr-vllm-ascend-1098.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #1131](wiki/techniques/pr-vllm-ascend-1131.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #1409](wiki/techniques/pr-vllm-ascend-1409.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #1872](wiki/techniques/pr-vllm-ascend-1872.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #2474](wiki/techniques/pr-vllm-ascend-2474.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #2549](wiki/techniques/pr-vllm-ascend-2549.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #2619](wiki/techniques/pr-vllm-ascend-2619.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #2896](wiki/techniques/pr-vllm-ascend-2896.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #2988](wiki/techniques/pr-vllm-ascend-2988.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3072](wiki/techniques/pr-vllm-ascend-3072.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3356](wiki/techniques/pr-vllm-ascend-3356.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3364](wiki/techniques/pr-vllm-ascend-3364.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3446](wiki/techniques/pr-vllm-ascend-3446.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3533](wiki/techniques/pr-vllm-ascend-3533.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3804](wiki/techniques/pr-vllm-ascend-3804.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4056](wiki/techniques/pr-vllm-ascend-4056.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4058](wiki/techniques/pr-vllm-ascend-4058.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4245](wiki/techniques/pr-vllm-ascend-4245.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4495](wiki/techniques/pr-vllm-ascend-4495.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4593](wiki/techniques/pr-vllm-ascend-4593.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4878](wiki/techniques/pr-vllm-ascend-4878.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #4943](wiki/techniques/pr-vllm-ascend-4943.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5068](wiki/techniques/pr-vllm-ascend-5068.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #5199](wiki/techniques/pr-vllm-ascend-5199.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6505](wiki/techniques/pr-vllm-ascend-6505.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #6705](wiki/techniques/pr-vllm-ascend-6705.md) `[wiki-technique]` arch:ascend310p
+- [PR Insight: vllm-project/vllm-ascend #6851](wiki/techniques/pr-vllm-ascend-6851.md) `[wiki-technique]` arch:ascend310p
+- [PR Insight: vllm-project/vllm-ascend #909](wiki/techniques/pr-vllm-ascend-909.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #9105](wiki/techniques/pr-vllm-ascend-9105.md) `[wiki-technique]` arch:ascend310p
+- [PR Insight: vllm-project/vllm-ascend #9625](wiki/techniques/pr-vllm-ascend-9625.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #9721](wiki/techniques/pr-vllm-ascend-9721.md) `[wiki-technique]` arch:ascend910b
 
 ## scalar-unit (3 pages)
 
@@ -328,7 +393,7 @@
 - [CANN Architecture Guide — AICore Hardware Principles](sources/docs/cann-architecture-guide.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Scalar Unit — Control Flow and Address Generation](wiki/hardware/scalar-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 
-## unified-buffer (73 pages)
+## unified-buffer (76 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
@@ -400,11 +465,14 @@
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) `[wiki-technique]` arch:ascend910b
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: Ascend/catlass #201](wiki/techniques/pr-catlass-201.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #91](wiki/techniques/pr-sgl-kernel-npu-91.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: vllm-project/vllm-ascend #3532](wiki/techniques/pr-vllm-ascend-3532.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## vector-unit (93 pages)
+## vector-unit (95 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -498,4 +566,6 @@
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #154](wiki/techniques/pr-sgl-kernel-npu-154.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [PR Insight: sgl-project/sgl-kernel-npu #332](wiki/techniques/pr-sgl-kernel-npu-332.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md) `[wiki-technique]` arch:ascend910b
