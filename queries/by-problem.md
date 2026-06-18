@@ -32,11 +32,11 @@ Symptom → Pattern → Technique → Solution
 - Tags: GM bandwidth >90% utilized, Cube/Vector utilization <30%, kernel time dominated by DataCopy, low arithmetic intensity
 - Related: `technique-double-buffering`, `technique-data-reuse`, `hw-unified-buffer`
 
-### MTE (Memory Transfer Engine) Saturation
+### MTE Saturation (Bandwidth Bound)
 
 - ID: `pattern-mte-saturation`
 - Path: `wiki/patterns/mte-saturation.md`
-- Tags: dma
+- Tags: debugging, performance
 
 ### FRACTAL_NZ Format Traps — Common Pitfalls and Solutions
 
@@ -52,17 +52,17 @@ Symptom → Pattern → Technique → Solution
 - Tags: MTE queue idle while Vector waits, Cube queue has gaps between operations, PipeBarrier taking >10% of kernel time, Low overall AICore utilization
 - Related: `hw-instruction-queue`, `technique-pipeline-scheduling`, `technique-double-buffering`
 
-### Precision Loss & NaN Debugging
+### Precision & NaN Debugging
 
 - ID: `pattern-precision-nan-debugging`
 - Path: `wiki/patterns/precision-nan-debugging.md`
-- Tags: accuracy
+- Tags: debugging, accuracy
 
-### Scalar Unit Bottleneck
+### Scalar Unit Bottlenecks
 
 - ID: `pattern-scalar-bottleneck`
 - Path: `wiki/patterns/scalar-bottleneck.md`
-- Tags: pipeline
+- Tags: debugging, performance
 
 ### Tiling Too Small — Under-Utilized Cube and MTE
 
@@ -75,7 +75,7 @@ Symptom → Pattern → Technique → Solution
 
 - ID: `pattern-ub-oom`
 - Path: `wiki/patterns/ub-oom.md`
-- Tags: memory-bound
+- Tags: debugging, memory
 
 ### TQue Deadlock Pattern in Ascend C
 

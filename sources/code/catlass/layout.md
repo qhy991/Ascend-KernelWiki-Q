@@ -39,3 +39,8 @@ CATLASS layout abstraction directory. It provides code evidence for how row-majo
 - Repository: `Ascend/catlass`
 - Path: `include/catlass/layout`
 - URL: https://gitee.com/ascend/catlass/tree/master/include/catlass/layout
+
+
+## Fetched Source
+
+// No source files found in directory.

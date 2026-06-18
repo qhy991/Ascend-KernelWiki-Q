@@ -149,6 +149,11 @@
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
 
+## kv-cache (2 pages)
+
+- [PR Insight: KV Cache SSD Offload (Mooncake)](wiki/techniques/pr-mooncake-ssd-offload.md)
+- [PR Insight: vllm-ascend #10342](wiki/techniques/pr-vllm-ascend-10342.md)
+
 ## kv-cache-paging (21 pages)
 
 - [CANN Ops Adv — Incremental Flash Attention](src/transformer/incre_flash_attention)
@@ -229,6 +234,11 @@
 - [Ascend C SoftMax Tiling APIs](sources/docs/ascendc-softmax-tiling.md)
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md)
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md)
+
+## pipeline-parallelism (2 pages)
+
+- [PR Insight: Chimera Bidirectional Pipeline Parallelism](wiki/techniques/pr-mindspeed-chimera-pp.md)
+- [PR Insight: MTP + PP Speculative Decoding](wiki/techniques/pr-vllm-mtp-pp.md)
 
 ## pipeline-scheduling (82 pages)
 
@@ -336,6 +346,10 @@
 - [vLLM Ascend Model Runner](vllm_ascend/worker)
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
+
+## tensor-parallelism (1 pages)
+
+- [PR Insight: TP-2D & Ring Attention](wiki/techniques/pr-mindspeed-tp2d-ring.md)
 
 ## tiling-strategy (28 pages)
 

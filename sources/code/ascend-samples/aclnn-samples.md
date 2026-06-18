@@ -42,3 +42,8 @@ Official samples for calling aclnn operators from host C++ code. This path provi
 - Repository: `Ascend/samples`
 - Path: `operator/aclnn`
 - URL: https://gitee.com/ascend/samples/tree/master/operator/aclnn
+
+
+## Fetched Source
+
+// Path operator/aclnn not found in repo.

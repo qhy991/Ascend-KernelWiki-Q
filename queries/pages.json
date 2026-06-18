@@ -2732,7 +2732,7 @@
       "ascend910b"
     ],
     "tags": [
-      "pipeline"
+      "hardware-overview"
     ],
     "kernel_types": [],
     "languages": [],
@@ -2994,7 +2994,7 @@
     "confidence": "source-reported"
   },
   {
-    "id": "kernel-mla",
+    "id": "kernel-mla-ascendc",
     "type": "wiki-kernel",
     "title": "Multi-Head Latent Attention (AscendC)",
     "path": "wiki/kernels/mla-ascendc.md",
@@ -3003,7 +3003,8 @@
     ],
     "tags": [
       "llm",
-      "inference"
+      "inference",
+      "deepseek"
     ],
     "kernel_types": [
       "attention"
@@ -3031,26 +3032,6 @@
     "kernel_types": [
       "moe",
       "grouped-gemm"
-    ],
-    "languages": [
-      "ascendc"
-    ],
-    "confidence": "inferred"
-  },
-  {
-    "id": "kernel-paged-attention",
-    "type": "wiki-kernel",
-    "title": "Paged Attention (AscendC)",
-    "path": "wiki/kernels/paged-attention-ascendc.md",
-    "architectures": [
-      "ascend910b"
-    ],
-    "tags": [
-      "llm",
-      "inference"
-    ],
-    "kernel_types": [
-      "attention"
     ],
     "languages": [
       "ascendc"
@@ -3107,26 +3088,6 @@
     "confidence": "source-reported"
   },
   {
-    "id": "kernel-quantized-gemm",
-    "type": "wiki-kernel",
-    "title": "Quantized GEMM (W4A16/INT8) (AscendC)",
-    "path": "wiki/kernels/quantized-gemm-ascendc.md",
-    "architectures": [
-      "ascend910b"
-    ],
-    "tags": [
-      "quantization",
-      "matmul"
-    ],
-    "kernel_types": [
-      "matmul"
-    ],
-    "languages": [
-      "ascendc"
-    ],
-    "confidence": "inferred"
-  },
-  {
     "id": "kernel-reduction-ascendc",
     "type": "wiki-kernel",
     "title": "Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU",
@@ -3150,16 +3111,16 @@
     "confidence": "source-reported"
   },
   {
-    "id": "kernel-ring-attention",
+    "id": "kernel-ring-attention-ascendc",
     "type": "wiki-kernel",
-    "title": "Ring Attention & Context Parallelism (AscendC)",
+    "title": "Ring Attention (AscendC)",
     "path": "wiki/kernels/ring-attention-ascendc.md",
     "architectures": [
       "ascend910b"
     ],
     "tags": [
       "llm",
-      "communication"
+      "context-parallelism"
     ],
     "kernel_types": [
       "attention"
@@ -3284,25 +3245,6 @@
     "kernel_types": [
       "reduce",
       "moe"
-    ],
-    "languages": [
-      "ascendc"
-    ],
-    "confidence": "inferred"
-  },
-  {
-    "id": "kernel-topk-sort",
-    "type": "wiki-kernel",
-    "title": "TopK & Sort (AscendC)",
-    "path": "wiki/kernels/topk-sort-ascendc.md",
-    "architectures": [
-      "ascend910b"
-    ],
-    "tags": [
-      "memory-bound"
-    ],
-    "kernel_types": [
-      "reduction"
     ],
     "languages": [
       "ascendc"
@@ -3493,7 +3435,7 @@
   {
     "id": "migration-aclnn-api",
     "type": "wiki-migration",
-    "title": "CANN aclnn API Guide",
+    "title": "aclnn (Single Operator API)",
     "path": "wiki/migration/aclnn-api.md",
     "architectures": [],
     "tags": [
@@ -3622,11 +3564,12 @@
   {
     "id": "migration-pytorch-custom-op",
     "type": "wiki-migration",
-    "title": "PyTorch OP-Plugin & CustomOp",
+    "title": "PyTorch Custom Op (torch_npu)",
     "path": "wiki/migration/pytorch-custom-op.md",
     "architectures": [],
     "tags": [
-      "framework"
+      "framework",
+      "pytorch"
     ],
     "kernel_types": [],
     "languages": [],
@@ -3635,11 +3578,12 @@
   {
     "id": "migration-rocm-to-ascendc",
     "type": "wiki-migration",
-    "title": "ROCm/HIP to AscendC Migration",
+    "title": "ROCm (HIP) to AscendC Migration",
     "path": "wiki/migration/rocm-to-ascendc.md",
     "architectures": [],
     "tags": [
-      "framework"
+      "framework",
+      "rocm"
     ],
     "kernel_types": [],
     "languages": [],
@@ -3759,13 +3703,15 @@
   {
     "id": "pattern-mte-saturation",
     "type": "wiki-pattern",
-    "title": "MTE (Memory Transfer Engine) Saturation",
+    "title": "MTE Saturation (Bandwidth Bound)",
     "path": "wiki/patterns/mte-saturation.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "dma"
+      "debugging",
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -3815,12 +3761,14 @@
   {
     "id": "pattern-precision-nan-debugging",
     "type": "wiki-pattern",
-    "title": "Precision Loss & NaN Debugging",
+    "title": "Precision & NaN Debugging",
     "path": "wiki/patterns/precision-nan-debugging.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
+      "debugging",
       "accuracy"
     ],
     "kernel_types": [],
@@ -3830,13 +3778,15 @@
   {
     "id": "pattern-scalar-bottleneck",
     "type": "wiki-pattern",
-    "title": "Scalar Unit Bottleneck",
+    "title": "Scalar Unit Bottlenecks",
     "path": "wiki/patterns/scalar-bottleneck.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "pipeline"
+      "debugging",
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -3868,10 +3818,12 @@
     "title": "UB OOM (Unified Buffer Overflow)",
     "path": "wiki/patterns/ub-oom.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "memory-bound"
+      "debugging",
+      "memory"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4066,10 +4018,11 @@
     "title": "Asynchronous DMA & Multi-stage Pipelines",
     "path": "wiki/techniques/async-dma-multistage.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "dma"
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4258,10 +4211,11 @@
     "title": "Multi-Core Grid Scheduling",
     "path": "wiki/techniques/multicore-grid-scheduling.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "multi-core"
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4313,13 +4267,14 @@
   {
     "id": "technique-operator-fusion",
     "type": "wiki-technique",
-    "title": "Operator Fusion (UB/L1 Fusion)",
+    "title": "Operator Fusion",
     "path": "wiki/techniques/operator-fusion.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [
-      "bandwidth"
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4348,11 +4303,1237 @@
     "confidence": "source-reported"
   },
   {
+    "id": "technique-pr-cann-ops-adv-313",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #313",
+    "path": "wiki/techniques/pr-cann-ops-adv-313.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "compiler",
+      "synchronization",
+      "correctness",
+      "moe"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-ops-adv-325",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #325",
+    "path": "wiki/techniques/pr-cann-ops-adv-325.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "bugfix",
+      "logging"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-ops-adv-340",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #340",
+    "path": "wiki/techniques/pr-cann-ops-adv-340.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "build",
+      "dependency",
+      "cmake",
+      "json"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-ops-adv-347",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #347",
+    "path": "wiki/techniques/pr-cann-ops-adv-347.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "memory",
+      "stability"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-ops-adv-355",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #355",
+    "path": "wiki/techniques/pr-cann-ops-adv-355.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "moe",
+      "expert-parallel"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-pfa-l1-reuse",
+    "type": "wiki-technique",
+    "title": "PR Insight: CANN PFA L1 Reuse & Tiling",
+    "path": "wiki/techniques/pr-cann-pfa-l1-reuse.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "flash-attention",
+      "memory-optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-251",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #251",
+    "path": "wiki/techniques/pr-catlass-251.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-257",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #257",
+    "path": "wiki/techniques/pr-catlass-257.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-260",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #260",
+    "path": "wiki/techniques/pr-catlass-260.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "tuning",
+      "matmul"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-271",
+    "type": "wiki-technique",
+    "title": "PR Insight: catlass #271",
+    "path": "wiki/techniques/pr-catlass-271.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "fp8",
+      "matmul"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-full-load-a",
+    "type": "wiki-technique",
+    "title": "PR Insight: Catlass Full Load A Strategy",
+    "path": "wiki/techniques/pr-catlass-full-load-a.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "memory-optimization",
+      "matmul"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-mstuner",
+    "type": "wiki-technique",
+    "title": "PR Insight: MSTuner Automated Tiling Search",
+    "path": "wiki/techniques/pr-catlass-mstuner.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "tuning",
+      "profiling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-printf",
+    "type": "wiki-technique",
+    "title": "PR Insight: AscendC Printf Hardware Debugging",
+    "path": "wiki/techniques/pr-catlass-printf.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "debugging"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-w8a16-matmul",
+    "type": "wiki-technique",
+    "title": "PR Insight: Catlass W8A16 Matmul Dequantization",
+    "path": "wiki/techniques/pr-catlass-w8a16-matmul.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "quantization",
+      "matmul"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-deepep-low-latency",
+    "type": "wiki-technique",
+    "title": "PR Insight: DeepEP Low-Latency All-to-All",
+    "path": "wiki/techniques/pr-deepep-low-latency.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "networking",
+      "deepseek"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-dsv4-dsa-cp",
+    "type": "wiki-technique",
+    "title": "PR Insight: DeepSeek-V4-Flash DSA-CP on A5",
+    "path": "wiki/techniques/pr-dsv4-dsa-cp.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "deepseek",
+      "sparse-attention",
+      "quantization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2722",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2722",
+    "path": "wiki/techniques/pr-mindspeed-2722.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "attention",
+      "communication",
+      "parallel-computing"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2818",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/MindSpeed #2818",
+    "path": "wiki/techniques/pr-mindspeed-2818.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "communication",
+      "memory"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2819",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2819",
+    "path": "wiki/techniques/pr-mindspeed-2819.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "mindspore"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-chimera-pp",
+    "type": "wiki-technique",
+    "title": "PR Insight: Chimera Bidirectional Pipeline Parallelism",
+    "path": "wiki/techniques/pr-mindspeed-chimera-pp.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "pipeline-parallelism",
+      "training",
+      "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-moe-permute-fusion",
+    "type": "wiki-technique",
+    "title": "PR Insight: Fused MoE Permute",
+    "path": "wiki/techniques/pr-mindspeed-moe-permute-fusion.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "training",
+      "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-swap-attention-cpu",
+    "type": "wiki-technique",
+    "title": "PR Insight: Swap-Attention CPU Affinity",
+    "path": "wiki/techniques/pr-mindspeed-swap-attention-cpu.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory-optimization",
+      "training",
+      "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-tp2d-ring",
+    "type": "wiki-technique",
+    "title": "PR Insight: TP-2D & Ring Attention",
+    "path": "wiki/techniques/pr-mindspeed-tp2d-ring.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "tensor-parallelism",
+      "training",
+      "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3363",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3363",
+    "path": "wiki/techniques/pr-modellink-3363.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "docs",
+      "checkpoint"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3375",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3375",
+    "path": "wiki/techniques/pr-modellink-3375.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "docs",
+      "mindspore",
+      "models"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3376",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/ModelLink #3376",
+    "path": "wiki/techniques/pr-modellink-3376.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "recompute",
+      "memory"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3380",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3380",
+    "path": "wiki/techniques/pr-modellink-3380.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "scripts",
+      "qwen",
+      "mindspore",
+      "inference",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3381",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3381",
+    "path": "wiki/techniques/pr-modellink-3381.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "shell-script",
+      "mixtral",
+      "mindspore"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3382",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3382",
+    "path": "wiki/techniques/pr-modellink-3382.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "scripts",
+      "mindspore",
+      "llama"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3383",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3383",
+    "path": "wiki/techniques/pr-modellink-3383.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "script",
+      "grok1",
+      "mindspore",
+      "llm"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3384",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3384",
+    "path": "wiki/techniques/pr-modellink-3384.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "model-support",
+      "script",
+      "mindspore",
+      "gemma"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3385",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3385",
+    "path": "wiki/techniques/pr-modellink-3385.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "model-support",
+      "script",
+      "mindspore",
+      "codellama"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3386",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3386",
+    "path": "wiki/techniques/pr-modellink-3386.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "model-support",
+      "deepseek2",
+      "mindspore"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3406",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3406",
+    "path": "wiki/techniques/pr-modellink-3406.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "docs"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mooncake-ssd-offload",
+    "type": "wiki-technique",
+    "title": "PR Insight: KV Cache SSD Offload (Mooncake)",
+    "path": "wiki/techniques/pr-mooncake-ssd-offload.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "kv-cache",
+      "offloading"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-pto-vs-triton",
+    "type": "wiki-technique",
+    "title": "PR Insight: Custom PTO vs Triton Backend",
+    "path": "wiki/techniques/pr-pto-vs-triton.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "triton",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-457",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-project/sgl-kernel-npu #457",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-457.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-483",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #483",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-483.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-514",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-project/sgl-kernel-npu #514",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-514.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-516",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #516",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-516.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "build",
+      "refactor"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-528",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #528",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-528.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "test",
+      "gdn"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-537",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #537",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-537.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "build",
+      "ci",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-550",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #550",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-550.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "versioning",
+      "release"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-551",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #551",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-551.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "refactor"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-558",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-kernel-npu #558",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-558.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "clean",
+      "low-latency",
+      "trivial"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-moe-1024",
+    "type": "wiki-technique",
+    "title": "PR Insight: DeepEP 1024-Expert MoE Scaling",
+    "path": "wiki/techniques/pr-sgl-moe-1024.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "deepseek"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-mrope-interleaved",
+    "type": "wiki-technique",
+    "title": "PR Insight: MRoPE Interleaved Data Layout",
+    "path": "wiki/techniques/pr-sgl-mrope-interleaved.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "rope",
+      "multi-modal"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-soft-fp8-grouped-matmul",
+    "type": "wiki-technique",
+    "title": "PR Insight: Soft FP8 Grouped MatMul for MoE",
+    "path": "wiki/techniques/pr-soft-fp8-grouped-matmul.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "fp8",
+      "quantization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10003",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10003",
+    "path": "wiki/techniques/pr-vllm-ascend-10003.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "cudagraph",
+      "eager-mode",
+      "dsv4"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10090",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-project/vllm-ascend #10090",
+    "path": "wiki/techniques/pr-vllm-ascend-10090.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "quickstart"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10342",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10342",
+    "path": "wiki/techniques/pr-vllm-ascend-10342.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory",
+      "kv-cache",
+      "mooncake",
+      "deepseek",
+      "architecture"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10469",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10469",
+    "path": "wiki/techniques/pr-vllm-ascend-10469.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "bugfix",
+      "deepseek",
+      "test"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10470",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10470",
+    "path": "wiki/techniques/pr-vllm-ascend-10470.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "misc",
+      "doc",
+      "telemetry"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10482",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10482",
+    "path": "wiki/techniques/pr-vllm-ascend-10482.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ops",
+      "logging",
+      "triton",
+      "misc"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10549",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10549",
+    "path": "wiki/techniques/pr-vllm-ascend-10549.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "acl-graph",
+      "performance",
+      "multimodal",
+      "vision-transformer"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10587",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10587",
+    "path": "wiki/techniques/pr-vllm-ascend-10587.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10588",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10588",
+    "path": "wiki/techniques/pr-vllm-ascend-10588.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "fix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10612",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10612",
+    "path": "wiki/techniques/pr-vllm-ascend-10612.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "refactor",
+      "deepseek",
+      "integration",
+      "vllm-core"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10615",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10615",
+    "path": "wiki/techniques/pr-vllm-ascend-10615.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "automation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10618",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-project/vllm-ascend #10618",
+    "path": "wiki/techniques/pr-vllm-ascend-10618.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "glm5.2"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10625",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10625",
+    "path": "wiki/techniques/pr-vllm-ascend-10625.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "typo"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10629",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10629",
+    "path": "wiki/techniques/pr-vllm-ascend-10629.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10634",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10634",
+    "path": "wiki/techniques/pr-vllm-ascend-10634.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10646",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-project/vllm-ascend #10646",
+    "path": "wiki/techniques/pr-vllm-ascend-10646.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "release"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10687",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10687",
+    "path": "wiki/techniques/pr-vllm-ascend-10687.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "backport"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10688",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10688",
+    "path": "wiki/techniques/pr-vllm-ascend-10688.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "backport"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-10689",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #10689",
+    "path": "wiki/techniques/pr-vllm-ascend-10689.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "doc",
+      "backport"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-ascend-9900",
+    "type": "wiki-technique",
+    "title": "PR Insight: vllm-ascend #9900",
+    "path": "wiki/techniques/pr-vllm-ascend-9900.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "chunked prefill",
+      "scheduling",
+      "mtp",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-vllm-mtp-pp",
+    "type": "wiki-technique",
+    "title": "PR Insight: MTP + PP Speculative Decoding",
+    "path": "wiki/techniques/pr-vllm-mtp-pp.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "speculative-decoding",
+      "pipeline-parallelism",
+      "deepseek"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-precision-tuning",
     "type": "wiki-technique",
     "title": "Precision Tuning & Accumulation",
     "path": "wiki/techniques/precision-tuning.md",
     "architectures": [
+      "ascend910",
       "ascend910b"
     ],
     "tags": [

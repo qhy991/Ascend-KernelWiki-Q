@@ -41,3 +41,8 @@ Advanced CANN activation operator source directory. It provides code evidence fo
 - Repository: `Ascend/cann-ops-adv`
 - Path: `src/activation`
 - URL: https://gitee.com/ascend/cann-ops-adv/tree/master/src/activation
+
+
+## Fetched Source
+
+// Path src/activation not found in repo.

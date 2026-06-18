@@ -8,7 +8,7 @@
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) conf:verified arch:ascend910, ascend910b, ascend310p
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 
-## attention (46 pages)
+## attention (45 pages)
 
 - [CANN Ops Adv — Fused Infer Attention Score](src/transformer/fused_infer_attention_score) conf:source-reported arch:ascend910, ascend910b
 - [CANN Ops Adv — Incremental Flash Attention](src/transformer/incre_flash_attention) conf:source-reported arch:ascend910, ascend910b
@@ -39,9 +39,8 @@
 - [vLLM Ascend Kernel and Backend Tests](tests) conf:source-reported arch:ascend910b
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md) conf:inferred arch:ascend910, ascend910b
 - [Multi-Head Latent Attention (AscendC)](wiki/kernels/mla-ascendc.md) conf:inferred arch:ascend910b
-- [Paged Attention (AscendC)](wiki/kernels/paged-attention-ascendc.md) conf:inferred arch:ascend910b
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md) conf:source-reported arch:ascend910b
-- [Ring Attention & Context Parallelism (AscendC)](wiki/kernels/ring-attention-ascendc.md) conf:inferred arch:ascend910b
+- [Ring Attention (AscendC)](wiki/kernels/ring-attention-ascendc.md) conf:inferred arch:ascend910b
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md) conf:source-reported arch:ascend910b
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md) conf:? arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) conf:? arch:ascend910, ascend910b
@@ -174,7 +173,7 @@
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) conf:source-reported arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## matmul (45 pages)
+## matmul (44 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) conf:source-reported arch:ascend910b
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) conf:source-reported arch:ascend910b
@@ -210,7 +209,6 @@
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md) conf:source-reported arch:ascend910b
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md) conf:source-reported arch:ascend910b
-- [Quantized GEMM (W4A16/INT8) (AscendC)](wiki/kernels/quantized-gemm-ascendc.md) conf:inferred arch:ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) conf:? arch:ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) conf:? arch:ascend910b
@@ -264,10 +262,6 @@
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md) conf:inferred arch:ascend910, ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) conf:inferred arch:ascend910b
-
-## reduction (1 pages)
-
-- [TopK & Sort (AscendC)](wiki/kernels/topk-sort-ascendc.md) conf:inferred arch:ascend910b
 
 ## rmsnorm (3 pages)
 

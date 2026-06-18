@@ -44,3 +44,8 @@ Advanced CANN matmul source directory. This path should be mined for standard, q
 - Repository: `Ascend/cann-ops-adv`
 - Path: `src/matmul`
 - URL: https://gitee.com/ascend/cann-ops-adv/tree/master/src/matmul
+
+
+## Fetched Source
+
+// Path src/matmul not found in repo.

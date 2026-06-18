@@ -1,7 +1,7 @@
 # Index: By Language
 
 
-## ascendc (77 pages)
+## ascendc (74 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -60,18 +60,15 @@
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md)
 - [Multi-Head Latent Attention (AscendC)](wiki/kernels/mla-ascendc.md)
 - [MoE (Mixture of Experts) Kernel on Ascend NPU](wiki/kernels/moe-ascendc.md)
-- [Paged Attention (AscendC)](wiki/kernels/paged-attention-ascendc.md)
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md)
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md)
-- [Quantized GEMM (W4A16/INT8) (AscendC)](wiki/kernels/quantized-gemm-ascendc.md)
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md)
-- [Ring Attention & Context Parallelism (AscendC)](wiki/kernels/ring-attention-ascendc.md)
+- [Ring Attention (AscendC)](wiki/kernels/ring-attention-ascendc.md)
 - [AscendC RMSNorm — Fused Vector Normalization](wiki/kernels/rmsnorm-ascendc.md)
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md)
 - [AscendC Softmax — Vector Unit Implementation](wiki/kernels/softmax-ascendc.md)
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md)
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md)
-- [TopK & Sort (AscendC)](wiki/kernels/topk-sort-ascendc.md)
 - [AscendC Programming Guide — C/C++ Kernel Development for Ascend NPU](wiki/languages/ascendc-guide.md)
 - [MindSpore on Ascend — AOT AscendC Custom Operators](wiki/languages/mindspore-ascend-guide.md)
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)

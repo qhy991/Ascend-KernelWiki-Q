@@ -41,3 +41,8 @@ CATLASS block-level GEMM component directory. This is the code evidence for how 
 - Repository: `Ascend/catlass`
 - Path: `include/catlass/gemm/block`
 - URL: https://gitee.com/ascend/catlass/tree/master/include/catlass/gemm/block
+
+
+## Fetched Source
+
+// No source files found in directory.

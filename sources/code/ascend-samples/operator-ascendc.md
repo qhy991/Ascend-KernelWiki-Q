@@ -45,3 +45,281 @@ Official Ascend samples directory for AscendC custom operators. It is the primar
 - Repository: `Ascend/samples`
 - Path: `operator/ascendc`
 - URL: https://gitee.com/ascend/samples/tree/master/operator/ascendc
+
+
+## Fetched Source
+
+
+### `operator/ascendc/4_best_practices/6_group_matmul/KernelLaunch/data_utils.h`
+```cpp
+/**
+ * @file data_utils.h
+ *
+ * Copyright (C) 2024. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+#ifndef DATA_UTILS_H
+#define DATA_UTILS_H
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+#include <cassert>
+#include <cstdio>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include "acl/acl.h"
+
+typedef enum {
+    DT_UNDEFINED = -1,
+    FLOAT = 0,
+    HALF = 1,
+    INT8_T = 2,
+    INT32_T = 3,
+    UINT8_T = 4,
+    INT16_T = 6,
+    UINT16_T = 7,
+    UINT32_T = 8,
+    INT64_T = 9,
+    UINT64_T = 10,
+    DOUBLE = 11,
+    BOOL = 12,
+    STRING = 13,
+    COMPLEX64 = 16,
+    COMPLEX128 = 17,
+    BF16 = 27
+} printDataType;
+
+#define INFO_LOG(fmt, args...) fprintf(stdout, "[INFO]  " fmt "\n", ##args)
+#define WARN_LOG(fmt, args...) fprintf(stdout, "[WARN]  " fmt "\n", ##args)
+#define ERROR_LOG(fmt, args...) fprintf(stdout, "[ERROR]  " fmt "\n", ##args)
+#define CHECK_ACL(x)                                                                        \
+    do {                                                                                    \
+        aclError __ret = x;                                                                 \
+        if (__ret != ACL_ERROR_NONE) {                                                      \
+            std::cerr << __FILE__ << ":" << __LINE__ << " aclError:" << __ret << std::endl; \
+            return false;                                                                   \
+        }                                                                                   \
+    } while (0);
+
+/**
+ * @brief Read data from file
+ * @param [in] filePath: file path
+ * @param [out] fileSize: file size
+ * @return read result
+ */
+bool ReadFile(const std::string &filePath, size_t &fileSize, void *buffer, size_t bufferSize)
+{
+    struct stat sBuf;
+    int fileStatus = stat(filePath.data(), &sBuf);
+    if (fileStatus == -1) {
+        ERROR_LOG("failed to get file: %s", filePath.c_str());
+        return false;
+    }
+    if (S_ISREG(sBuf.st_mode) == 0) {
+        ERROR_LOG("%s is not a file, please enter a file", filePath.c_str());
+        return false;
+    }
+
+    std::ifstream file;
+    file.open(filePath, std::ios::binary);
+    if (!file.is_open()) {
+        ERROR_LOG("Open file failed. path = %s", filePath.c_str());
+        return false;
+    }
+
+    std::filebuf *buf = file.rdbuf();
+    size_t size = buf->pubseekoff(0, std::ios::end, std::ios::in);
+    if (size == 0) {
+        ERROR_LOG("file size is 0");
+        file.close();
+        return false;
+    }
+    if (size > bufferSize) {
+        ERROR_LOG("file size is larger than buffer size");
+        file.close();
+        return false;
+    }
+    buf->pubseekpos(0, std::ios::in);
+    buf->sgetn(static_cast<char *>(buffer), size);
+    fileSize = size;
+    file.close();
+    return true;
+}
+
+/**
+ * @brief Write data to file
+ * @param [in] filePath: file path
+ * @param [in] buffer: data to write to file
+ * @param [in] size: size to write
+ * @return write result
+ */
+bool WriteFile(const std::string &filePath, const void *buffer, size_t size)
+{
+    if (buffer == nullptr) {
+        ERROR_LOG("Write file failed. buffer is nullptr");
+        return false;
+    }
+
+    int fd = open(filePath.c_str(), O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWRITE);
+    if (fd < 0) {
+        ERROR_LOG("Open file failed. path = %s", filePath.c_str());
+        return false;
+    }
+
+    size_t writeSize = write(fd, buffer, size);
+    (void)close(fd);
+    if (writeSize != size) {
+        ERROR_LOG("Write file Failed.");
+        return false;
+    }
+
+    return true;
+}
+
+template <typename T> void DoPrintData(const T *data, size_t count, size_t elementsPerRow)
+{
+    assert(elementsPerRow != 0);
+    for (size_t i = 0; i < count; ++i) {
+        std::cout << std::setw(10) << data[i];
+        if (i % elementsPerRow == elementsPerRow - 1) {
+            std::cout << std::endl;
+        }
+    }
+}
+
+void DoPrintHalfData(const aclFloat16 *data, size_t count, size_t elementsPerRow)
+{
+    assert(elementsPerRow != 0);
+    for (size_t i = 0; i < count; ++i) {
+        std::cout << std::setw(10) << std::setprecision(6) << aclFloat16ToFloat(data[i]);
+        if (i % elementsPerRow == elementsPerRow - 1) {
+            std::cout << std::endl;
+        }
+    }
+}
+
+void PrintData(const void *data, size_t count, printDataType dataType, size_t elementsPerRow = 16)
+{
+    if (data == nullptr) {
+        ERROR_LOG("Print data failed. data is nullptr");
+        return;
+    }
+
+    switch (dataType) {
+        case BOOL:
+            DoPrintData(reinterpret_cast<const bool *>(data), count, elementsPerRow);
+            break;
+        case INT8_T:
+            DoPrintData(reinterpret_cast<const int8_t *>(data), count, elementsPerRow);
+            break;
+        case UINT8_T:
+    
+// ... (truncated due to length) ...
+
+```
+
+### `operator/ascendc/4_best_practices/6_group_matmul/KernelLaunch/quant_group_matmul_custom_tiling.cpp`
+```cpp
+/**
+ * @file quant_group_matmul_custom_tiling.cpp
+ *
+ * Copyright (C) 2024. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+#include <cassert>
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <string>
+
+#include "tiling/tiling_api.h"
+#include "tiling/platform/platform_ascendc.h"
+#include "quant_group_matmul_custom_tiling.h"
+
+using matmul_tiling::TPosition;
+using matmul_tiling::CubeFormat;
+using matmul_tiling::DataType;
+
+constexpr uint32_t BEST_BASE_M = 128;
+constexpr uint32_t BEST_BASE_K = 128;
+constexpr uint32_t BEST_BASE_N = 256;
+
+bool GenerateTiling(QuantGroupMatmulCustomTilingData &gmmTiling)
+{
+    optiling::TCubeTiling tilingData;
+    auto ascendcPlatform = platform_ascendc::PlatformAscendCManager::GetInstance();
+    matmul_tiling::MultiCoreMatmulTiling tilingApi(*ascendcPlatform);
+
+    tilingApi.SetDim(1);
+    tilingApi.SetAType(TPosition::GM, CubeFormat::ND, DataType::DT_INT8, false);
+    tilingApi.SetBType(TPosition::GM, CubeFormat::NZ, DataType::DT_INT8, false);
+    tilingApi.SetCType(TPosition::GM, CubeFormat::ND, DataType::DT_INT32);
+    tilingApi.SetBias(false);
+
+    tilingApi.SetOrgShape(BEST_BASE_M, gmmTiling.n, gmmTiling.k);
+    tilingApi.SetShape(BEST_BASE_M, gmmTiling.n, gmmTiling.k);
+    tilingApi.SetFixSplit(BEST_BASE_M, BEST_BASE_N, BEST_BASE_K);
+
+    int64_t res = tilingApi.GetTiling(tilingData);
+    if (res == -1) {
+        std::cout << "gen tiling failed" << std::endl;
+        return false;
+    }
+    tilingData.set_dbL0C(1);
+    tilingData.set_stepKa(4);  // 4: L1中左矩阵单次搬运基于baseK的4倍数据
+    tilingData.set_stepKb(4);  // 4: L1中右矩阵单次搬运基于baseK的4倍数据
+    tilingData.set_depthA1(8);  // 8: stepKa的两倍，开启double buffer
+    tilingData.set_depthB1(8);  // 8: stepKb的两倍，开启double buffer
+    tilingData.set_stepM(1);
+    tilingData.set_stepN(1);
+    
+    uint32_t tilingSize = tilingData.GetDataSize();
+    tilingData.SaveToBuffer(&gmmTiling.mmTilingData, tilingSize);
+    return true;
+}
+
+```
+
+### `operator/ascendc/4_best_practices/6_group_matmul/KernelLaunch/quant_group_matmul_custom_tiling.h`
+```cpp
+/**
+ * @file quant_group_matmul_custom_tiling.h
+ *
+ * Copyright (C) 2024. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+#ifndef QUANT_GROUP_MATMUL_CUSTOM_TILING_H
+#define QUANT_GROUP_MATMUL_CUSTOM_TILING_H
+
+#include "kernel_tiling/kernel_tiling.h"
+
+
+struct QuantGroupMatmulCustomTilingData
+{
+    uint32_t coreNum;
+    uint32_t groupNum;
+    uint32_t totalInGroup;
+    uint32_t k;
+    uint32_t n;
+    uint32_t ubCalSize;
+    uint32_t ubRestBytes;
+    uint32_t parallNum;
+    TCubeTiling mmTilingData;
+};
+
+#endif // QUANT_GROUP_MATMUL_CUSTOM_TILING_H
+```

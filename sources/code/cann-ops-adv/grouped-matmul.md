@@ -45,3 +45,8 @@ Advanced grouped matmul operator source. It is code evidence for MoE expert batc
 - Repository: `Ascend/cann-ops-adv`
 - Path: `src/matmul/grouped_matmul`
 - URL: https://gitee.com/ascend/cann-ops-adv/tree/master/src/matmul/grouped_matmul
+
+
+## Fetched Source
+
+// Path src/matmul/grouped_matmul not found in repo.
