@@ -61,7 +61,7 @@
 - [CATLASS Conv Bias Example](examples/24_conv_bias) conf:source-reported arch:ascend910b
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md) conf:inferred arch:ascend910, ascend910b
 
-## elementwise (24 pages)
+## elementwise (26 pages)
 
 - [Calling a Custom aclnn Operator from C++ — End to End](sources/blogs/aclnn-custom-op-invocation.md) conf:source-reported arch:ascend910, ascend910b
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) conf:source-reported arch:ascend910, ascend910b
@@ -86,7 +86,9 @@
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [aclnn Vector Add — Single-Operator Invocation in C++](wiki/kernels/vector-add-aclnn.md) conf:source-reported arch:ascend910, ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
+- [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) conf:? arch:ascend910, ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) conf:? arch:ascend910b
+- [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) conf:? arch:ascend910b
 
 ## embedding (2 pages)
 
@@ -109,7 +111,7 @@
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) conf:source-reported arch:ascend910b
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) conf:source-reported arch:ascend910, ascend910b
 
-## gemm (38 pages)
+## gemm (41 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) conf:source-reported arch:ascend910b
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) conf:source-reported arch:ascend910b
@@ -138,7 +140,10 @@
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md) conf:source-reported arch:ascend910b
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md) conf:? arch:ascend910, ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) conf:? arch:ascend910b
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) conf:? arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) conf:? arch:ascend910b
+- [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) conf:? arch:ascend910, ascend910b
+- [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) conf:? arch:ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) conf:inferred arch:ascend910b
 - [UB Bank Conflict Avoidance](wiki/techniques/bank-conflict-avoidance.md) conf:inferred arch:ascend910, ascend910b
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) conf:source-reported arch:ascend910, ascend910b
@@ -173,7 +178,7 @@
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) conf:source-reported arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## matmul (44 pages)
+## matmul (47 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) conf:source-reported arch:ascend910b
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) conf:source-reported arch:ascend910b
@@ -211,16 +216,19 @@
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md) conf:source-reported arch:ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) conf:? arch:ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) conf:? arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) conf:? arch:ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) conf:? arch:ascend910, ascend910b
+- [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) conf:? arch:ascend910, ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) conf:? arch:ascend910b
+- [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) conf:? arch:ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) conf:inferred arch:ascend910b
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md) conf:source-reported arch:ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) conf:source-reported arch:ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) conf:source-reported arch:ascend910, ascend910b, ascend310p
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## moe (12 pages)
+## moe (15 pages)
 
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) conf:source-reported arch:ascend910, ascend910b
 - [CATLASS Group GEMM Example](examples/16_group_gemm) conf:source-reported arch:ascend910b
@@ -231,7 +239,10 @@
 - [vLLM Ascend Kernel and Backend Tests](tests) conf:source-reported arch:ascend910b
 - [MoE (Mixture of Experts) Kernel on Ascend NPU](wiki/kernels/moe-ascendc.md) conf:inferred arch:ascend910, ascend910b
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md) conf:inferred arch:ascend910, ascend910b
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) conf:? arch:ascend910, ascend910b
+- [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md) conf:? arch:ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) conf:? arch:ascend910b
+- [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) conf:? arch:ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) conf:inferred arch:ascend910, ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) conf:source-reported arch:ascend910b
 
@@ -253,7 +264,7 @@
 - [vLLM Ascend Grouped Matmul SwiGLU Quant Operator](csrc/gmm/grouped_matmul_swiglu_quant) conf:source-reported arch:ascend910b
 - [vLLM Ascend KV Quant Sparse Attention Operator](csrc/attention/kv_quant_sparse_attn_sharedkv) conf:source-reported arch:ascend910b
 
-## reduce (7 pages)
+## reduce (8 pages)
 
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc) conf:source-reported arch:ascend910, ascend910b, ascend310p
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul) conf:source-reported arch:ascend910b
@@ -261,6 +272,7 @@
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md) conf:inferred arch:ascend910, ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
+- [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) conf:? arch:ascend910, ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) conf:inferred arch:ascend910b
 
 ## rmsnorm (3 pages)

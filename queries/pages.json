@@ -3911,6 +3911,36 @@
     "confidence": null
   },
   {
+    "id": "pr-cann-ops-adv-001",
+    "type": "source-pr",
+    "title": "cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel",
+    "path": "sources/prs/cann-ops-adv/PR-001.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "cann",
+      "moe",
+      "matmul",
+      "swiglu",
+      "quantization",
+      "fusion",
+      "nz-format",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "moe"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
     "id": "pr-catlass-001",
     "type": "source-pr",
     "title": "CATLASS — Basic Matmul and Group GEMM Examples",
@@ -3964,6 +3994,86 @@
     "confidence": null
   },
   {
+    "id": "pr-sgl-kernel-npu-002",
+    "type": "source-pr",
+    "title": "sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)",
+    "path": "sources/prs/sgl-kernel-npu/PR-002.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sgl",
+      "lora",
+      "matmul",
+      "cube-unit",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-sgl-kernel-npu-003",
+    "type": "source-pr",
+    "title": "sgl-kernel-npu — Fused GDN Gating + solve_tril Performance",
+    "path": "sources/prs/sgl-kernel-npu/PR-003.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sgl",
+      "fla",
+      "gdn",
+      "fusion",
+      "triton",
+      "linear-attention",
+      "ub"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "reduce"
+    ],
+    "languages": [
+      "python",
+      "triton"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-sgl-kernel-npu-004",
+    "type": "source-pr",
+    "title": "sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU",
+    "path": "sources/prs/sgl-kernel-npu/PR-004.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "sgl",
+      "deepep",
+      "moe",
+      "alltoall",
+      "communication",
+      "expert-parallel",
+      "low-latency"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
     "id": "pr-vllm-ascend-001",
     "type": "source-pr",
     "title": "vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)",
@@ -4006,6 +4116,60 @@
     "kernel_types": [
       "moe",
       "matmul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-vllm-ascend-003",
+    "type": "source-pr",
+    "title": "vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)",
+    "path": "sources/prs/vllm-ascend/PR-003.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "kv-cache",
+      "paging",
+      "ascendc",
+      "multicore",
+      "mte",
+      "event-sync",
+      "inference"
+    ],
+    "kernel_types": [
+      "elementwise"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-vllm-ascend-004",
+    "type": "source-pr",
+    "title": "vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950",
+    "path": "sources/prs/vllm-ascend/PR-004.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "quantization",
+      "fp8",
+      "w8a8",
+      "moe",
+      "ascend950",
+      "inference"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "moe"
     ],
     "languages": [
       "python"
@@ -4340,6 +4504,24 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-cann-ops-adv-336",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #336",
+    "path": "wiki/techniques/pr-cann-ops-adv-336.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "operator",
+      "flash-attention",
+      "mainline-sync"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-cann-ops-adv-340",
     "type": "wiki-technique",
     "title": "PR Insight: cann-ops-adv #340",
@@ -4371,6 +4553,24 @@
       "bugfix",
       "memory",
       "stability"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-cann-ops-adv-350",
+    "type": "wiki-technique",
+    "title": "PR Insight: cann-ops-adv #350",
+    "path": "wiki/techniques/pr-cann-ops-adv-350.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "communication",
+      "operators"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4412,6 +4612,43 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-catlass-218",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #218",
+    "path": "wiki/techniques/pr-catlass-218.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "performance",
+      "optimization",
+      "kernel"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-239",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #239",
+    "path": "wiki/techniques/pr-catlass-239.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "fp8",
+      "matmul",
+      "gemm",
+      "memory",
+      "performance"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-catlass-251",
     "type": "wiki-technique",
     "title": "PR Insight: ascend/catlass #251",
@@ -4422,6 +4659,42 @@
     ],
     "tags": [
       "documentation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-253",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #253",
+    "path": "wiki/techniques/pr-catlass-253.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "operator",
+      "convolution",
+      "feature",
+      "implicit-gemm"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-256",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #256",
+    "path": "wiki/techniques/pr-catlass-256.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "trivial"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4462,6 +4735,94 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-catlass-262",
+    "type": "wiki-technique",
+    "title": "PR Insight: Catlass #262",
+    "path": "wiki/techniques/pr-catlass-262.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "refactor",
+      "tuning",
+      "tooling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-263",
+    "type": "wiki-technique",
+    "title": "PR Insight: catlass #263",
+    "path": "wiki/techniques/pr-catlass-263.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "refactor",
+      "cleancode"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-267",
+    "type": "wiki-technique",
+    "title": "PR Insight: catlass #267",
+    "path": "wiki/techniques/pr-catlass-267.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-268",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/catlass #268",
+    "path": "wiki/techniques/pr-catlass-268.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "compiler",
+      "aicore",
+      "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-269",
+    "type": "wiki-technique",
+    "title": "PR Insight: catlass #269",
+    "path": "wiki/techniques/pr-catlass-269.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "build",
+      "mstuner"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-catlass-271",
     "type": "wiki-technique",
     "title": "PR Insight: catlass #271",
@@ -4474,6 +4835,22 @@
       "documentation",
       "fp8",
       "matmul"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-catlass-279",
+    "type": "wiki-technique",
+    "title": "PR Insight: catlass #279",
+    "path": "wiki/techniques/pr-catlass-279.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4606,6 +4983,23 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-mindspeed-2809",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2809",
+    "path": "wiki/techniques/pr-mindspeed-2809.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "profiling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-mindspeed-2818",
     "type": "wiki-technique",
     "title": "PR Insight: ascend/MindSpeed #2818",
@@ -4635,6 +5029,80 @@
     "tags": [
       "bugfix",
       "mindspore"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2821",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2821",
+    "path": "wiki/techniques/pr-mindspeed-2821.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "mla"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2822",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2822",
+    "path": "wiki/techniques/pr-mindspeed-2822.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ci",
+      "testing",
+      "fsdp",
+      "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2824",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/MindSpeed #2824",
+    "path": "wiki/techniques/pr-mindspeed-2824.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "docs",
+      "bugfix",
+      "te",
+      "transformer engine"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-mindspeed-2826",
+    "type": "wiki-technique",
+    "title": "PR Insight: MindSpeed #2826",
+    "path": "wiki/techniques/pr-mindspeed-2826.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "determinism",
+      "reproducibility",
+      "memory",
+      "zero"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4707,6 +5175,24 @@
       "tensor-parallelism",
       "training",
       "mindspeed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3362",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3362",
+    "path": "wiki/techniques/pr-modellink-3362.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "performance",
+      "bugfix",
+      "mindspore"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4897,6 +5383,42 @@
     "confidence": "inferred"
   },
   {
+    "id": "technique-pr-modellink-3398",
+    "type": "wiki-technique",
+    "title": "PR Insight: ascend/ModelLink #3398",
+    "path": "wiki/techniques/pr-modellink-3398.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "checkpointing",
+      "pytorch"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3401",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3401",
+    "path": "wiki/techniques/pr-modellink-3401.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "documentation",
+      "bugfix",
+      "installation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-pr-modellink-3406",
     "type": "wiki-technique",
     "title": "PR Insight: ModelLink #3406",
@@ -4907,6 +5429,24 @@
     ],
     "tags": [
       "docs"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-modellink-3410",
+    "type": "wiki-technique",
+    "title": "PR Insight: ModelLink #3410",
+    "path": "wiki/techniques/pr-modellink-3410.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bugfix",
+      "docs",
+      "mindspore"
     ],
     "kernel_types": [],
     "languages": [],
@@ -4958,6 +5498,24 @@
     "tags": [
       "doc",
       "bugfix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pr-sgl-kernel-npu-463",
+    "type": "wiki-technique",
+    "title": "PR Insight: sgl-project/sgl-kernel-npu #463",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-463.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "feature",
+      "memory",
+      "performance"
     ],
     "kernel_types": [],
     "languages": [],

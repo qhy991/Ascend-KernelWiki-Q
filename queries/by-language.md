@@ -1,7 +1,7 @@
 # Index: By Language
 
 
-## ascendc (74 pages)
+## ascendc (77 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -74,11 +74,14 @@
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md)
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md)
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
+- [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
+- [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
 
-## cpp (61 pages)
+## cpp (64 pages)
 
 - [Calling a Custom aclnn Operator from C++ — End to End](sources/blogs/aclnn-custom-op-invocation.md)
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md)
@@ -139,10 +142,13 @@
 - [PyTorch on Ascend — torch_npu, Custom Kernels, and Bindings](wiki/languages/pytorch-npu-guide.md)
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md)
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
+- [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
+- [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
 
-## python (21 pages)
+## python (24 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -163,8 +169,11 @@
 - [TBE-DSL — High-Level Operator Development (Deprecated)](wiki/languages/tbe-dsl-guide.md)
 - [TIK — Low-Level Python Kernel Programming (Tensor Iterator Kernel)](wiki/languages/tik-guide.md)
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md)
+- [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md)
+- [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
+- [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md)
 
 ## tbe-dsl (1 pages)
 
@@ -175,3 +184,7 @@
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
 - [TIK Vector Add — Elementwise Kernel in Python](wiki/kernels/add-tik.md)
 - [TIK — Low-Level Python Kernel Programming (Tensor Iterator Kernel)](wiki/languages/tik-guide.md)
+
+## triton (1 pages)
+
+- [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md)

@@ -21,7 +21,7 @@
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
 
-## cube-vector-overlap (15 pages)
+## cube-vector-overlap (16 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CANN Training Camp — Advanced Operator Optimization Techniques](sources/blogs/cann-training-camp.md)
@@ -37,13 +37,14 @@
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md)
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md)
 
 ## data-format (1 pages)
 
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 
-## data-reuse (41 pages)
+## data-reuse (45 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -85,6 +86,10 @@
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md)
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md)
 - [Memory-Bound Kernel — Diagnosis and Resolution](wiki/patterns/memory-bound.md)
+- [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md)
+- [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md)
+- [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
+- [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md)
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md)
 
 ## double-buffering (22 pages)
@@ -136,7 +141,7 @@
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md)
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md)
 
-## hccl-optimization (10 pages)
+## hccl-optimization (11 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
 - [SGL Kernel NPU DeepEP Operators](csrc/deepep/ops)
@@ -146,6 +151,7 @@
 - [HCCL C API Reference](sources/docs/hccl-api-reference.md)
 - [HCCL Collective Communication Library](sources/docs/hccl-collective.md)
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md)
+- [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md)
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
 
@@ -183,7 +189,7 @@
 - [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 
-## nz-tiling (30 pages)
+## nz-tiling (31 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md)
@@ -211,6 +217,7 @@
 - [Memory-Bound Kernel — Diagnosis and Resolution](wiki/patterns/memory-bound.md)
 - [FRACTAL_NZ Format Traps — Common Pitfalls and Solutions](wiki/patterns/nz-format-traps.md)
 - [Tiling Too Small — Under-Utilized Cube and MTE](wiki/patterns/tiling-too-small.md)
+- [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
@@ -240,7 +247,7 @@
 - [PR Insight: Chimera Bidirectional Pipeline Parallelism](wiki/techniques/pr-mindspeed-chimera-pp.md)
 - [PR Insight: MTP + PP Speculative Decoding](wiki/techniques/pr-vllm-mtp-pp.md)
 
-## pipeline-scheduling (82 pages)
+## pipeline-scheduling (83 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -321,6 +328,7 @@
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
+- [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md)
 - [TQue Deadlock Pattern in Ascend C](wiki/patterns/tque-deadlock.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
