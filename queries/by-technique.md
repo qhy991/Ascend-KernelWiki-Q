@@ -59,6 +59,10 @@
 
 - [PR Insight: vllm-project/vllm-ascend #8574](wiki/techniques/pr-vllm-ascend-8574.md)
 
+## data-conversion (1 pages)
+
+- [PR Insight: Ascend/ModelLink #2938](wiki/techniques/pr-modellink-2938.md)
+
 ## data-format (1 pages)
 
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
@@ -88,7 +92,7 @@
 - [PR Insight: vllm-project/vllm-ascend #626](wiki/techniques/pr-vllm-ascend-626.md)
 - [PR Insight: vllm-project/vllm-ascend #6715](wiki/techniques/pr-vllm-ascend-6715.md)
 
-## data-reuse (50 pages)
+## data-reuse (51 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -138,6 +142,7 @@
 - [PR Insight: Ascend/cann-ops-adv #266](wiki/techniques/pr-cann-ops-adv-266.md)
 - [PR Insight: Ascend/cann-ops-adv #311](wiki/techniques/pr-cann-ops-adv-311.md)
 - [PR Insight: cann-ops-adv #84](wiki/techniques/pr-cann-ops-adv-84.md)
+- [PR Insight: Ascend/MindSpeed #2757](wiki/techniques/pr-mindspeed-2757.md)
 - [PR Insight: vllm-project/vllm-ascend #204](wiki/techniques/pr-vllm-ascend-204.md)
 - [PR Insight: vllm-project/vllm-ascend #32](wiki/techniques/pr-vllm-ascend-32.md)
 
@@ -206,7 +211,7 @@
 
 - [PR Insight: sgl-project/sgl-kernel-npu #79](wiki/techniques/pr-sgl-kernel-npu-79.md)
 
-## hccl-optimization (92 pages)
+## hccl-optimization (93 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
 - [SGL Kernel NPU DeepEP Operators](csrc/deepep/ops)
@@ -221,6 +226,7 @@
 - [PR Insight: Ascend/cann-ops-adv #250](wiki/techniques/pr-cann-ops-adv-250.md)
 - [PR Insight: Ascend/cann-ops-adv #260](wiki/techniques/pr-cann-ops-adv-260.md)
 - [PR Insight: Ascend/cann-ops-adv #293](wiki/techniques/pr-cann-ops-adv-293.md)
+- [PR Insight: Ascend/ModelLink #2985](wiki/techniques/pr-modellink-2985.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #117](wiki/techniques/pr-sgl-kernel-npu-117.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #313](wiki/techniques/pr-sgl-kernel-npu-313.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #314](wiki/techniques/pr-sgl-kernel-npu-314.md)
