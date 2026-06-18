@@ -1,0 +1,4551 @@
+[
+  {
+    "id": "blog-aclnn-custom-op-invocation",
+    "type": "source-blog",
+    "title": "Calling a Custom aclnn Operator from C++ — End to End",
+    "path": "sources/blogs/aclnn-custom-op-invocation.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "aclnn",
+      "cpp",
+      "operator",
+      "runtime",
+      "tutorial"
+    ],
+    "kernel_types": [
+      "elementwise"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-ascend-910b-deep-dive",
+    "type": "source-blog",
+    "title": "Ascend 910B Deep Dive — Architecture Improvements over 910A",
+    "path": "sources/blogs/ascend-910b-deep-dive.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ascend910b",
+      "architecture",
+      "hardware",
+      "comparison"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-ascend-w8a8-quantization",
+    "type": "source-blog",
+    "title": "W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul",
+    "path": "sources/blogs/ascend-w8a8-quantization.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "quantization",
+      "int8",
+      "w8a8",
+      "python",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "python",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-ascendc-performance-tips",
+    "type": "source-blog",
+    "title": "Top 10 AscendC Performance Optimization Tips",
+    "path": "sources/blogs/ascendc-performance-tips.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "optimization",
+      "performance",
+      "tips",
+      "ascendc"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-ascendc-programming-guide",
+    "type": "source-blog",
+    "title": "Notes on Ascend C Operator Development — Comparative Study with CUDA",
+    "path": "sources/blogs/ascendc-programming-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "programming",
+      "cuda-comparison",
+      "tutorial"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-cann-training-camp",
+    "type": "source-blog",
+    "title": "CANN Training Camp — Advanced Operator Optimization Techniques",
+    "path": "sources/blogs/cann-training-camp.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "optimization",
+      "pipeline",
+      "cann",
+      "training"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-catlass-gemm-templates",
+    "type": "source-blog",
+    "title": "CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)",
+    "path": "sources/blogs/catlass-gemm-templates.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "cpp",
+      "gemm",
+      "matmul",
+      "template"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-nz-format-explained",
+    "type": "source-blog",
+    "title": "Understanding FRACTAL_NZ — Ascend's 5D Data Format for Matrix Computation",
+    "path": "sources/blogs/nz-format-explained.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "nz-format",
+      "data-format",
+      "cube-unit",
+      "matrix"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "blog-tik-operator-walkthrough",
+    "type": "source-blog",
+    "title": "TIK Operator Walkthrough — Writing Vector Add and Softmax in Python",
+    "path": "sources/blogs/tik-operator-walkthrough.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "tbe-tik",
+      "tik",
+      "python",
+      "operator",
+      "tutorial"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "softmax"
+    ],
+    "languages": [
+      "tbe-tik",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-ascend-samples-acl-runtime",
+    "type": "source-code",
+    "title": "Ascend Samples — AscendCL Runtime Examples",
+    "path": "cplusplus/level1_single_api",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "samples",
+      "ascendcl",
+      "runtime",
+      "cpp"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-ascend-samples-aclnn",
+    "type": "source-code",
+    "title": "Ascend Samples — aclnn Single-Operator Invocation",
+    "path": "operator/aclnn",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "samples",
+      "aclnn",
+      "cpp",
+      "operator"
+    ],
+    "kernel_types": [
+      "matmul",
+      "softmax",
+      "layernorm",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-ascend-samples-hccl",
+    "type": "source-code",
+    "title": "Ascend Samples — HCCL Communication Examples",
+    "path": "cplusplus/level1_single_api/7_dvpp",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "samples",
+      "hccl",
+      "communication",
+      "cpp"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-ascend-samples-operator-ascendc",
+    "type": "source-code",
+    "title": "Ascend Samples — AscendC Operator Examples",
+    "path": "operator/ascendc",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "samples",
+      "ascendc",
+      "operator",
+      "tutorial"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "matmul",
+      "reduce",
+      "softmax"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-activation",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Activation Operators",
+    "path": "src/activation",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "activation",
+      "vector",
+      "ascendc",
+      "cann"
+    ],
+    "kernel_types": [
+      "activation",
+      "elementwise"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-fused-infer-attention-score",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Fused Infer Attention Score",
+    "path": "src/transformer/fused_infer_attention_score",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "attention",
+      "fusion",
+      "inference",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-grouped-matmul",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Grouped Matmul",
+    "path": "src/matmul/grouped_matmul",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "grouped-gemm",
+      "matmul",
+      "moe",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "gemm",
+      "moe",
+      "matmul"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-incre-flash-attention",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Incremental Flash Attention",
+    "path": "src/transformer/incre_flash_attention",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "attention",
+      "flash-attention",
+      "kv-cache",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-matmul",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Matmul Operators",
+    "path": "src/matmul",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "matmul",
+      "gemm",
+      "ascendc",
+      "cann"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "quant-matmul"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-cann-ops-adv-prompt-flash-attention",
+    "type": "source-code",
+    "title": "CANN Ops Adv — Prompt Flash Attention",
+    "path": "src/transformer/prompt_flash_attention",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "attention",
+      "flash-attention",
+      "ascendc",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-basic-matmul",
+    "type": "source-code",
+    "title": "CATLASS Basic Matmul Example",
+    "path": "examples/00_basic_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "matmul",
+      "cpp",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-batched-matmul",
+    "type": "source-code",
+    "title": "CATLASS Batched Matmul Example",
+    "path": "examples/01_batched_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "batched-matmul",
+      "gemm",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-block-mmad",
+    "type": "source-code",
+    "title": "CATLASS Block MMAD Components",
+    "path": "include/catlass/gemm/block",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "matmul",
+      "template",
+      "cpp"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-conv-bias",
+    "type": "source-code",
+    "title": "CATLASS Conv Bias Example",
+    "path": "examples/24_conv_bias",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "convolution",
+      "bias",
+      "cube"
+    ],
+    "kernel_types": [
+      "conv",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-flash-attention-infer",
+    "type": "source-code",
+    "title": "CATLASS Flash Attention Inference Example",
+    "path": "examples/23_flash_attention_infer",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "flash-attention",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-fp8-matmul",
+    "type": "source-code",
+    "title": "CATLASS FP8 Matmul Example",
+    "path": "examples/29_a2_fp8_e4m3_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "fp8",
+      "quantization",
+      "matmul"
+    ],
+    "kernel_types": [
+      "quant-matmul",
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-group-gemm",
+    "type": "source-code",
+    "title": "CATLASS Group GEMM Example",
+    "path": "examples/16_group_gemm",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "grouped-gemm",
+      "moe",
+      "cpp"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "gemm",
+      "moe"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-layout",
+    "type": "source-code",
+    "title": "CATLASS Layout Types",
+    "path": "include/catlass/layout",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "layout",
+      "nz-format",
+      "cpp"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-matmul-add",
+    "type": "source-code",
+    "title": "CATLASS Matmul Add Example",
+    "path": "examples/03_matmul_add",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "matmul",
+      "epilogue",
+      "fusion"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-mla",
+    "type": "source-code",
+    "title": "CATLASS MLA Example",
+    "path": "examples/19_mla",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "mla",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "flash-attention"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-optimized-matmul",
+    "type": "source-code",
+    "title": "CATLASS Optimized Matmul Example",
+    "path": "examples/06_optimized_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "optimized-gemm",
+      "matmul",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-python-extension",
+    "type": "source-code",
+    "title": "CATLASS Python Extension Example",
+    "path": "examples/python_extension",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "python-extension",
+      "binding",
+      "operator"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-quant-matmul",
+    "type": "source-code",
+    "title": "CATLASS Quantized Matmul Example",
+    "path": "examples/12_quant_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "quantization",
+      "matmul",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "quant-matmul",
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-shared-lib",
+    "type": "source-code",
+    "title": "CATLASS Shared Library Example",
+    "path": "examples/shared_lib",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "shared-library",
+      "deployment",
+      "cpp"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-splitk-matmul",
+    "type": "source-code",
+    "title": "CATLASS Split-K Matmul Example",
+    "path": "examples/09_splitk_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "split-k",
+      "matmul",
+      "reduction"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "reduce"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-catlass-w8a16-matmul",
+    "type": "source-code",
+    "title": "CATLASS W8A16 Matmul Example",
+    "path": "examples/30_w8a16_matmul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "w8a16",
+      "quantization",
+      "matmul"
+    ],
+    "kernel_types": [
+      "quant-matmul",
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-assign-cache",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Assign Cache Operator",
+    "path": "csrc/assign_cache_op",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "kv-cache",
+      "cache",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-batch-matmul-transpose",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Batch Matmul Transpose Operator",
+    "path": "csrc/batch_matmul_transpose",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "matmul",
+      "transpose",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-block-sparse-attention",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Block Sparse Attention Operator",
+    "path": "csrc/attentions/csrc/ops/block_sparse_attention",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "block-sparse-attention",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-cache-location-assign",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Cache Location Assign Operator",
+    "path": "csrc/cache_location_assign",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "kv-cache",
+      "scheduling",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-catlass",
+    "type": "source-code",
+    "title": "SGL Kernel NPU CATLASS Utility Kernels",
+    "path": "csrc/catlass",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "catlass",
+      "matmul",
+      "fp8"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "quant-matmul"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-csrc",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Native Source",
+    "path": "csrc",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "npu",
+      "ascendc",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "softmax",
+      "layernorm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-deepep",
+    "type": "source-code",
+    "title": "SGL Kernel NPU DeepEP Operators",
+    "path": "csrc/deepep/ops",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "deepep",
+      "moe",
+      "communication"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm",
+      "matmul"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-laser-attention",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Laser Attention Operator",
+    "path": "csrc/attentions/csrc/ops/laser_attention",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "laser-attention",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-lightning-indexer",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Lightning Indexer Operator",
+    "path": "csrc/lightning_indexer",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "indexing",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-mla-preprocess",
+    "type": "source-code",
+    "title": "SGL Kernel NPU MLA Preprocess Operator",
+    "path": "csrc/mla_preprocess",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "mla",
+      "attention",
+      "preprocessing"
+    ],
+    "kernel_types": [
+      "attention",
+      "rope",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-python",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Python Package",
+    "path": "python",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "npu",
+      "python",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "softmax",
+      "layernorm"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-sparse-block-estimate",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Sparse Block Estimate Operator",
+    "path": "csrc/attentions/csrc/ops/sparse_block_estimate",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "sparse-attention",
+      "block-estimate",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "reduce"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-sgl-kernel-npu-tests",
+    "type": "source-code",
+    "title": "SGL Kernel NPU Tests",
+    "path": "tests",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "tests",
+      "npu",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "softmax",
+      "layernorm"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-aclnn-adapter",
+    "type": "source-code",
+    "title": "vLLM Ascend aclnn Torch Adapter",
+    "path": "csrc/aclnn_torch_adapter",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "aclnn",
+      "torch-adapter",
+      "operator"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-attention",
+    "type": "source-code",
+    "title": "vLLM Ascend Attention Backend",
+    "path": "vllm_ascend/attention",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "attention",
+      "paged-attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-batch-matmul-transpose",
+    "type": "source-code",
+    "title": "vLLM Ascend Batch Matmul Transpose Operator",
+    "path": "csrc/batch_matmul_transpose",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "matmul",
+      "transpose",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-compressor",
+    "type": "source-code",
+    "title": "vLLM Ascend Attention Compressor Operator",
+    "path": "csrc/attention/compressor",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "attention",
+      "compressor",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-csrc",
+    "type": "source-code",
+    "title": "vLLM Ascend C++/AscendC Extension Source",
+    "path": "csrc",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "ascendc",
+      "cpp",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "rope",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-fused-gdn-gating",
+    "type": "source-code",
+    "title": "vLLM Ascend Fused GDN Gating Operator",
+    "path": "csrc/attention/fused_gdn_gating",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "fused-op",
+      "gating",
+      "attention"
+    ],
+    "kernel_types": [
+      "attention",
+      "activation",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-grouped-matmul-swiglu-quant",
+    "type": "source-code",
+    "title": "vLLM Ascend Grouped Matmul SwiGLU Quant Operator",
+    "path": "csrc/gmm/grouped_matmul_swiglu_quant",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "grouped-gemm",
+      "swiglu",
+      "quantization"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "moe",
+      "swiglu",
+      "quant-matmul"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-inplace-partial-rotary",
+    "type": "source-code",
+    "title": "vLLM Ascend In-place Partial Rotary Operator",
+    "path": "csrc/attention/inplace_partial_rotary_mul",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "rope",
+      "attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "rope",
+      "attention",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-kv-quant-sparse-attn",
+    "type": "source-code",
+    "title": "vLLM Ascend KV Quant Sparse Attention Operator",
+    "path": "csrc/attention/kv_quant_sparse_attn_sharedkv",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "sparse-attention",
+      "kv-cache",
+      "quantization"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention",
+      "quant-matmul"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-matmul-allreduce-rmsnorm",
+    "type": "source-code",
+    "title": "vLLM Ascend Matmul AllReduce Add RMSNorm Operator",
+    "path": "csrc/mc2/matmul_allreduce_add_rmsnorm",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "matmul",
+      "allreduce",
+      "rmsnorm"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "rmsnorm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-mla-preprocess",
+    "type": "source-code",
+    "title": "vLLM Ascend MLA Preprocess Operator",
+    "path": "csrc/mla_preprocess",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "mla",
+      "attention",
+      "preprocessing"
+    ],
+    "kernel_types": [
+      "attention",
+      "rope",
+      "elementwise"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-model-runner",
+    "type": "source-code",
+    "title": "vLLM Ascend Model Runner",
+    "path": "vllm_ascend/worker",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "scheduler",
+      "inference",
+      "python"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-ops",
+    "type": "source-code",
+    "title": "vLLM Ascend Operator Wrappers",
+    "path": "vllm_ascend/ops",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "operator",
+      "python",
+      "torch-npu"
+    ],
+    "kernel_types": [
+      "matmul",
+      "attention",
+      "rope",
+      "moe"
+    ],
+    "languages": [
+      "python",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-sparse-flash-attention",
+    "type": "source-code",
+    "title": "vLLM Ascend Sparse Flash Attention Operator",
+    "path": "csrc/attention/sparse_flash_attention",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "sparse-attention",
+      "flash-attention",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "code-vllm-ascend-tests",
+    "type": "source-code",
+    "title": "vLLM Ascend Kernel and Backend Tests",
+    "path": "tests",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "tests",
+      "inference",
+      "python"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "moe",
+      "rope"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-aclnn-operator-api",
+    "type": "source-doc",
+    "title": "aclnn Single-Operator API Reference (Two-Phase Interface)",
+    "path": "sources/docs/aclnn-operator-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "aclnn",
+      "cpp",
+      "operator",
+      "cann",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-debugging-guide",
+    "type": "source-doc",
+    "title": "Ascend Kernel Debugging — Twin Debug Mode and Log Analysis",
+    "path": "sources/docs/ascend-debugging-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "debugging",
+      "logging",
+      "twin-debug",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-memory-hierarchy",
+    "type": "source-doc",
+    "title": "Ascend Memory Hierarchy and Data Movement",
+    "path": "sources/docs/ascend-memory-hierarchy.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory",
+      "unified-buffer",
+      "global-memory",
+      "data-movement"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-multi-stream-guide",
+    "type": "source-doc",
+    "title": "Multi-Stream Execution on Ascend NPU",
+    "path": "sources/docs/ascend-multi-stream-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "multi-stream",
+      "concurrent",
+      "pipeline",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-operator-fusion",
+    "type": "source-doc",
+    "title": "Operator Fusion Patterns on Ascend NPU",
+    "path": "sources/docs/ascend-operator-fusion.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "fusion",
+      "operator",
+      "optimization",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-profiling-guide",
+    "type": "source-doc",
+    "title": "Ascend Profiling with msprof",
+    "path": "sources/docs/ascend-profiling-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "profiling",
+      "msprof",
+      "performance",
+      "debugging"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascend-quantization-guide",
+    "type": "source-doc",
+    "title": "Ascend Quantization — FP8/INT8 Operator Development",
+    "path": "sources/docs/ascend-quantization-guide.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "quantization",
+      "fp8",
+      "int8",
+      "ascendc"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascendc-api-overview",
+    "type": "source-doc",
+    "title": "Ascend C Operator Development API Overview",
+    "path": "sources/docs/ascendc-api-overview.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "api",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-api-reference",
+    "type": "source-doc",
+    "title": "AscendC API Reference (CANN 8.0)",
+    "path": "sources/docs/ascendc-api-reference.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "api",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascendc-atomic-apis",
+    "type": "source-doc",
+    "title": "Ascend C Atomic Operation APIs",
+    "path": "sources/docs/ascendc-atomic-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "atomic",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-axpy-template-sample",
+    "type": "source-doc",
+    "title": "Ascend C Axpy Template Sample",
+    "path": "sources/docs/ascendc-axpy-template-sample.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "elementwise",
+      "vector",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-datacopypad-api",
+    "type": "source-doc",
+    "title": "Ascend C DataCopyPad API",
+    "path": "sources/docs/ascendc-datacopypad-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "datacopy",
+      "memory",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-debugging-apis",
+    "type": "source-doc",
+    "title": "Ascend C Debugging Helper APIs",
+    "path": "sources/docs/ascendc-debugging-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "debugging",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-fixpipe-apis",
+    "type": "source-doc",
+    "title": "Ascend C Fixpipe and Post-Matmul APIs",
+    "path": "sources/docs/ascendc-fixpipe-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "quantization",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-kernel-launch",
+    "type": "source-doc",
+    "title": "Ascend C Kernel Launch Operator Project",
+    "path": "sources/docs/ascendc-kernel-launch.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "cpp",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-layernorm-api",
+    "type": "source-doc",
+    "title": "Ascend C LayerNorm High-Level API",
+    "path": "sources/docs/ascendc-layernorm-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "layernorm",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-load-data-apis",
+    "type": "source-doc",
+    "title": "Ascend C LoadData and Sparse Load APIs",
+    "path": "sources/docs/ascendc-load-data-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "datacopy",
+      "sparse",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-matmul-end",
+    "type": "source-doc",
+    "title": "Ascend C Matmul End API",
+    "path": "sources/docs/ascendc-matmul-end.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-matmul-getbatchc",
+    "type": "source-doc",
+    "title": "Ascend C Matmul GetBatchC API",
+    "path": "sources/docs/ascendc-matmul-getbatchc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "batched",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-matmul-regist-obj",
+    "type": "source-doc",
+    "title": "Ascend C REGIST_MATMUL_OBJ API",
+    "path": "sources/docs/ascendc-matmul-regist-obj.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-matmul-tiling-bias",
+    "type": "source-doc",
+    "title": "Ascend C Matmul Tiling EnableBias API",
+    "path": "sources/docs/ascendc-matmul-tiling-bias.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "tiling",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-resource-group-apis",
+    "type": "source-doc",
+    "title": "Ascend C Resource Group and KFC Workspace APIs",
+    "path": "sources/docs/ascendc-resource-group-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "synchronization",
+      "resource",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-softmax-api",
+    "type": "source-doc",
+    "title": "Ascend C SoftMax High-Level APIs",
+    "path": "sources/docs/ascendc-softmax-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "softmax",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-softmax-tiling",
+    "type": "source-doc",
+    "title": "Ascend C SoftMax Tiling APIs",
+    "path": "sources/docs/ascendc-softmax-tiling.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "softmax",
+      "tiling",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-sort32-api",
+    "type": "source-doc",
+    "title": "Ascend C Sort32 API",
+    "path": "sources/docs/ascendc-sort32-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "sort",
+      "topk",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-synchronization-control",
+    "type": "source-doc",
+    "title": "Ascend C Synchronization Control APIs",
+    "path": "sources/docs/ascendc-synchronization-control.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "synchronization",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-system-variable-apis",
+    "type": "source-doc",
+    "title": "Ascend C System Variable Access APIs",
+    "path": "sources/docs/ascendc-system-variable-apis.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "system",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-tanh-api",
+    "type": "source-doc",
+    "title": "Ascend C Tanh API",
+    "path": "sources/docs/ascendc-tanh-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "activation",
+      "api",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-tiling-api",
+    "type": "source-doc",
+    "title": "Ascend C Host-Side Tiling API Reference",
+    "path": "sources/docs/ascendc-tiling-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "tiling",
+      "ascendc",
+      "cpp",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascendc-tilingdata-registration",
+    "type": "source-doc",
+    "title": "Ascend C TilingData Structure Registration",
+    "path": "sources/docs/ascendc-tilingdata-registration.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "tiling",
+      "cpp",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-topk-api-family",
+    "type": "source-doc",
+    "title": "Ascend C TopK API Family",
+    "path": "sources/docs/ascendc-topk-api-family.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "topk",
+      "sort",
+      "api"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-tpipe-initbuffer",
+    "type": "source-doc",
+    "title": "Ascend C TPipe InitBuffer API",
+    "path": "sources/docs/ascendc-tpipe-initbuffer.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "api",
+      "memory",
+      "pipeline"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-tque",
+    "type": "source-doc",
+    "title": "Ascend C TQue Memory Queue API",
+    "path": "sources/docs/ascendc-tque.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "api",
+      "memory",
+      "queue"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-vector-programming",
+    "type": "source-doc",
+    "title": "Ascend C Vector Operator Implementation",
+    "path": "sources/docs/ascendc-vector-programming.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "vector",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendcl-memory-management",
+    "type": "source-doc",
+    "title": "AscendCL Runtime Memory Management",
+    "path": "sources/docs/ascendcl-memory-management.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendcl",
+      "memory",
+      "runtime",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendcl-runtime",
+    "type": "source-doc",
+    "title": "AscendCL (ACL) Host Runtime API Reference",
+    "path": "sources/docs/ascendcl-runtime.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendcl",
+      "acl",
+      "cpp",
+      "runtime",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-ascendcl-runtime-api",
+    "type": "source-doc",
+    "title": "AscendCL Runtime Management API",
+    "path": "sources/docs/ascendcl-runtime-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendcl",
+      "runtime",
+      "cpp",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-bisheng-compiler-quickstart",
+    "type": "source-doc",
+    "title": "BiSheng Compiler Quick Start for Ascend C Operators",
+    "path": "sources/docs/bisheng-compiler-quickstart.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "bisheng",
+      "compiler",
+      "ascendc",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-cann-architecture-guide",
+    "type": "source-doc",
+    "title": "CANN Architecture Guide — AICore Hardware Principles",
+    "path": "sources/docs/cann-architecture-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "cann",
+      "architecture",
+      "aicore",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-cann-quickstart-index",
+    "type": "source-doc",
+    "title": "CANN 8.0 Quick Start and Documentation Map",
+    "path": "sources/docs/cann-quickstart-index.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "cann",
+      "quickstart",
+      "operator",
+      "documentation"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-catlass-framework",
+    "type": "source-doc",
+    "title": "Catlass — Modular GEMM Framework for Ascend (CUTLASS equivalent)",
+    "path": "sources/docs/catlass-framework.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "gemm",
+      "matmul",
+      "library"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-hccl-api-reference",
+    "type": "source-doc",
+    "title": "HCCL C API Reference",
+    "path": "sources/docs/hccl-api-reference.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccl",
+      "cpp",
+      "communication",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-hccl-collective",
+    "type": "source-doc",
+    "title": "HCCL Collective Communication Library",
+    "path": "sources/docs/hccl-collective.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccl",
+      "communication",
+      "collective",
+      "distributed"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-hccl-overview",
+    "type": "source-doc",
+    "title": "HCCL Collective Communication Overview",
+    "path": "sources/docs/hccl-overview.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccl",
+      "communication",
+      "distributed",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-mindspore-ascendc-custom-op",
+    "type": "source-doc",
+    "title": "MindSpore AOT-Type AscendC Custom Operator Development",
+    "path": "sources/docs/mindspore-ascendc-custom-op.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspore",
+      "ascendc",
+      "python",
+      "operator",
+      "aot"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-msdebug-overview",
+    "type": "source-doc",
+    "title": "msDebug Operator Debugging Overview",
+    "path": "sources/docs/msdebug-overview.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "debugging",
+      "msdebug",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-msprof-profiling-overview",
+    "type": "source-doc",
+    "title": "Ascend Profiling Tool Overview",
+    "path": "sources/docs/msprof-profiling-overview.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "profiling",
+      "msprof",
+      "performance",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "doc-tik-api-reference",
+    "type": "source-doc",
+    "title": "TIK (Tensor Iterator Kernel) Python API Reference",
+    "path": "sources/docs/tik-api-reference.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "tbe-tik",
+      "tik",
+      "python",
+      "operator",
+      "cann"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-torch-npu-adapter",
+    "type": "source-doc",
+    "title": "torch_npu — PyTorch Ascend Adapter and Custom Operator Registration",
+    "path": "sources/docs/torch-npu-adapter.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "torch-npu",
+      "pytorch",
+      "python",
+      "cpp",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-vllm-ascend",
+    "type": "source-doc",
+    "title": "vLLM Ascend Backend — NPU Inference Plugin",
+    "path": "sources/docs/vllm-ascend.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "inference",
+      "python",
+      "ascendc",
+      "paged-attention"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-ascend-910b-evolution",
+    "type": "wiki-hardware",
+    "title": "Ascend 910B Architecture Evolution",
+    "path": "wiki/hardware/ascend-910b-evolution.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "hardware-overview"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "hw-cube-unit",
+    "type": "wiki-hardware",
+    "title": "Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)",
+    "path": "wiki/hardware/cube-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "cube-unit",
+      "matrix",
+      "compute",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "hw-data-formats",
+    "type": "wiki-hardware",
+    "title": "Data Formats: ND vs FRACTAL_NZ",
+    "path": "wiki/hardware/data-formats.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "nd-format",
+      "nz-format",
+      "format-conversion",
+      "cube-unit"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "hw-hccs",
+    "type": "wiki-hardware",
+    "title": "HCCS — Huawei Cache Coherent System Interconnect",
+    "path": "wiki/hardware/hccs.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccs",
+      "interconnect",
+      "communication",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-instruction-queue",
+    "type": "wiki-hardware",
+    "title": "Instruction Queue System — 4-Queue Pipeline Architecture",
+    "path": "wiki/hardware/instruction-queue.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "instruction-queue",
+      "pipeline",
+      "hardware",
+      "synchronization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "hw-l1-l0-buffer",
+    "type": "wiki-hardware",
+    "title": "L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy",
+    "path": "wiki/hardware/l1-l0-buffer.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "l1-buffer",
+      "l0-buffer",
+      "memory",
+      "cube-unit",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-memory-hierarchy",
+    "type": "wiki-hardware",
+    "title": "Ascend Memory Hierarchy (GM → L1 → UB → L0)",
+    "path": "wiki/hardware/memory-hierarchy.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory",
+      "hierarchy",
+      "global-memory",
+      "unified-buffer",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "hw-mte",
+    "type": "wiki-hardware",
+    "title": "MTE — Memory Transfer Engine (Async Data Movement)",
+    "path": "wiki/hardware/mte.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "mte",
+      "memory",
+      "dma",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-nz-format",
+    "type": "wiki-hardware",
+    "title": "FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format",
+    "path": "wiki/hardware/nz-format.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "nz-format",
+      "nd-format",
+      "data-format",
+      "cube-unit",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-scalar-unit",
+    "type": "wiki-hardware",
+    "title": "Scalar Unit — Control Flow and Address Generation",
+    "path": "wiki/hardware/scalar-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "scalar-unit",
+      "control",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "hw-sync-primitives",
+    "type": "wiki-hardware",
+    "title": "Hardware Synchronization Primitives",
+    "path": "wiki/hardware/sync-primitives.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "pipeline"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "hw-unified-buffer",
+    "type": "wiki-hardware",
+    "title": "Unified Buffer (UB) — On-Chip Scratchpad Memory",
+    "path": "wiki/hardware/unified-buffer.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "unified-buffer",
+      "memory",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "hw-vector-unit",
+    "type": "wiki-hardware",
+    "title": "Vector Unit — SIMD Processing Engine",
+    "path": "wiki/hardware/vector-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "vector-unit",
+      "simd",
+      "compute",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "kernel-add-tik",
+    "type": "wiki-kernel",
+    "title": "TIK Vector Add — Elementwise Kernel in Python",
+    "path": "wiki/kernels/add-tik.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "elementwise",
+      "tbe-tik",
+      "tik",
+      "python"
+    ],
+    "kernel_types": [
+      "elementwise"
+    ],
+    "languages": [
+      "tbe-tik",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-conv-ascendc",
+    "type": "wiki-kernel",
+    "title": "Convolution on Ascend NPU — im2col + GEMM Approach",
+    "path": "wiki/kernels/conv-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "conv",
+      "convolution",
+      "im2col",
+      "cube-unit"
+    ],
+    "kernel_types": [
+      "conv"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-elementwise-ascendc",
+    "type": "wiki-kernel",
+    "title": "Elementwise Operations — AscendC Vector Template",
+    "path": "wiki/kernels/elementwise-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "elementwise",
+      "vector-unit",
+      "activation",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "activation"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "verified"
+  },
+  {
+    "id": "kernel-embedding-ascendc",
+    "type": "wiki-kernel",
+    "title": "Embedding Lookup on Ascend NPU",
+    "path": "wiki/kernels/embedding-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "embedding",
+      "lookup",
+      "gather",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "embedding"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-flash-attention-npu",
+    "type": "wiki-kernel",
+    "title": "Flash Attention on Ascend NPU",
+    "path": "wiki/kernels/flash-attention-npu.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "attention",
+      "flash-attention",
+      "cube-unit",
+      "softmax"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-gemm-catlass-cpp",
+    "type": "wiki-kernel",
+    "title": "CATLASS GEMM — C++ Template Matmul on the Cube Unit",
+    "path": "wiki/kernels/gemm-catlass-cpp.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "matmul",
+      "gemm",
+      "catlass",
+      "cpp",
+      "cube-unit"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-grouped-gemm-ascendc",
+    "type": "wiki-kernel",
+    "title": "Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA",
+    "path": "wiki/kernels/grouped-gemm-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "grouped-gemm",
+      "gemm",
+      "matmul",
+      "moe",
+      "batch"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "gemm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-layernorm-ascendc",
+    "type": "wiki-kernel",
+    "title": "LayerNorm / RMSNorm on Ascend NPU",
+    "path": "wiki/kernels/layernorm-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "layernorm",
+      "rmsnorm",
+      "normalization",
+      "vector-unit"
+    ],
+    "kernel_types": [
+      "layernorm",
+      "rmsnorm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-matmul-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC Matmul — GEMM via Cube Unit and Catlass",
+    "path": "wiki/kernels/matmul-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "matmul",
+      "gemm",
+      "cube-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-mla",
+    "type": "wiki-kernel",
+    "title": "Multi-Head Latent Attention (AscendC)",
+    "path": "wiki/kernels/mla-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "llm",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-moe-ascendc",
+    "type": "wiki-kernel",
+    "title": "MoE (Mixture of Experts) Kernel on Ascend NPU",
+    "path": "wiki/kernels/moe-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "moe",
+      "grouped-gemm",
+      "routing",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-paged-attention",
+    "type": "wiki-kernel",
+    "title": "Paged Attention (AscendC)",
+    "path": "wiki/kernels/paged-attention-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "llm",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-paged-attention-npu",
+    "type": "wiki-kernel",
+    "title": "AscendC Paged Attention — Block KV Cache for NPU Inference",
+    "path": "wiki/kernels/paged-attention-npu.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "paged-attention",
+      "attention",
+      "flash-attention",
+      "ascendc",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-quant-matmul-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC W8A8 INT8 Matmul — npu_quant_matmul",
+    "path": "wiki/kernels/quant-matmul-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "quant-matmul",
+      "matmul",
+      "int8",
+      "quantization",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "ascendc",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-quantized-gemm",
+    "type": "wiki-kernel",
+    "title": "Quantized GEMM (W4A16/INT8) (AscendC)",
+    "path": "wiki/kernels/quantized-gemm-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "quantization",
+      "matmul"
+    ],
+    "kernel_types": [
+      "matmul"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-reduction-ascendc",
+    "type": "wiki-kernel",
+    "title": "Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU",
+    "path": "wiki/kernels/reduction-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "reduce",
+      "reduction",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "reduce"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-ring-attention",
+    "type": "wiki-kernel",
+    "title": "Ring Attention & Context Parallelism (AscendC)",
+    "path": "wiki/kernels/ring-attention-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "llm",
+      "communication"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-rmsnorm-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC RMSNorm — Fused Vector Normalization",
+    "path": "wiki/kernels/rmsnorm-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "rmsnorm",
+      "layernorm",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "rmsnorm",
+      "layernorm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-rope-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC Rotary Position Embedding (RoPE)",
+    "path": "wiki/kernels/rope-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "rope",
+      "elementwise",
+      "attention",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "attention"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-softmax-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC Softmax — Vector Unit Implementation",
+    "path": "wiki/kernels/softmax-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "softmax",
+      "vector-unit",
+      "reduction",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "softmax"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-swiglu-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC SwiGLU — Fused Gated Activation",
+    "path": "wiki/kernels/swiglu-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "swiglu",
+      "activation",
+      "elementwise",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "activation",
+      "elementwise"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-topk-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC Top-K — Expert Routing and Sampling Reduction",
+    "path": "wiki/kernels/topk-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "topk",
+      "reduce",
+      "moe",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "reduce",
+      "moe"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-topk-sort",
+    "type": "wiki-kernel",
+    "title": "TopK & Sort (AscendC)",
+    "path": "wiki/kernels/topk-sort-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "memory-bound"
+    ],
+    "kernel_types": [
+      "reduction"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-vector-add-aclnn",
+    "type": "wiki-kernel",
+    "title": "aclnn Vector Add — Single-Operator Invocation in C++",
+    "path": "wiki/kernels/vector-add-aclnn.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "elementwise",
+      "aclnn",
+      "cpp",
+      "runtime"
+    ],
+    "kernel_types": [
+      "elementwise"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-aclnn-cpp-guide",
+    "type": "wiki-language",
+    "title": "aclnn — C++ Single-Operator API and Custom Operators",
+    "path": "wiki/languages/aclnn-cpp-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "aclnn",
+      "cpp",
+      "operator",
+      "runtime"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-ascendc-guide",
+    "type": "wiki-language",
+    "title": "AscendC Programming Guide — C/C++ Kernel Development for Ascend NPU",
+    "path": "wiki/languages/ascendc-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "programming",
+      "kernel",
+      "tutorial"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-ascendcl-host-guide",
+    "type": "wiki-language",
+    "title": "AscendCL — Host Runtime Programming (C/C++ and pyACL)",
+    "path": "wiki/languages/ascendcl-host-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendcl",
+      "acl",
+      "cpp",
+      "python",
+      "runtime"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-mindspore-ascend-guide",
+    "type": "wiki-language",
+    "title": "MindSpore on Ascend — AOT AscendC Custom Operators",
+    "path": "wiki/languages/mindspore-ascend-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspore",
+      "ascendc",
+      "python",
+      "operator",
+      "aot"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "python",
+      "ascendc"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-pytorch-npu-guide",
+    "type": "wiki-language",
+    "title": "PyTorch on Ascend — torch_npu, Custom Kernels, and Bindings",
+    "path": "wiki/languages/pytorch-npu-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "torch-npu",
+      "pytorch",
+      "python",
+      "cpp",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "python",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-tbe-dsl-guide",
+    "type": "wiki-language",
+    "title": "TBE-DSL — High-Level Operator Development (Deprecated)",
+    "path": "wiki/languages/tbe-dsl-guide.md",
+    "architectures": [
+      "ascend910"
+    ],
+    "tags": [
+      "tbe-dsl",
+      "deprecated",
+      "python",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "tbe-dsl",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "lang-tik-guide",
+    "type": "wiki-language",
+    "title": "TIK — Low-Level Python Kernel Programming (Tensor Iterator Kernel)",
+    "path": "wiki/languages/tik-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "tbe-tik",
+      "tik",
+      "python",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "tbe-tik",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-aclnn-api",
+    "type": "wiki-migration",
+    "title": "CANN aclnn API Guide",
+    "path": "wiki/migration/aclnn-api.md",
+    "architectures": [],
+    "tags": [
+      "framework"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-api-equivalents",
+    "type": "wiki-migration",
+    "title": "CUDA API → AscendC/AscendCL API Equivalents Reference",
+    "path": "wiki/migration/api-equivalents.md",
+    "architectures": [],
+    "tags": [
+      "api",
+      "migration",
+      "reference",
+      "equivalents"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-cublas-to-aclnn",
+    "type": "wiki-migration",
+    "title": "cuBLAS / cuDNN -> aclnn — Library-Call Operator Migration",
+    "path": "wiki/migration/cublas-to-aclnn.md",
+    "architectures": [],
+    "tags": [
+      "cublas",
+      "cudnn",
+      "aclnn",
+      "migration",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-cuda-runtime-to-acl",
+    "type": "wiki-migration",
+    "title": "CUDA Runtime -> AscendCL — Streams, Events, and Device Memory",
+    "path": "wiki/migration/cuda-runtime-to-acl.md",
+    "architectures": [],
+    "tags": [
+      "cuda",
+      "ascendcl",
+      "acl",
+      "migration",
+      "runtime"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-cuda-to-ascendc",
+    "type": "wiki-migration",
+    "title": "CUDA → AscendC Migration Guide",
+    "path": "wiki/migration/cuda-to-ascendc.md",
+    "architectures": [],
+    "tags": [
+      "migration",
+      "cuda",
+      "ascendc",
+      "porting"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-cutlass-to-catlass",
+    "type": "wiki-migration",
+    "title": "CUTLASS → Catlass Migration Guide",
+    "path": "wiki/migration/cutlass-to-catlass.md",
+    "architectures": [],
+    "tags": [
+      "cutlass",
+      "catlass",
+      "migration",
+      "gemm",
+      "framework"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-memory-model-mapping",
+    "type": "wiki-migration",
+    "title": "CUDA Memory Model → Ascend Memory Model Mapping",
+    "path": "wiki/migration/memory-model-mapping.md",
+    "architectures": [],
+    "tags": [
+      "memory",
+      "migration",
+      "shared-memory",
+      "unified-buffer"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-pytorch-cuda-to-npu",
+    "type": "wiki-migration",
+    "title": "PyTorch CUDA -> NPU — Porting Models with torch_npu",
+    "path": "wiki/migration/pytorch-cuda-to-npu.md",
+    "architectures": [],
+    "tags": [
+      "pytorch",
+      "torch-npu",
+      "cuda",
+      "migration",
+      "python"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-pytorch-custom-op",
+    "type": "wiki-migration",
+    "title": "PyTorch OP-Plugin & CustomOp",
+    "path": "wiki/migration/pytorch-custom-op.md",
+    "architectures": [],
+    "tags": [
+      "framework"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-rocm-to-ascendc",
+    "type": "wiki-migration",
+    "title": "ROCm/HIP to AscendC Migration",
+    "path": "wiki/migration/rocm-to-ascendc.md",
+    "architectures": [],
+    "tags": [
+      "framework"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "migration-tbe-to-ascendc",
+    "type": "wiki-migration",
+    "title": "TBE (DSL/TIK) → AscendC Migration Guide",
+    "path": "wiki/migration/tbe-to-ascendc.md",
+    "architectures": [],
+    "tags": [
+      "tbe",
+      "tbe-dsl",
+      "tbe-tik",
+      "migration",
+      "ascendc"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "migration-triton-to-ascendc",
+    "type": "wiki-migration",
+    "title": "Triton → AscendC Migration Guide",
+    "path": "wiki/migration/triton-to-ascendc.md",
+    "architectures": [],
+    "tags": [
+      "triton",
+      "migration",
+      "ascendc",
+      "porting"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-format-conversion-overhead",
+    "type": "wiki-pattern",
+    "title": "Format-Conversion Overhead — Excess ND<->NZ Transposes",
+    "path": "wiki/patterns/format-conversion-overhead.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "format-conversion",
+      "nz-format",
+      "diagnosis",
+      "performance",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pattern-host-dispatch-bound",
+    "type": "wiki-pattern",
+    "title": "Host-Dispatch-Bound Kernel — Launch Overhead Dominates",
+    "path": "wiki/patterns/host-dispatch-bound.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "host-bound",
+      "dispatch",
+      "diagnosis",
+      "performance",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-low-cube-utilization",
+    "type": "wiki-pattern",
+    "title": "Low Cube Utilization — Diagnosis and Resolution",
+    "path": "wiki/patterns/low-cube-utilization.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "cube-utilization",
+      "compute-bound",
+      "diagnosis",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-memory-bound",
+    "type": "wiki-pattern",
+    "title": "Memory-Bound Kernel — Diagnosis and Resolution",
+    "path": "wiki/patterns/memory-bound.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory-bound",
+      "diagnosis",
+      "performance",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-mte-saturation",
+    "type": "wiki-pattern",
+    "title": "MTE (Memory Transfer Engine) Saturation",
+    "path": "wiki/patterns/mte-saturation.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "dma"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-nz-format-traps",
+    "type": "wiki-pattern",
+    "title": "FRACTAL_NZ Format Traps — Common Pitfalls and Solutions",
+    "path": "wiki/patterns/nz-format-traps.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "nz-format",
+      "pitfalls",
+      "data-format",
+      "diagnosis",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-pipeline-stall",
+    "type": "wiki-pattern",
+    "title": "Pipeline Stall — Queue Dependency Bottleneck",
+    "path": "wiki/patterns/pipeline-stall.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "pipeline",
+      "stall",
+      "queue",
+      "dependency",
+      "diagnosis",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-precision-nan-debugging",
+    "type": "wiki-pattern",
+    "title": "Precision Loss & NaN Debugging",
+    "path": "wiki/patterns/precision-nan-debugging.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "accuracy"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-scalar-bottleneck",
+    "type": "wiki-pattern",
+    "title": "Scalar Unit Bottleneck",
+    "path": "wiki/patterns/scalar-bottleneck.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "pipeline"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-tiling-too-small",
+    "type": "wiki-pattern",
+    "title": "Tiling Too Small — Under-Utilized Cube and MTE",
+    "path": "wiki/patterns/tiling-too-small.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "tiling",
+      "cube-unit",
+      "diagnosis",
+      "performance",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pattern-ub-oom",
+    "type": "wiki-pattern",
+    "title": "UB OOM (Unified Buffer Overflow)",
+    "path": "wiki/patterns/ub-oom.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "memory-bound"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pr-ascend-pytorch-001",
+    "type": "source-pr",
+    "title": "PyTorch Ascend Backend — Custom Operator Integration",
+    "path": "sources/prs/ascend-pytorch/PR-001.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "pytorch",
+      "ascendcl",
+      "backend",
+      "operator"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention",
+      "softmax",
+      "layernorm",
+      "embedding"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-ascend-pytorch-002",
+    "type": "source-pr",
+    "title": "torch_npu — npu_quant_matmul Dynamic W8A8 Operator",
+    "path": "sources/prs/ascend-pytorch/PR-002.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "torch-npu",
+      "quantization",
+      "int8",
+      "python",
+      "cpp"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [
+      "python",
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-ascend-samples-001",
+    "type": "source-pr",
+    "title": "CANN Sample Code — Reference AscendC Implementations",
+    "path": "sources/prs/ascend-samples/PR-001.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "samples",
+      "reference",
+      "ascendc",
+      "tutorial"
+    ],
+    "kernel_types": [
+      "matmul",
+      "elementwise",
+      "reduce",
+      "softmax"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-catlass-001",
+    "type": "source-pr",
+    "title": "CATLASS — Basic Matmul and Group GEMM Examples",
+    "path": "sources/prs/catlass/PR-001.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "cpp",
+      "gemm",
+      "matmul",
+      "template"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "grouped-gemm"
+    ],
+    "languages": [
+      "cpp",
+      "ascendc"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-sgl-kernel-npu-001",
+    "type": "source-pr",
+    "title": "SGLang NPU Kernel — Ascend Backend Support",
+    "path": "sources/prs/sgl-kernel-npu/PR-001.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "npu",
+      "ascendc",
+      "kernel",
+      "inference"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul",
+      "softmax",
+      "layernorm"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-vllm-ascend-001",
+    "type": "source-pr",
+    "title": "vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)",
+    "path": "sources/prs/vllm-ascend/PR-001.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "ascendc",
+      "rope",
+      "kernel",
+      "inference"
+    ],
+    "kernel_types": [
+      "elementwise"
+    ],
+    "languages": [
+      "ascendc",
+      "python",
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-vllm-ascend-002",
+    "type": "source-pr",
+    "title": "vllm-ascend — Default MoE w2_weight to NZ Format",
+    "path": "sources/prs/vllm-ascend/PR-002.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "moe",
+      "nz-format",
+      "inference",
+      "python"
+    ],
+    "kernel_types": [
+      "moe",
+      "matmul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "technique-async-dma-multistage",
+    "type": "wiki-technique",
+    "title": "Asynchronous DMA & Multi-stage Pipelines",
+    "path": "wiki/techniques/async-dma-multistage.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "dma"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-atomic-accumulation",
+    "type": "wiki-technique",
+    "title": "Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory",
+    "path": "wiki/techniques/atomic-accumulation.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "atomic-accumulation",
+      "reduce",
+      "split-k",
+      "optimization"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "reduce"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-bank-conflict-avoidance",
+    "type": "wiki-technique",
+    "title": "UB Bank Conflict Avoidance",
+    "path": "wiki/techniques/bank-conflict-avoidance.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "bank-conflict",
+      "unified-buffer",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention",
+      "softmax"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-cube-vector-overlap",
+    "type": "wiki-technique",
+    "title": "Cube/Vector Overlap — Exploiting Independent Instruction Queues",
+    "path": "wiki/techniques/cube-vector-overlap.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "overlap",
+      "compute",
+      "optimization"
+    ],
+    "kernel_types": [
+      "attention",
+      "softmax"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-data-reuse",
+    "type": "wiki-technique",
+    "title": "UB Data Reuse — Minimizing GM Bandwidth Pressure",
+    "path": "wiki/techniques/data-reuse.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "data-reuse",
+      "unified-buffer",
+      "memory",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention",
+      "softmax",
+      "layernorm"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-double-buffering",
+    "type": "wiki-technique",
+    "title": "Double Buffering — Overlapping Data Transfer with Compute",
+    "path": "wiki/techniques/double-buffering.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "double-buffer",
+      "memory",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-format-conversion",
+    "type": "wiki-technique",
+    "title": "ND ↔ NZ Format Conversion Optimization",
+    "path": "wiki/techniques/format-conversion.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "format-conversion",
+      "nz-format",
+      "nd-format",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-hccl-optimization",
+    "type": "wiki-technique",
+    "title": "HCCL Collective Communication Optimization",
+    "path": "wiki/techniques/hccl-optimization.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccl",
+      "communication",
+      "distributed",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention",
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-kv-cache-paging",
+    "type": "wiki-technique",
+    "title": "KV Cache Paging — Block-Table Memory Management for NPU Inference",
+    "path": "wiki/techniques/kv-cache-paging.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "kv-cache-paging",
+      "paged-attention",
+      "inference",
+      "memory",
+      "optimization"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-multicore-grid-scheduling",
+    "type": "wiki-technique",
+    "title": "Multi-Core Grid Scheduling",
+    "path": "wiki/techniques/multicore-grid-scheduling.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "multi-core"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-nz-tiling",
+    "type": "wiki-technique",
+    "title": "FRACTAL_NZ Tiling Strategy for Cube Unit",
+    "path": "wiki/techniques/nz-tiling.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "nz-format",
+      "tiling",
+      "data-format",
+      "optimization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-online-softmax",
+    "type": "wiki-technique",
+    "title": "Online Softmax — Numerically Stable Streaming Softmax for Flash Attention",
+    "path": "wiki/techniques/online-softmax.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "online-softmax",
+      "softmax",
+      "attention",
+      "flash-attention",
+      "optimization"
+    ],
+    "kernel_types": [
+      "softmax",
+      "flash-attention",
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-operator-fusion",
+    "type": "wiki-technique",
+    "title": "Operator Fusion (UB/L1 Fusion)",
+    "path": "wiki/techniques/operator-fusion.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "bandwidth"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-pipeline-scheduling",
+    "type": "wiki-technique",
+    "title": "Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination",
+    "path": "wiki/techniques/pipeline-scheduling.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "pipeline",
+      "scheduling",
+      "optimization"
+    ],
+    "kernel_types": [
+      "gemm",
+      "attention",
+      "softmax"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-precision-tuning",
+    "type": "wiki-technique",
+    "title": "Precision Tuning & Accumulation",
+    "path": "wiki/techniques/precision-tuning.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "accuracy"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-quantization-int8",
+    "type": "wiki-technique",
+    "title": "INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)",
+    "path": "wiki/techniques/quantization-int8.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "quantization-int8",
+      "int8",
+      "w8a8",
+      "quantization",
+      "optimization"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-tensor-parallel-overlap",
+    "type": "wiki-technique",
+    "title": "Tensor Parallelism — Communication/Compute Overlap with HCCL",
+    "path": "wiki/techniques/tensor-parallel-overlap.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "tensor-parallel-overlap",
+      "hccl",
+      "communication",
+      "optimization"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-tiling-strategy",
+    "type": "wiki-technique",
+    "title": "Tiling Strategy — Host-Side Tiling and Auto-Tiling",
+    "path": "wiki/techniques/tiling-strategy.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "tiling-strategy",
+      "tiling",
+      "optimization",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "gemm",
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-workspace-management",
+    "type": "wiki-technique",
+    "title": "Workspace Management — UB Budgeting and GM Scratch Tensors",
+    "path": "wiki/techniques/workspace-management.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "workspace-management",
+      "memory",
+      "ub",
+      "optimization"
+    ],
+    "kernel_types": [
+      "matmul",
+      "attention",
+      "layernorm"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "tool-aoe-autotuning",
+    "type": "wiki-tool",
+    "title": "Auto-Tuning with AOE",
+    "path": "wiki/tools/aoe-autotuning.md",
+    "architectures": [],
+    "tags": [
+      "autotuning"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "tool-camodel-simulator",
+    "type": "wiki-tool",
+    "title": "Ascend Simulator (Camodel)",
+    "path": "wiki/tools/camodel-simulator.md",
+    "architectures": [],
+    "tags": [
+      "simulator"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "tool-msprof-guide",
+    "type": "wiki-tool",
+    "title": "MindStudio Profiling (msprof) Deep Dive",
+    "path": "wiki/tools/msprof-guide.md",
+    "architectures": [],
+    "tags": [
+      "profiling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-language-triton-ascend",
+    "type": "wiki-language",
+    "title": "Triton for Ascend: Language Guide & Differences",
+    "path": "wiki/languages/triton-ascend-guide.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "triton",
+      "ascendc",
+      "ptx",
+      "python"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-pattern-tque-deadlock",
+    "type": "wiki-pattern",
+    "title": "TQue Deadlock Pattern in Ascend C",
+    "path": "wiki/patterns/tque-deadlock.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "instruction-queue",
+      "pipeline-scheduling",
+      "ascendc"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-technique-triton-ascend-opt",
+    "type": "wiki-technique",
+    "title": "Triton Optimization for Ascend NPUs",
+    "path": "wiki/techniques/triton-ascend-optimization.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "triton",
+      "pipeline-scheduling",
+      "cube-unit",
+      "unified-buffer"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  }
+]

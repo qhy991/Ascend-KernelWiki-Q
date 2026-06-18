@@ -4,6 +4,20 @@
 Symptom → Pattern → Technique → Solution
 
 
+### Format-Conversion Overhead — Excess ND<->NZ Transposes
+
+- ID: `pattern-format-conversion-overhead`
+- Path: `wiki/patterns/format-conversion-overhead.md`
+- Tags: repeated ND->NZ conversion every step, Vector unit busy transposing not computing, weights re-converted each forward pass, high MTE traffic for layout change
+- Related: `technique-format-conversion`, `hw-nz-format`, `pattern-nz-format-traps`
+
+### Host-Dispatch-Bound Kernel — Launch Overhead Dominates
+
+- ID: `pattern-host-dispatch-bound`
+- Path: `wiki/patterns/host-dispatch-bound.md`
+- Tags: NPU idle gaps between kernels in msprof timeline, small per-op device time but high end-to-end latency, high aclrt host API time, throughput barely improves with larger batch
+- Related: `lang-ascendcl-host-guide`, `technique-tiling-strategy`, `pattern-pipeline-stall`
+
 ### Low Cube Utilization — Diagnosis and Resolution
 
 - ID: `pattern-low-cube-utilization`
@@ -49,6 +63,13 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-scalar-bottleneck`
 - Path: `wiki/patterns/scalar-bottleneck.md`
 - Tags: pipeline
+
+### Tiling Too Small — Under-Utilized Cube and MTE
+
+- ID: `pattern-tiling-too-small`
+- Path: `wiki/patterns/tiling-too-small.md`
+- Tags: Cube utilization low despite a compute-bound shape, many short MTE transfers, tile dims below the 16x16 fractal, kernel time dominated by loop and sync overhead
+- Related: `pattern-low-cube-utilization`, `technique-tiling-strategy`, `hw-cube-unit`
 
 ### UB OOM (Unified Buffer Overflow)
 

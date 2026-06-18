@@ -1,8 +1,10 @@
 # Knowledge cutoff date for Ascend-KernelWiki-Q
 # Sources captured after this date are considered "new" and need review
 
-cutoff_date: "2026-06-13"
+cutoff_date: "2026-06-14"
 cann_versions:
+  - "8.1"
+  - "8.0.0"
   - "8.0.RC2"
   - "8.0"
   - "7.0.1"

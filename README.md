@@ -12,16 +12,16 @@ Ascend-KernelWiki-Q/
 │   ├── aliases.yaml      # Term alias mappings
 │   └── refresh-cutoff.yaml
 ├── sources/        # Raw data (docs, blogs, PRs)
-│   ├── docs/             # Official documentation
-│   ├── blogs/            # Community posts and tutorials
-│   └── prs/              # PR analysis (future)
+│   ├── docs/             # Official documentation (17)
+│   ├── blogs/            # Community posts and tutorials (9)
+│   └── prs/              # PR analysis (7: ascend-pytorch, ascend-samples, sgl-kernel-npu, vllm-ascend, catlass)
 ├── wiki/           # Synthesized knowledge
-│   ├── hardware/         # Hardware features (Cube, Vector, UB, ...)
-│   ├── techniques/       # Optimization patterns
-│   ├── kernels/          # Kernel case studies
-│   ├── languages/        # Programming guides (AscendC, TBE)
-│   ├── migration/        # CUDA→AscendC migration guides
-│   └── patterns/         # Problem→solution patterns (future)
+│   ├── hardware/         # Hardware features (Cube, Vector, Scalar, UB, L1/L0, MTE, NZ, HCCS)
+│   ├── techniques/       # Optimization techniques
+│   ├── kernels/          # Kernel case studies (AscendC, TIK, aclnn, CATLASS)
+│   ├── languages/        # Programming guides (AscendC, TIK, aclnn, AscendCL, torch_npu, MindSpore, TBE)
+│   ├── migration/        # CUDA/Triton/CUTLASS → Ascend migration guides
+│   └── patterns/         # Problem→solution diagnosis patterns
 ├── queries/        # Auto-generated indices
 ├── scripts/        # Tooling
 │   ├── validate.py       # Schema validation
@@ -49,14 +49,24 @@ python3 scripts/query.py --technique pipeline-scheduling
 
 | Category | Count | Key Topics |
 |----------|-------|------------|
-| Hardware | 5 | Cube unit, Vector unit, UB, Memory hierarchy, Instruction queues |
-| Techniques | 8 | Pipeline scheduling, Double buffering, NZ tiling, Cube/Vector overlap, Format conversion, Bank conflicts, Data reuse, HCCL |
-| Kernels | 10 | Matmul, Grouped GEMM, Flash Attention, Softmax, MoE, LayerNorm/RMSNorm, Reduction, Elementwise, Embedding, Conv |
-| Patterns | 4 | Memory-bound, Low Cube utilization, NZ format traps, Pipeline stall |
-| Languages | 2 | AscendC guide, TBE-DSL (deprecated) |
-| Migration | 6 | CUDA→AscendC, Memory mapping, API equivalents, Triton→AscendC, TBE→AscendC, CUTLASS→Catlass |
-| Sources | 18 | Official docs (10) + Community blogs (5) + PR sources (3) |
-| **Total** | **53** | **All 9 page types populated, 0 validation errors** |
+| Hardware | 10 | Cube, Vector, Scalar units, UB, L1/L0, MTE, NZ format, Instruction queues, HCCS, Memory hierarchy |
+| Techniques | 15 | Pipeline scheduling, Double buffering, NZ tiling, Cube/Vector overlap, Format conversion, Bank conflicts, Data reuse, HCCL, Tiling strategy, Online softmax, Atomic accumulation, Workspace mgmt, KV-cache paging, Tensor-parallel overlap, INT8 quant |
+| Kernels | 19 | Matmul, Grouped/CATLASS GEMM, Flash & Paged Attention, Softmax, MoE, Layer/RMSNorm, RoPE, SwiGLU, Top-K, Quant matmul (W8A8), Reduction, Elementwise/Embedding/Conv, TIK add, aclnn add |
+| Patterns | 7 | Memory-bound, Low Cube util, NZ traps, Pipeline stall, Host-dispatch-bound, Format-conversion overhead, Tiling too small |
+| Languages | 7 | AscendC, TBE-DSL, TIK (Python), aclnn (C++), AscendCL host (C/C++), PyTorch torch_npu, MindSpore |
+| Migration | 9 | CUDA→AscendC, Memory mapping, API equivalents, Triton→AscendC, TBE→AscendC, CUTLASS→Catlass, CUDA runtime→AscendCL, cuBLAS/cuDNN→aclnn, PyTorch CUDA→NPU |
+| Sources | 33 | Official docs (17) + Community blogs (9) + PR sources (7: ascend-pytorch, ascend-samples, sgl-kernel-npu, vllm-ascend ×2, catlass) |
+| **Total** | **100** | **All 9 page types populated, 0 validation errors / 0 warnings** |
+
+### Languages covered (operator authoring + host orchestration)
+
+| Language | Pages | Representative content |
+|----------|-------|------------------------|
+| AscendC (C/C++ kernel) | 28 | Matmul, attention, norms, RoPE, SwiGLU, quant matmul |
+| Python (`torch_npu`, MindSpore, TIK, vLLM) | 12 | torch_npu custom ops, MindSpore AOT, W8A8, paged attention |
+| C++ host (aclnn, AscendCL, CATLASS) | 11 | Two-phase aclnn calls, ACL runtime, template GEMM |
+| TIK (low-level Python) | 3 | Vector add & softmax operators, TIK API reference |
+| TBE-DSL (deprecated) | 1 | Legacy high-level DSL |
 
 ## Architecture Mapping (CUDA → Ascend)
 

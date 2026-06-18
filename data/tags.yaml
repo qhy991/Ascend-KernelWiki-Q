@@ -99,6 +99,27 @@ techniques:
   format-conversion:
     description: "ND↔NZ format conversion optimization to minimize overhead"
     related_hw: [nz-format, nd-format, vector-unit]
+  tiling-strategy:
+    description: "Host-side tiling and auto-tiling: per-core block dims and tile sizes that fit UB/L1/L0"
+    related_hw: [unified-buffer, l1-buffer, cube-unit]
+  online-softmax:
+    description: "Streaming numerically-stable softmax (running max/sum) for flash and paged attention"
+    related_hw: [vector-unit, unified-buffer]
+  atomic-accumulation:
+    description: "SetAtomicAdd accumulation to GM for split-K GEMM and cross-core reductions"
+    related_hw: [global-memory, mte, cube-unit]
+  workspace-management:
+    description: "UB budgeting and GM scratch (workspace) tensor sizing across kernel phases"
+    related_hw: [unified-buffer, global-memory, l1-buffer]
+  kv-cache-paging:
+    description: "Block-table KV cache memory management for NPU inference (paged attention)"
+    related_hw: [global-memory, unified-buffer, mte]
+  tensor-parallel-overlap:
+    description: "Overlapping HCCL AllReduce/ReduceScatter with Cube matmul in tensor parallelism"
+    related_hw: [hccs, cube-unit, global-memory]
+  quantization-int8:
+    description: "W8A8 INT8: per-token activation + per-channel weight quant, INT8 Cube matmul + dequant"
+    related_hw: [cube-unit, vector-unit]
 
 kernel_types:
   - matmul
@@ -115,6 +136,11 @@ kernel_types:
   - conv
   - embedding
   - activation
+  - rope
+  - swiglu
+  - topk
+  - paged-attention
+  - quant-matmul
 
 languages:
   - ascendc
@@ -144,3 +170,15 @@ tracked_repos:
     name: CANN-community
     description: "CANN community edition"
     url: https://gitee.com/ascend/CANN-community
+  - org: vllm-project
+    name: vllm-ascend
+    description: "vLLM Ascend NPU backend (paged attention, custom AscendC kernels)"
+    url: https://github.com/vllm-project/vllm-ascend
+  - org: Ascend
+    name: catlass
+    description: "CUTLASS-style C++ template GEMM library for Ascend"
+    url: https://gitee.com/ascend/catlass
+  - org: Ascend
+    name: cann-ops-adv
+    description: "Advanced CANN operators (flash/incre attention, fused ops)"
+    url: https://gitee.com/ascend/cann-ops-adv

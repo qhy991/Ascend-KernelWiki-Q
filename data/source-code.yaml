@@ -1,0 +1,862 @@
+source_code:
+  - id: code-ascend-samples-operator-ascendc
+    slug: operator-ascendc
+    repo_key: ascend-samples
+    title: "Ascend Samples — AscendC Operator Examples"
+    repo: Ascend/samples
+    path: operator/ascendc
+    url: https://gitee.com/ascend/samples/tree/master/operator/ascendc
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [samples, ascendc, operator, tutorial]
+    kernel_types: [elementwise, matmul, reduce, softmax]
+    languages: [ascendc, cpp]
+    hardware_features: [vector-unit, cube-unit, unified-buffer, mte]
+    techniques: [pipeline-scheduling, tiling-strategy]
+    summary: "Official Ascend samples directory for AscendC custom operators. It is the primary code evidence for class-style Init/Process kernels, GM/UB movement, TPipe/TQue staging, and build/run scaffolding across simple vector and Cube-oriented samples."
+
+  - id: code-ascend-samples-aclnn
+    slug: aclnn-samples
+    repo_key: ascend-samples
+    title: "Ascend Samples — aclnn Single-Operator Invocation"
+    repo: Ascend/samples
+    path: operator/aclnn
+    url: https://gitee.com/ascend/samples/tree/master/operator/aclnn
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [samples, aclnn, cpp, operator]
+    kernel_types: [matmul, softmax, layernorm, elementwise]
+    languages: [cpp]
+    hardware_features: [global-memory, cube-unit, vector-unit]
+    techniques: [workspace-management]
+    summary: "Official samples for calling aclnn operators from host C++ code. This path provides code evidence for the two-phase GetWorkspaceSize/execute pattern, explicit workspace allocation, tensor descriptor creation, and stream-based operator launch."
+
+  - id: code-ascend-samples-acl-runtime
+    slug: acl-runtime-samples
+    repo_key: ascend-samples
+    title: "Ascend Samples — AscendCL Runtime Examples"
+    repo: Ascend/samples
+    path: cplusplus/level1_single_api
+    url: https://gitee.com/ascend/samples/tree/master/cplusplus/level1_single_api
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [samples, ascendcl, runtime, cpp]
+    languages: [cpp]
+    hardware_features: [global-memory, event-sync]
+    techniques: [workspace-management, pipeline-scheduling]
+    summary: "Official C++ samples for low-level AscendCL APIs. These examples anchor host runtime evidence for device/context setup, stream creation, memory allocation, memcpy, event synchronization, and lifecycle cleanup."
+
+  - id: code-ascend-samples-hccl
+    slug: hccl-samples
+    repo_key: ascend-samples
+    title: "Ascend Samples — HCCL Communication Examples"
+    repo: Ascend/samples
+    path: cplusplus/level1_single_api/7_dvpp
+    url: https://gitee.com/ascend/samples/tree/master/cplusplus
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [samples, hccl, communication, cpp]
+    languages: [cpp]
+    hardware_features: [hccs, global-memory]
+    techniques: [hccl-optimization, tensor-parallel-overlap]
+    summary: "Official sample-code area that should be expanded into more precise HCCL examples as the distributed-source pass continues. It is a placeholder code-evidence anchor for host-side C++ communication and stream integration around HCCL workflows."
+
+  - id: code-catlass-basic-matmul
+    slug: basic-matmul
+    repo_key: catlass
+    title: "CATLASS Basic Matmul Example"
+    repo: Ascend/catlass
+    path: examples/00_basic_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/00_basic_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, matmul, cpp, ascendc]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, l1-buffer, l0-buffer, nz-format]
+    techniques: [nz-tiling, pipeline-scheduling, double-buffering]
+    summary: "CATLASS basic GEMM example showing the template stack for Cube-unit matmul: architecture tags, operand layouts, L1/L0 tile shapes, block-level MMAD, scheduling, and host-side stream launch."
+
+  - id: code-catlass-group-gemm
+    slug: group-gemm
+    repo_key: catlass
+    title: "CATLASS Group GEMM Example"
+    repo: Ascend/catlass
+    path: examples/16_group_gemm
+    url: https://gitee.com/ascend/catlass/tree/master/examples/16_group_gemm
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, grouped-gemm, moe, cpp]
+    kernel_types: [grouped-gemm, gemm, moe]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, nz-format, l1-buffer, l0-buffer]
+    techniques: [nz-tiling, tiling-strategy, pipeline-scheduling]
+    summary: "CATLASS grouped GEMM example used as code evidence for MoE-style grouped matmul on Ascend. It demonstrates template-based per-group GEMM dispatch and Cube-friendly tile/lifecycle organization."
+
+  - id: code-catlass-block-mmad
+    slug: block-mmad
+    repo_key: catlass
+    title: "CATLASS Block MMAD Components"
+    repo: Ascend/catlass
+    path: include/catlass/gemm/block
+    url: https://gitee.com/ascend/catlass/tree/master/include/catlass/gemm/block
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, matmul, template, cpp]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, l0-buffer, l1-buffer]
+    techniques: [pipeline-scheduling, double-buffering, tiling-strategy]
+    summary: "CATLASS block-level GEMM component directory. This is the code evidence for how CATLASS decomposes matrix multiplication into reusable MMAD blocks, dispatch policies, and tile-shape abstractions."
+
+  - id: code-catlass-layout
+    slug: layout
+    repo_key: catlass
+    title: "CATLASS Layout Types"
+    repo: Ascend/catlass
+    path: include/catlass/layout
+    url: https://gitee.com/ascend/catlass/tree/master/include/catlass/layout
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, layout, nz-format, cpp]
+    kernel_types: [matmul, gemm]
+    languages: [cpp]
+    hardware_features: [nz-format, l1-buffer, l0-buffer]
+    techniques: [format-conversion, nz-tiling]
+    summary: "CATLASS layout abstraction directory. It provides code evidence for how row-major, column-major, and Ascend-specific blocked/NZ layouts are represented in template GEMM kernels."
+
+  - id: code-cann-ops-adv-prompt-flash-attention
+    slug: prompt-flash-attention
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Prompt Flash Attention"
+    repo: Ascend/cann-ops-adv
+    path: src/transformer/prompt_flash_attention
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/transformer/prompt_flash_attention
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [attention, flash-attention, ascendc, inference]
+    kernel_types: [attention, flash-attention]
+    languages: [ascendc, cpp]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, kv-cache-paging, pipeline-scheduling]
+    summary: "Advanced CANN transformer operator source for prompt-phase FlashAttention. This path is code evidence for attention tiling, score/softmax/value pipeline organization, and inference-oriented memory handling on Ascend."
+
+  - id: code-cann-ops-adv-incre-flash-attention
+    slug: incre-flash-attention
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Incremental Flash Attention"
+    repo: Ascend/cann-ops-adv
+    path: src/transformer/incre_flash_attention
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/transformer/incre_flash_attention
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [attention, flash-attention, kv-cache, inference]
+    kernel_types: [attention, flash-attention, paged-attention]
+    languages: [ascendc, cpp]
+    hardware_features: [cube-unit, vector-unit, global-memory, unified-buffer]
+    techniques: [online-softmax, kv-cache-paging, pipeline-scheduling]
+    summary: "Advanced CANN source path for decode/incremental FlashAttention. It anchors evidence for KV-cache reads, small-step decode attention, and mixed Cube/Vector work in autoregressive inference."
+
+  - id: code-cann-ops-adv-fused-infer-attention-score
+    slug: fused-infer-attention-score
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Fused Infer Attention Score"
+    repo: Ascend/cann-ops-adv
+    path: src/transformer/fused_infer_attention_score
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/transformer/fused_infer_attention_score
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [attention, fusion, inference, ascendc]
+    kernel_types: [attention, flash-attention]
+    languages: [ascendc, cpp]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, pipeline-scheduling, data-reuse]
+    summary: "Advanced fused attention-score operator path. This is code evidence for fusing attention score computation, masking, scaling, softmax, and output staging in inference workloads."
+
+  - id: code-cann-ops-adv-grouped-matmul
+    slug: grouped-matmul
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Grouped Matmul"
+    repo: Ascend/cann-ops-adv
+    path: src/matmul/grouped_matmul
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/matmul/grouped_matmul
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [grouped-gemm, matmul, moe, ascendc]
+    kernel_types: [grouped-gemm, gemm, moe, matmul]
+    languages: [ascendc, cpp]
+    hardware_features: [cube-unit, nz-format, l1-buffer, l0-buffer]
+    techniques: [nz-tiling, tiling-strategy, pipeline-scheduling]
+    summary: "Advanced grouped matmul operator source. It is code evidence for MoE expert batching, group list handling, and Cube-unit grouped GEMM execution on Ascend."
+
+  - id: code-cann-ops-adv-matmul
+    slug: matmul
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Matmul Operators"
+    repo: Ascend/cann-ops-adv
+    path: src/matmul
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/matmul
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [matmul, gemm, ascendc, cann]
+    kernel_types: [matmul, gemm, quant-matmul]
+    languages: [ascendc, cpp]
+    hardware_features: [cube-unit, nz-format, l1-buffer, l0-buffer]
+    techniques: [nz-tiling, tiling-strategy, quantization-int8]
+    summary: "Advanced CANN matmul source directory. This path should be mined for standard, quantized, and grouped matmul variants feeding Cube-unit GEMM pages and quant-matmul recipes."
+
+  - id: code-cann-ops-adv-activation
+    slug: activation
+    repo_key: cann-ops-adv
+    title: "CANN Ops Adv — Activation Operators"
+    repo: Ascend/cann-ops-adv
+    path: src/activation
+    url: https://gitee.com/ascend/cann-ops-adv/tree/master/src/activation
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [activation, vector, ascendc, cann]
+    kernel_types: [activation, elementwise]
+    languages: [ascendc, cpp]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [data-reuse, pipeline-scheduling]
+    summary: "Advanced CANN activation operator source directory. It provides code evidence for vector-unit activation kernels, UB staging, and fused epilogue patterns around transformer MLP blocks."
+
+  - id: code-vllm-ascend-csrc
+    slug: csrc
+    repo_key: vllm-ascend
+    title: "vLLM Ascend C++/AscendC Extension Source"
+    repo: vllm-project/vllm-ascend
+    path: csrc
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, ascendc, cpp, inference]
+    kernel_types: [attention, rope, elementwise]
+    languages: [cpp, ascendc, python]
+    hardware_features: [vector-unit, unified-buffer, mte, global-memory]
+    techniques: [pipeline-scheduling, kv-cache-paging]
+    summary: "vLLM Ascend native extension source tree. It is code evidence for binding custom NPU kernels into vLLM, including C++ extension build logic, torch operator registration, and AscendC kernel integration."
+
+  - id: code-vllm-ascend-attention
+    slug: attention
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Attention Backend"
+    repo: vllm-project/vllm-ascend
+    path: vllm_ascend/attention
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/vllm_ascend/attention
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, attention, paged-attention, inference]
+    kernel_types: [attention, paged-attention, flash-attention]
+    languages: [python, cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, global-memory, unified-buffer]
+    techniques: [kv-cache-paging, online-softmax, pipeline-scheduling]
+    summary: "vLLM Ascend attention backend source. It anchors evidence for how vLLM's paged attention abstractions map onto Ascend NPU operators and custom kernels in serving workloads."
+
+  - id: code-vllm-ascend-model-runner
+    slug: model-runner
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Model Runner"
+    repo: vllm-project/vllm-ascend
+    path: vllm_ascend/worker
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/vllm_ascend/worker
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, scheduler, inference, python]
+    kernel_types: [attention, matmul, moe]
+    languages: [python]
+    hardware_features: [global-memory, cube-unit, vector-unit]
+    techniques: [kv-cache-paging, pipeline-scheduling, tensor-parallel-overlap]
+    summary: "vLLM Ascend worker/model-runner source. This path is evidence for request scheduling, execution orchestration, KV-cache management, and how Python control flow invokes NPU kernels in serving."
+
+  - id: code-vllm-ascend-ops
+    slug: ops
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Operator Wrappers"
+    repo: vllm-project/vllm-ascend
+    path: vllm_ascend/ops
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/vllm_ascend/ops
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, operator, python, torch-npu]
+    kernel_types: [matmul, attention, rope, moe]
+    languages: [python, cpp]
+    hardware_features: [cube-unit, vector-unit, global-memory]
+    techniques: [format-conversion, kv-cache-paging, pipeline-scheduling]
+    summary: "vLLM Ascend operator wrapper source. It is evidence for Python-side dispatch to torch_npu and custom kernels, including format preparation, attention/MoE wrappers, and operator availability gates."
+
+  - id: code-vllm-ascend-tests
+    slug: tests
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Kernel and Backend Tests"
+    repo: vllm-project/vllm-ascend
+    path: tests
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/tests
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, tests, inference, python]
+    kernel_types: [attention, matmul, moe, rope]
+    languages: [python]
+    hardware_features: [cube-unit, vector-unit, global-memory]
+    techniques: [kv-cache-paging, format-conversion]
+    summary: "vLLM Ascend test suite source. These tests provide executable evidence for NPU backend behavior, custom kernel correctness, model execution, and regression coverage around serving workloads."
+
+  - id: code-sgl-kernel-npu-csrc
+    slug: csrc
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Native Source"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, npu, ascendc, inference]
+    kernel_types: [attention, matmul, softmax, layernorm]
+    languages: [cpp, ascendc, python]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [pipeline-scheduling, online-softmax, kv-cache-paging]
+    summary: "SGLang NPU native source directory. It should be mined for production inference kernels and binding code used by SGLang's Ascend backend."
+
+  - id: code-sgl-kernel-npu-python
+    slug: python
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Python Package"
+    repo: sgl-project/sgl-kernel-npu
+    path: python
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/python
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, npu, python, inference]
+    kernel_types: [attention, matmul, softmax, layernorm]
+    languages: [python]
+    hardware_features: [cube-unit, vector-unit, global-memory]
+    techniques: [kv-cache-paging, pipeline-scheduling]
+    summary: "SGL Kernel NPU Python package source. This path provides evidence for how native kernels are exposed to serving code and how Python wrappers select Ascend implementations."
+
+  - id: code-sgl-kernel-npu-tests
+    slug: tests
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Tests"
+    repo: sgl-project/sgl-kernel-npu
+    path: tests
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/tests
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, tests, npu, inference]
+    kernel_types: [attention, matmul, softmax, layernorm]
+    languages: [python]
+    hardware_features: [cube-unit, vector-unit, global-memory]
+    techniques: [pipeline-scheduling, online-softmax]
+    summary: "SGL Kernel NPU test source. This is executable evidence for kernel correctness and backend integration around production NPU inference kernels."
+
+  - id: code-catlass-batched-matmul
+    slug: batched-matmul
+    repo_key: catlass
+    title: "CATLASS Batched Matmul Example"
+    repo: Ascend/catlass
+    path: examples/01_batched_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/01_batched_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, batched-matmul, gemm, ascendc]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, l1-buffer, l0-buffer, nz-format]
+    techniques: [nz-tiling, pipeline-scheduling, double-buffering]
+    summary: "CATLASS batched matmul example showing how the GEMM template stack handles a batch dimension while preserving Cube-friendly operand layouts and tiled scheduling."
+
+  - id: code-catlass-matmul-add
+    slug: matmul-add
+    repo_key: catlass
+    title: "CATLASS Matmul Add Example"
+    repo: Ascend/catlass
+    path: examples/03_matmul_add
+    url: https://gitee.com/ascend/catlass/tree/master/examples/03_matmul_add
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, matmul, epilogue, fusion]
+    kernel_types: [matmul, gemm, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, l1-buffer, l0-buffer]
+    techniques: [cube-vector-overlap, data-reuse, pipeline-scheduling]
+    summary: "CATLASS matmul-plus-add example used as code evidence for fused GEMM epilogues, where Cube matmul output is combined with vector-side elementwise work before final storage."
+
+  - id: code-catlass-optimized-matmul
+    slug: optimized-matmul
+    repo_key: catlass
+    title: "CATLASS Optimized Matmul Example"
+    repo: Ascend/catlass
+    path: examples/06_optimized_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/06_optimized_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, optimized-gemm, matmul, ascendc]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, l1-buffer, l0-buffer, unified-buffer]
+    techniques: [pipeline-scheduling, double-buffering, data-reuse]
+    summary: "CATLASS optimized matmul example anchoring higher-performance GEMM variants with explicit scheduling, tile reuse, and buffered movement around Cube computation."
+
+  - id: code-catlass-splitk-matmul
+    slug: splitk-matmul
+    repo_key: catlass
+    title: "CATLASS Split-K Matmul Example"
+    repo: Ascend/catlass
+    path: examples/09_splitk_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/09_splitk_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, split-k, matmul, reduction]
+    kernel_types: [matmul, gemm, reduce]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, global-memory, l1-buffer, l0-buffer]
+    techniques: [atomic-accumulation, tiling-strategy, pipeline-scheduling]
+    summary: "CATLASS Split-K matmul example showing how K-dimension partitioning and accumulation are represented for GEMM shapes that need more parallelism or better tile balance."
+
+  - id: code-catlass-quant-matmul
+    slug: quant-matmul
+    repo_key: catlass
+    title: "CATLASS Quantized Matmul Example"
+    repo: Ascend/catlass
+    path: examples/12_quant_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/12_quant_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, quantization, matmul, ascendc]
+    kernel_types: [quant-matmul, matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, nz-format, l0-buffer]
+    techniques: [quantization-int8, nz-tiling, format-conversion]
+    summary: "CATLASS quantized matmul example for low-precision GEMM flows, including quantized operands, Cube execution, and vector-side scale/dequantization handling."
+
+  - id: code-catlass-mla
+    slug: mla
+    repo_key: catlass
+    title: "CATLASS MLA Example"
+    repo: Ascend/catlass
+    path: examples/19_mla
+    url: https://gitee.com/ascend/catlass/tree/master/examples/19_mla
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, mla, attention, inference]
+    kernel_types: [attention, matmul, flash-attention]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, kv-cache-paging, pipeline-scheduling]
+    summary: "CATLASS MLA example providing code evidence for attention-style matmul pipelines used in inference, including mixed Cube/Vector work and cache-aware data movement."
+
+  - id: code-catlass-flash-attention-infer
+    slug: flash-attention-infer
+    repo_key: catlass
+    title: "CATLASS Flash Attention Inference Example"
+    repo: Ascend/catlass
+    path: examples/23_flash_attention_infer
+    url: https://gitee.com/ascend/catlass/tree/master/examples/23_flash_attention_infer
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, flash-attention, attention, inference]
+    kernel_types: [attention, flash-attention]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, kv-cache-paging, data-reuse]
+    summary: "CATLASS FlashAttention inference example used as source evidence for streaming attention score/value computation and softmax staging on Ascend."
+
+  - id: code-catlass-conv-bias
+    slug: conv-bias
+    repo_key: catlass
+    title: "CATLASS Conv Bias Example"
+    repo: Ascend/catlass
+    path: examples/24_conv_bias
+    url: https://gitee.com/ascend/catlass/tree/master/examples/24_conv_bias
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, convolution, bias, cube]
+    kernel_types: [conv, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, l1-buffer, l0-buffer]
+    techniques: [data-reuse, tiling-strategy, cube-vector-overlap]
+    summary: "CATLASS convolution-plus-bias example anchoring non-GEMM Cube workloads and fused vector epilogue patterns in the Ascend code corpus."
+
+  - id: code-catlass-fp8-matmul
+    slug: fp8-matmul
+    repo_key: catlass
+    title: "CATLASS FP8 Matmul Example"
+    repo: Ascend/catlass
+    path: examples/29_a2_fp8_e4m3_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/29_a2_fp8_e4m3_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, fp8, quantization, matmul]
+    kernel_types: [quant-matmul, matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, l1-buffer, l0-buffer]
+    techniques: [quantization-int8, tiling-strategy, pipeline-scheduling]
+    summary: "CATLASS FP8 E4M3 matmul example documenting low-precision GEMM structure and scale-aware data preparation for Ascend accelerator kernels."
+
+  - id: code-catlass-w8a16-matmul
+    slug: w8a16-matmul
+    repo_key: catlass
+    title: "CATLASS W8A16 Matmul Example"
+    repo: Ascend/catlass
+    path: examples/30_w8a16_matmul
+    url: https://gitee.com/ascend/catlass/tree/master/examples/30_w8a16_matmul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, w8a16, quantization, matmul]
+    kernel_types: [quant-matmul, matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, nz-format, l0-buffer]
+    techniques: [quantization-int8, format-conversion, nz-tiling]
+    summary: "CATLASS W8A16 matmul example used as source evidence for weight-only quantized GEMM and the related layout, scale, and epilogue requirements."
+
+  - id: code-catlass-python-extension
+    slug: python-extension
+    repo_key: catlass
+    title: "CATLASS Python Extension Example"
+    repo: Ascend/catlass
+    path: examples/python_extension
+    url: https://gitee.com/ascend/catlass/tree/master/examples/python_extension
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, python-extension, binding, operator]
+    kernel_types: [matmul, gemm]
+    languages: [python, cpp, ascendc]
+    hardware_features: [cube-unit, global-memory]
+    techniques: [workspace-management, pipeline-scheduling]
+    summary: "CATLASS Python extension example showing how generated or templated Ascend kernels are surfaced through Python bindings for benchmark and application integration."
+
+  - id: code-catlass-shared-lib
+    slug: shared-lib
+    repo_key: catlass
+    title: "CATLASS Shared Library Example"
+    repo: Ascend/catlass
+    path: examples/shared_lib
+    url: https://gitee.com/ascend/catlass/tree/master/examples/shared_lib
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [catlass, shared-library, deployment, cpp]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, global-memory]
+    techniques: [workspace-management, pipeline-scheduling]
+    summary: "CATLASS shared-library example anchoring deployment evidence for packaging Ascend GEMM kernels outside standalone examples."
+
+  - id: code-vllm-ascend-compressor
+    slug: compressor
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Attention Compressor Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/attention/compressor
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/attention/compressor
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, attention, compressor, inference]
+    kernel_types: [attention, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, data-reuse, pipeline-scheduling]
+    summary: "vLLM Ascend compressor custom operator with host and kernel directories, useful as code evidence for attention-side compression and cache preprocessing."
+
+  - id: code-vllm-ascend-fused-gdn-gating
+    slug: fused-gdn-gating
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Fused GDN Gating Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/attention/fused_gdn_gating
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/attention/fused_gdn_gating
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, fused-op, gating, attention]
+    kernel_types: [attention, activation, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [data-reuse, pipeline-scheduling]
+    summary: "vLLM Ascend fused gating operator source that combines attention-adjacent activation and gating work in a custom NPU kernel."
+
+  - id: code-vllm-ascend-inplace-partial-rotary
+    slug: inplace-partial-rotary
+    repo_key: vllm-ascend
+    title: "vLLM Ascend In-place Partial Rotary Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/attention/inplace_partial_rotary_mul
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/attention/inplace_partial_rotary_mul
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, rope, attention, inference]
+    kernel_types: [rope, attention, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [data-reuse, pipeline-scheduling]
+    summary: "vLLM Ascend rotary-position operator used as code evidence for in-place vector transformations on query/key tensors during inference."
+
+  - id: code-vllm-ascend-kv-quant-sparse-attn
+    slug: kv-quant-sparse-attn
+    repo_key: vllm-ascend
+    title: "vLLM Ascend KV Quant Sparse Attention Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/attention/kv_quant_sparse_attn_sharedkv
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/attention/kv_quant_sparse_attn_sharedkv
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, sparse-attention, kv-cache, quantization]
+    kernel_types: [attention, paged-attention, quant-matmul]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, quantization-int8, online-softmax]
+    summary: "vLLM Ascend sparse attention operator over quantized shared KV data, anchoring code evidence for compressed cache reads and quantized attention execution."
+
+  - id: code-vllm-ascend-sparse-flash-attention
+    slug: sparse-flash-attention
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Sparse Flash Attention Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/attention/sparse_flash_attention
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/attention/sparse_flash_attention
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, sparse-attention, flash-attention, inference]
+    kernel_types: [attention, flash-attention, paged-attention]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, kv-cache-paging, pipeline-scheduling]
+    summary: "vLLM Ascend sparse FlashAttention source directory with host/kernel code and examples, useful for mining sparse attention scheduling and softmax patterns."
+
+  - id: code-vllm-ascend-batch-matmul-transpose
+    slug: batch-matmul-transpose
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Batch Matmul Transpose Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/batch_matmul_transpose
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/batch_matmul_transpose
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, matmul, transpose, ascendc]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, nz-format, global-memory]
+    techniques: [format-conversion, tiling-strategy, pipeline-scheduling]
+    summary: "vLLM Ascend batch-matmul-transpose custom operator showing how transposed layouts, tiling metadata, and Cube execution are packaged for serving workloads."
+
+  - id: code-vllm-ascend-grouped-matmul-swiglu-quant
+    slug: grouped-matmul-swiglu-quant
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Grouped Matmul SwiGLU Quant Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/gmm/grouped_matmul_swiglu_quant
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/gmm/grouped_matmul_swiglu_quant
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, grouped-gemm, swiglu, quantization]
+    kernel_types: [grouped-gemm, moe, swiglu, quant-matmul]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, l1-buffer, l0-buffer]
+    techniques: [quantization-int8, cube-vector-overlap, pipeline-scheduling]
+    summary: "vLLM Ascend grouped matmul plus SwiGLU quant operator, serving as code evidence for MoE MLP fusion and low-precision grouped GEMM."
+
+  - id: code-vllm-ascend-matmul-allreduce-rmsnorm
+    slug: matmul-allreduce-rmsnorm
+    repo_key: vllm-ascend
+    title: "vLLM Ascend Matmul AllReduce Add RMSNorm Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/mc2/matmul_allreduce_add_rmsnorm
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/mc2/matmul_allreduce_add_rmsnorm
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, matmul, allreduce, rmsnorm]
+    kernel_types: [matmul, gemm, rmsnorm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, hccs, global-memory]
+    techniques: [tensor-parallel-overlap, hccl-optimization, cube-vector-overlap]
+    summary: "vLLM Ascend MC2 operator fusing matmul, communication, residual add, and RMSNorm; it is source evidence for tensor-parallel overlap around NPU GEMM."
+
+  - id: code-vllm-ascend-mla-preprocess
+    slug: mla-preprocess
+    repo_key: vllm-ascend
+    title: "vLLM Ascend MLA Preprocess Operator"
+    repo: vllm-project/vllm-ascend
+    path: csrc/mla_preprocess
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/mla_preprocess
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, mla, attention, preprocessing]
+    kernel_types: [attention, rope, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, data-reuse, pipeline-scheduling]
+    summary: "vLLM Ascend MLA preprocess operator with host tiling and kernel code, useful for mapping attention preprocessing to vector and memory-transfer behavior."
+
+  - id: code-vllm-ascend-aclnn-adapter
+    slug: aclnn-adapter
+    repo_key: vllm-ascend
+    title: "vLLM Ascend aclnn Torch Adapter"
+    repo: vllm-project/vllm-ascend
+    path: csrc/aclnn_torch_adapter
+    url: https://github.com/vllm-project/vllm-ascend/tree/main/csrc/aclnn_torch_adapter
+    date: "2026-06-18"
+    architectures: [ascend910b]
+    tags: [vllm, aclnn, torch-adapter, operator]
+    kernel_types: [attention, matmul, elementwise]
+    languages: [cpp]
+    hardware_features: [global-memory, cube-unit, vector-unit]
+    techniques: [workspace-management, format-conversion]
+    summary: "vLLM Ascend aclnn Torch adapter source, anchoring code evidence for bridging PyTorch extension calls to CANN aclnn operators and workspace semantics."
+
+  - id: code-sgl-kernel-npu-block-sparse-attention
+    slug: block-sparse-attention
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Block Sparse Attention Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/attentions/csrc/ops/block_sparse_attention
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/attentions/csrc/ops/block_sparse_attention
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, block-sparse-attention, attention, inference]
+    kernel_types: [attention, paged-attention, flash-attention]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, kv-cache-paging, pipeline-scheduling]
+    summary: "SGL Kernel NPU block sparse attention implementation, providing production-style evidence for sparse attention tiling and cache-aware inference kernels."
+
+  - id: code-sgl-kernel-npu-laser-attention
+    slug: laser-attention
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Laser Attention Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/attentions/csrc/ops/laser_attention
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/attentions/csrc/ops/laser_attention
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, laser-attention, attention, inference]
+    kernel_types: [attention, flash-attention]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, global-memory]
+    techniques: [online-softmax, data-reuse, pipeline-scheduling]
+    summary: "SGL Kernel NPU laser attention operator directory anchoring an attention variant with custom host and kernel code for serving workloads."
+
+  - id: code-sgl-kernel-npu-sparse-block-estimate
+    slug: sparse-block-estimate
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Sparse Block Estimate Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/attentions/csrc/ops/sparse_block_estimate
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/attentions/csrc/ops/sparse_block_estimate
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, sparse-attention, block-estimate, inference]
+    kernel_types: [attention, reduce]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [data-reuse, tiling-strategy, pipeline-scheduling]
+    summary: "SGL Kernel NPU sparse block estimation source for attention pruning and block selection, useful as evidence for auxiliary attention kernels."
+
+  - id: code-sgl-kernel-npu-batch-matmul-transpose
+    slug: batch-matmul-transpose
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Batch Matmul Transpose Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/batch_matmul_transpose
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/batch_matmul_transpose
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, matmul, transpose, ascendc]
+    kernel_types: [matmul, gemm]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, nz-format, global-memory]
+    techniques: [format-conversion, tiling-strategy, pipeline-scheduling]
+    summary: "SGL Kernel NPU batch matmul transpose operator with host tiling and kernel directories, anchoring GEMM layout-transform evidence."
+
+  - id: code-sgl-kernel-npu-catlass
+    slug: catlass
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU CATLASS Utility Kernels"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/catlass
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/catlass
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, catlass, matmul, fp8]
+    kernel_types: [matmul, gemm, quant-matmul]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, l1-buffer, l0-buffer]
+    techniques: [quantization-int8, nz-tiling, pipeline-scheduling]
+    summary: "SGL Kernel NPU CATLASS-backed source tree, including GEMM utility code and low-precision matmul components for production inference."
+
+  - id: code-sgl-kernel-npu-assign-cache
+    slug: assign-cache
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Assign Cache Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/assign_cache_op
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/assign_cache_op
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, kv-cache, cache, inference]
+    kernel_types: [attention, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, data-reuse, pipeline-scheduling]
+    summary: "SGL Kernel NPU assign-cache operator providing code evidence for KV-cache write and placement logic around attention-serving pipelines."
+
+  - id: code-sgl-kernel-npu-cache-location-assign
+    slug: cache-location-assign
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Cache Location Assign Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/cache_location_assign
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/cache_location_assign
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, kv-cache, scheduling, inference]
+    kernel_types: [attention, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, tiling-strategy, pipeline-scheduling]
+    summary: "SGL Kernel NPU cache-location assignment operator with tiling metadata, useful for mining serving-side KV-cache placement patterns."
+
+  - id: code-sgl-kernel-npu-lightning-indexer
+    slug: lightning-indexer
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU Lightning Indexer Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/lightning_indexer
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/lightning_indexer
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, indexing, attention, inference]
+    kernel_types: [attention, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, data-reuse, pipeline-scheduling]
+    summary: "SGL Kernel NPU lightning indexer operator, anchoring code evidence for attention index construction and cache-oriented preprocessing."
+
+  - id: code-sgl-kernel-npu-deepep
+    slug: deepep
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU DeepEP Operators"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/deepep/ops
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/deepep/ops
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, deepep, moe, communication]
+    kernel_types: [moe, grouped-gemm, matmul]
+    languages: [cpp, ascendc]
+    hardware_features: [cube-unit, vector-unit, hccs, global-memory]
+    techniques: [tensor-parallel-overlap, hccl-optimization, pipeline-scheduling]
+    summary: "SGL Kernel NPU DeepEP operator source, useful as evidence for MoE dispatch/combine kernels and communication-aware inference execution."
+
+  - id: code-sgl-kernel-npu-mla-preprocess
+    slug: mla-preprocess
+    repo_key: sgl-kernel-npu
+    title: "SGL Kernel NPU MLA Preprocess Operator"
+    repo: sgl-project/sgl-kernel-npu
+    path: csrc/mla_preprocess
+    url: https://github.com/sgl-project/sgl-kernel-npu/tree/main/csrc/mla_preprocess
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [sglang, mla, attention, preprocessing]
+    kernel_types: [attention, rope, elementwise]
+    languages: [cpp, ascendc]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [kv-cache-paging, data-reuse, pipeline-scheduling]
+    summary: "SGL Kernel NPU MLA preprocess source directory, anchoring attention preprocessing and cache-shaping code for serving workloads."

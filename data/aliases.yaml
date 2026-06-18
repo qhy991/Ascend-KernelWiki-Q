@@ -58,3 +58,22 @@ concepts:
   catlass: catlass
   acl: ascendcl
   "ascend computing language": ascendcl
+  aclnn: aclnn
+  "single operator api": aclnn
+  "ascend operator library": aclnn
+  ascendcl: ascendcl
+  pyacl: ascendcl
+  torch_npu: torch-npu
+  "torch npu": torch-npu
+  "pytorch npu": torch-npu
+  mindspore: mindspore
+  vllm: vllm
+  "vllm ascend": vllm
+  w8a8: quantization-int8
+  "int8 quant": quantization-int8
+  qmm: quant-matmul
+  "quant matmul": quant-matmul
+  rope: rope
+  "rotary embedding": rope
+  swiglu: swiglu
+  "paged attention": paged-attention

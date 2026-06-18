@@ -40,8 +40,9 @@ def build_index():
 def main():
     ap = argparse.ArgumentParser(description="Fetch a page by id")
     ap.add_argument("id", help="page id (e.g. hw-cube-unit)")
-    ap.add_argument("--frontmatter", action="store_true", help="print frontmatter only")
+    ap.add_argument("--frontmatter", "--frontmatter-only", dest="frontmatter", action="store_true", help="print frontmatter only")
     ap.add_argument("--field", help="print just one frontmatter field")
+    ap.add_argument("--body-only", action="store_true", help="print markdown body without YAML frontmatter")
     args = ap.parse_args()
     index = build_index()
     if args.id not in index:
@@ -59,6 +60,9 @@ def main():
         return 0
     if args.frontmatter:
         print(yaml.safe_dump(fm, sort_keys=False).strip())
+        return 0
+    if args.body_only:
+        print(body.strip())
         return 0
     print(f"# Path: {path.relative_to(ROOT)}\n")
     print(yaml.safe_dump(fm, sort_keys=False).strip())

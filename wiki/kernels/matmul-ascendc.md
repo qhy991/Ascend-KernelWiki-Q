@@ -26,6 +26,38 @@ performance_claims:
     source_id: doc-catlass-framework
 reproducibility: snippet
 techniques: [pipeline-scheduling, nz-tiling, double-buffering]
+operator_recipe:
+  operator: matmul
+  dtype: [fp16, bf16]
+  layout: [ND, FRACTAL_NZ]
+  shape_class: [large-square, batched, compute-bound]
+  memory_path:
+    global_memory: [A, B, C]
+    onchip_buffers: [UB, L1, L0A, L0B, L0C]
+    data_formats: [ND-input, FRACTAL_NZ-internal]
+  parallelism:
+    granularity: output tiles over M and N
+    block_dim: AI Cube core count
+    sync_scope: per-AICore independent output tile
+  instruction_family: [Mmad, Matmul]
+  library_backend: [AscendC Matmul, CATLASS]
+  tiling:
+    tile_axes: [M, N, K]
+    tile_granularity: L1 block tiles and L0 Cube fragments
+    constraints: [N-and-K-multiple-of-16, UB-L1-L0-capacity]
+  pipeline:
+    stages: [CopyIn, Mmad, CopyOut]
+    queues: [MTE, Cube, Vector]
+    overlap: double-buffered A/B tiles hide DataCopy behind Cube compute
+  aicore_mapping:
+    block_dim: aicCoreNum
+    scheduling: block swizzle partitions MxN output tiles across AI Cube cores
+  data_movement:
+    apis: [DataCopy, LoadData]
+    path: "GM -> UB/L1 -> L0A/L0B -> L0C -> GM"
+  compute_path:
+    units: [Cube Unit]
+    primitives: [Matmul, Mmad]
 ---
 
 # AscendC GEMM Implementation

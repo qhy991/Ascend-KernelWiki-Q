@@ -1,0 +1,396 @@
+source_docs:
+  - id: doc-ascendc-kernel-launch
+    slug: ascendc-kernel-launch
+    title: "Ascend C Kernel Launch Operator Project"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/opdevg/Ascendcopdevg/atlas_ascendc_10_0056.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, cpp, operator, cann]
+    hardware_features: [global-memory, unified-buffer, cube-unit, vector-unit]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official CANN operator-development guide for the kernel launch project. It describes the project structure used to build and run vector, tiling-enabled vector, cube, and vector+cube fusion operator samples, including the CMake-based development flow, kernel launch configuration, debugging hooks, and profiling integration."
+
+  - id: doc-ascendc-vector-programming
+    slug: ascendc-vector-programming
+    title: "Ascend C Vector Operator Implementation"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/opdevg/Ascendcopdevg/atlas_ascendc_10_0033.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, vector, operator, cann]
+    hardware_features: [vector-unit, unified-buffer, global-memory, mte]
+    techniques: [pipeline-scheduling, data-reuse]
+    confidence: source-reported
+    summary: "Official vector-programming workflow for implementing an Ascend C operator. The guide walks through operator analysis, kernel function definition, class-style Init/Process implementation, GM-to-UB movement with DataCopy, vector compute APIs, and queue-based EnQue/DeQue tensor flow."
+
+  - id: doc-ascendc-api-overview
+    slug: ascendc-api-overview
+    title: "Ascend C Operator Development API Overview"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, api, operator, cann]
+    hardware_features: [cube-unit, vector-unit, unified-buffer, mte]
+    techniques: [tiling-strategy, pipeline-scheduling]
+    confidence: source-reported
+    summary: "Official API overview for Ascend C class libraries. It groups the API surface into high-level compute APIs such as Matmul and Softmax, host-side tiling and prototype registration APIs, platform information APIs, and operator debugging helpers including DumpTensor, printf, assert, Trap, and CPU debug entry points."
+
+  - id: doc-ascendc-tilingdata-registration
+    slug: ascendc-tilingdata-registration
+    title: "Ascend C TilingData Structure Registration"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_1006.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, tiling, cpp, operator, cann]
+    hardware_features: [global-memory, unified-buffer]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official API reference for registering a TilingData structure and binding it to a custom operator. This source is important for host/kernel contracts because the generated tiling object is how shape-dependent tile parameters are serialized for the device kernel."
+
+  - id: doc-ascendc-tque
+    slug: ascendc-tque
+    title: "Ascend C TQue Memory Queue API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0137.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, api, memory, queue]
+    hardware_features: [unified-buffer, instruction-queue, event-sync]
+    techniques: [pipeline-scheduling, double-buffering]
+    confidence: source-reported
+    summary: "Official TQue reference for queue-managed LocalTensor lifetimes. It documents the AllocTensor, EnQue, DeQue, and FreeTensor pattern used to pass tensors between CopyIn, Compute, and CopyOut stages in Ascend C kernels."
+
+  - id: doc-ascendc-tpipe-initbuffer
+    slug: ascendc-tpipe-initbuffer
+    title: "Ascend C TPipe InitBuffer API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0110.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, api, memory, pipeline]
+    hardware_features: [unified-buffer, instruction-queue]
+    techniques: [pipeline-scheduling, double-buffering, workspace-management]
+    confidence: source-reported
+    summary: "Official TPipe InitBuffer reference for allocating queue buffers and slicing LocalTensor storage. This source anchors UB budgeting and queue depth decisions for CopyIn/Compute/CopyOut pipelines."
+
+  - id: doc-ascendc-layernorm-api
+    slug: ascendc-layernorm-api
+    title: "Ascend C LayerNorm High-Level API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0797.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, layernorm, operator, cann]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [tiling-strategy, data-reuse]
+    confidence: source-reported
+    summary: "Official high-level LayerNorm API page. The sample kernel passes GM addresses plus a tiling buffer, uses GET_TILING_DATA, initializes a KernelLayernorm instance, and runs Process(), making it useful evidence for normalization-kernel recipes."
+
+  - id: doc-ascendc-matmul-tiling-bias
+    slug: ascendc-matmul-tiling-bias
+    title: "Ascend C Matmul Tiling EnableBias API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0683.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, matmul, tiling, cann]
+    hardware_features: [cube-unit, l1-buffer, l0-buffer, unified-buffer]
+    techniques: [tiling-strategy, nz-tiling]
+    confidence: source-reported
+    summary: "Official Matmul tiling-class API reference covering bias enablement and shape/buffer-space setup before GetTiling. This source supports GEMM recipe fields such as bias participation, original shape, Cube format, data type, and tiling-data generation."
+
+  - id: doc-ascendcl-runtime-api
+    slug: ascendcl-runtime-api
+    title: "AscendCL Runtime Management API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/appdevgapi/aclcppdevg_03_0126.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendcl, runtime, cpp, cann]
+    hardware_features: [global-memory, event-sync]
+    techniques: [pipeline-scheduling]
+    confidence: source-reported
+    summary: "Official AscendCL runtime API reference page. It documents stream-queued asynchronous work such as aclrtLaunchCallback and related synchronization requirements, which are relevant for host-side dispatch and stream orchestration around custom operators."
+
+  - id: doc-ascendcl-memory-management
+    slug: ascendcl-memory-management
+    title: "AscendCL Runtime Memory Management"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/appdevgapi/aclcppdevg_03_0102.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendcl, memory, runtime, cann]
+    hardware_features: [global-memory]
+    techniques: [workspace-management]
+    confidence: source-reported
+    summary: "Official AscendCL runtime memory-management reference. The page documents host-memory lifetime restrictions such as aclrtFreeHost only releasing memory allocated by aclrtMallocHost and not performing implicit device or stream synchronization."
+
+  - id: doc-hccl-overview
+    slug: hccl-overview
+    title: "HCCL Collective Communication Overview"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/hcclug/hcclug/hcclug_000001.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [hccl, communication, distributed, cann]
+    hardware_features: [hccs, global-memory]
+    techniques: [hccl-optimization, tensor-parallel-overlap]
+    confidence: source-reported
+    summary: "Official HCCL overview. It describes AllReduce, Broadcast, AllGather, ReduceScatter, AlltoAll, Ring, Mesh, and Halving-Doubling algorithms over HCCS, RoCE, and PCIe links, with C and Python APIs for framework adaptation."
+
+  - id: doc-hccl-api-reference
+    slug: hccl-api-reference
+    title: "HCCL C API Reference"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/hcclapiref/hcclcpp_07_0043.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [hccl, cpp, communication, cann]
+    hardware_features: [hccs]
+    techniques: [hccl-optimization]
+    confidence: source-reported
+    summary: "Official HCCL API reference. It includes communicator data types such as HcclRootInfo and collective API entries including HcclAllReduce, making it source evidence for distributed operator and tensor-parallel overlap pages."
+
+  - id: doc-msprof-profiling-overview
+    slug: msprof-profiling-overview
+    title: "Ascend Profiling Tool Overview"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/devaids/profiling/atlasprofiling_16_0001.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [profiling, msprof, performance, cann]
+    hardware_features: [cube-unit, vector-unit, mte, global-memory]
+    techniques: [pipeline-scheduling, data-reuse]
+    confidence: source-reported
+    summary: "Official profiling overview for Ascend AI Processor performance tuning. It explains sampling and analysis of execution-stage metrics, use of msprof CLI in offline inference, framework profiler integration for training, and the profile parse/export flow."
+
+  - id: doc-msdebug-overview
+    slug: msdebug-overview
+    title: "msDebug Operator Debugging Overview"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/devaids/optool/atlasopdev_16_0062.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [debugging, msdebug, operator, cann]
+    hardware_features: [cube-unit, vector-unit, unified-buffer]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official msDebug overview for debugging Ascend operators, including Ascend C vector, cube, and mixed fused operators. It covers breakpoint setting, memory and variable printing, step-by-step execution, interruptions, and core switching."
+
+  - id: doc-bisheng-compiler-quickstart
+    slug: bisheng-compiler-quickstart
+    title: "BiSheng Compiler Quick Start for Ascend C Operators"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/opdevg/BishengCompiler/atlas_bisheng_10_0002.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [bisheng, compiler, ascendc, cann]
+    hardware_features: [cube-unit, vector-unit]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official BiSheng Compiler quick start. It documents CANN environment configuration, the ccec compiler location, and a VecAdd Ascend C example that uses the kernel launch syntax to call an AI Core kernel from host code."
+
+  - id: doc-cann-quickstart-index
+    slug: cann-quickstart-index
+    title: "CANN 8.0 Quick Start and Documentation Map"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/quickstart/index/index.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [cann, quickstart, operator, documentation]
+    hardware_features: [cube-unit, vector-unit, global-memory]
+    techniques: [tiling-strategy, hccl-optimization]
+    confidence: source-reported
+    summary: "Official CANN quick-start index for application development, operator development, graph development, HCCL, development tools, profiling, migration tools, model accuracy analysis, and operator/model query tools. This is a map source for planning future Ascend evidence collection."
+
+  - id: doc-ascendc-matmul-regist-obj
+    slug: ascendc-matmul-regist-obj
+    title: "Ascend C REGIST_MATMUL_OBJ API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0628.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, matmul, api, cann]
+    hardware_features: [cube-unit, l1-buffer, l0-buffer, unified-buffer]
+    techniques: [tiling-strategy, workspace-management]
+    confidence: source-reported
+    summary: "Official Matmul API reference for REGIST_MATMUL_OBJ. It documents how Matmul objects are initialized with TPipe, system workspace, and optional TCubeTiling data, including the limit on the number of Matmul objects and the relationship between tiling and InitBuffer order."
+
+  - id: doc-ascendc-matmul-end
+    slug: ascendc-matmul-end
+    title: "Ascend C Matmul End API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0645.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, matmul, api, cann]
+    hardware_features: [cube-unit, l0-buffer, l1-buffer]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official Matmul high-level API reference for finalizing a single-core matrix multiplication. The page documents the End function that must be called after Matmul computation such as IterateAll, making it source evidence for Matmul object lifecycle recipes."
+
+  - id: doc-ascendc-matmul-getbatchc
+    slug: ascendc-matmul-getbatchc
+    title: "Ascend C Matmul GetBatchC API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0668.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, matmul, batched, cann]
+    hardware_features: [cube-unit, l0-buffer, l1-buffer]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official Matmul API page for obtaining a batched C matrix slice after IterateNBatch. It is relevant for batched GEMM and grouped computation recipes that need to reason about per-batch C output tiles."
+
+  - id: doc-ascendc-softmax-api
+    slug: ascendc-softmax-api
+    title: "Ascend C SoftMax High-Level APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, softmax, api, cann]
+    hardware_features: [vector-unit, unified-buffer]
+    techniques: [online-softmax, data-reuse]
+    confidence: source-reported
+    summary: "Official Ascend C API overview listing SoftMax, SimpleSoftMax, SoftmaxFlash, SoftmaxFlashV2, and SoftmaxGrad. This source anchors softmax and attention recipes that depend on running max/sum and vector-unit normalization behavior."
+
+  - id: doc-ascendc-softmax-tiling
+    slug: ascendc-softmax-tiling
+    title: "Ascend C SoftMax Tiling APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0694.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, softmax, tiling, cann]
+    hardware_features: [vector-unit, unified-buffer]
+    techniques: [online-softmax, tiling-strategy]
+    confidence: source-reported
+    summary: "Official softmax tiling API area documenting tile-range controls and related high-level API tiling pages. It supports wiki synthesis for softmax, FlashAttention-style online softmax, and vector-kernel tiling constraints."
+
+  - id: doc-ascendc-sort32-api
+    slug: ascendc-sort32-api
+    title: "Ascend C Sort32 API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0231.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, sort, topk, api]
+    hardware_features: [vector-unit, unified-buffer, global-memory]
+    techniques: [data-reuse]
+    confidence: source-reported
+    summary: "Official Sort32 reference and sample. It shows GM buffers bound with GlobalTensor, data staged through TQue and DataCopy, Sort32 execution on LocalTensor data, and CopyOut back to global memory."
+
+  - id: doc-ascendc-topk-api-family
+    slug: ascendc-topk-api-family
+    title: "Ascend C TopK API Family"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0645.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, topk, sort, api]
+    hardware_features: [vector-unit, unified-buffer]
+    techniques: [data-reuse, tiling-strategy]
+    confidence: source-reported
+    summary: "Official Ascend C API area listing TopK and TopK tiling alongside sorting APIs. This source is useful evidence for top-k operator pages, ranking kernels, and decode-time token selection workflows."
+
+  - id: doc-ascendc-tanh-api
+    slug: ascendc-tanh-api
+    title: "Ascend C Tanh API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0489.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, activation, api, cann]
+    hardware_features: [vector-unit, unified-buffer]
+    techniques: [workspace-management]
+    confidence: source-reported
+    summary: "Official high-level Tanh API reference. The API uses LocalTensor operands and a shared temporary buffer allocated through TPipe/TQue, making it evidence for activation kernels that need explicit UB scratch management."
+
+  - id: doc-ascendc-axpy-template-sample
+    slug: ascendc-axpy-template-sample
+    title: "Ascend C Axpy Template Sample"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0064.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, elementwise, vector, api]
+    hardware_features: [vector-unit, unified-buffer, global-memory, mte]
+    techniques: [pipeline-scheduling, data-reuse]
+    confidence: source-reported
+    summary: "Official template sample for triple-operand scalar/vector instructions. It shows a complete KernelAxpy class with GlobalTensor binding, TPipe/TQue buffer setup, CopyIn/Compute/CopyOut stages, DataCopy, Axpy, EnQue/DeQue, and FreeTensor."
+
+  - id: doc-ascendc-datacopypad-api
+    slug: ascendc-datacopypad-api
+    title: "Ascend C DataCopyPad API"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, datacopy, memory, api]
+    hardware_features: [mte, unified-buffer, global-memory]
+    techniques: [format-conversion, data-reuse]
+    confidence: source-reported
+    summary: "Official Ascend C API overview entry for DataCopyPad, which enables non-aligned data movement and padding behavior. This is relevant for operators whose tile edges do not align to native transfer granularity."
+
+  - id: doc-ascendc-synchronization-control
+    slug: ascendc-synchronization-control
+    title: "Ascend C Synchronization Control APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, synchronization, api, cann]
+    hardware_features: [instruction-queue, event-sync, mte]
+    techniques: [pipeline-scheduling]
+    confidence: source-reported
+    summary: "Official API overview listing SetFlag, WaitFlag, PipeBarrier, DataSyncBarrier, CrossCoreSetFlag, and CrossCoreWaitFlag. These APIs are source evidence for queue ordering, same-pipeline hazards, and cross-core synchronization patterns."
+
+  - id: doc-ascendc-debugging-apis
+    slug: ascendc-debugging-apis
+    title: "Ascend C Debugging Helper APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, debugging, api, cann]
+    hardware_features: [unified-buffer, vector-unit, cube-unit]
+    techniques: [tiling-strategy]
+    confidence: source-reported
+    summary: "Official API overview listing debugging helpers such as DumpTensor, printf, assert, Trap, GetBlockIdx, GetSubBlockIdx, GetTaskRation, and CPU debug APIs. This complements msDebug pages with API-level debugging evidence."
+
+  - id: doc-ascendc-system-variable-apis
+    slug: ascendc-system-variable-apis
+    title: "Ascend C System Variable Access APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, system, api, cann]
+    hardware_features: [scalar-unit, vector-unit]
+    techniques: [pipeline-scheduling]
+    confidence: source-reported
+    summary: "Official API overview listing GetProgramCounter, GetSubBlockNum, GetSubBlockIdx, and GetSystemCycle. These are useful for low-level debugging, timing, and sub-block aware vector-kernel recipes."
+
+  - id: doc-ascendc-atomic-apis
+    slug: ascendc-atomic-apis
+    title: "Ascend C Atomic Operation APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b, ascend310p]
+    tags: [ascendc, atomic, api, cann]
+    hardware_features: [global-memory, mte, vector-unit]
+    techniques: [atomic-accumulation]
+    confidence: source-reported
+    summary: "Official API overview listing SetAtomicMax, SetAtomicMin, SetStoreAtomicConfig, and GetStoreAtomicConfig. These APIs support reduction and split-output recipes that need controlled atomic writes to global memory."
+
+  - id: doc-ascendc-fixpipe-apis
+    slug: ascendc-fixpipe-apis
+    title: "Ascend C Fixpipe and Post-Matmul APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, matmul, quantization, api]
+    hardware_features: [cube-unit, vector-unit, l0-buffer, global-memory]
+    techniques: [quantization-int8, format-conversion]
+    confidence: source-reported
+    summary: "Official API overview entries for Fixpipe, SetFixPipeConfig, SetFixpipeNz2ndFlag, SetFixpipePreQuantFlag, SetFixPipeClipRelu, and SetFixPipeAddr. These APIs are relevant to post-matmul quantization, NZ-to-ND conversion, and fused epilogue behavior."
+
+  - id: doc-ascendc-load-data-apis
+    slug: ascendc-load-data-apis
+    title: "Ascend C LoadData and Sparse Load APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, datacopy, sparse, api]
+    hardware_features: [mte, l1-buffer, l0-buffer, cube-unit]
+    techniques: [data-reuse, format-conversion]
+    confidence: source-reported
+    summary: "Official API overview entries for LoadDataUnzip, LoadDataWithSparse, Load3D setup helpers, and dense/sparse movement into matrix-compute buffers. These sources matter for convolution, sparse matmul, and Cube input preparation pages."
+
+  - id: doc-ascendc-resource-group-apis
+    slug: ascendc-resource-group-apis
+    title: "Ascend C Resource Group and KFC Workspace APIs"
+    url: https://www.hiascend.com/document/detail/en/canncommercial/800/apiref/ascendcopapi/atlasascendc_api_07_0003.html
+    date: "2026-06-18"
+    architectures: [ascend910, ascend910b]
+    tags: [ascendc, synchronization, resource, api]
+    hardware_features: [cube-unit, vector-unit, event-sync]
+    techniques: [pipeline-scheduling, workspace-management]
+    confidence: source-reported
+    summary: "Official API overview entries for CubeResGroupHandle, GroupBarrier, and KfcWorkspace. These APIs are evidence for separated AIC/AIV communication, compute resource grouping, and workspace-managed message areas."

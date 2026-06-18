@@ -65,6 +65,50 @@ def collect_all_ids():
     return ids
 
 
+def validate_operator_recipe(recipe, schemas):
+    """Validate a structured wiki-kernel operator recipe."""
+    errors = []
+    recipe_schema = schemas.get("operator_recipe_schema", {})
+
+    if not isinstance(recipe, dict):
+        return [{"error": "incomplete_operator_recipe", "message": "operator_recipe must be a mapping"}]
+
+    for field in recipe_schema.get("required_fields", []):
+        if field not in recipe:
+            errors.append({
+                "error": "incomplete_operator_recipe",
+                "field": field,
+                "message": f"operator_recipe missing: {field}",
+            })
+
+    for field in recipe_schema.get("list_fields", []):
+        if field in recipe and (not isinstance(recipe[field], list) or not recipe[field]):
+            errors.append({
+                "error": "invalid_operator_recipe_field",
+                "field": field,
+                "message": f"operator_recipe field must be a non-empty list: {field}",
+            })
+
+    for section, required_fields in recipe_schema.get("nested_required_fields", {}).items():
+        value = recipe.get(section)
+        if not isinstance(value, dict):
+            errors.append({
+                "error": "incomplete_operator_recipe",
+                "field": section,
+                "message": f"operator_recipe section must be a mapping: {section}",
+            })
+            continue
+        for field in required_fields:
+            if field not in value:
+                errors.append({
+                    "error": "incomplete_operator_recipe",
+                    "field": f"{section}.{field}",
+                    "message": f"operator_recipe missing: {section}.{field}",
+                })
+
+    return errors
+
+
 def validate_page(filepath, schemas, tags, all_ids):
     """Validate a single page against its schema."""
     errors = []
@@ -111,6 +155,8 @@ def validate_page(filepath, schemas, tags, all_ids):
                 if field not in claim:
                     errors.append({"error": "incomplete_perf_claim", "index": i, "field": field,
                                   "message": f"Performance claim [{i}] missing: {field}"})
+        if "operator_recipe" in fm:
+            errors.extend(validate_operator_recipe(fm["operator_recipe"], schemas))
 
     # Check link integrity (sources and related)
     for field in ["sources", "related"]:

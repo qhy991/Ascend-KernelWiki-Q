@@ -64,6 +64,29 @@ page_types:
       - confidence
       - aliases
 
+  source-code:
+    id_prefix: "code-"
+    description: "Concrete upstream code directories, examples, kernels, or integration files"
+    required_fields:
+      - id
+      - title
+      - type
+      - repo
+      - path
+      - url
+      - source_category
+      - architectures
+      - tags
+      - date
+      - captured_at
+      - confidence
+    optional_fields:
+      - techniques
+      - hardware_features
+      - kernel_types
+      - languages
+      - aliases
+
   wiki-hardware:
     id_prefix: "hw-"
     description: "Hardware feature pages (Cube, Vector, UB, memory hierarchy...)"
@@ -121,6 +144,7 @@ page_types:
       - related
       - techniques
       - aliases
+      - operator_recipe
 
   wiki-pattern:
     id_prefix: "pattern-"
@@ -213,3 +237,44 @@ reproducibility_levels:
     description: "Self-contained buildable example"
   benchmarked:
     description: "Runnable + performance numbers"
+
+operator_recipe_schema:
+  description: "Structured fields that turn a wiki-kernel page into an implementation-oriented Ascend operator recipe"
+  required_fields:
+    - operator
+    - dtype
+    - layout
+    - shape_class
+    - memory_path
+    - parallelism
+    - instruction_family
+    - library_backend
+    - tiling
+    - pipeline
+    - aicore_mapping
+    - data_movement
+    - compute_path
+  list_fields:
+    - dtype
+    - layout
+    - shape_class
+    - instruction_family
+    - library_backend
+  nested_required_fields:
+    memory_path:
+      - global_memory
+      - onchip_buffers
+    tiling:
+      - tile_axes
+      - tile_granularity
+    pipeline:
+      - stages
+    aicore_mapping:
+      - block_dim
+      - scheduling
+    data_movement:
+      - apis
+      - path
+    compute_path:
+      - units
+      - primitives

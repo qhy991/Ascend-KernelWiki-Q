@@ -20,6 +20,20 @@ ROOT = Path(__file__).resolve().parent.parent
 WIKI_DIR = ROOT / "wiki"
 SOURCES_DIR = ROOT / "sources"
 
+# Friendly short names used in README examples, mapped to canonical page types.
+TYPE_ALIASES = {
+    "hardware": "wiki-hardware",
+    "technique": "wiki-technique",
+    "kernel": "wiki-kernel",
+    "pattern": "wiki-pattern",
+    "language": "wiki-language",
+    "migration": "wiki-migration",
+    "pr": "source-pr",
+    "doc": "source-doc",
+    "blog": "source-blog",
+    "code": "source-code",
+}
+
 
 def extract_frontmatter(filepath):
     """Extract YAML frontmatter from a markdown file."""
@@ -98,7 +112,8 @@ def filter_pages(pages, **filters):
         tags = filters["tag"] if isinstance(filters["tag"], list) else [filters["tag"]]
         result = [p for p in result if any(t in p.get("tags", []) for t in tags)]
     if filters.get("type"):
-        result = [p for p in result if p.get("type") == filters["type"]]
+        want = TYPE_ALIASES.get(filters["type"], filters["type"])
+        result = [p for p in result if p.get("type") == want]
     if filters.get("architecture"):
         archs = filters["architecture"] if isinstance(filters["architecture"], list) else [filters["architecture"]]
         result = [p for p in result if any(a in p.get("architectures", []) for a in archs)]
@@ -108,8 +123,25 @@ def filter_pages(pages, **filters):
     if filters.get("kernel_type"):
         kts = filters["kernel_type"] if isinstance(filters["kernel_type"], list) else [filters["kernel_type"]]
         result = [p for p in result if any(kt in p.get("kernel_types", []) for kt in kts)]
+    if filters.get("operator"):
+        operators = filters["operator"] if isinstance(filters["operator"], list) else [filters["operator"]]
+        operator_set = {str(op).lower() for op in operators}
+        result = [
+            p for p in result
+            if operator_set & {
+                str(value).lower()
+                for field in ("kernel_types", "tags")
+                for value in p.get(field, [])
+            }
+            or (
+                isinstance(p.get("operator_recipe"), dict)
+                and str(p["operator_recipe"].get("operator", "")).lower() in operator_set
+            )
+        ]
     if filters.get("confidence"):
         result = [p for p in result if p.get("confidence") == filters["confidence"]]
+    if filters.get("has_recipe"):
+        result = [p for p in result if isinstance(p.get("operator_recipe"), dict)]
     return result
 
 
@@ -153,7 +185,9 @@ def main():
     parser.add_argument("--architecture", "-a", action="append", help="Filter by architecture (ascend910, ascend910b)")
     parser.add_argument("--technique", action="append", help="Filter by technique")
     parser.add_argument("--kernel-type", action="append", help="Filter by kernel type")
+    parser.add_argument("--operator", action="append", help="Common cross-KernelWiki operator filter")
     parser.add_argument("--confidence", help="Filter by confidence level")
+    parser.add_argument("--has-recipe", action="store_true", help="Only show pages with operator_recipe metadata")
     parser.add_argument("--limit", "-n", type=int, default=10, help="Max results")
     parser.add_argument("--verbose", "-v", action="store_true", help="Show content snippets")
 
@@ -162,7 +196,7 @@ def main():
     pages = collect_pages()
 
     # Apply structured filters
-    if args.tag or args.type or args.architecture or args.technique or args.kernel_type or args.confidence:
+    if args.tag or args.type or args.architecture or args.technique or args.kernel_type or args.operator or args.confidence or args.has_recipe:
         results = filter_pages(
             pages,
             tag=args.tag,
@@ -170,7 +204,9 @@ def main():
             architecture=args.architecture,
             technique=args.technique,
             kernel_type=args.kernel_type,
+            operator=args.operator,
             confidence=args.confidence,
+            has_recipe=args.has_recipe,
         )
     elif args.query:
         results = search_keyword(pages, args.query)
