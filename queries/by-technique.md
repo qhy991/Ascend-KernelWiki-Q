@@ -7,11 +7,13 @@
 - [Ascend C Atomic Operation APIs](sources/docs/ascendc-atomic-apis.md)
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md)
 
-## bank-conflict-avoidance (3 pages)
+## bank-conflict-avoidance (5 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md)
 - [UB Bank Conflict Avoidance](wiki/techniques/bank-conflict-avoidance.md)
+- [PR Insight: Ascend/samples #2705](wiki/techniques/pr-samples-2705.md)
+- [PR Insight: Ascend/samples #2706](wiki/techniques/pr-samples-2706.md)
 
 ## cube-group (2 pages)
 
@@ -59,9 +61,15 @@
 
 - [PR Insight: vllm-project/vllm-ascend #8574](wiki/techniques/pr-vllm-ascend-8574.md)
 
-## data-conversion (1 pages)
+## data-distribution (7 pages)
 
-- [PR Insight: Ascend/ModelLink #2938](wiki/techniques/pr-modellink-2938.md)
+- [PR Insight: Ascend/samples #2126](wiki/techniques/pr-samples-2126.md)
+- [PR Insight: Ascend/samples #2293](wiki/techniques/pr-samples-2293.md)
+- [PR Insight: Ascend/samples #2531](wiki/techniques/pr-samples-2531.md)
+- [PR Insight: Ascend/samples #2687](wiki/techniques/pr-samples-2687.md)
+- [PR Insight: Ascend/samples #2717](wiki/techniques/pr-samples-2717.md)
+- [PR Insight: Ascend/samples #2722](wiki/techniques/pr-samples-2722.md)
+- [PR Insight: Ascend/samples #2752](wiki/techniques/pr-samples-2752.md)
 
 ## data-format (1 pages)
 
@@ -75,14 +83,21 @@
 
 - [PR Insight: Ascend/catlass #201](wiki/techniques/pr-catlass-201.md)
 
+## data-management (1 pages)
+
+- [PR Insight: Ascend/samples #1472](wiki/techniques/pr-samples-1472.md)
+
 ## data-movement (3 pages)
 
 - [PR Insight: Ascend/catlass #124](wiki/techniques/pr-catlass-124.md)
 - [PR Insight: Ascend/catlass #127](wiki/techniques/pr-catlass-127.md)
 - [PR Insight: Ascend/catlass #128](wiki/techniques/pr-catlass-128.md)
 
-## data-parallel (8 pages)
+## data-parallel (11 pages)
 
+- [PR Insight: Ascend/ModelLink #2201](wiki/techniques/pr-modellink-2201.md)
+- [PR Insight: Ascend/ModelLink #2202](wiki/techniques/pr-modellink-2202.md)
+- [PR Insight: Ascend/ModelLink #2207](wiki/techniques/pr-modellink-2207.md)
 - [PR Insight: vllm-project/vllm-ascend #10046](wiki/techniques/pr-vllm-ascend-10046.md)
 - [PR Insight: vllm-project/vllm-ascend #10117](wiki/techniques/pr-vllm-ascend-10117.md)
 - [PR Insight: vllm-project/vllm-ascend #10147](wiki/techniques/pr-vllm-ascend-10147.md)
@@ -92,7 +107,23 @@
 - [PR Insight: vllm-project/vllm-ascend #626](wiki/techniques/pr-vllm-ascend-626.md)
 - [PR Insight: vllm-project/vllm-ascend #6715](wiki/techniques/pr-vllm-ascend-6715.md)
 
-## data-reuse (51 pages)
+## data-preprocessing (2 pages)
+
+- [PR Insight: Ascend/ModelLink #2248](wiki/techniques/pr-modellink-2248.md)
+- [PR Insight: Ascend/samples #1486](wiki/techniques/pr-samples-1486.md)
+
+## data-processing (4 pages)
+
+- [PR Insight: Ascend/ModelLink #2527](wiki/techniques/pr-modellink-2527.md)
+- [PR Insight: Ascend/ModelLink #2948](wiki/techniques/pr-modellink-2948.md)
+- [PR Insight: Ascend/samples #2162](wiki/techniques/pr-samples-2162.md)
+- [PR Insight: Ascend/samples #2177](wiki/techniques/pr-samples-2177.md)
+
+## data-reorganization (1 pages)
+
+- [PR Insight: Ascend/samples #2369](wiki/techniques/pr-samples-2369.md)
+
+## data-reuse (50 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -142,13 +173,16 @@
 - [PR Insight: Ascend/cann-ops-adv #266](wiki/techniques/pr-cann-ops-adv-266.md)
 - [PR Insight: Ascend/cann-ops-adv #311](wiki/techniques/pr-cann-ops-adv-311.md)
 - [PR Insight: cann-ops-adv #84](wiki/techniques/pr-cann-ops-adv-84.md)
-- [PR Insight: Ascend/MindSpeed #2757](wiki/techniques/pr-mindspeed-2757.md)
 - [PR Insight: vllm-project/vllm-ascend #204](wiki/techniques/pr-vllm-ascend-204.md)
 - [PR Insight: vllm-project/vllm-ascend #32](wiki/techniques/pr-vllm-ascend-32.md)
 
 ## data-type-handling (1 pages)
 
 - [PR Insight: vllm-project/vllm-ascend #7209](wiki/techniques/pr-vllm-ascend-7209.md)
+
+## data-types (1 pages)
+
+- [PR Insight: Ascend/samples #1155](wiki/techniques/pr-samples-1155.md)
 
 ## double-buffering (25 pages)
 
@@ -178,7 +212,15 @@
 - [PR Insight: sgl-project/sgl-kernel-npu #313](wiki/techniques/pr-sgl-kernel-npu-313.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #314](wiki/techniques/pr-sgl-kernel-npu-314.md)
 
-## format-conversion (26 pages)
+## format-adaptation (1 pages)
+
+- [PR Insight: Ascend/samples #1486](wiki/techniques/pr-samples-1486.md)
+
+## format-control (1 pages)
+
+- [PR Insight: Ascend/ModelLink #2256](wiki/techniques/pr-modellink-2256.md)
+
+## format-conversion (27 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [Understanding FRACTAL_NZ — Ascend's 5D Data Format for Matrix Computation](sources/blogs/nz-format-explained.md)
@@ -201,6 +243,7 @@
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md)
 - [PR Insight: Ascend/catlass #182](wiki/techniques/pr-catlass-182.md)
+- [PR Insight: Ascend/samples #705](wiki/techniques/pr-samples-705.md)
 - [PR Insight: vllm-project/vllm-ascend #1131](wiki/techniques/pr-vllm-ascend-1131.md)
 - [PR Insight: vllm-project/vllm-ascend #1872](wiki/techniques/pr-vllm-ascend-1872.md)
 - [PR Insight: vllm-project/vllm-ascend #2619](wiki/techniques/pr-vllm-ascend-2619.md)
@@ -211,7 +254,7 @@
 
 - [PR Insight: sgl-project/sgl-kernel-npu #79](wiki/techniques/pr-sgl-kernel-npu-79.md)
 
-## hccl-optimization (93 pages)
+## hccl-optimization (95 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
 - [SGL Kernel NPU DeepEP Operators](csrc/deepep/ops)
@@ -226,7 +269,9 @@
 - [PR Insight: Ascend/cann-ops-adv #250](wiki/techniques/pr-cann-ops-adv-250.md)
 - [PR Insight: Ascend/cann-ops-adv #260](wiki/techniques/pr-cann-ops-adv-260.md)
 - [PR Insight: Ascend/cann-ops-adv #293](wiki/techniques/pr-cann-ops-adv-293.md)
-- [PR Insight: Ascend/ModelLink #2985](wiki/techniques/pr-modellink-2985.md)
+- [PR Insight: Ascend/samples #2526](wiki/techniques/pr-samples-2526.md)
+- [PR Insight: Ascend/samples #2740](wiki/techniques/pr-samples-2740.md)
+- [PR Insight: Ascend/samples #2770](wiki/techniques/pr-samples-2770.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #117](wiki/techniques/pr-sgl-kernel-npu-117.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #313](wiki/techniques/pr-sgl-kernel-npu-313.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #314](wiki/techniques/pr-sgl-kernel-npu-314.md)
@@ -307,11 +352,16 @@
 - [PR Insight: vllm-project/vllm-ascend #7654](wiki/techniques/pr-vllm-ascend-7654.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
 
-## kv-cache (107 pages)
+## kv-cache (112 pages)
 
 - [PR Insight: vllm-project/vllm-ascend #10438](wiki/techniques/pr-vllm-ascend-10438.md)
 - [PR Insight: cann-ops-adv #157](wiki/techniques/pr-cann-ops-adv-157.md)
 - [PR Insight: Ascend/cann-ops-adv #251](wiki/techniques/pr-cann-ops-adv-251.md)
+- [PR Insight: Ascend/MindSpeed #1806](wiki/techniques/pr-mindspeed-1806.md)
+- [PR Insight: Ascend/MindSpeed #1850](wiki/techniques/pr-mindspeed-1850.md)
+- [PR Insight: Ascend/MindSpeed #1854](wiki/techniques/pr-mindspeed-1854.md)
+- [PR Insight: Ascend/MindSpeed #1861](wiki/techniques/pr-mindspeed-1861.md)
+- [PR Insight: Ascend/MindSpeed #1979](wiki/techniques/pr-mindspeed-1979.md)
 - [PR Insight: KV Cache SSD Offload (Mooncake)](wiki/techniques/pr-mooncake-ssd-offload.md)
 - [PR Insight: Ascend/samples #2052](wiki/techniques/pr-samples-2052.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #148](wiki/techniques/pr-sgl-kernel-npu-148.md)
@@ -571,8 +621,9 @@
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md)
 
-## online-inference (1 pages)
+## online-inference (2 pages)
 
+- [PR Insight: Ascend/samples #2555](wiki/techniques/pr-samples-2555.md)
 - [PR Insight: vllm-project/vllm-ascend #5775](wiki/techniques/pr-vllm-ascend-5775.md)
 
 ## online-serving (1 pages)
@@ -602,8 +653,22 @@
 
 - [PR Insight: vllm-project/vllm-ascend #8850](wiki/techniques/pr-vllm-ascend-8850.md)
 
-## pipeline-parallel (6 pages)
+## pipeline-parallel (20 pages)
 
+- [PR Insight: Ascend/MindSpeed #1897](wiki/techniques/pr-mindspeed-1897.md)
+- [PR Insight: Ascend/MindSpeed #2069](wiki/techniques/pr-mindspeed-2069.md)
+- [PR Insight: Ascend/MindSpeed #2114](wiki/techniques/pr-mindspeed-2114.md)
+- [PR Insight: Ascend/MindSpeed #2160](wiki/techniques/pr-mindspeed-2160.md)
+- [PR Insight: Ascend/MindSpeed #2209](wiki/techniques/pr-mindspeed-2209.md)
+- [PR Insight: Ascend/MindSpeed #2224](wiki/techniques/pr-mindspeed-2224.md)
+- [PR Insight: Ascend/MindSpeed #2235](wiki/techniques/pr-mindspeed-2235.md)
+- [PR Insight: Ascend/MindSpeed #2412](wiki/techniques/pr-mindspeed-2412.md)
+- [PR Insight: Ascend/ModelLink #2408](wiki/techniques/pr-modellink-2408.md)
+- [PR Insight: Ascend/ModelLink #2667](wiki/techniques/pr-modellink-2667.md)
+- [PR Insight: Ascend/ModelLink #2780](wiki/techniques/pr-modellink-2780.md)
+- [PR Insight: Ascend/ModelLink #2798](wiki/techniques/pr-modellink-2798.md)
+- [PR Insight: Ascend/ModelLink #2806](wiki/techniques/pr-modellink-2806.md)
+- [PR Insight: Ascend/ModelLink #2814](wiki/techniques/pr-modellink-2814.md)
 - [PR Insight: vllm-project/vllm-ascend #10199](wiki/techniques/pr-vllm-ascend-10199.md)
 - [PR Insight: vllm-project/vllm-ascend #10202](wiki/techniques/pr-vllm-ascend-10202.md)
 - [PR Insight: vllm-project/vllm-ascend #1700](wiki/techniques/pr-vllm-ascend-1700.md)
@@ -620,7 +685,7 @@
 - [PR Insight: vllm-project/vllm-ascend #7896](wiki/techniques/pr-vllm-ascend-7896.md)
 - [PR Insight: MTP + PP Speculative Decoding](wiki/techniques/pr-vllm-mtp-pp.md)
 
-## pipeline-scheduling (87 pages)
+## pipeline-scheduling (88 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -703,12 +768,17 @@
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md)
+- [PR Insight: Ascend/MindSpeed #2701](wiki/techniques/pr-mindspeed-2701.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #314](wiki/techniques/pr-sgl-kernel-npu-314.md)
 - [PR Insight: vllm-project/vllm-ascend #1135](wiki/techniques/pr-vllm-ascend-1135.md)
 - [PR Insight: vllm-project/vllm-ascend #2946](wiki/techniques/pr-vllm-ascend-2946.md)
 - [PR Insight: vllm-project/vllm-ascend #6844](wiki/techniques/pr-vllm-ascend-6844.md)
 - [TQue Deadlock Pattern in Ascend C](wiki/patterns/tque-deadlock.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
+
+## quantization-aware-training (1 pages)
+
+- [PR Insight: Ascend/samples #1660](wiki/techniques/pr-samples-1660.md)
 
 ## quantization-int8 (10 pages)
 
@@ -732,11 +802,29 @@
 - [PR Insight: vllm-project/vllm-ascend #6182](wiki/techniques/pr-vllm-ascend-6182.md)
 - [PR Insight: vllm-project/vllm-ascend #6258](wiki/techniques/pr-vllm-ascend-6258.md)
 
+## tensor-buffer (1 pages)
+
+- [PR Insight: Ascend/samples #2677](wiki/techniques/pr-samples-2677.md)
+
+## tensor-decompose (3 pages)
+
+- [PR Insight: Ascend/samples #642](wiki/techniques/pr-samples-642.md)
+- [PR Insight: Ascend/samples #665](wiki/techniques/pr-samples-665.md)
+- [PR Insight: Ascend/samples #666](wiki/techniques/pr-samples-666.md)
+
+## tensor-decomposition (1 pages)
+
+- [PR Insight: Ascend/samples #849](wiki/techniques/pr-samples-849.md)
+
 ## tensor-disposal (1 pages)
 
 - [PR Insight: vllm-project/vllm-ascend #966](wiki/techniques/pr-vllm-ascend-966.md)
 
-## tensor-parallel (20 pages)
+## tensor-dump (1 pages)
+
+- [PR Insight: Ascend/samples #2550](wiki/techniques/pr-samples-2550.md)
+
+## tensor-parallel (25 pages)
 
 - [PR Insight: cann-ops-adv #179](wiki/techniques/pr-cann-ops-adv-179.md)
 - [PR Insight: cann-ops-adv #195](wiki/techniques/pr-cann-ops-adv-195.md)
@@ -744,6 +832,11 @@
 - [PR Insight: cann-ops-adv #220](wiki/techniques/pr-cann-ops-adv-220.md)
 - [PR Insight: cann-ops-adv #221](wiki/techniques/pr-cann-ops-adv-221.md)
 - [PR Insight: cann-ops-adv #242](wiki/techniques/pr-cann-ops-adv-242.md)
+- [PR Insight: Ascend/MindSpeed #1897](wiki/techniques/pr-mindspeed-1897.md)
+- [PR Insight: Ascend/MindSpeed #2040](wiki/techniques/pr-mindspeed-2040.md)
+- [PR Insight: Ascend/MindSpeed #2085](wiki/techniques/pr-mindspeed-2085.md)
+- [PR Insight: Ascend/MindSpeed #2176](wiki/techniques/pr-mindspeed-2176.md)
+- [PR Insight: Ascend/ModelLink #2502](wiki/techniques/pr-modellink-2502.md)
 - [PR Insight: vllm-project/vllm-ascend #1926](wiki/techniques/pr-vllm-ascend-1926.md)
 - [PR Insight: vllm-project/vllm-ascend #2589](wiki/techniques/pr-vllm-ascend-2589.md)
 - [PR Insight: vllm-project/vllm-ascend #2647](wiki/techniques/pr-vllm-ascend-2647.md)
@@ -768,9 +861,14 @@
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
 
-## tensor-parallelism (6 pages)
+## tensor-parallelism (11 pages)
 
 - [PR Insight: TP-2D & Ring Attention](wiki/techniques/pr-mindspeed-tp2d-ring.md)
+- [PR Insight: Ascend/ModelLink #2242](wiki/techniques/pr-modellink-2242.md)
+- [PR Insight: Ascend/ModelLink #2283](wiki/techniques/pr-modellink-2283.md)
+- [PR Insight: Ascend/ModelLink #2284](wiki/techniques/pr-modellink-2284.md)
+- [PR Insight: Ascend/ModelLink #2286](wiki/techniques/pr-modellink-2286.md)
+- [PR Insight: Ascend/ModelLink #2328](wiki/techniques/pr-modellink-2328.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #413](wiki/techniques/pr-sgl-kernel-npu-413.md)
 - [PR Insight: vllm-project/vllm-ascend #2167](wiki/techniques/pr-vllm-ascend-2167.md)
 - [PR Insight: vllm-project/vllm-ascend #4999](wiki/techniques/pr-vllm-ascend-4999.md)
@@ -844,3 +942,7 @@
 ## workspace-reuse (1 pages)
 
 - [PR Insight: vllm-project/vllm-ascend #9528](wiki/techniques/pr-vllm-ascend-9528.md)
+
+## workspace-size (1 pages)
+
+- [PR Insight: Ascend/samples #1636](wiki/techniques/pr-samples-1636.md)

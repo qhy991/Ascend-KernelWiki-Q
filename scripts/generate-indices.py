@@ -99,6 +99,8 @@ def generate_by_technique(pages):
     techniques = defaultdict(list)
     for p in pages:
         for tech in p.get("techniques", p.get("tags", [])):
+            if not isinstance(tech, str):
+                continue
             if tech.startswith(TECHNIQUE_PREFIXES):
                 techniques[tech].append(p)
 
