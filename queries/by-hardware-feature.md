@@ -1,7 +1,7 @@
 # Index: By Hardware Feature
 
 
-## cube-unit (101 pages)
+## cube-unit (106 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -29,6 +29,7 @@
 - [CATLASS Shared Library Example](examples/shared_lib) `[source-code]` arch:ascend910b
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul) `[source-code]` arch:ascend910b
 - [CATLASS W8A16 Matmul Example](examples/30_w8a16_matmul) `[source-code]` arch:ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) `[source-code]` arch:ascend910b
 - [SGL Kernel NPU Batch Matmul Transpose Operator](csrc/batch_matmul_transpose) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU Block Sparse Attention Operator](csrc/attentions/csrc/ops/block_sparse_attention) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU CATLASS Utility Kernels](csrc/catlass) `[source-code]` arch:ascend910, ascend910b
@@ -55,12 +56,14 @@
 - [AscendC API Reference (CANN 8.0)](sources/docs/ascendc-api-reference.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Debugging Helper APIs](sources/docs/ascendc-debugging-apis.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Fixpipe and Post-Matmul APIs](sources/docs/ascendc-fixpipe-apis.md) `[source-doc]` arch:ascend910, ascend910b
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Kernel Launch Operator Project](sources/docs/ascendc-kernel-launch.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C LoadData and Sparse Load APIs](sources/docs/ascendc-load-data-apis.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Matmul End API](sources/docs/ascendc-matmul-end.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Matmul GetBatchC API](sources/docs/ascendc-matmul-getbatchc.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C REGIST_MATMUL_OBJ API](sources/docs/ascendc-matmul-regist-obj.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Matmul Tiling EnableBias API](sources/docs/ascendc-matmul-tiling-bias.md) `[source-doc]` arch:ascend910, ascend910b
+- [AscendC PyTorch Framework Adaptation — torch.library & Pybind](sources/docs/ascendc-pytorch-framework-adaptation.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Resource Group and KFC Workspace APIs](sources/docs/ascendc-resource-group-apis.md) `[source-doc]` arch:ascend910, ascend910b
 - [BiSheng Compiler Quick Start for Ascend C Operators](sources/docs/bisheng-compiler-quickstart.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [CANN Architecture Guide — AICore Hardware Principles](sources/docs/cann-architecture-guide.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
@@ -76,6 +79,7 @@
 - [L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy](wiki/hardware/l1-l0-buffer.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) `[wiki-kernel]` arch:ascend910b
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md) `[wiki-kernel]` arch:ascend910b
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
@@ -87,6 +91,7 @@
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) `[source-pr]` arch:ascend910b
+- [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) `[wiki-technique]` arch:ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -291,10 +296,11 @@
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## mte (28 pages)
+## mte (29 pages)
 
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc) `[source-code]` arch:ascend910, ascend910b, ascend310p
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) `[source-code]` arch:ascend910b
 - [vLLM Ascend C++/AscendC Extension Source](csrc) `[source-code]` arch:ascend910b
 - [Ascend Memory Hierarchy and Data Movement](sources/docs/ascend-memory-hierarchy.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend Profiling with msprof](sources/docs/ascend-profiling-guide.md) `[source-doc]` arch:ascend910, ascend910b
@@ -395,7 +401,7 @@
 - [CANN Architecture Guide — AICore Hardware Principles](sources/docs/cann-architecture-guide.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Scalar Unit — Control Flow and Address Generation](wiki/hardware/scalar-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 
-## unified-buffer (76 pages)
+## unified-buffer (78 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
@@ -407,6 +413,7 @@
 - [CATLASS Flash Attention Inference Example](examples/23_flash_attention_infer) `[source-code]` arch:ascend910b
 - [CATLASS MLA Example](examples/19_mla) `[source-code]` arch:ascend910b
 - [CATLASS Optimized Matmul Example](examples/06_optimized_matmul) `[source-code]` arch:ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) `[source-code]` arch:ascend910b
 - [SGL Kernel NPU Assign Cache Operator](csrc/assign_cache_op) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU Block Sparse Attention Operator](csrc/attentions/csrc/ops/block_sparse_attention) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU Cache Location Assign Operator](csrc/cache_location_assign) `[source-code]` arch:ascend910, ascend910b
@@ -431,6 +438,7 @@
 - [Ascend C Axpy Template Sample](sources/docs/ascendc-axpy-template-sample.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C DataCopyPad API](sources/docs/ascendc-datacopypad-api.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Debugging Helper APIs](sources/docs/ascendc-debugging-apis.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Kernel Launch Operator Project](sources/docs/ascendc-kernel-launch.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C LayerNorm High-Level API](sources/docs/ascendc-layernorm-api.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C REGIST_MATMUL_OBJ API](sources/docs/ascendc-matmul-regist-obj.md) `[source-doc]` arch:ascend910, ascend910b
@@ -474,7 +482,7 @@
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## vector-unit (96 pages)
+## vector-unit (101 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -492,6 +500,7 @@
 - [CATLASS MLA Example](examples/19_mla) `[source-code]` arch:ascend910b
 - [CATLASS Quantized Matmul Example](examples/12_quant_matmul) `[source-code]` arch:ascend910b
 - [CATLASS W8A16 Matmul Example](examples/30_w8a16_matmul) `[source-code]` arch:ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) `[source-code]` arch:ascend910b
 - [SGL Kernel NPU Assign Cache Operator](csrc/assign_cache_op) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU Batch Matmul Transpose Operator](csrc/batch_matmul_transpose) `[source-code]` arch:ascend910, ascend910b
 - [SGL Kernel NPU Block Sparse Attention Operator](csrc/attentions/csrc/ops/block_sparse_attention) `[source-code]` arch:ascend910, ascend910b
@@ -530,8 +539,10 @@
 - [Ascend C Axpy Template Sample](sources/docs/ascendc-axpy-template-sample.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Debugging Helper APIs](sources/docs/ascendc-debugging-apis.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Fixpipe and Post-Matmul APIs](sources/docs/ascendc-fixpipe-apis.md) `[source-doc]` arch:ascend910, ascend910b
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C Kernel Launch Operator Project](sources/docs/ascendc-kernel-launch.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C LayerNorm High-Level API](sources/docs/ascendc-layernorm-api.md) `[source-doc]` arch:ascend910, ascend910b
+- [AscendC PyTorch Framework Adaptation — torch.library & Pybind](sources/docs/ascendc-pytorch-framework-adaptation.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Resource Group and KFC Workspace APIs](sources/docs/ascendc-resource-group-apis.md) `[source-doc]` arch:ascend910, ascend910b
 - [Ascend C SoftMax High-Level APIs](sources/docs/ascendc-softmax-api.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C SoftMax Tiling APIs](sources/docs/ascendc-softmax-tiling.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
@@ -551,6 +562,7 @@
 - [vLLM Ascend Backend — NPU Inference Plugin](sources/docs/vllm-ascend.md) `[source-doc]` arch:ascend910b
 - [Vector Unit — SIMD Processing Engine](wiki/hardware/vector-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b, ascend310p
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) `[wiki-kernel]` arch:ascend910b
 - [LayerNorm / RMSNorm on Ascend NPU](wiki/kernels/layernorm-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [AscendC RMSNorm — Fused Vector Normalization](wiki/kernels/rmsnorm-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
@@ -565,6 +577,7 @@
 - [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) `[source-pr]` arch:ascend910b
+- [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) `[wiki-technique]` arch:ascend910, ascend910b

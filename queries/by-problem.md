@@ -4,6 +4,20 @@
 Symptom → Pattern → Technique → Solution
 
 
+### Ascend Performance Optimization Decision Tree
+
+- ID: `pattern-ascend-performance-decision-tree`
+- Path: `wiki/patterns/ascend-performance-decision-tree.md`
+- Tags: speedup below 1.0x, low cube utilization, host dispatch overhead, memory bound, launch overhead dominates
+- Related: `pattern-host-dispatch-bound`, `pattern-low-cube-utilization`, `pattern-memory-bound`, `pattern-tiling-too-small`, `kernel-ffn-fused-ascendc`, `kernel-matmul-ascendc`
+
+### AscendC Compile Error Diagnostics — bisheng & CMake
+
+- ID: `pattern-ascendc-compile-troubleshooting`
+- Path: `wiki/patterns/ascendc-compile-troubleshooting.md`
+- Tags: bisheng compile failed, kernel_operator.h not found, namespace matmul ambiguous, LocalTensor type mismatch, cmake cannot find bisheng, NZ alignment error, link error undefined reference
+- Related: `lang-ascendc-direct-launch-project`, `pattern-nz-format-traps`, `pattern-ub-oom`, `lang-mkb-integration-rules`
+
 ### Format-Conversion Overhead — Excess ND<->NZ Transposes
 
 - ID: `pattern-format-conversion-overhead`

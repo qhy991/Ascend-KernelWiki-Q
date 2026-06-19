@@ -122,6 +122,7 @@ techniques:
     related_hw: [cube-unit, vector-unit]
 
 kernel_types:
+  - ffn
   - matmul
   - gemm
   - attention

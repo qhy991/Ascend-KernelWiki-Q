@@ -7,7 +7,7 @@ confidence: source-reported
 sources: [doc-ascendc-api-reference, blog-ascendc-programming-guide]
 architectures: [ascend910, ascend910b, ascend310p]
 languages: [ascendc]
-related: [lang-tbe-dsl-guide, migration-cuda-to-ascendc]
+related: [lang-tbe-dsl-guide, migration-cuda-to-ascendc, lang-ascendc-direct-launch-project, pattern-ascendc-compile-troubleshooting]
 ---
 
 ## Overview

@@ -7,7 +7,7 @@ confidence: source-reported
 sources: [doc-torch-npu-adapter, doc-vllm-ascend, pr-vllm-ascend-001]
 architectures: [ascend910, ascend910b]
 languages: [python, cpp]
-related: [lang-ascendc-guide, migration-pytorch-cuda-to-npu]
+related: [lang-ascendc-guide, migration-pytorch-cuda-to-npu, lang-torch-npu-cpp-api, lang-ascendc-direct-launch-project, lang-mkb-integration-rules]
 ---
 
 ## Overview

@@ -1,12 +1,18 @@
 # Index: By Kernel Type
 
 
-## activation (4 pages)
+## activation (10 pages)
 
 - [CANN Ops Adv — Activation Operators](src/activation) conf:source-reported arch:ascend910, ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) conf:verified arch:ascend910b
 - [vLLM Ascend Fused GDN Gating Operator](csrc/attention/fused_gdn_gating) conf:source-reported arch:ascend910b
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md) conf:verified arch:ascend910, ascend910b
+- [torch_npu.npu_ffn — Fused FFN / MoE FFN Operator](sources/docs/torch-npu-npu-ffn.md) conf:verified arch:ascend910b
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) conf:verified arch:ascend910, ascend910b, ascend310p
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) conf:source-reported arch:ascend910b
+- [MKB Working Kernel Examples — Verified Submissions](wiki/kernels/mkb-working-examples.md) conf:verified arch:ascend910b
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md) conf:source-reported arch:ascend910, ascend910b
+- [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) conf:verified arch:ascend910, ascend910b
 
 ## attention (45 pages)
 
@@ -61,7 +67,7 @@
 - [CATLASS Conv Bias Example](examples/24_conv_bias) conf:source-reported arch:ascend910b
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md) conf:inferred arch:ascend910, ascend910b
 
-## elementwise (26 pages)
+## elementwise (29 pages)
 
 - [Calling a Custom aclnn Operator from C++ — End to End](sources/blogs/aclnn-custom-op-invocation.md) conf:source-reported arch:ascend910, ascend910b
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) conf:source-reported arch:ascend910, ascend910b
@@ -70,6 +76,7 @@
 - [CANN Ops Adv — Activation Operators](src/activation) conf:source-reported arch:ascend910, ascend910b
 - [CATLASS Conv Bias Example](examples/24_conv_bias) conf:source-reported arch:ascend910b
 - [CATLASS Matmul Add Example](examples/03_matmul_add) conf:source-reported arch:ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) conf:verified arch:ascend910b
 - [SGL Kernel NPU Assign Cache Operator](csrc/assign_cache_op) conf:source-reported arch:ascend910, ascend910b
 - [SGL Kernel NPU Cache Location Assign Operator](csrc/cache_location_assign) conf:source-reported arch:ascend910, ascend910b
 - [SGL Kernel NPU Lightning Indexer Operator](csrc/lightning_indexer) conf:source-reported arch:ascend910, ascend910b
@@ -82,6 +89,7 @@
 - [vLLM Ascend MLA Preprocess Operator](csrc/mla_preprocess) conf:source-reported arch:ascend910b
 - [TIK Vector Add — Elementwise Kernel in Python](wiki/kernels/add-tik.md) conf:source-reported arch:ascend910, ascend910b
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) conf:verified arch:ascend910, ascend910b, ascend310p
+- [MKB Working Kernel Examples — Verified Submissions](wiki/kernels/mkb-working-examples.md) conf:verified arch:ascend910b
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md) conf:source-reported arch:ascend910b
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [aclnn Vector Add — Single-Operator Invocation in C++](wiki/kernels/vector-add-aclnn.md) conf:source-reported arch:ascend910, ascend910b
@@ -89,6 +97,7 @@
 - [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) conf:? arch:ascend910, ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) conf:? arch:ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) conf:? arch:ascend910b
+- [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) conf:verified arch:ascend910, ascend910b
 
 ## embedding (2 pages)
 
@@ -178,7 +187,7 @@
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) conf:source-reported arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## matmul (47 pages)
+## matmul (53 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) conf:source-reported arch:ascend910b
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) conf:source-reported arch:ascend910b
@@ -199,6 +208,7 @@
 - [CATLASS Shared Library Example](examples/shared_lib) conf:source-reported arch:ascend910b
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul) conf:source-reported arch:ascend910b
 - [CATLASS W8A16 Matmul Example](examples/30_w8a16_matmul) conf:source-reported arch:ascend910b
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py) conf:verified arch:ascend910b
 - [SGL Kernel NPU Batch Matmul Transpose Operator](csrc/batch_matmul_transpose) conf:source-reported arch:ascend910, ascend910b
 - [SGL Kernel NPU CATLASS Utility Kernels](csrc/catlass) conf:source-reported arch:ascend910, ascend910b
 - [SGL Kernel NPU Native Source](csrc) conf:source-reported arch:ascend910, ascend910b
@@ -211,8 +221,12 @@
 - [vLLM Ascend Model Runner](vllm_ascend/worker) conf:source-reported arch:ascend910b
 - [vLLM Ascend Operator Wrappers](vllm_ascend/ops) conf:source-reported arch:ascend910b
 - [vLLM Ascend Kernel and Backend Tests](tests) conf:source-reported arch:ascend910b
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md) conf:verified arch:ascend910, ascend910b
+- [torch_npu.npu_ffn — Fused FFN / MoE FFN Operator](sources/docs/torch-npu-npu-ffn.md) conf:verified arch:ascend910b
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) conf:source-reported arch:ascend910b
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md) conf:source-reported arch:ascend910b
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md) conf:source-reported arch:ascend910, ascend910b
+- [MKB Working Kernel Examples — Verified Submissions](wiki/kernels/mkb-working-examples.md) conf:verified arch:ascend910b
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md) conf:source-reported arch:ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) conf:? arch:ascend910b
 - [CANN Sample Code — Reference AscendC Implementations](sources/prs/ascend-samples/PR-001.md) conf:? arch:ascend910, ascend910b, ascend310p
@@ -222,6 +236,7 @@
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) conf:? arch:ascend910, ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) conf:? arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) conf:? arch:ascend910b
+- [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) conf:verified arch:ascend910, ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) conf:inferred arch:ascend910b
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md) conf:source-reported arch:ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) conf:source-reported arch:ascend910b
@@ -308,6 +323,7 @@
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) conf:source-reported arch:ascend910, ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) conf:source-reported arch:ascend910, ascend910b
 
-## swiglu (1 pages)
+## swiglu (2 pages)
 
 - [vLLM Ascend Grouped Matmul SwiGLU Quant Operator](csrc/gmm/grouped_matmul_swiglu_quant) conf:source-reported arch:ascend910b
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) conf:source-reported arch:ascend910b

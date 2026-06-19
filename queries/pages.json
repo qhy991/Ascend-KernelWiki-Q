@@ -839,6 +839,33 @@
     "confidence": "source-reported"
   },
   {
+    "id": "code-multikernelbench-ascendc-direct-launch",
+    "type": "source-code",
+    "title": "MultiKernelBench — AscendC Direct Launch Backend",
+    "path": "backends/ascendc_direct_launch_backend.py",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "pybind",
+      "operator",
+      "tutorial",
+      "mkb"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "matmul",
+      "activation"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "code-sgl-kernel-npu-assign-cache",
     "type": "source-code",
     "title": "SGL Kernel NPU Assign Cache Operator",
@@ -1821,6 +1848,31 @@
     "confidence": "source-reported"
   },
   {
+    "id": "doc-ascendc-fused-operator-matmul",
+    "type": "source-doc",
+    "title": "AscendC Fused Operator Programming — Matmul + Activation",
+    "path": "sources/docs/ascendc-fused-operator-matmul.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "matmul",
+      "operator-fusion",
+      "activation"
+    ],
+    "kernel_types": [
+      "matmul",
+      "activation"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "doc-ascendc-kernel-launch",
     "type": "source-doc",
     "title": "Ascend C Kernel Launch Operator Project",
@@ -1953,6 +2005,32 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "source-reported"
+  },
+  {
+    "id": "doc-ascendc-pytorch-framework-adaptation",
+    "type": "source-doc",
+    "title": "AscendC PyTorch Framework Adaptation — torch.library & Pybind",
+    "path": "sources/docs/ascendc-pytorch-framework-adaptation.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "ascendc",
+      "torch-npu",
+      "pytorch",
+      "pybind",
+      "cpp",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
   },
   {
     "id": "doc-ascendc-resource-group-apis",
@@ -2514,6 +2592,52 @@
     "confidence": "verified"
   },
   {
+    "id": "doc-torch-npu-get-current-npu-stream",
+    "type": "source-doc",
+    "title": "c10_npu::getCurrentNPUStream — torch_npu C++ Stream API",
+    "path": "sources/docs/torch-npu-get-current-npu-stream.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "torch-npu",
+      "cpp",
+      "operator"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": "verified"
+  },
+  {
+    "id": "doc-torch-npu-npu-ffn",
+    "type": "source-doc",
+    "title": "torch_npu.npu_ffn — Fused FFN / MoE FFN Operator",
+    "path": "sources/docs/torch-npu-npu-ffn.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "torch-npu",
+      "ffn",
+      "activation",
+      "operator",
+      "swiglu"
+    ],
+    "kernel_types": [
+      "activation",
+      "matmul"
+    ],
+    "languages": [
+      "python",
+      "cpp"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "doc-vllm-ascend",
     "type": "source-doc",
     "title": "vLLM Ascend Backend — NPU Inference Plugin",
@@ -2872,6 +2996,34 @@
     "confidence": "inferred"
   },
   {
+    "id": "kernel-ffn-fused-ascendc",
+    "type": "wiki-kernel",
+    "title": "AscendC FFN Fused Kernel — Dual GEMM + Activation",
+    "path": "wiki/kernels/ffn-fused-ascendc.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ffn",
+      "swiglu",
+      "matmul",
+      "activation",
+      "cube-unit",
+      "vector-unit",
+      "ascendc"
+    ],
+    "kernel_types": [
+      "matmul",
+      "activation",
+      "swiglu"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "kernel-flash-attention-npu",
     "type": "wiki-kernel",
     "title": "Flash Attention on Ascend NPU",
@@ -2992,6 +3144,33 @@
       "ascendc"
     ],
     "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-mkb-working-examples",
+    "type": "wiki-kernel",
+    "title": "MKB Working Kernel Examples — Verified Submissions",
+    "path": "wiki/kernels/mkb-working-examples.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "pybind",
+      "operator",
+      "tutorial",
+      "mkb"
+    ],
+    "kernel_types": [
+      "elementwise",
+      "matmul",
+      "activation"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
   },
   {
     "id": "kernel-mla-ascendc",
@@ -3297,6 +3476,30 @@
     "confidence": "source-reported"
   },
   {
+    "id": "lang-ascendc-direct-launch-project",
+    "type": "wiki-language",
+    "title": "AscendC Direct Launch — Complete Compilable Project Template",
+    "path": "wiki/languages/ascendc-direct-launch-project.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "pybind",
+      "cpp",
+      "operator",
+      "tutorial",
+      "cmake"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "lang-ascendc-guide",
     "type": "wiki-language",
     "title": "AscendC Programming Guide — C/C++ Kernel Development for Ascend NPU",
@@ -3366,6 +3569,28 @@
     "confidence": "source-reported"
   },
   {
+    "id": "lang-mkb-integration-rules",
+    "type": "wiki-language",
+    "title": "MultiKernelBench Integration Rules — ascendc_direct_launch",
+    "path": "wiki/languages/mkb-integration-rules.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "operator",
+      "pybind",
+      "tutorial"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "lang-pytorch-npu-guide",
     "type": "wiki-language",
     "title": "PyTorch on Ascend — torch_npu, Custom Kernels, and Bindings",
@@ -3431,6 +3656,29 @@
       "python"
     ],
     "confidence": "source-reported"
+  },
+  {
+    "id": "lang-torch-npu-cpp-api",
+    "type": "wiki-language",
+    "title": "torch_npu C++ API Reference — pybind11 Integration",
+    "path": "wiki/languages/torch-npu-cpp-api.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "torch-npu",
+      "cpp",
+      "pybind",
+      "operator",
+      "binding"
+    ],
+    "kernel_types": [],
+    "languages": [
+      "cpp",
+      "python"
+    ],
+    "confidence": "verified"
   },
   {
     "id": "migration-aclnn-api",
@@ -3621,6 +3869,46 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pattern-ascend-performance-decision-tree",
+    "type": "wiki-pattern",
+    "title": "Ascend Performance Optimization Decision Tree",
+    "path": "wiki/patterns/ascend-performance-decision-tree.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "performance",
+      "profiling",
+      "msprof",
+      "diagnosis",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "pattern-ascendc-compile-troubleshooting",
+    "type": "wiki-pattern",
+    "title": "AscendC Compile Error Diagnostics — bisheng & CMake",
+    "path": "wiki/patterns/ascendc-compile-troubleshooting.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "pitfalls",
+      "diagnosis",
+      "cmake",
+      "pattern"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
   },
   {
     "id": "pattern-format-conversion-overhead",
@@ -4439,6 +4727,34 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "technique-ascendc-multi-dtype",
+    "type": "wiki-technique",
+    "title": "AscendC Multi-Dtype Support — fp16, bf16, fp32",
+    "path": "wiki/techniques/ascendc-multi-dtype.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "ascendc",
+      "fp16",
+      "bf16",
+      "fp32",
+      "precision",
+      "dtype"
+    ],
+    "kernel_types": [
+      "matmul",
+      "elementwise",
+      "activation"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "verified"
   },
   {
     "id": "technique-async-dma-multistage",

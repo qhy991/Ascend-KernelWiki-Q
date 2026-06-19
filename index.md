@@ -30,6 +30,7 @@
 - [Operator Fusion](wiki/techniques/operator-fusion.md) — UB/L1 Fusion strategies
 - [Multi-Core Grid Scheduling](wiki/techniques/multicore-grid-scheduling.md) — BlockDim scaling & core-affinity
 - [Precision Tuning & Accumulation](wiki/techniques/precision-tuning.md) — Mixed precision handling
+- [AscendC Multi-Dtype Support](wiki/techniques/ascendc-multi-dtype.md) — fp16/bf16/fp32 dispatch patterns
 - [Asynchronous DMA & Multi-stage Pipelines](wiki/techniques/async-dma-multistage.md) — Ping-pong buffering configurations
 - [Tiling Strategy](wiki/techniques/tiling-strategy.md) — Host-side + auto tiling
 - [Online Softmax](wiki/techniques/online-softmax.md) — Streaming stable softmax (flash attn)
@@ -41,6 +42,8 @@
 
 ### Kernel Implementations
 - [Matmul (AscendC)](wiki/kernels/matmul-ascendc.md) — GEMM via Cube + Catlass
+- [FFN Fused (AscendC)](wiki/kernels/ffn-fused-ascendc.md) — Dual GEMM + activation fusion
+- [MKB Working Examples](wiki/kernels/mkb-working-examples.md) — Verified ascendc_direct_launch submissions
 - [Grouped GEMM](wiki/kernels/grouped-gemm-ascendc.md) — Batched matmul for MoE/GQA
 - [Flash Attention (NPU)](wiki/kernels/flash-attention-npu.md) — Attention with Cube/Vector overlap
 - [Softmax (AscendC)](wiki/kernels/softmax-ascendc.md) — Vector unit three-pass
@@ -63,6 +66,8 @@
 - [GEMM (CATLASS / C++)](wiki/kernels/gemm-catlass-cpp.md) — Template matmul on Cube
 
 ### Problem Diagnosis
+- [AscendC Compile Troubleshooting](wiki/patterns/ascendc-compile-troubleshooting.md) — bisheng/CMake error playbook
+- [Ascend Performance Decision Tree](wiki/patterns/ascend-performance-decision-tree.md) — Optimization strategy selection
 - [Memory-Bound Kernel](wiki/patterns/memory-bound.md) — Diagnosis → solutions
 - [Low Cube Utilization](wiki/patterns/low-cube-utilization.md) — Diagnosis → solutions
 - [NZ Format Traps](wiki/patterns/nz-format-traps.md) — Common pitfalls + fixes
@@ -76,6 +81,9 @@
 - [Tiling Too Small](wiki/patterns/tiling-too-small.md) — Under-utilized Cube / MTE
 
 ### Programming Guides (by language)
+- [AscendC Direct Launch Project](wiki/languages/ascendc-direct-launch-project.md) — **Complete compilable MKB template**
+- [torch_npu C++ API](wiki/languages/torch-npu-cpp-api.md) — pybind11 + NPUStream reference
+- [MKB Integration Rules](wiki/languages/mkb-integration-rules.md) — JSON spec, cheating detector, eval flow
 - [AscendC Guide](wiki/languages/ascendc-guide.md) — C/C++ kernel programming tutorial
 - [TBE-DSL Guide](wiki/languages/tbe-dsl-guide.md) — Deprecated Python DSL
 - [TIK Guide](wiki/languages/tik-guide.md) — Low-level Python kernel DSL
@@ -98,6 +106,12 @@
 - [CUDA Runtime → AscendCL](wiki/migration/cuda-runtime-to-acl.md) — Streams / events / device memory
 - [cuBLAS / cuDNN → aclnn](wiki/migration/cublas-to-aclnn.md) — Library-call operator migration
 - [PyTorch CUDA → NPU](wiki/migration/pytorch-cuda-to-npu.md) — `torch.cuda` → `torch_npu`
+
+### Official Documentation (Web-Sourced)
+- [AscendC PyTorch Adaptation (CANN 9.0)](sources/docs/ascendc-pytorch-framework-adaptation.md) — torch.library & Pybind Kernel直调
+- [getCurrentNPUStream C++ API](sources/docs/torch-npu-get-current-npu-stream.md) — Official stream API
+- [npu_ffn Operator Spec](sources/docs/torch-npu-npu-ffn.md) — Fused FFN constraints & inner_precise
+- [Fused Matmul+Activation Guide](sources/docs/ascendc-fused-operator-matmul.md) — MultiCoreMatmulTiling official flow
 
 ### Tools & References
 - [Profiling (msprof)](sources/docs/ascend-profiling-guide.md) — Performance analysis

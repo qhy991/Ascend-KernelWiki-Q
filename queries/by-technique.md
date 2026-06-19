@@ -38,7 +38,7 @@
 - [PR Insight: vllm-project/vllm-ascend #7198](wiki/techniques/pr-vllm-ascend-7198.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
 
-## cube-vector-overlap (16 pages)
+## cube-vector-overlap (18 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CANN Training Camp — Advanced Operator Optimization Techniques](sources/blogs/cann-training-camp.md)
@@ -48,10 +48,12 @@
 - [vLLM Ascend Matmul AllReduce Add RMSNorm Operator](csrc/mc2/matmul_allreduce_add_rmsnorm)
 - [Operator Fusion Patterns on Ascend NPU](sources/docs/ascend-operator-fusion.md)
 - [Ascend Profiling with msprof](sources/docs/ascend-profiling-guide.md)
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md)
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md)
+- [Ascend Performance Optimization Decision Tree](wiki/patterns/ascend-performance-decision-tree.md)
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
@@ -123,7 +125,7 @@
 
 - [PR Insight: Ascend/samples #2369](wiki/techniques/pr-samples-2369.md)
 
-## data-reuse (50 pages)
+## data-reuse (51 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -158,6 +160,7 @@
 - [TIK Vector Add — Elementwise Kernel in Python](wiki/kernels/add-tik.md)
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md)
 - [Embedding Lookup on Ascend NPU](wiki/kernels/embedding-ascendc.md)
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
 - [LayerNorm / RMSNorm on Ascend NPU](wiki/kernels/layernorm-ascendc.md)
 - [MoE (Mixture of Experts) Kernel on Ascend NPU](wiki/kernels/moe-ascendc.md)
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md)
@@ -587,7 +590,7 @@
 - [PR Insight: vllm-project/vllm-ascend #9625](wiki/techniques/pr-vllm-ascend-9625.md)
 - [PR Insight: vllm-project/vllm-ascend #9721](wiki/techniques/pr-vllm-ascend-9721.md)
 
-## nz-tiling (31 pages)
+## nz-tiling (32 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md)
@@ -610,6 +613,7 @@
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md)
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md)
+- [AscendC Compile Error Diagnostics — bisheng & CMake](wiki/patterns/ascendc-compile-troubleshooting.md)
 - [Format-Conversion Overhead — Excess ND<->NZ Transposes](wiki/patterns/format-conversion-overhead.md)
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
 - [Memory-Bound Kernel — Diagnosis and Resolution](wiki/patterns/memory-bound.md)
@@ -685,7 +689,7 @@
 - [PR Insight: vllm-project/vllm-ascend #7896](wiki/techniques/pr-vllm-ascend-7896.md)
 - [PR Insight: MTP + PP Speculative Decoding](wiki/techniques/pr-vllm-mtp-pp.md)
 
-## pipeline-scheduling (88 pages)
+## pipeline-scheduling (93 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -709,6 +713,7 @@
 - [CATLASS Python Extension Example](examples/python_extension)
 - [CATLASS Shared Library Example](examples/shared_lib)
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul)
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py)
 - [SGL Kernel NPU Assign Cache Operator](csrc/assign_cache_op)
 - [SGL Kernel NPU Batch Matmul Transpose Operator](csrc/batch_matmul_transpose)
 - [SGL Kernel NPU Block Sparse Attention Operator](csrc/attentions/csrc/ops/block_sparse_attention)
@@ -738,6 +743,8 @@
 - [Ascend Profiling with msprof](sources/docs/ascend-profiling-guide.md)
 - [Ascend C Operator Development API Overview](sources/docs/ascendc-api-overview.md)
 - [Ascend C Axpy Template Sample](sources/docs/ascendc-axpy-template-sample.md)
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md)
+- [AscendC PyTorch Framework Adaptation — torch.library & Pybind](sources/docs/ascendc-pytorch-framework-adaptation.md)
 - [Ascend C Resource Group and KFC Workspace APIs](sources/docs/ascendc-resource-group-apis.md)
 - [Ascend C Synchronization Control APIs](sources/docs/ascendc-synchronization-control.md)
 - [Ascend C System Variable Access APIs](sources/docs/ascendc-system-variable-apis.md)
@@ -749,6 +756,7 @@
 - [Ascend Profiling Tool Overview](sources/docs/msprof-profiling-overview.md)
 - [vLLM Ascend Backend — NPU Inference Plugin](sources/docs/vllm-ascend.md)
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md)
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
@@ -759,6 +767,7 @@
 - [AscendC Rotary Position Embedding (RoPE)](wiki/kernels/rope-ascendc.md)
 - [AscendC Softmax — Vector Unit Implementation](wiki/kernels/softmax-ascendc.md)
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md)
+- [Ascend Performance Optimization Decision Tree](wiki/patterns/ascend-performance-decision-tree.md)
 - [Host-Dispatch-Bound Kernel — Launch Overhead Dominates](wiki/patterns/host-dispatch-bound.md)
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
@@ -893,7 +902,7 @@
 - [PR Insight: Ascend/samples #2659](wiki/techniques/pr-samples-2659.md)
 - [PR Insight: Ascend/samples #2664](wiki/techniques/pr-samples-2664.md)
 
-## tiling-strategy (29 pages)
+## tiling-strategy (33 pages)
 
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc)
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul)
@@ -903,12 +912,14 @@
 - [CATLASS FP8 Matmul Example](examples/29_a2_fp8_e4m3_matmul)
 - [CATLASS Group GEMM Example](examples/16_group_gemm)
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul)
+- [MultiKernelBench — AscendC Direct Launch Backend](backends/ascendc_direct_launch_backend.py)
 - [SGL Kernel NPU Batch Matmul Transpose Operator](csrc/batch_matmul_transpose)
 - [SGL Kernel NPU Cache Location Assign Operator](csrc/cache_location_assign)
 - [SGL Kernel NPU Sparse Block Estimate Operator](csrc/attentions/csrc/ops/sparse_block_estimate)
 - [vLLM Ascend Batch Matmul Transpose Operator](csrc/batch_matmul_transpose)
 - [Ascend C Operator Development API Overview](sources/docs/ascendc-api-overview.md)
 - [Ascend C Debugging Helper APIs](sources/docs/ascendc-debugging-apis.md)
+- [AscendC Fused Operator Programming — Matmul + Activation](sources/docs/ascendc-fused-operator-matmul.md)
 - [Ascend C Kernel Launch Operator Project](sources/docs/ascendc-kernel-launch.md)
 - [Ascend C LayerNorm High-Level API](sources/docs/ascendc-layernorm-api.md)
 - [Ascend C Matmul End API](sources/docs/ascendc-matmul-end.md)
@@ -921,11 +932,13 @@
 - [BiSheng Compiler Quick Start for Ascend C Operators](sources/docs/bisheng-compiler-quickstart.md)
 - [CANN 8.0 Quick Start and Documentation Map](sources/docs/cann-quickstart-index.md)
 - [msDebug Operator Debugging Overview](sources/docs/msdebug-overview.md)
+- [Ascend Performance Optimization Decision Tree](wiki/patterns/ascend-performance-decision-tree.md)
+- [AscendC Compile Error Diagnostics — bisheng & CMake](wiki/patterns/ascendc-compile-troubleshooting.md)
 - [Tiling Too Small — Under-Utilized Cube and MTE](wiki/patterns/tiling-too-small.md)
 - [PR Insight: cann-ops-adv #58](wiki/techniques/pr-cann-ops-adv-58.md)
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md)
 
-## workspace-management (11 pages)
+## workspace-management (12 pages)
 
 - [Ascend Samples — AscendCL Runtime Examples](cplusplus/level1_single_api)
 - [Ascend Samples — aclnn Single-Operator Invocation](operator/aclnn)
@@ -937,6 +950,7 @@
 - [Ascend C Tanh API](sources/docs/ascendc-tanh-api.md)
 - [Ascend C TPipe InitBuffer API](sources/docs/ascendc-tpipe-initbuffer.md)
 - [AscendCL Runtime Memory Management](sources/docs/ascendcl-memory-management.md)
+- [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md)
 
 ## workspace-reuse (1 pages)
