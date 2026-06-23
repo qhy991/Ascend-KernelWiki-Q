@@ -2901,6 +2901,28 @@
     "confidence": "verified"
   },
   {
+    "id": "kernel-activation-ascendc",
+    "type": "wiki-kernel",
+    "title": "Activation Functions in Ascend C",
+    "path": "wiki/kernels/activation-ascendc.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "activation",
+      "elementwise",
+      "vector-unit"
+    ],
+    "kernel_types": [
+      "activation"
+    ],
+    "languages": [
+      "ascendc"
+    ],
+    "confidence": "verified"
+  },
+  {
     "id": "kernel-add-tik",
     "type": "wiki-kernel",
     "title": "TIK Vector Add — Elementwise Kernel in Python",
@@ -3016,6 +3038,68 @@
       "matmul",
       "activation",
       "swiglu"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "kernel-flash-attention-grad-tnd-catlass",
+    "type": "wiki-kernel",
+    "title": "CATLASS Flash Attention Grad TND — Backward Attention Case Study",
+    "path": "wiki/kernels/flash-attention-grad-tnd-catlass.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "flash-attention-grad",
+      "tnd",
+      "backward",
+      "softmax-grad",
+      "cube-unit",
+      "vector-unit"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "gemm",
+      "softmax"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "inferred"
+  },
+  {
+    "id": "kernel-flash-attention-infer-catlass",
+    "type": "wiki-kernel",
+    "title": "Flash Attention Infer in CATLASS",
+    "path": "wiki/kernels/flash-attention-infer-catlass.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "inference",
+      "online-softmax",
+      "cube-unit",
+      "vector-unit"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "softmax",
+      "matmul"
     ],
     "languages": [
       "ascendc",
@@ -3760,6 +3844,22 @@
     "confidence": "inferred"
   },
   {
+    "id": "migration-cudnn-to-cann",
+    "type": "wiki-migration",
+    "title": "cuDNN to CANN (aclnn) Migration Guide",
+    "path": "wiki/migration/cudnn-to-cann.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "migration"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
     "id": "migration-cutlass-to-catlass",
     "type": "wiki-migration",
     "title": "CUTLASS → Catlass Migration Guide",
@@ -3931,6 +4031,31 @@
     "confidence": "source-reported"
   },
   {
+    "id": "pattern-grouped-gemm-empty-k-output-init",
+    "type": "wiki-pattern",
+    "title": "Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics",
+    "path": "wiki/patterns/grouped-gemm-empty-k-output-init.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "grouped-gemm",
+      "split-k",
+      "output-init",
+      "bugfix",
+      "pattern"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "gemm",
+      "matmul"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pattern-host-dispatch-bound",
     "type": "wiki-pattern",
     "title": "Host-Dispatch-Bound Kernel — Launch Overhead Dominates",
@@ -3951,6 +4076,33 @@
     "confidence": "inferred"
   },
   {
+    "id": "pattern-kv-block-semantic-drift",
+    "type": "wiki-pattern",
+    "title": "KV Block Semantic Drift — Physical, Compressed, SWA, and Hybrid Blocks Mixed",
+    "path": "wiki/patterns/kv-block-semantic-drift.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "kv-cache",
+      "prefix-cache",
+      "compressed-kv",
+      "swa",
+      "mooncake",
+      "block-hash",
+      "debugging",
+      "pattern"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pattern-low-cube-utilization",
     "type": "wiki-pattern",
     "title": "Low Cube Utilization — Diagnosis and Resolution",
@@ -3968,6 +4120,32 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pattern-manifest-driven-kernel-autotune",
+    "type": "wiki-pattern",
+    "title": "Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection",
+    "path": "wiki/patterns/manifest-driven-kernel-autotune.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "autotune",
+      "manifest",
+      "tiling",
+      "gemm",
+      "tooling",
+      "pattern"
+    ],
+    "kernel_types": [
+      "gemm",
+      "matmul",
+      "grouped-gemm"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
   },
   {
     "id": "pattern-memory-bound",
@@ -4026,6 +4204,33 @@
     "confidence": "inferred"
   },
   {
+    "id": "pattern-online-softmax-wait-boundary",
+    "type": "wiki-pattern",
+    "title": "Online Softmax Wait Boundary — Tail Row Synchronization Drift",
+    "path": "wiki/patterns/online-softmax-wait-boundary.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "online-softmax",
+      "preload",
+      "synchronization",
+      "bugfix",
+      "pattern"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "softmax"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pattern-pipeline-stall",
     "type": "wiki-pattern",
     "title": "Pipeline Stall — Queue Dependency Bottleneck",
@@ -4062,6 +4267,32 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pattern-preload-nextblock-metadata-reuse",
+    "type": "wiki-pattern",
+    "title": "Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile",
+    "path": "wiki/patterns/preload-nextblock-metadata-reuse.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "block-mmad",
+      "preload",
+      "pipeline",
+      "tiling",
+      "gemm",
+      "bugfix",
+      "pattern"
+    ],
+    "kernel_types": [
+      "gemm",
+      "matmul"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
   },
   {
     "id": "pattern-scalar-bottleneck",
@@ -4116,6 +4347,28 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pattern-workspace-offset-underallocation",
+    "type": "wiki-pattern",
+    "title": "Workspace Offset Under-allocation — Host Tiling and Kernel Path Mismatch",
+    "path": "wiki/patterns/workspace-offset-underallocation.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "workspace",
+      "tiling",
+      "mte",
+      "long-context",
+      "debugging",
+      "pattern"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
   },
   {
     "id": "pr-ascend-pytorch-001",
@@ -4229,6 +4482,33 @@
     "confidence": null
   },
   {
+    "id": "pr-cann-ops-adv-140",
+    "type": "source-pr",
+    "title": "cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion",
+    "path": "sources/prs/cann-ops-adv/PR-140.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "cann-ops-adv",
+      "grouped-matmul",
+      "add-fusion",
+      "moe",
+      "aclnn"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm",
+      "elementwise"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-catlass-001",
     "type": "source-pr",
     "title": "CATLASS — Basic Matmul and Group GEMM Examples",
@@ -4255,6 +4535,175 @@
     "confidence": null
   },
   {
+    "id": "pr-catlass-159",
+    "type": "source-pr",
+    "title": "CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix",
+    "path": "sources/prs/catlass/PR-159.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "block-mmad",
+      "preload",
+      "bugfix",
+      "gemm",
+      "tiling"
+    ],
+    "kernel_types": [
+      "gemm",
+      "matmul"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-catlass-169",
+    "type": "source-pr",
+    "title": "CATLASS — Flash Attention Grad TND Example and Block Components",
+    "path": "sources/prs/catlass/PR-169.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "fag",
+      "tnd",
+      "softmax-grad"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "gemm",
+      "softmax"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-catlass-200",
+    "type": "source-pr",
+    "title": "CATLASS — Flash Attention Infer Base Implementation",
+    "path": "sources/prs/catlass/PR-200.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "inference",
+      "online-softmax",
+      "tiling"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "softmax",
+      "matmul"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-catlass-214",
+    "type": "source-pr",
+    "title": "CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear",
+    "path": "sources/prs/catlass/PR-214.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "grouped-gemm",
+      "split-k",
+      "output-init",
+      "bugfix"
+    ],
+    "kernel_types": [
+      "grouped-gemm",
+      "gemm",
+      "matmul"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-catlass-237",
+    "type": "source-pr",
+    "title": "CATLASS — Online Softmax RowNum=1 Wait Boundary Fix",
+    "path": "sources/prs/catlass/PR-237.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "attention",
+      "flash-attention",
+      "online-softmax",
+      "preload",
+      "bugfix"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention",
+      "softmax"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-catlass-266",
+    "type": "source-pr",
+    "title": "CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain",
+    "path": "sources/prs/catlass/PR-266.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "catlass",
+      "autotune",
+      "manifest",
+      "tiling",
+      "gemm",
+      "tooling"
+    ],
+    "kernel_types": [
+      "gemm",
+      "matmul",
+      "grouped-gemm"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-catlass-287",
     "type": "wiki-technique",
     "title": "PR Insight: ascend/catlass #287",
@@ -4271,6 +4720,78 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pr-mindspeed-2703",
+    "type": "source-pr",
+    "title": "MindSpeed — Fused MoE Token Permute and Unpermute on NPU",
+    "path": "sources/prs/mindspeed/PR-2703.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "token-dispatch",
+      "fusion",
+      "torch-npu"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-mindspeed-2707",
+    "type": "source-pr",
+    "title": "MindSpeed — Pipeline Parallel P2P Uses isend/irecv on NPU",
+    "path": "sources/prs/mindspeed/PR-2707.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "pipeline-parallel",
+      "p2p",
+      "communication",
+      "performance"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-mindspeed-2730",
+    "type": "source-pr",
+    "title": "MindSpeed — MindSpore MoE All-to-All Compute/Communication Overlap",
+    "path": "sources/prs/mindspeed/PR-2730.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "moe",
+      "alltoall-overlap",
+      "communication"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
   },
   {
     "id": "pr-mindspeed-2734",
@@ -4291,6 +4812,31 @@
     "confidence": "inferred"
   },
   {
+    "id": "pr-mindspeed-2796",
+    "type": "source-pr",
+    "title": "MindSpeed — MLA Supports Ring Attention and Tensor Parallel Context Parallel",
+    "path": "sources/prs/mindspeed/PR-2796.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mla",
+      "ring-attention",
+      "context-parallel",
+      "tensor-parallel",
+      "p2p"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-mindspeed-2817",
     "type": "wiki-technique",
     "title": "PR Insight: ascend/MindSpeed #2817",
@@ -4309,6 +4855,31 @@
     "confidence": "inferred"
   },
   {
+    "id": "pr-mindspeed-2823",
+    "type": "source-pr",
+    "title": "MindSpeed — Bucket Group Reordering for Param-Gather Overlap",
+    "path": "sources/prs/mindspeed/PR-2823.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "ddp",
+      "param-gather",
+      "overlap",
+      "communication",
+      "scheduling"
+    ],
+    "kernel_types": [
+      "matmul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-mindspeed-2827",
     "type": "wiki-technique",
     "title": "PR Insight: ascend/MindSpeed #2827",
@@ -4324,6 +4895,32 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pr-mindspeed-2828",
+    "type": "source-pr",
+    "title": "MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization",
+    "path": "sources/prs/mindspeed/PR-2828.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "mindspore",
+      "moe",
+      "alltoall",
+      "communication",
+      "tensor-parallel"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
   },
   {
     "id": "pr-sgl-kernel-npu-001",
@@ -4467,6 +5064,32 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "pr-sgl-kernel-npu-478",
+    "type": "source-pr",
+    "title": "sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path",
+    "path": "sources/prs/sgl-kernel-npu/PR-478.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "deepep",
+      "ccu",
+      "moe",
+      "low-latency"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp",
+      "python"
+    ],
+    "confidence": "source-reported"
   },
   {
     "id": "pr-sgl-kernel-npu-506",
@@ -4660,6 +5283,277 @@
     "confidence": null
   },
   {
+    "id": "pr-vllm-ascend-10009",
+    "type": "source-pr",
+    "title": "vllm-ascend — D-side Partial-Group Caching for Hybrid Mamba Models",
+    "path": "sources/prs/vllm-ascend/PR-10009.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "hybrid-model",
+      "mamba",
+      "prefix-cache",
+      "pd-disaggregation"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10041",
+    "type": "source-pr",
+    "title": "vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context",
+    "path": "sources/prs/vllm-ascend/PR-10041.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "qli",
+      "workspace",
+      "long-context"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "ascendc",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10077",
+    "type": "source-pr",
+    "title": "vllm-ascend — Layerwise KV Pooling for AscendStore",
+    "path": "sources/prs/vllm-ascend/PR-10077.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "kv-cache",
+      "ascend-store",
+      "layerwise-transfer",
+      "disaggregation"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10169",
+    "type": "source-pr",
+    "title": "vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill",
+    "path": "sources/prs/vllm-ascend/PR-10169.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "dsa",
+      "context-parallel",
+      "prefill",
+      "allgather",
+      "communication"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10202",
+    "type": "source-pr",
+    "title": "vllm-ascend — Mooncake PP Layer Index and MTP Block Flattening Fix",
+    "path": "sources/prs/vllm-ascend/PR-10202.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "mooncake",
+      "pipeline-parallel",
+      "mtp",
+      "kv-transfer"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10217",
+    "type": "source-pr",
+    "title": "vllm-ascend — AscendStore Grouped Hash Lookup Encoding Alignment",
+    "path": "sources/prs/vllm-ascend/PR-10217.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "ascend-store",
+      "prefix-cache",
+      "grouped-hash",
+      "kv-cache"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10255",
+    "type": "source-pr",
+    "title": "vllm-ascend — Trim SWA KV Transfer Blocks Before Window Clipping",
+    "path": "sources/prs/vllm-ascend/PR-10255.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "swa",
+      "kv-transfer",
+      "mooncake",
+      "nan-debugging"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10298",
+    "type": "source-pr",
+    "title": "vllm-ascend — DeepSeek-V4 Compressed Prefix-Cache Lookup Granularity",
+    "path": "sources/prs/vllm-ascend/PR-10298.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "compressed-kv",
+      "prefix-cache",
+      "block-hash"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10333",
+    "type": "source-pr",
+    "title": "vllm-ascend — Remove Manual DeepSeek-V4 Patch Environment Gate",
+    "path": "sources/prs/vllm-ascend/PR-10333.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "runtime-defaults",
+      "kv-cache",
+      "model-version"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10342",
+    "type": "source-pr",
+    "title": "vllm-ascend — Mooncake Connector Support for DeepSeek-V4 Hybrid KV",
+    "path": "sources/prs/vllm-ascend/PR-10342.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "mooncake",
+      "deepseek-v4",
+      "hybrid-kv",
+      "kv-transfer"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-10369",
+    "type": "source-pr",
+    "title": "vllm-ascend — Skip Pre-KV Graph Memory Profiling for DeepSeek-V4 Compressed Attention",
+    "path": "sources/prs/vllm-ascend/PR-10369.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "compressed-attention",
+      "graph-capture",
+      "memory-profiling"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-vllm-ascend-10438",
     "type": "wiki-technique",
     "title": "PR Insight: vllm-project/vllm-ascend #10438",
@@ -4712,6 +5606,107 @@
     "confidence": "inferred"
   },
   {
+    "id": "pr-vllm-ascend-10694",
+    "type": "source-pr",
+    "title": "vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP",
+    "path": "sources/prs/vllm-ascend/PR-10694.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "dsa",
+      "context-parallel",
+      "tensor-parallel",
+      "allgather",
+      "communication"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-9533",
+    "type": "source-pr",
+    "title": "vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache",
+    "path": "sources/prs/vllm-ascend/PR-9533.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "ascend-store",
+      "hybrid-model",
+      "mamba",
+      "prefix-cache"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-9757",
+    "type": "source-pr",
+    "title": "vllm-ascend — DeepSeek-V4 Support for Ascend 950",
+    "path": "sources/prs/vllm-ascend/PR-9757.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "ascend950",
+      "mxfp",
+      "dsa",
+      "quantization"
+    ],
+    "kernel_types": [
+      "attention",
+      "moe",
+      "gemm"
+    ],
+    "languages": [
+      "python",
+      "cpp"
+    ],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "pr-vllm-ascend-9935",
+    "type": "source-pr",
+    "title": "vllm-ascend — Keep DeepSeek-V4 DSA Forward Outside Piecewise Graph Capture",
+    "path": "sources/prs/vllm-ascend/PR-9935.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "deepseek-v4",
+      "dsa",
+      "graph-capture",
+      "piecewise-graph"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": "source-reported"
+  },
+  {
     "id": "pr-vllm-ascend-9995",
     "type": "wiki-technique",
     "title": "PR Insight: vllm-project/vllm-ascend #9995",
@@ -4725,6 +5720,36 @@
       "deepseek-v4"
     ],
     "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-ascend-gmm-fusion-epilogues",
+    "type": "wiki-technique",
+    "title": "GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues",
+    "path": "wiki/techniques/ascend-gmm-fusion-epilogues.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "gmm-fusion",
+      "grouped-matmul",
+      "grouped-gemm",
+      "moe",
+      "swiglu",
+      "quantization",
+      "add-fusion",
+      "nz-format"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm",
+      "matmul",
+      "elementwise",
+      "quant-matmul",
+      "activation"
+    ],
     "languages": [],
     "confidence": "inferred"
   },
@@ -4862,6 +5887,31 @@
     "confidence": "source-reported"
   },
   {
+    "id": "technique-deepseek-v4-ascend950-runtime",
+    "type": "wiki-technique",
+    "title": "DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation",
+    "path": "wiki/techniques/deepseek-v4-ascend950-runtime.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "deepseek-v4",
+      "ascend950",
+      "compressed-attention",
+      "mxfp",
+      "dsa",
+      "kv-cache",
+      "graph-capture"
+    ],
+    "kernel_types": [
+      "attention",
+      "moe",
+      "gemm"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-double-buffering",
     "type": "wiki-technique",
     "title": "Double Buffering — Overlapping Data Transfer with Compute",
@@ -4878,6 +5928,31 @@
     "kernel_types": [
       "gemm",
       "attention"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-dsa-context-parallel-prefill-overlap",
+    "type": "wiki-technique",
+    "title": "DSA Context-Parallel Prefill Overlap on Ascend",
+    "path": "wiki/techniques/dsa-context-parallel-prefill-overlap.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "dsa",
+      "context-parallel",
+      "prefill",
+      "tensor-parallel",
+      "allgather",
+      "communication"
+    ],
+    "kernel_types": [
+      "attention",
+      "matmul"
     ],
     "languages": [],
     "confidence": "source-reported"
@@ -4948,6 +6023,53 @@
     ],
     "languages": [],
     "confidence": "source-reported"
+  },
+  {
+    "id": "technique-mindspeed-moe-training-communication",
+    "type": "wiki-technique",
+    "title": "MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion",
+    "path": "wiki/techniques/mindspeed-moe-training-communication.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "communication",
+      "pipeline-parallel",
+      "alltoall-overlap",
+      "token-dispatch"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "technique-mla-ring-context-parallel",
+    "type": "wiki-technique",
+    "title": "MLA Ring Context Parallel on Ascend — Heterogeneous K/V P2P",
+    "path": "wiki/techniques/mla-ring-context-parallel.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mla",
+      "ring-attention",
+      "context-parallel",
+      "tensor-parallel",
+      "p2p",
+      "attention"
+    ],
+    "kernel_types": [
+      "attention",
+      "flash-attention"
+    ],
+    "languages": [],
+    "confidence": "inferred"
   },
   {
     "id": "technique-multicore-grid-scheduling",
@@ -71020,6 +72142,30 @@
     "confidence": "source-reported"
   },
   {
+    "id": "technique-sgl-deepep-moe-communication",
+    "type": "wiki-technique",
+    "title": "SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8",
+    "path": "wiki/techniques/sgl-deepep-moe-communication.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "sglang",
+      "deepep",
+      "moe",
+      "alltoall",
+      "ccu",
+      "mxfp8",
+      "communication"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
     "id": "technique-tensor-parallel-overlap",
     "type": "wiki-technique",
     "title": "Tensor Parallelism — Communication/Compute Overlap with HCCL",
@@ -71064,6 +72210,57 @@
     ],
     "languages": [],
     "confidence": "source-reported"
+  },
+  {
+    "id": "technique-training-communication-scheduling-overlap",
+    "type": "wiki-technique",
+    "title": "Training Communication Scheduling for MoE and Param-Gather Overlap",
+    "path": "wiki/techniques/training-communication-scheduling-overlap.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "mindspeed",
+      "moe",
+      "alltoall",
+      "param-gather",
+      "overlap",
+      "communication",
+      "scheduling"
+    ],
+    "kernel_types": [
+      "moe",
+      "grouped-gemm",
+      "matmul"
+    ],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "technique-vllm-hybrid-mamba-kv-cache",
+    "type": "wiki-technique",
+    "title": "vLLM Ascend Hybrid/Mamba KV Cache — Group-Aware Transfer and Prefix Caching",
+    "path": "wiki/techniques/vllm-hybrid-mamba-kv-cache.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "vllm",
+      "hybrid-model",
+      "mamba",
+      "kv-cache",
+      "prefix-cache",
+      "mooncake",
+      "ascend-store"
+    ],
+    "kernel_types": [
+      "attention",
+      "paged-attention"
+    ],
+    "languages": [],
+    "confidence": "inferred"
   },
   {
     "id": "technique-workspace-management",

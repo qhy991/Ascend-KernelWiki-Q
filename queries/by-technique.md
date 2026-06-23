@@ -1,10 +1,12 @@
 # Index: By Technique
 
 
-## atomic-accumulation (3 pages)
+## atomic-accumulation (5 pages)
 
 - [CATLASS Split-K Matmul Example](examples/09_splitk_matmul)
 - [Ascend C Atomic Operation APIs](sources/docs/ascendc-atomic-apis.md)
+- [Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics](wiki/patterns/grouped-gemm-empty-k-output-init.md)
+- [CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear](sources/prs/catlass/PR-214.md)
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md)
 
 ## bank-conflict-avoidance (5 pages)
@@ -38,7 +40,7 @@
 - [PR Insight: vllm-project/vllm-ascend #7198](wiki/techniques/pr-vllm-ascend-7198.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
 
-## cube-vector-overlap (18 pages)
+## cube-vector-overlap (22 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CANN Training Camp — Advanced Operator Optimization Techniques](sources/blogs/cann-training-camp.md)
@@ -49,6 +51,7 @@
 - [Operator Fusion Patterns on Ascend NPU](sources/docs/ascend-operator-fusion.md)
 - [Ascend Profiling with msprof](sources/docs/ascend-profiling-guide.md)
 - [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md)
@@ -57,6 +60,9 @@
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md)
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md)
+- [MindSpeed — Fused MoE Token Permute and Unpermute on NPU](sources/prs/mindspeed/PR-2703.md)
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md)
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md)
 
 ## data-collection (1 pages)
@@ -257,7 +263,7 @@
 
 - [PR Insight: sgl-project/sgl-kernel-npu #79](wiki/techniques/pr-sgl-kernel-npu-79.md)
 
-## hccl-optimization (95 pages)
+## hccl-optimization (108 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
 - [SGL Kernel NPU DeepEP Operators](csrc/deepep/ops)
@@ -267,8 +273,19 @@
 - [HCCL C API Reference](sources/docs/hccl-api-reference.md)
 - [HCCL Collective Communication Library](sources/docs/hccl-collective.md)
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md)
+- [MindSpeed — Pipeline Parallel P2P Uses isend/irecv on NPU](sources/prs/mindspeed/PR-2707.md)
+- [MindSpeed — MindSpore MoE All-to-All Compute/Communication Overlap](sources/prs/mindspeed/PR-2730.md)
+- [MindSpeed — MLA Supports Ring Attention and Tensor Parallel Context Parallel](sources/prs/mindspeed/PR-2796.md)
+- [MindSpeed — Bucket Group Reordering for Param-Gather Overlap](sources/prs/mindspeed/PR-2823.md)
+- [MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization](sources/prs/mindspeed/PR-2828.md)
 - [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md)
+- [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md)
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md)
+- [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md)
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md)
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md)
+- [MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion](wiki/techniques/mindspeed-moe-training-communication.md)
+- [MLA Ring Context Parallel on Ascend — Heterogeneous K/V P2P](wiki/techniques/mla-ring-context-parallel.md)
 - [PR Insight: Ascend/cann-ops-adv #250](wiki/techniques/pr-cann-ops-adv-250.md)
 - [PR Insight: Ascend/cann-ops-adv #260](wiki/techniques/pr-cann-ops-adv-260.md)
 - [PR Insight: Ascend/cann-ops-adv #293](wiki/techniques/pr-cann-ops-adv-293.md)
@@ -353,7 +370,9 @@
 - [PR Insight: vllm-project/vllm-ascend #6167](wiki/techniques/pr-vllm-ascend-6167.md)
 - [PR Insight: vllm-project/vllm-ascend #6168](wiki/techniques/pr-vllm-ascend-6168.md)
 - [PR Insight: vllm-project/vllm-ascend #7654](wiki/techniques/pr-vllm-ascend-7654.md)
+- [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
+- [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md)
 
 ## kv-cache (112 pages)
 
@@ -470,7 +489,7 @@
 - [PR Insight: vllm-project/vllm-ascend #9865](wiki/techniques/pr-vllm-ascend-9865.md)
 - [PR Insight: vllm-project/vllm-ascend #9947](wiki/techniques/pr-vllm-ascend-9947.md)
 
-## kv-cache-paging (21 pages)
+## kv-cache-paging (36 pages)
 
 - [CANN Ops Adv — Incremental Flash Attention](src/transformer/incre_flash_attention)
 - [CANN Ops Adv — Prompt Flash Attention](src/transformer/prompt_flash_attention)
@@ -492,7 +511,22 @@
 - [vLLM Ascend Operator Wrappers](vllm_ascend/ops)
 - [vLLM Ascend Sparse Flash Attention Operator](csrc/attention/sparse_flash_attention)
 - [vLLM Ascend Kernel and Backend Tests](tests)
+- [KV Block Semantic Drift — Physical, Compressed, SWA, and Hybrid Blocks Mixed](wiki/patterns/kv-block-semantic-drift.md)
+- [vllm-ascend — D-side Partial-Group Caching for Hybrid Mamba Models](sources/prs/vllm-ascend/PR-10009.md)
+- [vllm-ascend — Layerwise KV Pooling for AscendStore](sources/prs/vllm-ascend/PR-10077.md)
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md)
+- [vllm-ascend — Mooncake PP Layer Index and MTP Block Flattening Fix](sources/prs/vllm-ascend/PR-10202.md)
+- [vllm-ascend — AscendStore Grouped Hash Lookup Encoding Alignment](sources/prs/vllm-ascend/PR-10217.md)
+- [vllm-ascend — Trim SWA KV Transfer Blocks Before Window Clipping](sources/prs/vllm-ascend/PR-10255.md)
+- [vllm-ascend — DeepSeek-V4 Compressed Prefix-Cache Lookup Granularity](sources/prs/vllm-ascend/PR-10298.md)
+- [vllm-ascend — Remove Manual DeepSeek-V4 Patch Environment Gate](sources/prs/vllm-ascend/PR-10333.md)
+- [vllm-ascend — Mooncake Connector Support for DeepSeek-V4 Hybrid KV](sources/prs/vllm-ascend/PR-10342.md)
+- [vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache](sources/prs/vllm-ascend/PR-9533.md)
+- [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
+- [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md)
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md)
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md)
+- [vLLM Ascend Hybrid/Mamba KV Cache — Group-Aware Transfer and Prefix Caching](wiki/techniques/vllm-hybrid-mamba-kv-cache.md)
 
 ## kv-cache-specs (1 pages)
 
@@ -590,7 +624,7 @@
 - [PR Insight: vllm-project/vllm-ascend #9625](wiki/techniques/pr-vllm-ascend-9625.md)
 - [PR Insight: vllm-project/vllm-ascend #9721](wiki/techniques/pr-vllm-ascend-9721.md)
 
-## nz-tiling (32 pages)
+## nz-tiling (34 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md)
@@ -608,6 +642,7 @@
 - [Ascend C Matmul Tiling EnableBias API](sources/docs/ascendc-matmul-tiling-bias.md)
 - [Catlass — Modular GEMM Framework for Ascend (CUTLASS equivalent)](sources/docs/catlass-framework.md)
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
@@ -623,6 +658,7 @@
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md)
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md)
 
 ## online-inference (2 pages)
@@ -634,7 +670,7 @@
 
 - [PR Insight: vllm-project/vllm-ascend #877](wiki/techniques/pr-vllm-ascend-877.md)
 
-## online-softmax (16 pages)
+## online-softmax (22 pages)
 
 - [CANN Ops Adv — Fused Infer Attention Score](src/transformer/fused_infer_attention_score)
 - [CANN Ops Adv — Incremental Flash Attention](src/transformer/incre_flash_attention)
@@ -650,7 +686,13 @@
 - [vLLM Ascend Sparse Flash Attention Operator](csrc/attention/sparse_flash_attention)
 - [Ascend C SoftMax High-Level APIs](sources/docs/ascendc-softmax-api.md)
 - [Ascend C SoftMax Tiling APIs](sources/docs/ascendc-softmax-tiling.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md)
 - [AscendC Paged Attention — Block KV Cache for NPU Inference](wiki/kernels/paged-attention-npu.md)
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md)
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md)
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md)
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md)
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md)
 
 ## pipeline-decoding (1 pages)
@@ -689,7 +731,7 @@
 - [PR Insight: vllm-project/vllm-ascend #7896](wiki/techniques/pr-vllm-ascend-7896.md)
 - [PR Insight: MTP + PP Speculative Decoding](wiki/techniques/pr-vllm-mtp-pp.md)
 
-## pipeline-scheduling (93 pages)
+## pipeline-scheduling (103 pages)
 
 - [Top 10 AscendC Performance Optimization Tips](sources/blogs/ascendc-performance-tips.md)
 - [Notes on Ascend C Operator Development — Comparative Study with CUDA](sources/blogs/ascendc-programming-guide.md)
@@ -757,6 +799,8 @@
 - [vLLM Ascend Backend — NPU Inference Plugin](sources/docs/vllm-ascend.md)
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md)
 - [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md)
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md)
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md)
 - [Grouped GEMM on Ascend NPU — Batched Matrix Multiply for MoE and GQA](wiki/kernels/grouped-gemm-ascendc.md)
@@ -770,12 +814,20 @@
 - [Ascend Performance Optimization Decision Tree](wiki/patterns/ascend-performance-decision-tree.md)
 - [Host-Dispatch-Bound Kernel — Launch Overhead Dominates](wiki/patterns/host-dispatch-bound.md)
 - [Low Cube Utilization — Diagnosis and Resolution](wiki/patterns/low-cube-utilization.md)
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md)
 - [Pipeline Stall — Queue Dependency Bottleneck](wiki/patterns/pipeline-stall.md)
+- [Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile](wiki/patterns/preload-nextblock-metadata-reuse.md)
 - [PyTorch Ascend Backend — Custom Operator Integration](sources/prs/ascend-pytorch/PR-001.md)
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md)
+- [CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix](sources/prs/catlass/PR-159.md)
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md)
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md)
+- [MindSpeed — MLA Supports Ring Attention and Tensor Parallel Context Parallel](sources/prs/mindspeed/PR-2796.md)
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
+- [vllm-ascend — Layerwise KV Pooling for AscendStore](sources/prs/vllm-ascend/PR-10077.md)
+- [MLA Ring Context Parallel on Ascend — Heterogeneous K/V P2P](wiki/techniques/mla-ring-context-parallel.md)
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md)
 - [PR Insight: Ascend/MindSpeed #2701](wiki/techniques/pr-mindspeed-2701.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #314](wiki/techniques/pr-sgl-kernel-npu-314.md)
@@ -789,7 +841,7 @@
 
 - [PR Insight: Ascend/samples #1660](wiki/techniques/pr-samples-1660.md)
 
-## quantization-int8 (10 pages)
+## quantization-int8 (11 pages)
 
 - [CANN Ops Adv — Matmul Operators](src/matmul)
 - [CATLASS FP8 Matmul Example](examples/29_a2_fp8_e4m3_matmul)
@@ -800,6 +852,7 @@
 - [vLLM Ascend KV Quant Sparse Attention Operator](csrc/attention/kv_quant_sparse_attn_sharedkv)
 - [Ascend C Fixpipe and Post-Matmul APIs](sources/docs/ascendc-fixpipe-apis.md)
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md)
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md)
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md)
 
 ## quantization-layer-reversion (1 pages)
@@ -861,14 +914,20 @@
 - [PR Insight: vllm-project/vllm-ascend #8718](wiki/techniques/pr-vllm-ascend-8718.md)
 - [PR Insight: vllm-project/vllm-ascend #9908](wiki/techniques/pr-vllm-ascend-9908.md)
 
-## tensor-parallel-overlap (6 pages)
+## tensor-parallel-overlap (12 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
 - [SGL Kernel NPU DeepEP Operators](csrc/deepep/ops)
 - [vLLM Ascend Matmul AllReduce Add RMSNorm Operator](csrc/mc2/matmul_allreduce_add_rmsnorm)
 - [vLLM Ascend Model Runner](vllm_ascend/worker)
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md)
+- [MindSpeed — Bucket Group Reordering for Param-Gather Overlap](sources/prs/mindspeed/PR-2823.md)
+- [MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization](sources/prs/mindspeed/PR-2828.md)
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md)
+- [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md)
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md)
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md)
+- [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md)
 
 ## tensor-parallelism (11 pages)
 
@@ -902,7 +961,7 @@
 - [PR Insight: Ascend/samples #2659](wiki/techniques/pr-samples-2659.md)
 - [PR Insight: Ascend/samples #2664](wiki/techniques/pr-samples-2664.md)
 
-## tiling-strategy (33 pages)
+## tiling-strategy (51 pages)
 
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc)
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul)
@@ -932,13 +991,31 @@
 - [BiSheng Compiler Quick Start for Ascend C Operators](sources/docs/bisheng-compiler-quickstart.md)
 - [CANN 8.0 Quick Start and Documentation Map](sources/docs/cann-quickstart-index.md)
 - [msDebug Operator Debugging Overview](sources/docs/msdebug-overview.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md)
 - [Ascend Performance Optimization Decision Tree](wiki/patterns/ascend-performance-decision-tree.md)
 - [AscendC Compile Error Diagnostics — bisheng & CMake](wiki/patterns/ascendc-compile-troubleshooting.md)
+- [Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics](wiki/patterns/grouped-gemm-empty-k-output-init.md)
+- [Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection](wiki/patterns/manifest-driven-kernel-autotune.md)
+- [Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile](wiki/patterns/preload-nextblock-metadata-reuse.md)
 - [Tiling Too Small — Under-Utilized Cube and MTE](wiki/patterns/tiling-too-small.md)
+- [Workspace Offset Under-allocation — Host Tiling and Kernel Path Mismatch](wiki/patterns/workspace-offset-underallocation.md)
+- [cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion](sources/prs/cann-ops-adv/PR-140.md)
+- [CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix](sources/prs/catlass/PR-159.md)
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md)
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md)
+- [CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear](sources/prs/catlass/PR-214.md)
+- [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md)
+- [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md)
+- [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md)
+- [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md)
+- [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md)
 - [PR Insight: cann-ops-adv #58](wiki/techniques/pr-cann-ops-adv-58.md)
+- [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md)
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md)
 
-## workspace-management (12 pages)
+## workspace-management (25 pages)
 
 - [Ascend Samples — AscendCL Runtime Examples](cplusplus/level1_single_api)
 - [Ascend Samples — aclnn Single-Operator Invocation](operator/aclnn)
@@ -951,6 +1028,19 @@
 - [Ascend C TPipe InitBuffer API](sources/docs/ascendc-tpipe-initbuffer.md)
 - [AscendCL Runtime Memory Management](sources/docs/ascendcl-memory-management.md)
 - [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md)
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md)
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md)
+- [Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection](wiki/patterns/manifest-driven-kernel-autotune.md)
+- [Workspace Offset Under-allocation — Host Tiling and Kernel Path Mismatch](wiki/patterns/workspace-offset-underallocation.md)
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md)
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md)
+- [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md)
+- [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md)
+- [vllm-ascend — Skip Pre-KV Graph Memory Profiling for DeepSeek-V4 Compressed Attention](sources/prs/vllm-ascend/PR-10369.md)
+- [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
+- [vllm-ascend — Keep DeepSeek-V4 DSA Forward Outside Piecewise Graph Capture](sources/prs/vllm-ascend/PR-9935.md)
+- [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md)
+- [vLLM Ascend Hybrid/Mamba KV Cache — Group-Aware Transfer and Prefix Caching](wiki/techniques/vllm-hybrid-mamba-kv-cache.md)
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md)
 
 ## workspace-reuse (1 pages)

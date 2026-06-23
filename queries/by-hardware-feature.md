@@ -1,7 +1,7 @@
 # Index: By Hardware Feature
 
 
-## cube-unit (106 pages)
+## cube-unit (121 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -80,20 +80,35 @@
 - [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [Convolution on Ascend NPU — im2col + GEMM Approach](wiki/kernels/conv-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) `[wiki-kernel]` arch:ascend910b
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [Flash Attention on Ascend NPU](wiki/kernels/flash-attention-npu.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [CATLASS GEMM — C++ Template Matmul on the Cube Unit](wiki/kernels/gemm-catlass-cpp.md) `[wiki-kernel]` arch:ascend910b
 - [AscendC Matmul — GEMM via Cube Unit and Catlass](wiki/kernels/matmul-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics](wiki/patterns/grouped-gemm-empty-k-output-init.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection](wiki/patterns/manifest-driven-kernel-autotune.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile](wiki/patterns/preload-nextblock-metadata-reuse.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [Tiling Too Small — Under-Utilized Cube and MTE](wiki/patterns/tiling-too-small.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) `[source-pr]` arch:ascend910b
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
+- [cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion](sources/prs/cann-ops-adv/PR-140.md) `[source-pr]` arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
+- [CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix](sources/prs/catlass/PR-159.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear](sources/prs/catlass/PR-214.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md) `[source-pr]` arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) `[source-pr]` arch:ascend910b
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md) `[source-pr]` arch:ascend910, ascend910b
+- [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md) `[source-pr]` arch:ascend910, ascend910b
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) `[wiki-technique]` arch:ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: Ascend/catlass #195](wiki/techniques/pr-catlass-195.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: Ascend/catlass #223](wiki/techniques/pr-catlass-223.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -110,7 +125,7 @@
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## event-sync (16 pages)
+## event-sync (19 pages)
 
 - [Ascend Samples — AscendCL Runtime Examples](cplusplus/level1_single_api) `[source-code]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C Resource Group and KFC Workspace APIs](sources/docs/ascendc-resource-group-apis.md) `[source-doc]` arch:ascend910, ascend910b
@@ -118,6 +133,9 @@
 - [Ascend C TQue Memory Queue API](sources/docs/ascendc-tque.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [AscendCL Runtime Management API](sources/docs/ascendcl-runtime-api.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Instruction Queue System — 4-Queue Pipeline Architecture](wiki/hardware/instruction-queue.md) `[wiki-hardware]` arch:ascend910, ascend910b
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) `[source-pr]` arch:ascend910b
 - [PR Insight: Ascend/samples #2725](wiki/techniques/pr-samples-2725.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #37](wiki/techniques/pr-sgl-kernel-npu-37.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -129,7 +147,7 @@
 - [PR Insight: vllm-project/vllm-ascend #6416](wiki/techniques/pr-vllm-ascend-6416.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: vllm-project/vllm-ascend #6422](wiki/techniques/pr-vllm-ascend-6422.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## global-memory (67 pages)
+## global-memory (95 pages)
 
 - [Calling a Custom aclnn Operator from C++ — End to End](sources/blogs/aclnn-custom-op-invocation.md) `[source-blog]` arch:ascend910, ascend910b
 - [Ascend Samples — AscendCL Runtime Examples](cplusplus/level1_single_api) `[source-code]` arch:ascend910, ascend910b, ascend310p
@@ -193,13 +211,41 @@
 - [vLLM Ascend Backend — NPU Inference Plugin](sources/docs/vllm-ascend.md) `[source-doc]` arch:ascend910b
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [MTE — Memory Transfer Engine (Async Data Movement)](wiki/hardware/mte.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
+- [Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics](wiki/patterns/grouped-gemm-empty-k-output-init.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [KV Block Semantic Drift — Physical, Compressed, SWA, and Hybrid Blocks Mixed](wiki/patterns/kv-block-semantic-drift.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Workspace Offset Under-allocation — Host Tiling and Kernel Path Mismatch](wiki/patterns/workspace-offset-underallocation.md) `[wiki-pattern]` arch:ascend910b
+- [CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear](sources/prs/catlass/PR-214.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — Fused MoE Token Permute and Unpermute on NPU](sources/prs/mindspeed/PR-2703.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — Bucket Group Reordering for Param-Gather Overlap](sources/prs/mindspeed/PR-2823.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization](sources/prs/mindspeed/PR-2828.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) `[source-pr]` arch:ascend910b
+- [vllm-ascend — D-side Partial-Group Caching for Hybrid Mamba Models](sources/prs/vllm-ascend/PR-10009.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md) `[source-pr]` arch:ascend910b
+- [vllm-ascend — Layerwise KV Pooling for AscendStore](sources/prs/vllm-ascend/PR-10077.md) `[source-pr]` arch:ascend910, ascend910b
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Mooncake PP Layer Index and MTP Block Flattening Fix](sources/prs/vllm-ascend/PR-10202.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — AscendStore Grouped Hash Lookup Encoding Alignment](sources/prs/vllm-ascend/PR-10217.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Trim SWA KV Transfer Blocks Before Window Clipping](sources/prs/vllm-ascend/PR-10255.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — DeepSeek-V4 Compressed Prefix-Cache Lookup Granularity](sources/prs/vllm-ascend/PR-10298.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Remove Manual DeepSeek-V4 Patch Environment Gate](sources/prs/vllm-ascend/PR-10333.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Mooncake Connector Support for DeepSeek-V4 Hybrid KV](sources/prs/vllm-ascend/PR-10342.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — Skip Pre-KV Graph Memory Profiling for DeepSeek-V4 Compressed Attention](sources/prs/vllm-ascend/PR-10369.md) `[source-pr]` arch:ascend910, ascend910b
+- [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache](sources/prs/vllm-ascend/PR-9533.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md) `[source-pr]` arch:ascend910b
+- [vllm-ascend — Keep DeepSeek-V4 DSA Forward Outside Piecewise Graph Capture](sources/prs/vllm-ascend/PR-9935.md) `[source-pr]` arch:ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) `[wiki-technique]` arch:ascend910b
+- [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md) `[wiki-technique]` arch:ascend910b
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) `[wiki-technique]` arch:ascend910b
+- [MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion](wiki/techniques/mindspeed-moe-training-communication.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) `[wiki-technique]` arch:ascend910b
+- [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [vLLM Ascend Hybrid/Mamba KV Cache — Group-Aware Transfer and Prefix Caching](wiki/techniques/vllm-hybrid-mamba-kv-cache.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## hccs (16 pages)
+## hccs (30 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp) `[source-code]` arch:ascend910, ascend910b
@@ -210,15 +256,29 @@
 - [HCCL Collective Communication Library](sources/docs/hccl-collective.md) `[source-doc]` arch:ascend910, ascend910b
 - [HCCL Collective Communication Overview](sources/docs/hccl-overview.md) `[source-doc]` arch:ascend910, ascend910b
 - [HCCS — Huawei Cache Coherent System Interconnect](wiki/hardware/hccs.md) `[wiki-hardware]` arch:ascend910, ascend910b
+- [MindSpeed — Pipeline Parallel P2P Uses isend/irecv on NPU](sources/prs/mindspeed/PR-2707.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — MindSpore MoE All-to-All Compute/Communication Overlap](sources/prs/mindspeed/PR-2730.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — MLA Supports Ring Attention and Tensor Parallel Context Parallel](sources/prs/mindspeed/PR-2796.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — Bucket Group Reordering for Param-Gather Overlap](sources/prs/mindspeed/PR-2823.md) `[source-pr]` arch:ascend910, ascend910b
+- [MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization](sources/prs/mindspeed/PR-2828.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md) `[source-pr]` arch:ascend910b
+- [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md) `[source-pr]` arch:ascend910, ascend910b
+- [vLLM Ascend — Zigzag Context Parallel Optimization for DSA Prefill](sources/prs/vllm-ascend/PR-10169.md) `[source-pr]` arch:ascend910, ascend910b
+- [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md) `[source-pr]` arch:ascend910, ascend910b
+- [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md) `[source-pr]` arch:ascend910b
+- [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion](wiki/techniques/mindspeed-moe-training-communication.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [MLA Ring Context Parallel on Ascend — Heterogeneous K/V P2P](wiki/techniques/mla-ring-context-parallel.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #117](wiki/techniques/pr-sgl-kernel-npu-117.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #141](wiki/techniques/pr-sgl-kernel-npu-141.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #193](wiki/techniques/pr-sgl-kernel-npu-193.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #95](wiki/techniques/pr-sgl-kernel-npu-95.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) `[wiki-technique]` arch:ascend910b
+- [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## instruction-queue (11 pages)
+## instruction-queue (13 pages)
 
 - [Ascend C Synchronization Control APIs](sources/docs/ascendc-synchronization-control.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend C TPipe InitBuffer API](sources/docs/ascendc-tpipe-initbuffer.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
@@ -226,13 +286,15 @@
 - [CANN Architecture Guide — AICore Hardware Principles](sources/docs/cann-architecture-guide.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Instruction Queue System — 4-Queue Pipeline Architecture](wiki/hardware/instruction-queue.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [Scalar Unit — Control Flow and Address Generation](wiki/hardware/scalar-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md) `[source-pr]` arch:ascend910, ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: Ascend/cann-ops-adv #257](wiki/techniques/pr-cann-ops-adv-257.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #89](wiki/techniques/pr-sgl-kernel-npu-89.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [TQue Deadlock Pattern in Ascend C](wiki/patterns/tque-deadlock.md) `[wiki-pattern]` arch:ascend910, ascend910b
 
-## l0-buffer (27 pages)
+## l0-buffer (34 pages)
 
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) `[source-blog]` arch:ascend910b
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) `[source-code]` arch:ascend910, ascend910b
@@ -260,9 +322,16 @@
 - [Ascend C Matmul Tiling EnableBias API](sources/docs/ascendc-matmul-tiling-bias.md) `[source-doc]` arch:ascend910, ascend910b
 - [L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy](wiki/hardware/l1-l0-buffer.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection](wiki/patterns/manifest-driven-kernel-autotune.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile](wiki/patterns/preload-nextblock-metadata-reuse.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
+- [CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix](sources/prs/catlass/PR-159.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md) `[source-pr]` arch:ascend910, ascend910b
 
-## l1-buffer (31 pages)
+## l1-buffer (38 pages)
 
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) `[source-blog]` arch:ascend910b
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) `[source-code]` arch:ascend910, ascend910b
@@ -290,13 +359,20 @@
 - [L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy](wiki/hardware/l1-l0-buffer.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [MTE — Memory Transfer Engine (Async Data Movement)](wiki/hardware/mte.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection](wiki/patterns/manifest-driven-kernel-autotune.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Preload nextBlock Metadata Reuse — Current Tile State Leaks into Next Tile](wiki/patterns/preload-nextblock-metadata-reuse.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
+- [CATLASS — BlockMmad Preload nextBlock K-Tile Index Fix](sources/prs/catlass/PR-159.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md) `[source-pr]` arch:ascend910, ascend910b
 - [PR Insight: cann-ops-adv #84](wiki/techniques/pr-cann-ops-adv-84.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: Ascend/samples #1461](wiki/techniques/pr-samples-1461.md) `[wiki-technique]` arch:ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) `[wiki-technique]` arch:ascend910, ascend910b, ascend310p
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## mte (29 pages)
+## mte (32 pages)
 
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
 - [Ascend Samples — AscendC Operator Examples](operator/ascendc) `[source-code]` arch:ascend910, ascend910b, ascend310p
@@ -317,10 +393,13 @@
 - [TIK (Tensor Iterator Kernel) Python API Reference](sources/docs/tik-api-reference.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [MTE — Memory Transfer Engine (Async Data Movement)](wiki/hardware/mte.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
+- [Workspace Offset Under-allocation — Host Tiling and Kernel Path Mismatch](wiki/patterns/workspace-offset-underallocation.md) `[wiki-pattern]` arch:ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) `[source-pr]` arch:ascend910b
+- [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md) `[source-pr]` arch:ascend910b
 - [Atomic Accumulation — Split-K and Cross-Core Reduction to Global Memory](wiki/techniques/atomic-accumulation.md) `[wiki-technique]` arch:ascend910b
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) `[wiki-technique]` arch:ascend910, ascend910b
+- [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md) `[wiki-technique]` arch:ascend910b
 - [Double Buffering — Overlapping Data Transfer with Compute](wiki/techniques/double-buffering.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) `[wiki-technique]` arch:ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -337,7 +416,7 @@
 - [PR Insight: vllm-project/vllm-ascend #6393](wiki/techniques/pr-vllm-ascend-6393.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: vllm-project/vllm-ascend #6579](wiki/techniques/pr-vllm-ascend-6579.md) `[wiki-technique]` arch:ascend310p
 
-## nz-format (55 pages)
+## nz-format (56 pages)
 
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md) `[source-blog]` arch:ascend910b
 - [Understanding FRACTAL_NZ — Ascend's 5D Data Format for Matrix Computation](sources/blogs/nz-format-explained.md) `[source-blog]` arch:ascend910, ascend910b
@@ -358,6 +437,7 @@
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
 - [CATLASS — Basic Matmul and Group GEMM Examples](sources/prs/catlass/PR-001.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) `[source-pr]` arch:ascend910b
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [FRACTAL_NZ Tiling Strategy for Cube Unit](wiki/techniques/nz-tiling.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [PR Insight: sgl-project/sgl-kernel-npu #107](wiki/techniques/pr-sgl-kernel-npu-107.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -401,7 +481,7 @@
 - [CANN Architecture Guide — AICore Hardware Principles](sources/docs/cann-architecture-guide.md) `[source-doc]` arch:ascend910, ascend910b, ascend310p
 - [Scalar Unit — Control Flow and Address Generation](wiki/hardware/scalar-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 
-## unified-buffer (78 pages)
+## unified-buffer (85 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md) `[source-blog]` arch:ascend910, ascend910b
@@ -462,13 +542,20 @@
 - [Ascend Memory Hierarchy (GM → L1 → UB → L0)](wiki/hardware/memory-hierarchy.md) `[wiki-hardware]` arch:ascend910, ascend910b
 - [MTE — Memory Transfer Engine (Async Data Movement)](wiki/hardware/mte.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
 - [Unified Buffer (UB) — On-Chip Scratchpad Memory](wiki/hardware/unified-buffer.md) `[wiki-hardware]` arch:ascend910, ascend910b
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [CUDA Memory Model → Ascend Memory Model Mapping](wiki/migration/memory-model-mapping.md) `[wiki-migration]` arch:
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
+- [cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion](sources/prs/cann-ops-adv/PR-140.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md) `[source-pr]` arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md) `[source-pr]` arch:ascend910b
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [UB Bank Conflict Avoidance](wiki/techniques/bank-conflict-avoidance.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [UB Data Reuse — Minimizing GM Bandwidth Pressure](wiki/techniques/data-reuse.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Double Buffering — Overlapping Data Transfer with Compute](wiki/techniques/double-buffering.md) `[wiki-technique]` arch:ascend910, ascend910b
@@ -482,7 +569,7 @@
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md) `[wiki-technique]` arch:ascend910, ascend910b
 
-## vector-unit (101 pages)
+## vector-unit (112 pages)
 
 - [Ascend 910B Deep Dive — Architecture Improvements over 910A](sources/blogs/ascend-910b-deep-dive.md) `[source-blog]` arch:ascend910b
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md) `[source-blog]` arch:ascend910b
@@ -561,8 +648,11 @@
 - [torch_npu — PyTorch Ascend Adapter and Custom Operator Registration](sources/docs/torch-npu-adapter.md) `[source-doc]` arch:ascend910, ascend910b
 - [vLLM Ascend Backend — NPU Inference Plugin](sources/docs/vllm-ascend.md) `[source-doc]` arch:ascend910b
 - [Vector Unit — SIMD Processing Engine](wiki/hardware/vector-unit.md) `[wiki-hardware]` arch:ascend910, ascend910b, ascend310p
+- [Activation Functions in Ascend C](wiki/kernels/activation-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [Elementwise Operations — AscendC Vector Template](wiki/kernels/elementwise-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b, ascend310p
 - [AscendC FFN Fused Kernel — Dual GEMM + Activation](wiki/kernels/ffn-fused-ascendc.md) `[wiki-kernel]` arch:ascend910b
+- [CATLASS Flash Attention Grad TND — Backward Attention Case Study](wiki/kernels/flash-attention-grad-tnd-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Flash Attention Infer in CATLASS](wiki/kernels/flash-attention-infer-catlass.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [LayerNorm / RMSNorm on Ascend NPU](wiki/kernels/layernorm-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [Reduction Operations (ReduceSum/ReduceMax) on Ascend NPU](wiki/kernels/reduction-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [AscendC RMSNorm — Fused Vector Normalization](wiki/kernels/rmsnorm-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
@@ -570,13 +660,21 @@
 - [AscendC Softmax — Vector Unit Implementation](wiki/kernels/softmax-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [AscendC SwiGLU — Fused Gated Activation](wiki/kernels/swiglu-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md) `[wiki-kernel]` arch:ascend910, ascend910b
+- [Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics](wiki/patterns/grouped-gemm-empty-k-output-init.md) `[wiki-pattern]` arch:ascend910, ascend910b
+- [Online Softmax Wait Boundary — Tail Row Synchronization Drift](wiki/patterns/online-softmax-wait-boundary.md) `[wiki-pattern]` arch:ascend910, ascend910b
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md) `[source-pr]` arch:ascend910b
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
+- [cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion](sources/prs/cann-ops-adv/PR-140.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Grad TND Example and Block Components](sources/prs/catlass/PR-169.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Flash Attention Infer Base Implementation](sources/prs/catlass/PR-200.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Grouped Matmul Slice-K Ki=0 Output Clear](sources/prs/catlass/PR-214.md) `[source-pr]` arch:ascend910, ascend910b
+- [CATLASS — Online Softmax RowNum=1 Wait Boundary Fix](sources/prs/catlass/PR-237.md) `[source-pr]` arch:ascend910, ascend910b
 - [SGLang NPU Kernel — Ascend Backend Support](sources/prs/sgl-kernel-npu/PR-001.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md) `[source-pr]` arch:ascend910, ascend910b
 - [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md) `[source-pr]` arch:ascend910, ascend910b
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md) `[source-pr]` arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) `[source-pr]` arch:ascend910b
+- [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [Cube/Vector Overlap — Exploiting Independent Instruction Queues](wiki/techniques/cube-vector-overlap.md) `[wiki-technique]` arch:ascend910, ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) `[wiki-technique]` arch:ascend910, ascend910b
