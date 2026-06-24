@@ -1,5 +1,5 @@
 ---
-id: hw-hccs
+id: wiki-hardware-hccs
 title: "HCCS — Huawei Cache Coherent System Interconnect"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

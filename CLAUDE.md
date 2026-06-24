@@ -42,8 +42,13 @@ inclusion_reason: "why this PR matters"
 ```yaml
 kernel_types: [matmul, attention, ...]
 languages: [ascendc, ...]
+techniques: [list-of-techniques]
 related: [list-of-page-ids]
 sources: [list-of-source-ids]
+operator_recipe:
+  - block_dim: <str>
+    tiling: <str>
+    buffer_allocation: <str>
 performance_claims:
   - gpu: Ascend 910B
     dtype: fp16

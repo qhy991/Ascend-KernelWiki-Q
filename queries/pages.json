@@ -2657,250 +2657,6 @@
     "confidence": "source-reported"
   },
   {
-    "id": "hw-ascend-910b-evolution",
-    "type": "wiki-hardware",
-    "title": "Ascend 910B Architecture Evolution",
-    "path": "wiki/hardware/ascend-910b-evolution.md",
-    "architectures": [
-      "ascend910b"
-    ],
-    "tags": [
-      "hardware-overview"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "inferred"
-  },
-  {
-    "id": "hw-cube-unit",
-    "type": "wiki-hardware",
-    "title": "Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)",
-    "path": "wiki/hardware/cube-unit.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "cube-unit",
-      "matrix",
-      "compute",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
-    "id": "hw-data-formats",
-    "type": "wiki-hardware",
-    "title": "Data Formats: ND vs FRACTAL_NZ",
-    "path": "wiki/hardware/data-formats.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "nd-format",
-      "nz-format",
-      "format-conversion",
-      "cube-unit"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
-    "id": "hw-hccs",
-    "type": "wiki-hardware",
-    "title": "HCCS — Huawei Cache Coherent System Interconnect",
-    "path": "wiki/hardware/hccs.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "hccs",
-      "interconnect",
-      "communication",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "source-reported"
-  },
-  {
-    "id": "hw-instruction-queue",
-    "type": "wiki-hardware",
-    "title": "Instruction Queue System — 4-Queue Pipeline Architecture",
-    "path": "wiki/hardware/instruction-queue.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "instruction-queue",
-      "pipeline",
-      "hardware",
-      "synchronization"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
-    "id": "hw-l1-l0-buffer",
-    "type": "wiki-hardware",
-    "title": "L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy",
-    "path": "wiki/hardware/l1-l0-buffer.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "l1-buffer",
-      "l0-buffer",
-      "memory",
-      "cube-unit",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "source-reported"
-  },
-  {
-    "id": "hw-memory-hierarchy",
-    "type": "wiki-hardware",
-    "title": "Ascend Memory Hierarchy (GM → L1 → UB → L0)",
-    "path": "wiki/hardware/memory-hierarchy.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "memory",
-      "hierarchy",
-      "global-memory",
-      "unified-buffer",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
-    "id": "hw-mte",
-    "type": "wiki-hardware",
-    "title": "MTE — Memory Transfer Engine (Async Data Movement)",
-    "path": "wiki/hardware/mte.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b",
-      "ascend310p"
-    ],
-    "tags": [
-      "mte",
-      "memory",
-      "dma",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "source-reported"
-  },
-  {
-    "id": "hw-nz-format",
-    "type": "wiki-hardware",
-    "title": "FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format",
-    "path": "wiki/hardware/nz-format.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b",
-      "ascend310p"
-    ],
-    "tags": [
-      "nz-format",
-      "nd-format",
-      "data-format",
-      "cube-unit",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "source-reported"
-  },
-  {
-    "id": "hw-scalar-unit",
-    "type": "wiki-hardware",
-    "title": "Scalar Unit — Control Flow and Address Generation",
-    "path": "wiki/hardware/scalar-unit.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b",
-      "ascend310p"
-    ],
-    "tags": [
-      "scalar-unit",
-      "control",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "source-reported"
-  },
-  {
-    "id": "hw-sync-primitives",
-    "type": "wiki-hardware",
-    "title": "Hardware Synchronization Primitives",
-    "path": "wiki/hardware/sync-primitives.md",
-    "architectures": [
-      "ascend910b"
-    ],
-    "tags": [
-      "hardware-overview"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "inferred"
-  },
-  {
-    "id": "hw-unified-buffer",
-    "type": "wiki-hardware",
-    "title": "Unified Buffer (UB) — On-Chip Scratchpad Memory",
-    "path": "wiki/hardware/unified-buffer.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b"
-    ],
-    "tags": [
-      "unified-buffer",
-      "memory",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
-    "id": "hw-vector-unit",
-    "type": "wiki-hardware",
-    "title": "Vector Unit — SIMD Processing Engine",
-    "path": "wiki/hardware/vector-unit.md",
-    "architectures": [
-      "ascend910",
-      "ascend910b",
-      "ascend310p"
-    ],
-    "tags": [
-      "vector-unit",
-      "simd",
-      "compute",
-      "hardware"
-    ],
-    "kernel_types": [],
-    "languages": [],
-    "confidence": "verified"
-  },
-  {
     "id": "kernel-activation-ascendc",
     "type": "wiki-kernel",
     "title": "Activation Functions in Ascend C",
@@ -72319,6 +72075,250 @@
     "architectures": [],
     "tags": [
       "profiling"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-ascend-910b-evolution",
+    "type": "wiki-hardware",
+    "title": "Ascend 910B Architecture Evolution",
+    "path": "wiki/hardware/ascend-910b-evolution.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "hardware-overview"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "wiki-hardware-cube-unit",
+    "type": "wiki-hardware",
+    "title": "Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)",
+    "path": "wiki/hardware/cube-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "cube-unit",
+      "matrix",
+      "compute",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-data-formats",
+    "type": "wiki-hardware",
+    "title": "Data Formats: ND vs FRACTAL_NZ",
+    "path": "wiki/hardware/data-formats.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "nd-format",
+      "nz-format",
+      "format-conversion",
+      "cube-unit"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-hccs",
+    "type": "wiki-hardware",
+    "title": "HCCS — Huawei Cache Coherent System Interconnect",
+    "path": "wiki/hardware/hccs.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "hccs",
+      "interconnect",
+      "communication",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "wiki-hardware-instruction-queue",
+    "type": "wiki-hardware",
+    "title": "Instruction Queue System — 4-Queue Pipeline Architecture",
+    "path": "wiki/hardware/instruction-queue.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "instruction-queue",
+      "pipeline",
+      "hardware",
+      "synchronization"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-l1-l0-buffer",
+    "type": "wiki-hardware",
+    "title": "L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy",
+    "path": "wiki/hardware/l1-l0-buffer.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "l1-buffer",
+      "l0-buffer",
+      "memory",
+      "cube-unit",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "wiki-hardware-memory-hierarchy",
+    "type": "wiki-hardware",
+    "title": "Ascend Memory Hierarchy (GM → L1 → UB → L0)",
+    "path": "wiki/hardware/memory-hierarchy.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "memory",
+      "hierarchy",
+      "global-memory",
+      "unified-buffer",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-mte",
+    "type": "wiki-hardware",
+    "title": "MTE — Memory Transfer Engine (Async Data Movement)",
+    "path": "wiki/hardware/mte.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "mte",
+      "memory",
+      "dma",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "wiki-hardware-nz-format",
+    "type": "wiki-hardware",
+    "title": "FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format",
+    "path": "wiki/hardware/nz-format.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "nz-format",
+      "nd-format",
+      "data-format",
+      "cube-unit",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "wiki-hardware-scalar-unit",
+    "type": "wiki-hardware",
+    "title": "Scalar Unit — Control Flow and Address Generation",
+    "path": "wiki/hardware/scalar-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "scalar-unit",
+      "control",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "source-reported"
+  },
+  {
+    "id": "wiki-hardware-sync-primitives",
+    "type": "wiki-hardware",
+    "title": "Hardware Synchronization Primitives",
+    "path": "wiki/hardware/sync-primitives.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "hardware-overview"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "inferred"
+  },
+  {
+    "id": "wiki-hardware-unified-buffer",
+    "type": "wiki-hardware",
+    "title": "Unified Buffer (UB) — On-Chip Scratchpad Memory",
+    "path": "wiki/hardware/unified-buffer.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b"
+    ],
+    "tags": [
+      "unified-buffer",
+      "memory",
+      "hardware"
+    ],
+    "kernel_types": [],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
+    "id": "wiki-hardware-vector-unit",
+    "type": "wiki-hardware",
+    "title": "Vector Unit — SIMD Processing Engine",
+    "path": "wiki/hardware/vector-unit.md",
+    "architectures": [
+      "ascend910",
+      "ascend910b",
+      "ascend310p"
+    ],
+    "tags": [
+      "vector-unit",
+      "simd",
+      "compute",
+      "hardware"
     ],
     "kernel_types": [],
     "languages": [],

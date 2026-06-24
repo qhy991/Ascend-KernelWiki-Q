@@ -1,5 +1,5 @@
 ---
-id: hw-l1-l0-buffer
+id: wiki-hardware-l1-l0-buffer
 title: "L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

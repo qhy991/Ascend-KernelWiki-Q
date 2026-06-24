@@ -1,5 +1,5 @@
 ---
-id: hw-ascend-910b-evolution
+id: wiki-hardware-ascend-910b-evolution
 title: "Ascend 910B Architecture Evolution"
 type: wiki-hardware
 architectures:

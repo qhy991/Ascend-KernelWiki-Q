@@ -1,5 +1,5 @@
 ---
-id: hw-data-formats
+id: wiki-hardware-data-formats
 title: "Data Formats: ND vs FRACTAL_NZ"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

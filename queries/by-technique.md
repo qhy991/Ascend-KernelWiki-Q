@@ -24,10 +24,6 @@
 
 ## cube-unit (15 pages)
 
-- [Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)](wiki/hardware/cube-unit.md)
-- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
-- [L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy](wiki/hardware/l1-l0-buffer.md)
-- [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 - [PR Insight: Ascend/catlass #195](wiki/techniques/pr-catlass-195.md)
 - [PR Insight: Ascend/catlass #223](wiki/techniques/pr-catlass-223.md)
 - [PR Insight: Ascend/catlass #87](wiki/techniques/pr-catlass-87.md)
@@ -38,6 +34,10 @@
 - [PR Insight: vllm-project/vllm-ascend #5808](wiki/techniques/pr-vllm-ascend-5808.md)
 - [PR Insight: vllm-project/vllm-ascend #5873](wiki/techniques/pr-vllm-ascend-5873.md)
 - [PR Insight: vllm-project/vllm-ascend #7198](wiki/techniques/pr-vllm-ascend-7198.md)
+- [Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)](wiki/hardware/cube-unit.md)
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
+- [L1 and L0 Buffers — The Cube Unit's On-Chip Staging Hierarchy](wiki/hardware/l1-l0-buffer.md)
+- [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 - [Triton Optimization for Ascend NPUs](wiki/techniques/triton-ascend-optimization.md)
 
 ## cube-vector-overlap (22 pages)
@@ -244,7 +244,6 @@
 - [Ascend C DataCopyPad API](sources/docs/ascendc-datacopypad-api.md)
 - [Ascend C Fixpipe and Post-Matmul APIs](sources/docs/ascendc-fixpipe-apis.md)
 - [Ascend C LoadData and Sparse Load APIs](sources/docs/ascendc-load-data-apis.md)
-- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
 - [AscendC W8A8 INT8 Matmul — npu_quant_matmul](wiki/kernels/quant-matmul-ascendc.md)
 - [Format-Conversion Overhead — Excess ND<->NZ Transposes](wiki/patterns/format-conversion-overhead.md)
 - [FRACTAL_NZ Format Traps — Common Pitfalls and Solutions](wiki/patterns/nz-format-traps.md)
@@ -258,6 +257,7 @@
 - [PR Insight: vllm-project/vllm-ascend #2619](wiki/techniques/pr-vllm-ascend-2619.md)
 - [PR Insight: vllm-project/vllm-ascend #5068](wiki/techniques/pr-vllm-ascend-5068.md)
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md)
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
 
 ## format-support (1 pages)
 
@@ -587,8 +587,6 @@
 
 ## nz-format (36 pages)
 
-- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
-- [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #107](wiki/techniques/pr-sgl-kernel-npu-107.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #135](wiki/techniques/pr-sgl-kernel-npu-135.md)
 - [PR Insight: sgl-project/sgl-kernel-npu #79](wiki/techniques/pr-sgl-kernel-npu-79.md)
@@ -623,6 +621,8 @@
 - [PR Insight: vllm-project/vllm-ascend #9105](wiki/techniques/pr-vllm-ascend-9105.md)
 - [PR Insight: vllm-project/vllm-ascend #9625](wiki/techniques/pr-vllm-ascend-9625.md)
 - [PR Insight: vllm-project/vllm-ascend #9721](wiki/techniques/pr-vllm-ascend-9721.md)
+- [Data Formats: ND vs FRACTAL_NZ](wiki/hardware/data-formats.md)
+- [FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format](wiki/hardware/nz-format.md)
 
 ## nz-tiling (34 pages)
 

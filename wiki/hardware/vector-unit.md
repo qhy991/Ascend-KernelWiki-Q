@@ -1,5 +1,5 @@
 ---
-id: hw-vector-unit
+id: wiki-hardware-vector-unit
 title: "Vector Unit — SIMD Processing Engine"
 type: wiki-hardware
 architectures: [ascend910, ascend910b, ascend310p]

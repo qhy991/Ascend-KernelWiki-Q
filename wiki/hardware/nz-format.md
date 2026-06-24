@@ -1,5 +1,5 @@
 ---
-id: hw-nz-format
+id: wiki-hardware-nz-format
 title: "FRACTAL_NZ — The Cube Unit's 5D Tiled Data Format"
 type: wiki-hardware
 architectures: [ascend910, ascend910b, ascend310p]

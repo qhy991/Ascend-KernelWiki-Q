@@ -1,5 +1,5 @@
 ---
-id: hw-instruction-queue
+id: wiki-hardware-instruction-queue
 title: "Instruction Queue System — 4-Queue Pipeline Architecture"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

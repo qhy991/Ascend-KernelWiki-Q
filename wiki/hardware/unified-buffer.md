@@ -1,5 +1,5 @@
 ---
-id: hw-unified-buffer
+id: wiki-hardware-unified-buffer
 title: "Unified Buffer (UB) — On-Chip Scratchpad Memory"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

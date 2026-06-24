@@ -1,5 +1,5 @@
 ---
-id: hw-mte
+id: wiki-hardware-mte
 title: "MTE — Memory Transfer Engine (Async Data Movement)"
 type: wiki-hardware
 architectures: [ascend910, ascend910b, ascend310p]

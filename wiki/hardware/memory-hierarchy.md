@@ -1,5 +1,5 @@
 ---
-id: hw-memory-hierarchy
+id: wiki-hardware-memory-hierarchy
 title: "Ascend Memory Hierarchy (GM → L1 → UB → L0)"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

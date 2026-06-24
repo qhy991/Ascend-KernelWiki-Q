@@ -1,5 +1,5 @@
 ---
-id: hw-sync-primitives
+id: wiki-hardware-sync-primitives
 title: "Hardware Synchronization Primitives"
 type: wiki-hardware
 architectures:

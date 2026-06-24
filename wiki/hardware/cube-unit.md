@@ -1,5 +1,5 @@
 ---
-id: hw-cube-unit
+id: wiki-hardware-cube-unit
 title: "Cube Unit — Matrix Multiply Accelerator (Ascend 910/910B)"
 type: wiki-hardware
 architectures: [ascend910, ascend910b]

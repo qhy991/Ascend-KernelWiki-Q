@@ -1,5 +1,5 @@
 ---
-id: hw-scalar-unit
+id: wiki-hardware-scalar-unit
 title: "Scalar Unit — Control Flow and Address Generation"
 type: wiki-hardware
 architectures: [ascend910, ascend910b, ascend310p]
