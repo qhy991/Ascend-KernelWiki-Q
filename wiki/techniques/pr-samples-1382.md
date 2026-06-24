@@ -28,6 +28,6 @@ This PR fixes two issues: 1) Adds an exit condition to JPEG decoding so the proc
 Proper frame processing lifecycle management is critical for video applications. The exit condition fix ensures clean shutdown, while the device runtime fix ensures samples can execute reliably on Ascend hardware.
 
 ## Related
-- hw-dvpp
+- wiki-hardware-dvpp
 - technique-video-processing
 - technique-runtime-management

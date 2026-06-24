@@ -29,4 +29,4 @@ Maintaining directory structure with .keep files helps preserve the expected sam
 ## Related
 - samples-object-detection
 - technique-yolo
-- hw-dvpp
+- wiki-hardware-dvpp

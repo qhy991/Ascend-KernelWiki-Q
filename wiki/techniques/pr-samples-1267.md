@@ -23,6 +23,6 @@ This PR updates operator-specific sample directories to replace references from 
 Platform-specific operator samples require careful updates because Ascend310P may have different operator support, memory hierarchies, and performance characteristics compared to Ascend710. This migration ensures that operator development examples remain relevant for developers targeting Ascend310P hardware.
 
 ## Related
-- hw-unified-buffer
-- hw-l1-buffer
+- wiki-hardware-unified-buffer
+- wiki-hardware-l1-buffer
 - technique-tiling

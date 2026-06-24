@@ -26,5 +26,5 @@ This is a lightweight PR updating the JPEG decoding sample common code in sample
 Common code updates benefit multiple samples that use shared JPEG decoding functionality. This ensures consistent and correct JPEG decoding across DVPP samples on Ascend hardware.
 
 ## Related
-- hw-dvpp
+- wiki-hardware-dvpp
 - technique-jpeg-decoding

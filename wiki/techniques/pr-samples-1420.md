@@ -29,4 +29,4 @@ Multi-threaded processing is essential for achieving real-time performance in vi
 ## Related
 - technique-multi-threading
 - technique-yolo
-- hw-venc
+- wiki-hardware-venc

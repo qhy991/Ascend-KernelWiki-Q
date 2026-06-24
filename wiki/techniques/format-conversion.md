@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [format-conversion]
 hardware_features: [nz-format, nd-format, vector-unit]
 kernel_types: [gemm, attention]
-related: [hw-cube-unit, technique-nz-tiling]
+related: [wiki-hardware-cube-unit, technique-nz-tiling]
 sources: [blog-nz-format-explained, doc-cann-architecture-guide]
 reproducibility: snippet
 ---

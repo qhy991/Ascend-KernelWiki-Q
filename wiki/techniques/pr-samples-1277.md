@@ -28,4 +28,4 @@ Adding TF2.6 examples for add and scatter_nd_add provides developers with Ascend
 ## Related
 - kernel-elementwise
 - technique-vector-unit
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

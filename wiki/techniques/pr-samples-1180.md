@@ -27,4 +27,4 @@ Queue length configuration is important for pipeline-based applications, allowin
 ## Related
 - technique-pipeline-scheduling
 - technique-double-buffering
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

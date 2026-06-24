@@ -26,5 +26,5 @@ This PR adapts the autonomous driving (assisted driving) sample to run on the As
 Porting samples to different Ascend hardware platforms (310, 310B, 310P, 910, 910B) helps developers understand architectural differences and porting considerations. Autonomous driving scenarios often require edge deployment on lower-power chips like the 310B.
 
 ## Related
-- hw-ascend310b
+- wiki-hardware-ascend310b
 - technique-edge-inference

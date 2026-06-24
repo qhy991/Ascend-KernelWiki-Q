@@ -28,4 +28,4 @@ Configurable communication hiding parameters allow users to tune performance for
 ## Related
 - technique-hccl-optimization
 - technique-cube-vector-overlap
-- hw-hccs
+- wiki-hardware-hccs

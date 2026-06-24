@@ -8,7 +8,7 @@ confidence: inferred
 sources: [blog-cann-training-camp, doc-cann-architecture-guide]
 symptoms: ["MTE queue idle while Vector waits", "Cube queue has gaps between operations", "PipeBarrier taking >10% of kernel time", "Low overall AICore utilization"]
 techniques: [pipeline-scheduling, double-buffering, cube-vector-overlap]
-related: [hw-instruction-queue, technique-pipeline-scheduling, technique-double-buffering]
+related: [wiki-hardware-instruction-queue, technique-pipeline-scheduling, technique-double-buffering]
 ---
 
 # Pipeline Stall Pattern

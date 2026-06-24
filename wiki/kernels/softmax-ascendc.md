@@ -7,7 +7,7 @@ tags: [softmax, vector-unit, reduction, ascendc]
 confidence: source-reported
 kernel_types: [softmax]
 languages: [ascendc]
-related: [hw-vector-unit, technique-pipeline-scheduling]
+related: [wiki-hardware-vector-unit, technique-pipeline-scheduling]
 sources: [doc-ascendc-api-reference, blog-cann-training-camp]
 performance_claims:
   - gpu: Ascend 910B

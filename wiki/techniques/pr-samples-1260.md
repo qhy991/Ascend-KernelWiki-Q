@@ -23,5 +23,5 @@ This PR updates sample code to replace references from Ascend710 to Ascend310P p
 Platform migration requires updating configuration files, build scripts, and potentially runtime parameters to match Ascend310P's characteristics. This includes memory size differences, supported operator sets, and performance tuning parameters specific to the Ascend310P architecture.
 
 ## Related
-- hw-unified-buffer
-- hw-l1-buffer
+- wiki-hardware-unified-buffer
+- wiki-hardware-l1-buffer

@@ -25,6 +25,6 @@ This PR updates the README documentation for the general object recognition samp
 Documentation updates for object recognition samples are important as they guide developers through proper model deployment, preprocessing, and inference workflows. Object recognition on Ascend involves operator fusion, efficient memory management, and proper formatting of input tensors to match Ascend's ND or NZ format requirements.
 
 ## Related
-- hw-nd-format
-- hw-nz-format
+- wiki-hardware-nd-format
+- wiki-hardware-nz-format
 - technique-operator-fusion

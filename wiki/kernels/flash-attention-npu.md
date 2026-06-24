@@ -7,7 +7,7 @@ tags: [attention, flash-attention, cube-unit, softmax]
 confidence: inferred
 kernel_types: [attention, flash-attention]
 languages: [ascendc]
-related: [hw-cube-unit, hw-vector-unit, technique-cube-vector-overlap, kernel-matmul-ascendc]
+related: [wiki-hardware-cube-unit, hw-vector-unit, technique-cube-vector-overlap, kernel-matmul-ascendc]
 sources: [doc-ascendc-api-reference, blog-ascendc-programming-guide]
 performance_claims:
   - gpu: Ascend 910B

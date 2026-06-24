@@ -26,6 +26,6 @@ ResNet-50 is a foundational CNN model widely used for image classification. This
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-tiling
 - technique-nz-tiling

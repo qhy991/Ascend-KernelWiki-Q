@@ -26,5 +26,5 @@ Documentation updates help developers understand how to properly deploy and opti
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-tiling

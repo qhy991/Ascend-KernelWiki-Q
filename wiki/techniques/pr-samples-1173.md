@@ -25,6 +25,6 @@ This PR adds parameters for aligned width and height to the AclLiteImage class o
 Memory alignment is critical for efficient processing on Ascend hardware. Properly aligned images enable better utilization of the vector unit and avoid bank conflicts in the unified buffer. Adding alignment parameters gives developers control over memory layout optimization for their specific workloads.
 
 ## Related
-- hw-bank-conflict-avoidance
-- hw-vector-unit
-- hw-unified-buffer
+- wiki-hardware-bank-conflict-avoidance
+- wiki-hardware-vector-unit
+- wiki-hardware-unified-buffer

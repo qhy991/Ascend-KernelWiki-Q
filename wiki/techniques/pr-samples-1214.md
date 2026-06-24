@@ -26,6 +26,6 @@ Adding platform support for Conv2D requires adapting to SD3403's hardware charac
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-tiling
 - technique-nz-tiling

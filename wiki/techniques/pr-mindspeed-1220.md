@@ -26,4 +26,4 @@ Correct GMM configuration is essential for optimal performance on Ascend's Cube 
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit

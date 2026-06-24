@@ -27,5 +27,5 @@ This PR ports the black-and-white video colorization sample to the Ascend 310B p
 Video colorization is a generative task that adds color to monochrome video, useful for restoring archival footage and enhancing video content. Porting to 310B shows how to optimize generative models for edge deployment, balancing quality and latency on resource-constrained hardware.
 
 ## Related
-- hw-ascend310p
+- wiki-hardware-ascend310p
 - technique-generative-models

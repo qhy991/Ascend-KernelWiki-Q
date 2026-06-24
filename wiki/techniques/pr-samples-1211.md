@@ -24,5 +24,5 @@ This PR fixes an issue in the samples codebase (details not specified in the tit
 Bug fixes ensure sample code reliability and correctness. Common issues include buffer management problems, incorrect data type conversions, improper synchronization, or logic errors in preprocessing or postprocessing steps.
 
 ## Related
-- hw-unified-buffer
-- hw-event-sync
+- wiki-hardware-unified-buffer
+- wiki-hardware-event-sync

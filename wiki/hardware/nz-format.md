@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b, ascend310p]
 tags: [nz-format, nd-format, data-format, cube-unit, hardware]
 confidence: source-reported
 hardware_features: [nz-format, nd-format, cube-unit]
-related: [hw-cube-unit, technique-nz-tiling, technique-format-conversion]
+related: [wiki-hardware-cube-unit, technique-nz-tiling, technique-format-conversion]
 sources: [blog-nz-format-explained, doc-catlass-framework, doc-ascendc-api-reference]
 ---
 

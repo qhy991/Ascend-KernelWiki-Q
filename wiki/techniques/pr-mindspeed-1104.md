@@ -28,4 +28,4 @@ Efficient send/receive operations are critical for pipeline parallelism performa
 ## Related
 - technique-hccl-optimization
 - technique-communication-optimization
-- hw-hccs
+- wiki-hardware-hccs

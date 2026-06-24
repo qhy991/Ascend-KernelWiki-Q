@@ -27,4 +27,4 @@ Memory fragmentation is a critical issue for training large models on Ascend NPU
 
 ## Related
 - technique-memory-optimization
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

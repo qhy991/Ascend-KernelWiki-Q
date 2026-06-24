@@ -28,4 +28,4 @@ Memory optimization in 2D tensor parallelism is crucial for scaling to larger mo
 ## Related
 - technique-double-buffering
 - technique-data-reuse
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

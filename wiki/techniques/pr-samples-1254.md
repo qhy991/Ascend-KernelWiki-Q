@@ -26,6 +26,6 @@ This PR modifies YUV422 format handling to correct height alignment to 2-pixel b
 YUV422 format requires specific alignment constraints due to its chroma subsampling pattern (2:1 horizontal, no vertical subsampling). Height alignment to 2-pixel boundaries ensures efficient memory access patterns on Ascend's vector unit and prevents bank conflicts when processing YUV data in the unified buffer.
 
 ## Related
-- hw-bank-conflict-avoidance
-- hw-vector-unit
+- wiki-hardware-bank-conflict-avoidance
+- wiki-hardware-vector-unit
 - technique-format-conversion

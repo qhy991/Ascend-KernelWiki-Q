@@ -7,7 +7,7 @@ tags: [reduce, reduction, vector-unit, ascendc]
 confidence: source-reported
 kernel_types: [reduce]
 languages: [ascendc]
-related: [hw-vector-unit, kernel-layernorm-ascendc]
+related: [wiki-hardware-vector-unit, kernel-layernorm-ascendc]
 sources: [doc-ascendc-api-reference, blog-cann-training-camp]
 performance_claims:
   - gpu: Ascend 910B

@@ -26,5 +26,5 @@ This PR removes the call to the hi_mpi_venc_set_mod_param interface from the JPE
 Removing this API call from JPEGE indicates that the module parameter setting is no longer required or is handled differently. This cleanup reduces code complexity and potential for API misuse. JPEGE operations benefit from efficient memory management and vector unit acceleration on Ascend hardware.
 
 ## Related
-- hw-vector-unit
-- hw-unified-buffer
+- wiki-hardware-vector-unit
+- wiki-hardware-unified-buffer

@@ -25,5 +25,5 @@ This PR fixes an issue on Ascend 310P3 where VPC (Vision Processing Center) inpu
 Hardware alignment requirements are common for memory efficiency. Understanding and handling these requirements is important for correct image processing on Ascend 310P, especially with VPC operations.
 
 ## Related
-- hw-vpc
+- wiki-hardware-vpc
 - technique-memory-alignment

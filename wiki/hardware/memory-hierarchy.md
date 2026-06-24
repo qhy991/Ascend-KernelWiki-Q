@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b]
 tags: [memory, hierarchy, global-memory, unified-buffer, hardware]
 confidence: verified
 hardware_features: [global-memory, l1-buffer, unified-buffer, l0-buffer, mte]
-related: [hw-unified-buffer, hw-instruction-queue]
+related: [wiki-hardware-unified-buffer, hw-instruction-queue]
 sources: [doc-ascend-memory-hierarchy, doc-cann-architecture-guide]
 cuda_equivalent: null
 ---

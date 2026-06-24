@@ -26,5 +26,5 @@ ACL model inference utilities are critical for deploying models on Ascend hardwa
 
 ## Related
 - technique-pipeline-scheduling
-- hw-unified-buffer
+- wiki-hardware-unified-buffer
 - technique-double-buffering

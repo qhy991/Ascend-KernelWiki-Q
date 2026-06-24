@@ -27,5 +27,5 @@ Image preprocessing operations like cropping, resizing, and padding are compute-
 
 ## Related
 - technique-vector-unit
-- hw-bank-conflict-avoidance
+- wiki-hardware-bank-conflict-avoidance
 - technique-pipeline-scheduling

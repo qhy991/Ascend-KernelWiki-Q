@@ -7,7 +7,7 @@ tags: [layernorm, rmsnorm, normalization, vector-unit]
 confidence: source-reported
 kernel_types: [layernorm, rmsnorm]
 languages: [ascendc]
-related: [hw-vector-unit, technique-data-reuse]
+related: [wiki-hardware-vector-unit, technique-data-reuse]
 sources: [doc-ascendc-api-reference, blog-cann-training-camp]
 performance_claims:
   - gpu: Ascend 910B

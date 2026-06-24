@@ -8,7 +8,7 @@ confidence: inferred
 techniques: [hccl-optimization]
 hardware_features: [hccs]
 kernel_types: [gemm, attention, moe]
-related: [hw-memory-hierarchy]
+related: [wiki-hardware-memory-hierarchy]
 sources: [doc-hccl-collective]
 reproducibility: concept
 ---

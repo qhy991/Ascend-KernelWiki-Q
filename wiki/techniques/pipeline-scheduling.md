@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [pipeline-scheduling]
 hardware_features: [instruction-queue, mte, unified-buffer]
 kernel_types: [gemm, attention, softmax]
-related: [hw-instruction-queue, technique-double-buffering, technique-cube-vector-overlap]
+related: [wiki-hardware-instruction-queue, technique-double-buffering, technique-cube-vector-overlap]
 sources: [doc-ascendc-api-reference, blog-ascendc-programming-guide, blog-cann-training-camp]
 reproducibility: snippet
 ---

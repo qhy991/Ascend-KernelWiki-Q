@@ -27,5 +27,5 @@ ATC command modifications are critical for proper model conversion. Changes to A
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
-- hw-nz-format
+- wiki-hardware-cube-unit
+- wiki-hardware-nz-format

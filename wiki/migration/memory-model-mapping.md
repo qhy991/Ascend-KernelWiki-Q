@@ -228,4 +228,4 @@ private:
 
 - **Full migration guide**: [migration-cuda-to-ascendc](/Users/haiyan/Documents/Infinity/Agent4Kernel/Ascend-KernelWiki-Q/wiki/migration/cuda-to-ascendc.md)
 - **AscendC API reference**: [lang-ascendc-guide](/Users/haiyan/Documents/Infinity/Agent4Kernel/Ascend-KernelWiki-Q/wiki/languages/ascendc-guide.md)
-- **Hardware details**: [hw-memory-hierarchy](/Users/haiyan/Documents/Infinity/Agent4Kernel/Ascend-KernelWiki-Q/wiki/hardware/memory-hierarchy.md)
+- **Hardware details**: [wiki-hardware-memory-hierarchy](/Users/haiyan/Documents/Infinity/Agent4Kernel/Ascend-KernelWiki-Q/wiki/hardware/memory-hierarchy.md)

@@ -25,6 +25,6 @@ This PR adapts a custom operator sample for Ascend 910B hardware. The PR address
 This highlights the importance of hardware-specific memory constraints when developing AscendC operators, particularly for L1 buffer management. Understanding the smaller L1 size on 910B is critical for custom operator portability across Ascend architectures.
 
 ## Related
-- hw-l1-buffer
+- wiki-hardware-l1-buffer
 - technique-memory-optimization
 - technique-custom-operator

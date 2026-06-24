@@ -25,5 +25,5 @@ This PR fixes a bug in pyacl, which is the Python bindings for ACL (Ascend Compu
 Bug fixes in pyacl are important for Python developers using Ascend hardware. Common pyacl bugs include incorrect tensor shape handling, memory allocation/deallocation issues, or errors in API parameter passing. Proper pyacl implementation ensures efficient communication between Python code and the underlying Ascend runtime.
 
 ## Related
-- hw-unified-buffer
+- wiki-hardware-unified-buffer
 - technique-pipeline-scheduling

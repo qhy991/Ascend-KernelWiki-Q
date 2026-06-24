@@ -26,5 +26,5 @@ This PR updates the image download URLs in DVPP (Digital Vision Pre-Processing) 
 Working image links are essential for samples to be runnable by developers. DVPP is a key hardware accelerator for image preprocessing on Ascend devices, and functional samples help developers understand how to use it effectively.
 
 ## Related
-- hw-dvpp
+- wiki-hardware-dvpp
 - technique-image-preprocessing

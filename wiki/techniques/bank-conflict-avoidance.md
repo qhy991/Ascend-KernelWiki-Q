@@ -8,7 +8,7 @@ confidence: inferred
 techniques: [bank-conflict-avoidance]
 hardware_features: [unified-buffer]
 kernel_types: [gemm, attention, softmax]
-related: [hw-unified-buffer, technique-data-reuse]
+related: [wiki-hardware-unified-buffer, technique-data-reuse]
 sources: [blog-cann-training-camp, doc-ascend-memory-hierarchy]
 reproducibility: concept
 ---

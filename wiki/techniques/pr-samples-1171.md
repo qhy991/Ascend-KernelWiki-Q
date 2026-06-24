@@ -24,5 +24,5 @@ This PR fixes an issue in the samples codebase (details not specified in the tit
 Bug fixes maintain sample code reliability for developers learning Ascend programming. Common issues include buffer management errors, incorrect API usage, or problems with synchronization between host and device operations.
 
 ## Related
-- hw-unified-buffer
-- hw-event-sync
+- wiki-hardware-unified-buffer
+- wiki-hardware-event-sync

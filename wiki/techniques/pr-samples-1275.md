@@ -26,6 +26,6 @@ The slice operator is fundamental in many deep learning workloads, particularly 
 
 ## Related
 - kernel-elementwise
-- hw-nd-format
-- hw-nz-format
+- wiki-hardware-nd-format
+- wiki-hardware-nz-format
 - technique-format-conversion

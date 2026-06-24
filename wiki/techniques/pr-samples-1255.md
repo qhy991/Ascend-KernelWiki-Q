@@ -26,6 +26,6 @@ This PR modifies the YUV422 format handling to improve height alignment processi
 YUV422 is a common video format where chroma channels are subsampled. Proper height alignment is critical for efficient memory access on Ascend hardware, as misaligned data can cause bank conflicts and reduce vector unit utilization. This fix likely addresses padding or alignment requirements specific to YUV422 processing pipelines.
 
 ## Related
-- hw-bank-conflict-avoidance
-- hw-vector-unit
+- wiki-hardware-bank-conflict-avoidance
+- wiki-hardware-vector-unit
 - technique-format-conversion

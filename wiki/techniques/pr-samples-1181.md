@@ -24,6 +24,6 @@ This PR fixes a bug in the samples codebase (details not specified in the title)
 Bug fixes are essential for maintaining code quality. In Ascend samples, bugs often involve memory management issues, incorrect operator usage, or problems with data format conversions between ND and NZ formats that can cause performance degradation or incorrect results.
 
 ## Related
-- hw-nd-format
-- hw-nz-format
+- wiki-hardware-nd-format
+- wiki-hardware-nz-format
 - technique-format-conversion

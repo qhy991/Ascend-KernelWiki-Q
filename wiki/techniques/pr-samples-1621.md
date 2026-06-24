@@ -30,4 +30,4 @@ TBE is the DSL for writing custom Ascend operators. Adapting configuration for 3
 
 ## Related
 - technique-tbe
-- hw-ascend310p
+- wiki-hardware-ascend310p

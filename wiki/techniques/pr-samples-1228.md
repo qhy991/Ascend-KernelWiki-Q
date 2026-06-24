@@ -24,5 +24,5 @@ This PR fixes an issue in the samples codebase (details not specified in the tit
 Bug fixes maintain sample code reliability for developers learning Ascend programming. Common issues in Ascend samples include buffer overflow/underflow, incorrect tensor shapes, improper memory alignment, or synchronization failures between host and device.
 
 ## Related
-- hw-unified-buffer
-- hw-event-sync
+- wiki-hardware-unified-buffer
+- wiki-hardware-event-sync

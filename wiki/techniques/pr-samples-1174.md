@@ -26,5 +26,5 @@ This PR fixes a variable naming bug in the VDEC (Video Decoder) sample code.
 Variable naming bugs can cause logical errors, incorrect behavior, or compilation failures. In video decoding pipelines, correct variable usage is critical for proper buffer management, frame tracking, and synchronization between decoding and postprocessing stages.
 
 ## Related
-- hw-unified-buffer
-- hw-event-sync
+- wiki-hardware-unified-buffer
+- wiki-hardware-event-sync

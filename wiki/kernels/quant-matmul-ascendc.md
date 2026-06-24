@@ -169,4 +169,4 @@ Per-channel weight scales (`scale`) and per-token activation scales (`pertoken_s
 
 - [kernel-matmul-ascendc](kernel-matmul-ascendc) — FP16 Cube GEMM, the tiling and NZ foundation this kernel reuses.
 - [technique-quantization-int8](technique-quantization-int8) — per-token/per-channel INT8 quantization and SmoothQuant background.
-- [hw-cube-unit](hw-cube-unit) — INT8 vs FP16 MAC throughput on the 910B Cube unit.
+- [wiki-hardware-cube-unit](hw-cube-unit) — INT8 vs FP16 MAC throughput on the 910B Cube unit.

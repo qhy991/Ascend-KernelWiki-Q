@@ -26,5 +26,5 @@ Directory reorganization improves code discoverability and maintainability. For 
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-operator-fusion

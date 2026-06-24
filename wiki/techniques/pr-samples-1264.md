@@ -25,5 +25,5 @@ This PR fixes an intermittent issue where the VDEC (Video Decoder) channel would
 Video decoding reliability is critical for real-time inference pipelines. Channel reset issues in VDEC often stem from synchronization problems, buffer management issues, or event synchronization failures. The fix likely involves proper event-sync mechanisms or improved buffer management in the decoding pipeline to prevent race conditions.
 
 ## Related
-- hw-event-sync
+- wiki-hardware-event-sync
 - technique-hccl-optimization

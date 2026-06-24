@@ -29,6 +29,6 @@ Porting samples to different Ascend architectures helps developers understand ho
 
 ## Related
 - technique-yolo
-- hw-dvpp
-- hw-aipp
+- wiki-hardware-dvpp
+- wiki-hardware-aipp
 - technique-hardware-adaptation

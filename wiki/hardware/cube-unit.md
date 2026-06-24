@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b]
 tags: [cube-unit, matrix, compute, hardware]
 confidence: verified
 hardware_features: [cube-unit]
-related: [hw-vector-unit, hw-unified-buffer, hw-instruction-queue]
+related: [wiki-hardware-vector-unit, hw-unified-buffer, hw-instruction-queue]
 sources: [doc-cann-architecture-guide, doc-ascendc-api-reference, doc-catlass-framework]
 cuda_equivalent: tensor_core
 ---

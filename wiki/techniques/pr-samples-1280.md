@@ -23,6 +23,6 @@ This PR updates the samples codebase to replace references from Ascend710 to Asc
 Platform migration PRs are critical for maintaining sample code relevance across Ascend's hardware portfolio. The Ascend310P is a different inference chipset with potentially different memory hierarchies, tiling requirements, and operator support compared to Ascend710. This migration likely involves updating build configurations, model conversion commands, and potentially memory alignment patterns specific to Ascend310P's unified buffer and L1 constraints.
 
 ## Related
-- hw-unified-buffer
-- hw-l1-buffer
+- wiki-hardware-unified-buffer
+- wiki-hardware-l1-buffer
 - technique-tiling

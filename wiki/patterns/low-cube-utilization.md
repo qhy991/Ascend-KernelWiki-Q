@@ -8,7 +8,7 @@ confidence: inferred
 sources: [blog-cann-training-camp, doc-catlass-framework]
 symptoms: ["Cube utilization <50%", "Vector/MTE queues idle", "small matrix dimensions", "frequent Cube stalls"]
 techniques: [nz-tiling, cube-vector-overlap, pipeline-scheduling]
-related: [hw-cube-unit, technique-cube-vector-overlap, technique-nz-tiling]
+related: [wiki-hardware-cube-unit, technique-cube-vector-overlap, technique-nz-tiling]
 ---
 
 # Low Cube Utilization Pattern

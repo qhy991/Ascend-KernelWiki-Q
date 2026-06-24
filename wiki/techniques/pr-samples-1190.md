@@ -24,6 +24,6 @@ This PR adds a new sample to the repository (specific details not specified in t
 Adding new samples expands the knowledge base for Ascend developers. New samples typically demonstrate specific operators, optimization techniques, or application patterns relevant to Ascend hardware, helping developers understand how to efficiently utilize cube units, vector units, and memory hierarchies.
 
 ## Related
-- hw-cube-unit
-- hw-vector-unit
+- wiki-hardware-cube-unit
+- wiki-hardware-vector-unit
 - technique-pipeline-scheduling

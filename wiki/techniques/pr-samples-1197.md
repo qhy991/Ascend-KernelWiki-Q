@@ -26,4 +26,4 @@ Documentation improvements help developers understand best practices for object 
 
 ## Related
 - technique-operator-fusion
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

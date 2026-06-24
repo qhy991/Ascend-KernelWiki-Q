@@ -27,5 +27,5 @@ This PR ports the black-and-white image colorization sample to the Ascend 310B p
 Image colorization is a computer vision task that adds color to grayscale images, commonly used for photo restoration and enhancement. Porting to 310B demonstrates how to optimize generative models for edge devices, handling the memory and compute constraints of the 310B architecture.
 
 ## Related
-- hw-ascend310p
+- wiki-hardware-ascend310p
 - technique-generative-models

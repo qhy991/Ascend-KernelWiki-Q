@@ -28,4 +28,4 @@ Combining JPEG decoding with resize operations is a common preprocessing step in
 ## Related
 - technique-vector-unit
 - technique-operator-fusion
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

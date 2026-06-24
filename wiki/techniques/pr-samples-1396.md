@@ -29,8 +29,8 @@ This PR performs comprehensive code refactoring across multiple areas: common li
 This large-scale refactoring improves code quality and consistency across video processing and object detection samples. It demonstrates best practices for DVPP video decode/encode workflows, camera integration, and YOLOv3 video detection with AIPP preprocessing on Ascend hardware.
 
 ## Related
-- hw-dvpp
-- hw-vdec
-- hw-venc
+- wiki-hardware-dvpp
+- wiki-hardware-vdec
+- wiki-hardware-venc
 - technique-yolo
 - technique-video-processing

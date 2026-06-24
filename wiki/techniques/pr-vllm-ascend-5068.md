@@ -28,4 +28,4 @@ The NZ format is optimized for MLU (MindSpore Learning Unit) memory layout but i
 ## Related
 - technique-nz-tiling
 - technique-format-conversion
-- hw-cube-unit
+- wiki-hardware-cube-unit

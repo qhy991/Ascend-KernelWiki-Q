@@ -26,4 +26,4 @@ This PR fixes a bug where an incorrect "read yuv file fail" error log was being 
 Incorrect error logging can cause confusion during debugging and make it difficult to identify real issues. This fix likely involves correcting conditional logic or error handling in the YUV file I/O code. Proper error handling is particularly important in video processing pipelines where YUV data is read sequentially.
 
 ## Related
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

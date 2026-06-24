@@ -26,5 +26,5 @@ This PR fixes bugs related to VDEC (Video Decoder) input parameters in the sampl
 VDEC input parameter bugs can cause decoding failures, incorrect output, or performance issues. Proper parameter handling is critical for video processing pipelines, including buffer sizes, format specifications, and alignment requirements. This fix ensures reliable video decoding on Ascend hardware.
 
 ## Related
-- hw-unified-buffer
+- wiki-hardware-unified-buffer
 - technique-pipeline-scheduling

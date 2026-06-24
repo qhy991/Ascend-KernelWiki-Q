@@ -7,7 +7,7 @@ tags: [nz-format, tiling, data-format, optimization]
 confidence: source-reported
 techniques: [nz-tiling]
 hardware_features: [nz-format, cube-unit]
-related: [hw-cube-unit, technique-format-conversion]
+related: [wiki-hardware-cube-unit, technique-format-conversion]
 sources: [blog-nz-format-explained, doc-catlass-framework]
 reproducibility: snippet
 ---

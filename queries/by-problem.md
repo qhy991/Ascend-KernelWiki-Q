@@ -51,7 +51,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-low-cube-utilization`
 - Path: `wiki/patterns/low-cube-utilization.md`
 - Tags: Cube utilization <50%, Vector/MTE queues idle, small matrix dimensions, frequent Cube stalls
-- Related: `hw-cube-unit`, `technique-cube-vector-overlap`, `technique-nz-tiling`
+- Related: `wiki-hardware-cube-unit`, `technique-cube-vector-overlap`, `technique-nz-tiling`
 
 ### Manifest-Driven Kernel Autotune — Separate Kernel Inventory from Shape Selection
 
@@ -92,7 +92,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-pipeline-stall`
 - Path: `wiki/patterns/pipeline-stall.md`
 - Tags: MTE queue idle while Vector waits, Cube queue has gaps between operations, PipeBarrier taking >10% of kernel time, Low overall AICore utilization
-- Related: `hw-instruction-queue`, `technique-pipeline-scheduling`, `technique-double-buffering`
+- Related: `wiki-hardware-instruction-queue`, `technique-pipeline-scheduling`, `technique-double-buffering`
 
 ### Precision & NaN Debugging
 

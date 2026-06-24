@@ -26,5 +26,5 @@ This PR adds support for user-configurable output memory in the JPEGE (JPEG Enco
 User-configurable output memory is an important optimization for inference pipelines, enabling zero-copy or reduced-copy workflows. For Ascend inference applications, this can reduce data movement between device memory (unified buffer) and host memory, improving overall throughput and reducing latency in image processing pipelines.
 
 ## Related
-- hw-unified-buffer
+- wiki-hardware-unified-buffer
 - technique-data-reuse

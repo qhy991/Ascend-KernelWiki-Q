@@ -26,5 +26,5 @@ This PR simplifies the JPEG decoding workflow by removing the requirement for us
 API simplification improves developer experience and reduces error potential. This change makes JPEG decoding samples easier to use while leveraging DVPP hardware acceleration capabilities.
 
 ## Related
-- hw-dvpp
+- wiki-hardware-dvpp
 - technique-api-simplification

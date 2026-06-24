@@ -27,4 +27,4 @@ The detect_and_classify application represents a multi-stage CV pipeline involvi
 ## Related
 - technique-operator-fusion
 - technique-pipeline-scheduling
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

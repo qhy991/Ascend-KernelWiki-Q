@@ -28,4 +28,4 @@ Exposing padding mode configuration gives developers more control over preproces
 ## Related
 - technique-vector-unit
 - technique-format-conversion
-- hw-unified-buffer
+- wiki-hardware-unified-buffer

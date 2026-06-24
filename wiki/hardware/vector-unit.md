@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b, ascend310p]
 tags: [vector-unit, simd, compute, hardware]
 confidence: verified
 hardware_features: [vector-unit]
-related: [hw-cube-unit, hw-unified-buffer]
+related: [wiki-hardware-cube-unit, hw-unified-buffer]
 sources: [doc-cann-architecture-guide, doc-ascendc-api-reference]
 cuda_equivalent: cuda_core
 ---

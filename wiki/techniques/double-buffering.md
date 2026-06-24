@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [double-buffering]
 hardware_features: [unified-buffer, mte]
 kernel_types: [gemm, attention]
-related: [hw-unified-buffer, technique-pipeline-scheduling]
+related: [wiki-hardware-unified-buffer, technique-pipeline-scheduling]
 sources: [blog-cann-training-camp, doc-ascend-memory-hierarchy]
 reproducibility: snippet
 ---

@@ -7,7 +7,7 @@ tags: [mte, memory, dma, hardware]
 confidence: source-reported
 hardware_features: [mte, unified-buffer, l1-buffer, global-memory]
 cuda_equivalent: tma
-related: [hw-unified-buffer, hw-memory-hierarchy, technique-double-buffering]
+related: [wiki-hardware-unified-buffer, hw-memory-hierarchy, technique-double-buffering]
 sources: [doc-ascend-memory-hierarchy, doc-ascendc-api-reference, blog-ascend-910b-deep-dive]
 ---
 
@@ -17,7 +17,7 @@ The Memory Transfer Engine (MTE) is the DaVinci architecture's family of DMA uni
 
 ## Role in the Hierarchy
 
-MTE is the data-movement counterpart to the compute units described in [hw-memory-hierarchy](memory-hierarchy.md). Where Cube and Vector consume operands, MTE is responsible for *staging* those operands into fast on-chip memory and *evicting* results back out:
+MTE is the data-movement counterpart to the compute units described in [wiki-hardware-memory-hierarchy](memory-hierarchy.md). Where Cube and Vector consume operands, MTE is responsible for *staging* those operands into fast on-chip memory and *evicting* results back out:
 
 ```
 Global Memory (HBM/DDR)
@@ -52,7 +52,7 @@ The DaVinci core exposes several MTE pipes, each responsible for a different leg
 
 ## Independent Instruction Queue
 
-MTE has its **own hardware instruction queue**, separate from the Scalar, Vector, and Cube queues described in [hw-instruction-queue](instruction-queue.md). This is what makes asynchronous overlap possible: a `DataCopy` issued on the MTE queue returns control immediately, and the Cube/Vector queues continue executing in parallel.
+MTE has its **own hardware instruction queue**, separate from the Scalar, Vector, and Cube queues described in [wiki-hardware-instruction-queue](instruction-queue.md). This is what makes asynchronous overlap possible: a `DataCopy` issued on the MTE queue returns control immediately, and the Cube/Vector queues continue executing in parallel.
 
 ```
 MTE Queue:    DataCopy(tile N+1) ───────────► DataCopy(tile N+2) ──►
@@ -136,7 +136,7 @@ The conceptual contract is the same: a descriptor-driven, hardware-managed bulk 
 
 - **Over-synchronizing kills overlap.** A `WaitFlag` or `PipeBarrier` placed too early forces the compute queue to stall on MTE. Wait only where data is genuinely consumed.
 - **Misalignment is a silent slowdown, not an error.** A strided or unaligned `DataCopy` still produces correct results but issues fragmented bursts. Use `DataCopyPad` for ragged tails and align UB allocations to 32B.
-- **MTE bandwidth is shared.** GM bandwidth (MTE2/MTE3) is shared across all AICores, so a kernel that is MTE2-bound will not speed up by adding compute — reduce GM traffic via tiling and reuse in the UB ([hw-unified-buffer](unified-buffer.md)).
+- **MTE bandwidth is shared.** GM bandwidth (MTE2/MTE3) is shared across all AICores, so a kernel that is MTE2-bound will not speed up by adding compute — reduce GM traffic via tiling and reuse in the UB ([wiki-hardware-unified-buffer](unified-buffer.md)).
 - **Format conversion isn't free of constraints.** ND ↔ NZ moves require the tile dimensions to be compatible with the 16×16 fractal; pad to the fractal boundary when they are not.
 - **L1 staging is optional.** MTE1 only matters if the kernel routes through L1; many elementwise kernels go GM↔UB directly (MTE2/MTE3 only) and skip MTE1 entirely.
 

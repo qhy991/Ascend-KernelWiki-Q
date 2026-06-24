@@ -7,7 +7,7 @@ tags: [matmul, gemm, cube-unit, ascendc]
 confidence: source-reported
 kernel_types: [matmul, gemm]
 languages: [ascendc]
-related: [hw-cube-unit, technique-pipeline-scheduling, technique-nz-tiling]
+related: [wiki-hardware-cube-unit, technique-pipeline-scheduling, technique-nz-tiling]
 sources: [doc-ascendc-api-reference, doc-catlass-framework]
 performance_claims:
   - gpu: Ascend 910B

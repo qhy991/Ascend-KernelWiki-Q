@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [data-reuse]
 hardware_features: [unified-buffer, mte]
 kernel_types: [gemm, attention, softmax, layernorm]
-related: [hw-unified-buffer, technique-double-buffering, technique-pipeline-scheduling]
+related: [wiki-hardware-unified-buffer, technique-double-buffering, technique-pipeline-scheduling]
 sources: [doc-ascend-memory-hierarchy, blog-cann-training-camp]
 reproducibility: concept
 ---

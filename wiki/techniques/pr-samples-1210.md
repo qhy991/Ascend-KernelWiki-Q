@@ -26,5 +26,5 @@ Adding MindSpore model support expands the framework compatibility of Ascend sam
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-tiling

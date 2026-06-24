@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [workspace-management]
 hardware_features: [unified-buffer, global-memory, l1-buffer]
 kernel_types: [matmul, attention, layernorm]
-related: [hw-unified-buffer, technique-double-buffering, technique-tiling-strategy]
+related: [wiki-hardware-unified-buffer, technique-double-buffering, technique-tiling-strategy]
 sources: [doc-ascendc-tiling-api, doc-ascend-memory-hierarchy, doc-ascendc-api-reference]
 reproducibility: snippet
 ---

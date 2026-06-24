@@ -24,5 +24,5 @@ This PR fixes an issue in the samples codebase (details not specified in the tit
 Bug fixes ensure that sample code remains reliable and educational. Common issues in Ascend samples include incorrect memory allocation, improper data type handling, or synchronization problems in multi-stage processing pipelines.
 
 ## Related
-- hw-unified-buffer
-- hw-event-sync
+- wiki-hardware-unified-buffer
+- wiki-hardware-event-sync

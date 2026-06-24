@@ -7,7 +7,7 @@ tags: [l1-buffer, l0-buffer, memory, cube-unit, hardware]
 confidence: source-reported
 hardware_features: [l1-buffer, l0-buffer, unified-buffer, cube-unit]
 cuda_equivalent: l1_cache
-related: [hw-memory-hierarchy, hw-cube-unit, hw-unified-buffer]
+related: [wiki-hardware-memory-hierarchy, hw-cube-unit, hw-unified-buffer]
 sources: [doc-ascend-memory-hierarchy, doc-catlass-framework, blog-ascend-910b-deep-dive]
 ---
 

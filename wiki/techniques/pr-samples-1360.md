@@ -26,5 +26,5 @@ This is a lightweight PR updating the PNG decoding sample common code in sample_
 Common code updates benefit multiple samples that use shared PNG decoding functionality. This ensures consistent and correct PNG decoding across DVPP samples on Ascend hardware.
 
 ## Related
-- hw-dvpp
+- wiki-hardware-dvpp
 - technique-png-decoding

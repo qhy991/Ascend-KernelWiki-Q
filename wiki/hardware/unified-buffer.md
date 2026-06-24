@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b]
 tags: [unified-buffer, memory, hardware]
 confidence: verified
 hardware_features: [unified-buffer]
-related: [hw-cube-unit, hw-vector-unit, hw-memory-hierarchy]
+related: [wiki-hardware-cube-unit, hw-vector-unit, hw-memory-hierarchy]
 sources: [doc-ascend-memory-hierarchy, doc-cann-architecture-guide]
 cuda_equivalent: shared_memory
 ---

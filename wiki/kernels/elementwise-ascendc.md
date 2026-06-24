@@ -7,7 +7,7 @@ tags: [elementwise, vector-unit, activation, ascendc]
 confidence: verified
 kernel_types: [elementwise, activation]
 languages: [ascendc]
-related: [hw-vector-unit, technique-pipeline-scheduling]
+related: [wiki-hardware-vector-unit, technique-pipeline-scheduling]
 sources: [doc-ascendc-api-reference, blog-ascendc-programming-guide]
 reproducibility: snippet
 techniques: [pipeline-scheduling]

@@ -27,5 +27,5 @@ Using ONNX models for YOLOv3 enables model portability from other frameworks to 
 
 ## Related
 - kernel-matmul
-- hw-cube-unit
+- wiki-hardware-cube-unit
 - technique-operator-fusion

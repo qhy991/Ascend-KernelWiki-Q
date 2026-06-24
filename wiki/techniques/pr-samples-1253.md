@@ -24,5 +24,5 @@ This PR fixes an issue in the samples codebase (details not specified in the tit
 Bug fixes in sample code are critical for ensuring developers have working examples to learn from. Common issues in Ascend samples include memory alignment problems, incorrect format conversions, event synchronization failures, or buffer management issues that can cause runtime errors or incorrect results.
 
 ## Related
-- hw-event-sync
-- hw-unified-buffer
+- wiki-hardware-event-sync
+- wiki-hardware-unified-buffer

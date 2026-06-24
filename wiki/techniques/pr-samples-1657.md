@@ -27,5 +27,5 @@ This PR ports the image dehazing sample to the Ascend 310B platform, adapting th
 Image dehazing improves visibility in foggy conditions, useful for autonomous driving and outdoor monitoring. Porting to 310B demonstrates how to optimize computer vision models for edge devices with limited compute resources, including quantization, pruning, and latency optimization.
 
 ## Related
-- hw-ascend310p
+- wiki-hardware-ascend310p
 - technique-image-enhancement
