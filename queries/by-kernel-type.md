@@ -318,7 +318,7 @@
 - [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md) conf:source-reported arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## moe (29 pages)
+## moe (31 pages)
 
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) conf:source-reported arch:ascend910, ascend910b
 - [CATLASS Group GEMM Example](examples/16_group_gemm) conf:source-reported arch:ascend910b
@@ -331,6 +331,7 @@
 - [AscendC Top-K — Expert Routing and Sampling Reduction](wiki/kernels/topk-ascendc.md) conf:inferred arch:ascend910, ascend910b
 - [cann-ops-adv — grouped_matmul_swiglu_quant Fused MoE FFN Kernel](sources/prs/cann-ops-adv/PR-001.md) conf:? arch:ascend910, ascend910b
 - [cann-ops-adv — GroupedMatmulAdd Operator for MoE Fusion](sources/prs/cann-ops-adv/PR-140.md) conf:source-reported arch:ascend910, ascend910b
+- [[ascend] adapt for s1-pro dp*tp+ep](sources/prs/lmdeploy/PR-4380.md) conf:? arch:ascend910b
 - [MindSpeed — Fused MoE Token Permute and Unpermute on NPU](sources/prs/mindspeed/PR-2703.md) conf:source-reported arch:ascend910, ascend910b
 - [MindSpeed — Pipeline Parallel P2P Uses isend/irecv on NPU](sources/prs/mindspeed/PR-2707.md) conf:source-reported arch:ascend910, ascend910b
 - [MindSpeed — MindSpore MoE All-to-All Compute/Communication Overlap](sources/prs/mindspeed/PR-2730.md) conf:source-reported arch:ascend910, ascend910b
@@ -344,6 +345,7 @@
 - [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) conf:inferred arch:ascend910, ascend910b
 - [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md) conf:inferred arch:ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) conf:inferred arch:ascend910, ascend910b
+- [Hybrid 3D Parallelism (DP x TP + EP) for MoE on Ascend](wiki/techniques/pr-lmdeploy-ascend-4380.md) conf:verified arch:ascend910b
 - [MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion](wiki/techniques/mindspeed-moe-training-communication.md) conf:inferred arch:ascend910, ascend910b
 - [MXFP8 Support in DeepEP Low Latency Dispatch](wiki/techniques/pr-sgl-kernel-npu-549.md) conf:verified arch:ascend910b
 - [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md) conf:inferred arch:ascend910, ascend910b

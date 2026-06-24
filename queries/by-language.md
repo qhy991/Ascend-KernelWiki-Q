@@ -192,7 +192,7 @@
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md)
 
-## python (56 pages)
+## python (57 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -221,6 +221,7 @@
 - [torch_npu C++ API Reference — pybind11 Integration](wiki/languages/torch-npu-cpp-api.md)
 - [torch_npu — npu_quant_matmul Dynamic W8A8 Operator](sources/prs/ascend-pytorch/PR-002.md)
 - [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md)
+- [[ascend] adapt for s1-pro dp*tp+ep](sources/prs/lmdeploy/PR-4380.md)
 - [MindSpeed — Fused MoE Token Permute and Unpermute on NPU](sources/prs/mindspeed/PR-2703.md)
 - [MindSpeed — Pipeline Parallel P2P Uses isend/irecv on NPU](sources/prs/mindspeed/PR-2707.md)
 - [MindSpeed — MindSpore MoE All-to-All Compute/Communication Overlap](sources/prs/mindspeed/PR-2730.md)

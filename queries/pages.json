@@ -4460,6 +4460,27 @@
     "confidence": "source-reported"
   },
   {
+    "id": "pr-lmdeploy-ascend-4380",
+    "type": "source-pr",
+    "title": "[ascend] adapt for s1-pro dp*tp+ep",
+    "path": "sources/prs/lmdeploy/PR-4380.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "s1-pro",
+      "expert-parallel",
+      "tensor-parallel"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
     "id": "pr-mindspeed-2703",
     "type": "source-pr",
     "title": "MindSpeed — Fused MoE Token Permute and Unpermute on NPU",
@@ -5610,6 +5631,25 @@
     ],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "technique-hybrid-parallelism-s1pro",
+    "type": "wiki-technique",
+    "title": "Hybrid 3D Parallelism (DP x TP + EP) for MoE on Ascend",
+    "path": "wiki/techniques/pr-lmdeploy-ascend-4380.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "s1-pro",
+      "expert-parallel",
+      "tensor-parallel"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "verified"
   },
   {
     "id": "technique-kv-cache-paging",

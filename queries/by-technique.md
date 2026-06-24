@@ -407,6 +407,11 @@
 - [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md)
 - [INT8 Quantization — Per-Token Activation and Per-Channel Weight (W8A8)](wiki/techniques/quantization-int8.md)
 
+## tensor-parallel (2 pages)
+
+- [[ascend] adapt for s1-pro dp*tp+ep](sources/prs/lmdeploy/PR-4380.md)
+- [Hybrid 3D Parallelism (DP x TP + EP) for MoE on Ascend](wiki/techniques/pr-lmdeploy-ascend-4380.md)
+
 ## tensor-parallel-overlap (12 pages)
 
 - [Ascend Samples — HCCL Communication Examples](cplusplus/level1_single_api/7_dvpp)
