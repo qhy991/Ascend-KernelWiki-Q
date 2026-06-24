@@ -314,7 +314,7 @@
 - [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md) conf:source-reported arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b
 
-## moe (27 pages)
+## moe (29 pages)
 
 - [CANN Ops Adv — Grouped Matmul](src/matmul/grouped_matmul) conf:source-reported arch:ascend910, ascend910b
 - [CATLASS Group GEMM Example](examples/16_group_gemm) conf:source-reported arch:ascend910b
@@ -333,6 +333,7 @@
 - [MindSpeed — all_to_all_v_c Variable-Count MoE Communication Optimization](sources/prs/mindspeed/PR-2828.md) conf:source-reported arch:ascend910, ascend910b
 - [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md) conf:? arch:ascend910b
 - [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md) conf:source-reported arch:ascend910, ascend910b
+- [feat: add MXFP8 support for low_latency_dispatch](sources/prs/sgl-kernel-npu/PR-549.md) conf:? arch:ascend910b
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md) conf:? arch:ascend910b
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md) conf:? arch:ascend910b
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md) conf:source-reported arch:ascend910b
@@ -340,6 +341,7 @@
 - [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md) conf:inferred arch:ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) conf:inferred arch:ascend910, ascend910b
 - [MindSpeed MoE Training Communication — P2P, All-to-All Overlap, and Token Permute Fusion](wiki/techniques/mindspeed-moe-training-communication.md) conf:inferred arch:ascend910, ascend910b
+- [MXFP8 Support in DeepEP Low Latency Dispatch](wiki/techniques/pr-sgl-kernel-npu-549.md) conf:verified arch:ascend910b
 - [SGL DeepEP MoE Communication — Strategy, All-to-All, CCU, and MXFP8](wiki/techniques/sgl-deepep-moe-communication.md) conf:inferred arch:ascend910, ascend910b
 - [Tensor Parallelism — Communication/Compute Overlap with HCCL](wiki/techniques/tensor-parallel-overlap.md) conf:source-reported arch:ascend910b
 - [Training Communication Scheduling for MoE and Param-Gather Overlap](wiki/techniques/training-communication-scheduling-overlap.md) conf:source-reported arch:ascend910, ascend910b
@@ -388,7 +390,7 @@
 - [LayerNorm / RMSNorm on Ascend NPU](wiki/kernels/layernorm-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 - [AscendC RMSNorm — Fused Vector Normalization](wiki/kernels/rmsnorm-ascendc.md) conf:source-reported arch:ascend910, ascend910b
 
-## rope (6 pages)
+## rope (8 pages)
 
 - [SGL Kernel NPU MLA Preprocess Operator](csrc/mla_preprocess) conf:source-reported arch:ascend910, ascend910b
 - [vLLM Ascend C++/AscendC Extension Source](csrc) conf:source-reported arch:ascend910b
@@ -396,6 +398,8 @@
 - [vLLM Ascend MLA Preprocess Operator](csrc/mla_preprocess) conf:source-reported arch:ascend910b
 - [vLLM Ascend Operator Wrappers](vllm_ascend/ops) conf:source-reported arch:ascend910b
 - [vLLM Ascend Kernel and Backend Tests](tests) conf:source-reported arch:ascend910b
+- [fused_rope_qk_mqa optimize & fix glm5 bf16 no bias](sources/prs/sgl-kernel-npu/PR-557.md) conf:? arch:ascend910b
+- [Vectorized Triton Optimizations for Fused RoPE MQA](wiki/techniques/pr-sgl-kernel-npu-557.md) conf:verified arch:ascend910b
 
 ## softmax (21 pages)
 

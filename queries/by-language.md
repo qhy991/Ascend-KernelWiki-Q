@@ -101,7 +101,7 @@
 - [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md)
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md)
 
-## cpp (87 pages)
+## cpp (88 pages)
 
 - [Calling a Custom aclnn Operator from C++ — End to End](sources/blogs/aclnn-custom-op-invocation.md)
 - [CATLASS — C++ Template GEMM Kernels for Ascend (CUTLASS-style)](sources/blogs/catlass-gemm-templates.md)
@@ -185,13 +185,14 @@
 - [CATLASS — mstuner_catlass Kernel Manifest and Tuning Toolchain](sources/prs/catlass/PR-266.md)
 - [sgl-kernel-npu — LoRA Kernels on the CUBE Unit (sgemmc)](sources/prs/sgl-kernel-npu/PR-002.md)
 - [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md)
+- [feat: add MXFP8 support for low_latency_dispatch](sources/prs/sgl-kernel-npu/PR-549.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
 - [vllm-ascend — AscendC store_kv_block Op (Scatter into Paged KV Cache)](sources/prs/vllm-ascend/PR-003.md)
 - [vllm-ascend — Ascend 950 QLI Workspace Sizing for Long Context](sources/prs/vllm-ascend/PR-10041.md)
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md)
 
-## python (53 pages)
+## python (54 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -229,6 +230,7 @@
 - [sgl-kernel-npu — Fused GDN Gating + solve_tril Performance](sources/prs/sgl-kernel-npu/PR-003.md)
 - [sgl-kernel-npu — DeepEP Low-Latency Alltoall (dispatch/combine) on NPU](sources/prs/sgl-kernel-npu/PR-004.md)
 - [sgl-kernel-npu — DeepEP Low-Latency CCU Offload Path](sources/prs/sgl-kernel-npu/PR-478.md)
+- [fused_rope_qk_mqa optimize & fix glm5 bf16 no bias](sources/prs/sgl-kernel-npu/PR-557.md)
 - [vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)](sources/prs/vllm-ascend/PR-001.md)
 - [vllm-ascend — Default MoE w2_weight to NZ Format](sources/prs/vllm-ascend/PR-002.md)
 - [vllm-ascend — W8A8FP8 Dynamic Quantization on Ascend 950](sources/prs/vllm-ascend/PR-004.md)

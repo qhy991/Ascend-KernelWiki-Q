@@ -4741,6 +4741,47 @@
     "confidence": "source-reported"
   },
   {
+    "id": "pr-sgl-kernel-npu-549",
+    "type": "source-pr",
+    "title": "feat: add MXFP8 support for low_latency_dispatch",
+    "path": "sources/prs/sgl-kernel-npu/PR-549.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "mxfp8",
+      "low-latency-dispatch",
+      "deepep"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [
+      "cpp"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-sgl-kernel-npu-557",
+    "type": "source-pr",
+    "title": "fused_rope_qk_mqa optimize & fix glm5 bf16 no bias",
+    "path": "sources/prs/sgl-kernel-npu/PR-557.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "glm5",
+      "fusion"
+    ],
+    "kernel_types": [
+      "rope"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
     "id": "pr-vllm-ascend-001",
     "type": "source-pr",
     "title": "vllm-ascend — Custom AscendC Kernel Support (rotary_embedding)",
@@ -5472,6 +5513,24 @@
     "confidence": "source-reported"
   },
   {
+    "id": "technique-fused-rope-mqa-optim",
+    "type": "wiki-technique",
+    "title": "Vectorized Triton Optimizations for Fused RoPE MQA",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-557.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "fusion",
+      "glm5"
+    ],
+    "kernel_types": [
+      "rope"
+    ],
+    "languages": [],
+    "confidence": "verified"
+  },
+  {
     "id": "technique-hccl-optimization",
     "type": "wiki-technique",
     "title": "HCCL Collective Communication Optimization",
@@ -5578,6 +5637,25 @@
     "kernel_types": [],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "technique-mxfp8-low-latency-dispatch",
+    "type": "wiki-technique",
+    "title": "MXFP8 Support in DeepEP Low Latency Dispatch",
+    "path": "wiki/techniques/pr-sgl-kernel-npu-549.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "mxfp8",
+      "low-latency-dispatch",
+      "deepep"
+    ],
+    "kernel_types": [
+      "moe"
+    ],
+    "languages": [],
+    "confidence": "verified"
   },
   {
     "id": "technique-nz-tiling",

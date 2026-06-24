@@ -121,6 +121,10 @@ techniques:
     description: "W8A8 INT8: per-token activation + per-channel weight quant, INT8 Cube matmul + dequant"
     related_hw: [cube-unit, vector-unit]
 
+  kernel-fusion:
+    description: "Fusing multiple operations into a single kernel"
+    related_hw: []
+
 kernel_types:
   - ffn
   - matmul
@@ -183,3 +187,8 @@ tracked_repos:
     name: cann-ops-adv
     description: "Advanced CANN operators (flash/incre attention, fused ops)"
     url: https://gitee.com/ascend/cann-ops-adv
+  - mxfp8
+  - mxfp4
+  - low-latency-dispatch
+  - deepep
+  - glm5
