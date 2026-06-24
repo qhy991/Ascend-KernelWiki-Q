@@ -7,7 +7,7 @@ tags: [tiling, cube-unit, diagnosis, performance, pattern]
 confidence: source-reported
 symptoms: ["Cube utilization low despite a compute-bound shape", "many short MTE transfers", "tile dims below the 16x16 fractal", "kernel time dominated by loop and sync overhead"]
 techniques: [tiling-strategy, nz-tiling]
-related: [pattern-low-cube-utilization, technique-tiling-strategy, hw-cube-unit]
+related: [pattern-low-cube-utilization, technique-tiling-strategy, wiki-hardware-cube-unit]
 sources: [doc-ascendc-tiling-api, doc-catlass-framework, doc-ascend-profiling-guide]
 ---
 

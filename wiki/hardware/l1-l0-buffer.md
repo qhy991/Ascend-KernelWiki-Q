@@ -7,7 +7,7 @@ tags: [l1-buffer, l0-buffer, memory, cube-unit, hardware]
 confidence: source-reported
 hardware_features: [l1-buffer, l0-buffer, unified-buffer, cube-unit]
 cuda_equivalent: l1_cache
-related: [wiki-hardware-memory-hierarchy, hw-cube-unit, hw-unified-buffer]
+related: [wiki-hardware-memory-hierarchy, wiki-hardware-cube-unit, wiki-hardware-unified-buffer]
 sources: [doc-ascend-memory-hierarchy, doc-catlass-framework, blog-ascend-910b-deep-dive]
 ---
 
@@ -84,7 +84,7 @@ The path is therefore: **GM → L1 → L0A/L0B → Cube → L0C (FP32 accumulate
 
 Two ideas drive the design:
 
-1. **Data reuse.** A GM access costs ~100+ cycles (see hw-memory-hierarchy). By staging a tile of `A` in L1 once and reusing it against many tiles of `B` (and vice versa), the expensive GM traffic is amortized over a large number of MAC operations. The L0 buffers then deliver operand fragments at near-MAC-array bandwidth.
+1. **Data reuse.** A GM access costs ~100+ cycles (see wiki-hardware-memory-hierarchy). By staging a tile of `A` in L1 once and reusing it against many tiles of `B` (and vice versa), the expensive GM traffic is amortized over a large number of MAC operations. The L0 buffers then deliver operand fragments at near-MAC-array bandwidth.
 
 2. **Ping-pong (double buffering).** Because L1 and L0 are explicitly managed, the kernel can hold *two* tiles per level: while the Cube array consumes one buffer, the MTE engine loads the next. The Catlass framework exposes this as the **`MmadAtlasA2Pingpong`** policy, which double-buffers the L1/L0 staging so that GM→L1 and L1→L0 transfers overlap with Cube compute. This is the matmul-specific instance of the double-buffering technique (technique-double-buffering) on the Cube path.
 

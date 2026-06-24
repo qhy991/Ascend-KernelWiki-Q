@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b, ascend310p]
 tags: [scalar-unit, control, hardware]
 confidence: source-reported
 hardware_features: [scalar-unit, instruction-queue]
-related: [wiki-hardware-cube-unit, hw-vector-unit, hw-instruction-queue]
+related: [wiki-hardware-cube-unit, wiki-hardware-vector-unit, wiki-hardware-instruction-queue]
 sources: [doc-cann-architecture-guide, blog-ascend-910b-deep-dive]
 ---
 

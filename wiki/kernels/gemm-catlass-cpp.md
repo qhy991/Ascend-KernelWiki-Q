@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [matmul, gemm]
 languages: [cpp, ascendc]
 sources: [blog-catlass-gemm-templates, pr-catlass-001, doc-catlass-framework]
-related: [kernel-matmul-ascendc, migration-cutlass-to-catlass, hw-cube-unit]
+related: [kernel-matmul-ascendc, migration-cutlass-to-catlass, wiki-hardware-cube-unit]
 techniques: [nz-tiling, pipeline-scheduling, double-buffering]
 performance_claims:
   - gpu: Ascend 910B

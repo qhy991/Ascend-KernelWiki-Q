@@ -1,18 +1,18 @@
 ---
 id: technique-pr-mindspeed-2730
-title: "PR Insight: Ascend/MindSpeed #2730"
+title: 'PR Insight: Ascend/MindSpeed #2730'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - mindspeed
-  - mindspore
-  - moe
-  - distributed
+- mindspeed
+- mindspore
+- moe
+- distributed
 confidence: inferred
 sources:
-  - "https://gitee.com/ascend/MindSpeed/pulls/2730"
+- pr-mindspeed-2730
 ---
 
 # PR Insight: Ascend/MindSpeed #2730

@@ -8,7 +8,7 @@ confidence: inferred
 techniques: [cube-vector-overlap]
 hardware_features: [cube-unit, vector-unit, instruction-queue]
 kernel_types: [attention, softmax]
-related: [wiki-hardware-instruction-queue, hw-cube-unit, hw-vector-unit]
+related: [wiki-hardware-instruction-queue, wiki-hardware-cube-unit, wiki-hardware-vector-unit]
 sources: [doc-cann-architecture-guide, blog-cann-training-camp]
 reproducibility: concept
 ---

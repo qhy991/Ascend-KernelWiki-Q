@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [elementwise]
 languages: [tbe-tik, python]
 sources: [doc-tik-api-reference, blog-tik-operator-walkthrough]
-related: [lang-tik-guide, kernel-elementwise-ascendc, hw-vector-unit]
+related: [lang-tik-guide, kernel-elementwise-ascendc, wiki-hardware-vector-unit]
 techniques: [double-buffering, data-reuse]
 reproducibility: snippet
 ---

@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [tensor-parallel-overlap, hccl-optimization]
 hardware_features: [hccs, cube-unit, global-memory]
 kernel_types: [matmul, gemm, moe]
-related: [technique-hccl-optimization, hw-hccs, kernel-grouped-gemm-ascendc]
+related: [technique-hccl-optimization, wiki-hardware-hccs, kernel-grouped-gemm-ascendc]
 sources: [doc-hccl-collective, blog-ascend-910b-deep-dive]
 reproducibility: concept
 ---

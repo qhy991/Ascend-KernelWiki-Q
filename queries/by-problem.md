@@ -23,7 +23,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-format-conversion-overhead`
 - Path: `wiki/patterns/format-conversion-overhead.md`
 - Tags: repeated ND->NZ conversion every step, Vector unit busy transposing not computing, weights re-converted each forward pass, high MTE traffic for layout change
-- Related: `technique-format-conversion`, `hw-nz-format`, `pattern-nz-format-traps`
+- Related: `technique-format-conversion`, `wiki-hardware-nz-format`, `pattern-nz-format-traps`
 
 ### Grouped GEMM Empty-K Output Init — No Compute Still Needs Semantics
 
@@ -65,7 +65,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-memory-bound`
 - Path: `wiki/patterns/memory-bound.md`
 - Tags: GM bandwidth >90% utilized, Cube/Vector utilization <30%, kernel time dominated by DataCopy, low arithmetic intensity
-- Related: `technique-double-buffering`, `technique-data-reuse`, `hw-unified-buffer`
+- Related: `technique-double-buffering`, `technique-data-reuse`, `wiki-hardware-unified-buffer`
 
 ### MTE Saturation (Bandwidth Bound)
 
@@ -78,7 +78,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-nz-format-traps`
 - Path: `wiki/patterns/nz-format-traps.md`
 - Tags: Cube produces garbage output, Matrix dimensions not aligned to 16, Unexpected format conversion overhead >15%, NZ reshape errors
-- Related: `technique-nz-tiling`, `technique-format-conversion`, `hw-cube-unit`
+- Related: `technique-nz-tiling`, `technique-format-conversion`, `wiki-hardware-cube-unit`
 
 ### Online Softmax Wait Boundary — Tail Row Synchronization Drift
 
@@ -118,7 +118,7 @@ Symptom → Pattern → Technique → Solution
 - ID: `pattern-tiling-too-small`
 - Path: `wiki/patterns/tiling-too-small.md`
 - Tags: Cube utilization low despite a compute-bound shape, many short MTE transfers, tile dims below the 16x16 fractal, kernel time dominated by loop and sync overhead
-- Related: `pattern-low-cube-utilization`, `technique-tiling-strategy`, `hw-cube-unit`
+- Related: `pattern-low-cube-utilization`, `technique-tiling-strategy`, `wiki-hardware-cube-unit`
 
 ### UB OOM (Unified Buffer Overflow)
 

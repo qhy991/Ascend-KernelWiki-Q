@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [activation, elementwise]
 languages: [ascendc]
 sources: [doc-ascendc-api-reference, doc-ascend-operator-fusion, blog-ascendc-performance-tips]
-related: [kernel-elementwise-ascendc, hw-vector-unit, technique-workspace-management]
+related: [kernel-elementwise-ascendc, wiki-hardware-vector-unit, technique-workspace-management]
 techniques: [data-reuse, pipeline-scheduling]
 reproducibility: snippet
 ---
@@ -142,4 +142,4 @@ Key AscendC Vector APIs used by this kernel:
 
 ## Relation to Other Pages
 
-SwiGLU sits downstream of the FFN up-projection GEMM (see kernel-matmul-ascendc) and reuses the Vector-unit machinery documented in hw-vector-unit and the elementwise template in kernel-elementwise-ascendc. The single-CopyOut, no-intermediate-spill design is the activation-specific instance of the workspace strategy in technique-workspace-management. As a confidence-`source-reported` page, the 3x GM-traffic reduction is the grounded, sourced claim; no absolute throughput numbers are asserted for this kernel.
+SwiGLU sits downstream of the FFN up-projection GEMM (see kernel-matmul-ascendc) and reuses the Vector-unit machinery documented in wiki-hardware-vector-unit and the elementwise template in kernel-elementwise-ascendc. The single-CopyOut, no-intermediate-spill design is the activation-specific instance of the workspace strategy in technique-workspace-management. As a confidence-`source-reported` page, the 3x GM-traffic reduction is the grounded, sourced claim; no absolute throughput numbers are asserted for this kernel.

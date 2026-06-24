@@ -8,7 +8,7 @@ confidence: source-reported
 techniques: [quantization-int8, format-conversion]
 hardware_features: [cube-unit, vector-unit]
 kernel_types: [matmul, gemm]
-related: [kernel-quant-matmul-ascendc, hw-cube-unit, technique-format-conversion]
+related: [kernel-quant-matmul-ascendc, wiki-hardware-cube-unit, technique-format-conversion]
 sources: [blog-ascend-w8a8-quantization, doc-ascend-quantization-guide, pr-ascend-pytorch-002]
 reproducibility: snippet
 ---

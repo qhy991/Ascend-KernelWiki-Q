@@ -7,7 +7,7 @@ tags: [moe, grouped-gemm, routing, ascendc]
 confidence: inferred
 kernel_types: [moe, grouped-gemm]
 languages: [ascendc]
-related: [kernel-matmul-ascendc, hw-cube-unit, technique-pipeline-scheduling]
+related: [kernel-matmul-ascendc, wiki-hardware-cube-unit, technique-pipeline-scheduling]
 sources: [doc-ascendc-api-reference, doc-catlass-framework]
 performance_claims:
   - gpu: Ascend 910B

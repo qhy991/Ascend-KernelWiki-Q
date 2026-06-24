@@ -6,7 +6,7 @@ architectures: [ascend910, ascend910b]
 tags: [instruction-queue, pipeline, hardware, synchronization]
 confidence: verified
 hardware_features: [instruction-queue, event-sync]
-related: [wiki-hardware-cube-unit, hw-vector-unit, hw-unified-buffer]
+related: [wiki-hardware-cube-unit, wiki-hardware-vector-unit, wiki-hardware-unified-buffer]
 sources: [doc-cann-architecture-guide]
 cuda_equivalent: null
 ---

@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [matmul, gemm]
 languages: [ascendc, python]
 sources: [blog-ascend-w8a8-quantization, pr-ascend-pytorch-002, doc-ascend-quantization-guide]
-related: [kernel-matmul-ascendc, technique-quantization-int8, hw-cube-unit]
+related: [kernel-matmul-ascendc, technique-quantization-int8, wiki-hardware-cube-unit]
 techniques: [quantization-int8, format-conversion, nz-tiling]
 performance_claims:
   - gpu: Ascend 910B

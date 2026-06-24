@@ -8,7 +8,7 @@ sources: [doc-ascend-memory-hierarchy, blog-ascendc-programming-guide]
 from_concept: "CUDA Memory Hierarchy"
 to_concept: "Ascend Memory Hierarchy"
 difficulty: moderate
-related: [migration-cuda-to-ascendc, hw-memory-hierarchy]
+related: [migration-cuda-to-ascendc, wiki-hardware-memory-hierarchy]
 ---
 
 ## Overview

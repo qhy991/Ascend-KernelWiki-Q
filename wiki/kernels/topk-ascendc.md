@@ -8,7 +8,7 @@ confidence: inferred
 kernel_types: [reduce, moe]
 languages: [ascendc]
 sources: [doc-ascendc-api-reference, blog-ascendc-performance-tips]
-related: [kernel-moe-ascendc, kernel-reduction-ascendc, hw-vector-unit]
+related: [kernel-moe-ascendc, kernel-reduction-ascendc, wiki-hardware-vector-unit]
 techniques: [data-reuse, bank-conflict-avoidance]
 reproducibility: pseudocode
 ---
@@ -21,7 +21,7 @@ Top-K selects the `k` largest values from an array and returns both the values a
 
 ## Why Top-K Is Awkward on a Vector Unit
 
-The Vector unit is built for dense, regular elementwise and reduction work (see hw-vector-unit). Top-K is neither: it is a partial sort that must also carry an index alongside every value. Two facts drive the design:
+The Vector unit is built for dense, regular elementwise and reduction work (see wiki-hardware-vector-unit). Top-K is neither: it is a partial sort that must also carry an index alongside every value. Two facts drive the design:
 
 - **Index tracking.** A bare `ReduceMax` returns the maximum *value* but not *where* it came from. Top-K consumers need the argmax (the expert id, or the token id), so a companion index tensor must be threaded through every comparison.
 - **k is usually tiny.** In MoE routing k is typically 1, 2, or 8 over a small set of experts (8-256). At that scale a full sort is wasteful, and an iterative max-and-mask loop wins. Sampling top-k over a vocabulary (k up to a few hundred over tens of thousands of logits) is the regime where a real partial sort pays off.

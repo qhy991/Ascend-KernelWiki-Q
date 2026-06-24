@@ -1,18 +1,18 @@
 ---
 id: technique-pr-mindspeed-2796
-title: "PR Insight: Ascend/MindSpeed #2796"
+title: 'PR Insight: Ascend/MindSpeed #2796'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - mindspeed
-  - attention
-  - distributed
-  - feature
+- mindspeed
+- attention
+- distributed
+- feature
 confidence: inferred
 sources:
-  - "https://gitee.com/ascend/MindSpeed/pulls/2796"
+- pr-mindspeed-2796
 ---
 
 # PR Insight: Ascend/MindSpeed #2796

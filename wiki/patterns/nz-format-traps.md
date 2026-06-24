@@ -8,7 +8,7 @@ confidence: inferred
 sources: [blog-nz-format-explained, doc-ascend-memory-hierarchy]
 symptoms: ["Cube produces garbage output", "Matrix dimensions not aligned to 16", "Unexpected format conversion overhead >15%", "NZ reshape errors"]
 techniques: [nz-tiling, format-conversion]
-related: [technique-nz-tiling, technique-format-conversion, hw-cube-unit]
+related: [technique-nz-tiling, technique-format-conversion, wiki-hardware-cube-unit]
 ---
 
 # FRACTAL_NZ Format Traps

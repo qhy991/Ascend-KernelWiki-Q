@@ -1,17 +1,17 @@
 ---
 id: technique-pr-catlass-mstuner
-title: "PR Insight: MSTuner Automated Tiling Search"
+title: 'PR Insight: MSTuner Automated Tiling Search'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - catlass
-  - tuning
-  - profiling
+- catlass
+- tuning
+- profiling
 confidence: inferred
 sources:
-  - "https://gitee.com/ascend/catlass/pulls/266"
+- pr-catlass-266
 ---
 
 # PR Insight: MSTuner Automated Tiling Search

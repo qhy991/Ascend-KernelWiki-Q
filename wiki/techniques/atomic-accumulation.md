@@ -8,7 +8,7 @@ confidence: inferred
 techniques: [atomic-accumulation]
 hardware_features: [global-memory, mte, cube-unit]
 kernel_types: [matmul, gemm, reduce]
-related: [kernel-matmul-ascendc, technique-workspace-management, hw-mte]
+related: [kernel-matmul-ascendc, technique-workspace-management, wiki-hardware-mte]
 sources: [doc-ascendc-api-reference, doc-ascend-memory-hierarchy]
 reproducibility: pseudocode
 ---

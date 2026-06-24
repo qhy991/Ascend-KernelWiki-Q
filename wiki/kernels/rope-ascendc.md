@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [elementwise, attention]
 languages: [ascendc]
 sources: [pr-vllm-ascend-001, doc-ascendc-api-reference, blog-ascendc-performance-tips]
-related: [kernel-flash-attention-npu, kernel-paged-attention-npu, hw-vector-unit]
+related: [kernel-flash-attention-npu, kernel-paged-attention-npu, wiki-hardware-vector-unit]
 techniques: [cube-vector-overlap, pipeline-scheduling]
 performance_claims:
   - gpu: Ascend 910B

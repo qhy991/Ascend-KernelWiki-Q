@@ -7,7 +7,7 @@ tags: [format-conversion, nz-format, diagnosis, performance, pattern]
 confidence: source-reported
 symptoms: ["repeated ND->NZ conversion every step", "Vector unit busy transposing not computing", "weights re-converted each forward pass", "high MTE traffic for layout change"]
 techniques: [format-conversion, nz-tiling]
-related: [technique-format-conversion, hw-nz-format, pattern-nz-format-traps]
+related: [technique-format-conversion, wiki-hardware-nz-format, pattern-nz-format-traps]
 sources: [blog-nz-format-explained, doc-catlass-framework, pr-vllm-ascend-002]
 ---
 

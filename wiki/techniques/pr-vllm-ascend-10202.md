@@ -1,17 +1,17 @@
 ---
 id: technique-pr-vllm-ascend-10202
-title: "PR Insight: vllm-project/vllm-ascend #10202"
+title: 'PR Insight: vllm-project/vllm-ascend #10202'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - pipeline-parallel
-  - kv-cache
-  - communication
+- pipeline-parallel
+- kv-cache
+- communication
 confidence: inferred
 sources:
-  - "https://github.com/vllm-project/vllm-ascend/pull/10202"
+- pr-vllm-ascend-10202
 ---
 
 # PR Insight: vllm-project/vllm-ascend #10202

@@ -8,7 +8,7 @@ confidence: inferred
 sources: [blog-cann-training-camp, doc-ascend-memory-hierarchy]
 symptoms: ["GM bandwidth >90% utilized", "Cube/Vector utilization <30%", "kernel time dominated by DataCopy", "low arithmetic intensity"]
 techniques: [data-reuse, double-buffering, nz-tiling]
-related: [technique-double-buffering, technique-data-reuse, hw-unified-buffer]
+related: [technique-double-buffering, technique-data-reuse, wiki-hardware-unified-buffer]
 ---
 
 # Memory-Bound Kernel Pattern

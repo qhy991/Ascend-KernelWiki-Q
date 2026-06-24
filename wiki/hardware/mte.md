@@ -7,7 +7,7 @@ tags: [mte, memory, dma, hardware]
 confidence: source-reported
 hardware_features: [mte, unified-buffer, l1-buffer, global-memory]
 cuda_equivalent: tma
-related: [wiki-hardware-unified-buffer, hw-memory-hierarchy, technique-double-buffering]
+related: [wiki-hardware-unified-buffer, wiki-hardware-memory-hierarchy, technique-double-buffering]
 sources: [doc-ascend-memory-hierarchy, doc-ascendc-api-reference, blog-ascend-910b-deep-dive]
 ---
 

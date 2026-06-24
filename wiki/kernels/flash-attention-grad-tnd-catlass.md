@@ -8,7 +8,7 @@ confidence: inferred
 kernel_types: [attention, flash-attention, gemm, softmax]
 languages: [ascendc, cpp]
 sources: [pr-catlass-169, doc-catlass-framework, doc-ascendc-api-reference]
-related: [kernel-flash-attention-npu, kernel-softmax-ascendc, kernel-gemm-catlass-cpp, kernel-matmul-ascendc, hw-cube-unit, hw-vector-unit, hw-l1-l0-buffer, technique-online-softmax, technique-cube-vector-overlap, technique-pipeline-scheduling, technique-workspace-management, technique-nz-tiling]
+related: [kernel-flash-attention-npu, kernel-softmax-ascendc, kernel-gemm-catlass-cpp, kernel-matmul-ascendc, wiki-hardware-cube-unit, wiki-hardware-vector-unit, wiki-hardware-l1-l0-buffer, technique-online-softmax, technique-cube-vector-overlap, technique-pipeline-scheduling, technique-workspace-management, technique-nz-tiling]
 techniques: [tiling-strategy, workspace-management, cube-vector-overlap, pipeline-scheduling, online-softmax, nz-tiling]
 reproducibility: source-example
 ---

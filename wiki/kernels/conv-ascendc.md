@@ -7,7 +7,7 @@ tags: [conv, convolution, im2col, cube-unit]
 confidence: inferred
 kernel_types: [conv]
 languages: [ascendc]
-related: [kernel-matmul-ascendc, hw-cube-unit, technique-nz-tiling]
+related: [kernel-matmul-ascendc, wiki-hardware-cube-unit, technique-nz-tiling]
 sources: [doc-ascendc-api-reference, doc-cann-architecture-guide]
 reproducibility: concept
 techniques: [nz-tiling, data-reuse]

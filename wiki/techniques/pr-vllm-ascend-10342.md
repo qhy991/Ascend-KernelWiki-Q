@@ -1,19 +1,19 @@
 ---
 id: technique-pr-vllm-ascend-10342
-title: "PR Insight: vllm-ascend #10342"
+title: 'PR Insight: vllm-ascend #10342'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - memory
-  - kv-cache
-  - mooncake
-  - deepseek
-  - architecture
+- memory
+- kv-cache
+- mooncake
+- deepseek
+- architecture
 confidence: inferred
 sources:
-  - "https://github.com/vllm-project/vllm-ascend/pull/10342"
+- pr-vllm-ascend-10342
 ---
 
 # PR Insight: vllm-ascend #10342 - Mooncake Connector Support for DeepSeek V4

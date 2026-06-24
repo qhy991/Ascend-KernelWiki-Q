@@ -7,7 +7,7 @@ tags: [grouped-gemm, gemm, matmul, moe, batch]
 confidence: inferred
 kernel_types: [grouped-gemm, gemm]
 languages: [ascendc]
-related: [kernel-matmul-ascendc, kernel-moe-ascendc, hw-cube-unit]
+related: [kernel-matmul-ascendc, kernel-moe-ascendc, wiki-hardware-cube-unit]
 sources: [doc-ascendc-api-reference, doc-catlass-framework]
 performance_claims:
   - gpu: Ascend 910B

@@ -8,7 +8,7 @@ confidence: source-reported
 kernel_types: [rmsnorm, layernorm]
 languages: [ascendc]
 sources: [doc-ascendc-api-reference, blog-ascendc-performance-tips, doc-ascend-operator-fusion]
-related: [kernel-layernorm-ascendc, hw-vector-unit, technique-online-softmax]
+related: [kernel-layernorm-ascendc, wiki-hardware-vector-unit, technique-online-softmax]
 techniques: [data-reuse, pipeline-scheduling]
 reproducibility: snippet
 operator_recipe:

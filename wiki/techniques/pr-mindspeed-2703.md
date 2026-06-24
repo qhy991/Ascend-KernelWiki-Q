@@ -1,17 +1,17 @@
 ---
 id: technique-pr-mindspeed-2703
-title: "PR Insight: Ascend/MindSpeed #2703"
+title: 'PR Insight: Ascend/MindSpeed #2703'
 type: wiki-technique
 architectures:
-  - ascend910
-  - ascend910b
+- ascend910
+- ascend910b
 tags:
-  - moe
-  - performance
-  - operator-fusion
+- moe
+- performance
+- operator-fusion
 confidence: inferred
 sources:
-  - "https://gitee.com/ascend/MindSpeed/pulls/2703"
+- pr-mindspeed-2703
 ---
 
 # PR Insight: Ascend/MindSpeed #2703
