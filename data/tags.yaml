@@ -192,3 +192,7 @@ tracked_repos:
   - low-latency-dispatch
   - deepep
   - glm5
+  - speculative-decoding
+  - mtp
+  - sfa
+  - dsa-cp

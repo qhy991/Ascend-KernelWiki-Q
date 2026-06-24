@@ -16,7 +16,7 @@
 - [GMM Fusion for Ascend MoE — Add, SwiGLU, and Quant Epilogues](wiki/techniques/ascend-gmm-fusion-epilogues.md) conf:inferred arch:ascend910, ascend910b
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md) conf:verified arch:ascend910, ascend910b
 
-## attention (73 pages)
+## attention (77 pages)
 
 - [CANN Ops Adv — Fused Infer Attention Score](src/transformer/fused_infer_attention_score) conf:source-reported arch:ascend910, ascend910b
 - [CANN Ops Adv — Incremental Flash Attention](src/transformer/incre_flash_attention) conf:source-reported arch:ascend910, ascend910b
@@ -73,6 +73,8 @@
 - [vllm-ascend — Mooncake Connector Support for DeepSeek-V4 Hybrid KV](sources/prs/vllm-ascend/PR-10342.md) conf:source-reported arch:ascend910, ascend910b
 - [vllm-ascend — Skip Pre-KV Graph Memory Profiling for DeepSeek-V4 Compressed Attention](sources/prs/vllm-ascend/PR-10369.md) conf:source-reported arch:ascend910, ascend910b
 - [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md) conf:source-reported arch:ascend910, ascend910b
+- [[BugFix][SpecDecode] Fix low MTP acceptance rate for SFA+DSA_CP (MTP>1)](sources/prs/vllm-ascend/PR-10825.md) conf:? arch:ascend910b
+- [[BugFix] Fix Index Cache when DSA_CP is Enable](sources/prs/vllm-ascend/PR-10827.md) conf:? arch:ascend910b
 - [vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache](sources/prs/vllm-ascend/PR-9533.md) conf:source-reported arch:ascend910, ascend910b
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md) conf:source-reported arch:ascend910b
 - [vllm-ascend — Keep DeepSeek-V4 DSA Forward Outside Piecewise Graph Capture](sources/prs/vllm-ascend/PR-9935.md) conf:source-reported arch:ascend910b
@@ -82,12 +84,14 @@
 - [DeepSeek-V4 on Ascend 950 — Compressed Attention Runtime Adaptation](wiki/techniques/deepseek-v4-ascend950-runtime.md) conf:inferred arch:ascend910b
 - [Double Buffering — Overlapping Data Transfer with Compute](wiki/techniques/double-buffering.md) conf:source-reported arch:ascend910, ascend910b
 - [DSA Context-Parallel Prefill Overlap on Ascend](wiki/techniques/dsa-context-parallel-prefill-overlap.md) conf:source-reported arch:ascend910, ascend910b
+- [Context-Parallel Aware Index Caching for DeepSeek Attention](wiki/techniques/pr-vllm-ascend-10827.md) conf:verified arch:ascend910b
 - [ND ↔ NZ Format Conversion Optimization](wiki/techniques/format-conversion.md) conf:source-reported arch:ascend910, ascend910b
 - [HCCL Collective Communication Optimization](wiki/techniques/hccl-optimization.md) conf:inferred arch:ascend910, ascend910b
 - [KV Cache Paging — Block-Table Memory Management for NPU Inference](wiki/techniques/kv-cache-paging.md) conf:source-reported arch:ascend910b
 - [MLA Ring Context Parallel on Ascend — Heterogeneous K/V P2P](wiki/techniques/mla-ring-context-parallel.md) conf:inferred arch:ascend910, ascend910b
 - [Online Softmax — Numerically Stable Streaming Softmax for Flash Attention](wiki/techniques/online-softmax.md) conf:source-reported arch:ascend910, ascend910b
 - [Pipeline Scheduling — CopyIn/Compute/CopyOut Queue Coordination](wiki/techniques/pipeline-scheduling.md) conf:source-reported arch:ascend910, ascend910b
+- [Isolating Attention Metadata Buffers for MTP Speculative Decoding](wiki/techniques/pr-vllm-ascend-10825.md) conf:verified arch:ascend910b
 - [Tiling Strategy — Host-Side Tiling and Auto-Tiling](wiki/techniques/tiling-strategy.md) conf:source-reported arch:ascend910, ascend910b, ascend310p
 - [vLLM Ascend Hybrid/Mamba KV Cache — Group-Aware Transfer and Prefix Caching](wiki/techniques/vllm-hybrid-mamba-kv-cache.md) conf:inferred arch:ascend910, ascend910b
 - [Workspace Management — UB Budgeting and GM Scratch Tensors](wiki/techniques/workspace-management.md) conf:source-reported arch:ascend910, ascend910b

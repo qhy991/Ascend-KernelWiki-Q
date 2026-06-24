@@ -192,7 +192,7 @@
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
 - [AscendC Multi-Dtype Support — fp16, bf16, fp32](wiki/techniques/ascendc-multi-dtype.md)
 
-## python (54 pages)
+## python (56 pages)
 
 - [W8A8 INT8 Quantization on Ascend 910B — SmoothQuant and npu_quant_matmul](sources/blogs/ascend-w8a8-quantization.md)
 - [TIK Operator Walkthrough — Writing Vector Add and Softmax in Python](sources/blogs/tik-operator-walkthrough.md)
@@ -245,6 +245,8 @@
 - [vllm-ascend — Mooncake Connector Support for DeepSeek-V4 Hybrid KV](sources/prs/vllm-ascend/PR-10342.md)
 - [vllm-ascend — Skip Pre-KV Graph Memory Profiling for DeepSeek-V4 Compressed Attention](sources/prs/vllm-ascend/PR-10369.md)
 - [vLLM Ascend — Async O-Projection TP Weight AllGather in DSA-CP](sources/prs/vllm-ascend/PR-10694.md)
+- [[BugFix][SpecDecode] Fix low MTP acceptance rate for SFA+DSA_CP (MTP>1)](sources/prs/vllm-ascend/PR-10825.md)
+- [[BugFix] Fix Index Cache when DSA_CP is Enable](sources/prs/vllm-ascend/PR-10827.md)
 - [vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache](sources/prs/vllm-ascend/PR-9533.md)
 - [vllm-ascend — DeepSeek-V4 Support for Ascend 950](sources/prs/vllm-ascend/PR-9757.md)
 - [vllm-ascend — Keep DeepSeek-V4 DSA Forward Outside Piecewise Graph Capture](sources/prs/vllm-ascend/PR-9935.md)

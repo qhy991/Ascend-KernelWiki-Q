@@ -5182,6 +5182,47 @@
     "confidence": "source-reported"
   },
   {
+    "id": "pr-vllm-ascend-10825",
+    "type": "source-pr",
+    "title": "[BugFix][SpecDecode] Fix low MTP acceptance rate for SFA+DSA_CP (MTP>1)",
+    "path": "sources/prs/vllm-ascend/PR-10825.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "speculative-decoding",
+      "mtp",
+      "sfa",
+      "dsa-cp"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
+    "id": "pr-vllm-ascend-10827",
+    "type": "source-pr",
+    "title": "[BugFix] Fix Index Cache when DSA_CP is Enable",
+    "path": "sources/prs/vllm-ascend/PR-10827.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "dsa-cp"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [
+      "python"
+    ],
+    "confidence": null
+  },
+  {
     "id": "pr-vllm-ascend-9533",
     "type": "source-pr",
     "title": "vllm-ascend — AscendStore Hybrid/Mamba Aligned Prefix Cache",
@@ -5489,6 +5530,23 @@
     ],
     "languages": [],
     "confidence": "source-reported"
+  },
+  {
+    "id": "technique-dsa-cp-index-cache",
+    "type": "wiki-technique",
+    "title": "Context-Parallel Aware Index Caching for DeepSeek Attention",
+    "path": "wiki/techniques/pr-vllm-ascend-10827.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "dsa-cp"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "verified"
   },
   {
     "id": "technique-format-conversion",
@@ -5911,6 +5969,26 @@
     ],
     "languages": [],
     "confidence": "inferred"
+  },
+  {
+    "id": "technique-spec-decode-mtp-buffers",
+    "type": "wiki-technique",
+    "title": "Isolating Attention Metadata Buffers for MTP Speculative Decoding",
+    "path": "wiki/techniques/pr-vllm-ascend-10825.md",
+    "architectures": [
+      "ascend910b"
+    ],
+    "tags": [
+      "speculative-decoding",
+      "mtp",
+      "sfa",
+      "dsa-cp"
+    ],
+    "kernel_types": [
+      "attention"
+    ],
+    "languages": [],
+    "confidence": "verified"
   },
   {
     "id": "technique-tensor-parallel-overlap",
